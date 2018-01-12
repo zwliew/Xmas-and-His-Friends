@@ -10,27 +10,28 @@ public class PianPangSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-		for(int i = 0; i < 4; i++){
-			
-			pos[i] = new Vector3 (-3 + i * 2, 1, -3);
-		}
-
-		for (int i = 0; i < 4; i++) {
-			GameObjectUtility.customInstantiate (prefabPianPang, pos [i]);
-			Debug.Log(i);
-		}
+		GenerateQn ();
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
-			foreach (var a in PinZiMain.theDic) {
-				Debug.Log (a.Key + " " + a.Value);
-			}
+		if (Input.GetMouseButtonDown (1)) {
+
+			GenerateQn ();
 		}
 	}
 
+	void GenerateQn(){
+		PinZiGM.SetChooseZero ();
+		for(int i = 0; i < 4; i++){
+			pos[i] = new Vector3 (-3 + i * 2, 1, -3);
+		}
+
+
+		for (int i = 0; i < 4; i++) {
+			GameObjectUtility.customInstantiate (prefabPianPang, pos [i]);
+		}
+	}
 
 }

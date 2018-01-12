@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4655713949823128}
   - component: {fileID: 212953360029323636}
   - component: {fileID: 114419008879873830}
-  - component: {fileID: 114197169219211286}
   - component: {fileID: 65326630535907142}
-  m_Layer: 0
+  - component: {fileID: 114513328831832120}
+  m_Layer: 9
   m_Name: An
   m_TagString: PianPang
   m_Icon: {fileID: 0}
@@ -55,23 +55,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114197169219211286
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1306473761033426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61371ecf796eb6d45983bc915b6677bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spritePianPang:
-  - {fileID: 21300000, guid: 52717cfcf68e07a458968d05d15942c6, type: 3}
-  - {fileID: 21300000, guid: 094fdc5d3ed73a74d85f2324fc035d12, type: 3}
-  - {fileID: 21300000, guid: 5e8bc7e97317c0e418df07c489b50429, type: 3}
-  - {fileID: 21300000, guid: cf40d4d494bb4c94db1121a11e20649a, type: 3}
-  lifetime: 0.25
 --- !u!114 &114419008879873830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,6 +66,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be40794e4737f3743b727e9ed1179b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114513328831832120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306473761033426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b078a3e3e837c4bbd23f7b227feb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spritePianPang:
+  - {fileID: 21300000, guid: 25a5678e57d3c8d4ca8aa5d1acb60388, type: 3}
+  - {fileID: 21300000, guid: 9f1d2c6a267c98d4589032aaced12381, type: 3}
+  - {fileID: 21300000, guid: 25a5678e57d3c8d4ca8aa5d1acb60388, type: 3}
+  - {fileID: 21300000, guid: 9f1d2c6a267c98d4589032aaced12381, type: 3}
+  - {fileID: 21300000, guid: 52717cfcf68e07a458968d05d15942c6, type: 3}
+  - {fileID: 21300000, guid: 094fdc5d3ed73a74d85f2324fc035d12, type: 3}
+  - {fileID: 21300000, guid: 52717cfcf68e07a458968d05d15942c6, type: 3}
+  - {fileID: 21300000, guid: 094fdc5d3ed73a74d85f2324fc035d12, type: 3}
+  spriteNo: 0
 --- !u!212 &212953360029323636
 SpriteRenderer:
   m_ObjectHideFlags: 1
