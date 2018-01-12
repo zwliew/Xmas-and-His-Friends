@@ -7,6 +7,7 @@ public class PinZiGM : MonoBehaviour {
 	static Vector2Int v2Ans;
 	static Dictionary<Vector2Int, string> theDic = new Dictionary<Vector2Int, string>();
 	static int Choose;
+	public GameObject sprAns;
 
 	// Use this for initialization
 	void Awake() {
@@ -53,6 +54,7 @@ public class PinZiGM : MonoBehaviour {
 
 	void DisplayResult(Vector2Int ans){
 		if(theDic.ContainsKey(ans)){
+			GameObjectUtility.customInstantiate (sprAns, new Vector3(0, 0,-3));
 			Debug.Log(theDic[ans]);
 		}
 	}

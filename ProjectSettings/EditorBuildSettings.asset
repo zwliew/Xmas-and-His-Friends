@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/HelloWorld.unity
-    guid: 0faa08dfb953e3b4e8cfa88a72962d36
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Homescreen.unity
     guid: 12023b903ba59ad40839b579d5934885
+  - enabled: 1
+    path: Assets/Scenes/PinZiGame.unity
+    guid: 7d4803e1aaddb6549a3fc0c296aeeada
