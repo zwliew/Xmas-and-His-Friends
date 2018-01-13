@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script is the fundation of the object pool system
+ * Just leave it there
+ */
 public class GameObjectUtility {
 
 	private static Dictionary<RecycleTouch, ObjectPoolTouch> touchesPool = new Dictionary<RecycleTouch, ObjectPoolTouch> ();

@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script I also dont know for what but is important
+ */
 public class ObjectPoolTouch : MonoBehaviour {
 
 	public RecycleTouch prefab;

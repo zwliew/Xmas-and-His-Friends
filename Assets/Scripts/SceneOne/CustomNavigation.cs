@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script is not in use
+ */
 public class CustomNavigation : MonoBehaviour {
 
 	private static Vector3 v3destination;

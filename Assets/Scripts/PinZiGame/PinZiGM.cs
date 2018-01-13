@@ -1,7 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script pulls the listQuestions<intPianp> and dicAnswer<Vector2Int(intPianp1, intPianp2), strZi> from the data base
+ * TODO the above mentioned function is yet to be achieved
+ * PinZiGM.QuestionList(): get the list of pianpang
+ * PinZiGM.AnswerDictionary(): get the dictionary of answers
+ * PinZiGM.SetChooseZero(): reset the counter for selected pianpang by player
+ */ 
 public class PinZiGM : MonoBehaviour {
 	static List<int> theList = new List<int> ();
 	static Vector2Int v2Ans;

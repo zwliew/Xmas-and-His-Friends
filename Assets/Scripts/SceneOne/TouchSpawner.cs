@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script generates a feedback animation for touch inputs
+ */
 public class TouchSpawner : MonoBehaviour {
 
 	public GameObject[] objTouch;

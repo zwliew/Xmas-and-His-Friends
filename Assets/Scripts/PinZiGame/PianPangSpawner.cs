@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script generates pianpang prefabs on the screen
+ * 
+*/
 public class PianPangSpawner : MonoBehaviour {
 
 

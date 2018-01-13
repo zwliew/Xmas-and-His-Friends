@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script manages the animation of Xmas
+ * AnimationManager.SetState(int state) 
+*/
 public class AnimationManager : MonoBehaviour {
 
 	private Animator animatorXmas;

@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script is attached to the pianpang prefab and
+ * controls the spritePianpang that should be displayed
+ * 
+*/
 public class PinZiPP : MonoBehaviour, IRecycle {
 
-	public Sprite[] spritePianPang;
+	private Sprite[] spritePianPang;
 
 	[HideInInspector]
 	public int spriteNo;

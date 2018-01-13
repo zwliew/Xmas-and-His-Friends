@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script enables the attached gameObject to disappear after some time
+ * change the floatLifetime in the inspector window!
+ */
 public class DestroyTouchSpawner : MonoBehaviour {
 
 	public float lifetime = 0.25f;

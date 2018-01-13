@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script enables a followed camera
+ */
 public class CameraMovement : MonoBehaviour {
 
 	private Vector3 v3cameraLocation;

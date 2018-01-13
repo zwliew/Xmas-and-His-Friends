@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script make the attached gameObject a recycled gameObject
+ */
 public interface IRecycle{
 	void Restart ();
 	void Shutdown();

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//This script is superseded by MovementXmasRB2D
+//This script is superseded by MovementXmasRB2D and is no longer used
 
 public class MovementXmas : MonoBehaviour {
 

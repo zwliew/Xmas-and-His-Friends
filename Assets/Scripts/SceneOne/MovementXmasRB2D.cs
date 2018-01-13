@@ -1,8 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-//2d
+/*
+ * This script enables Xmas to move to the destination in a randomized updown/leftright way
+ * and get over obstacles automatically
+ * MovementXmas.SetDestination(vector3Location, Vector3Destination)
+ * MovementXmas.GetLocation()
+ * MovementXmas.GetDestination()
+ */ 
 
 public class MovementXmasRB2D : MonoBehaviour {
 	private static Vector3 v3location;

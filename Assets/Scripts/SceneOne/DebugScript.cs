@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script is for debugging
+ */ 
 public class DebugScript : MonoBehaviour {
 	private Vector3 v3TouchLocation;
 	private Vector3 v3GroundLocation;
