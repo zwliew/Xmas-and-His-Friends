@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -221,6 +222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabPianPang: {fileID: 1306473761033426, guid: 2b36ec868aa228a469889a2a08428e03,
+    type: 2}
+  prefabGlowingEffect: {fileID: 1633679769880484, guid: 20492ab3c4293734b8d067a32c854f66,
     type: 2}
 --- !u!4 &942135274
 Transform:

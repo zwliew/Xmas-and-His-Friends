@@ -7,24 +7,18 @@ using UnityEngine;
  */
 public class DestroyTouchSpawner : MonoBehaviour {
 
-	public float lifetime = 0.25f;
+	private float lifetime = 2f;
+	private float lifeTime = 2f;
 	private bool dead;
 
 
 	// Update is called once per frame
 	void Update () {
-		if (lifetime > 0) {
-			lifetime -= Time.deltaTime;
+		if (lifeTime > 0) {
+			lifeTime -= Time.deltaTime;
 		} else {
-			dead = true;
+			lifeTime = lifetime;
+			GameObjectUtility.customDestroy(gameObject);
 		}
-
-		if (dead)
-			deleteTouch();
-	}
-	void deleteTouch(){
-		dead = false;
-		lifetime = 0.25f;
-		GameObjectUtility.customDestroy(gameObject);
 	}
 }
