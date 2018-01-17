@@ -1,0 +1,43 @@
+﻿{
+	"words": [
+		{
+			"name": "AN",
+			"sideIndices": [
+				"baogaitou",
+				"nv",
+				"renzipang",
+				"wei"
+			],
+			"correctSideIndices": [
+				"baogaitou",
+				"nv"
+			]
+		},
+		{
+			"name": "XIN",
+			"sideIndices": [
+				"qin",
+				"jin",
+				"baogaitou",
+				"wei"
+			],
+			"correctSideIndices": [
+				"qin",
+				"jin"
+			]
+		},
+		{
+			"name": "QIU",
+			"sideIndices": [
+				"he",
+				"huo",
+				"qin",
+				"nv"
+			],
+			"correctSideIndices": [
+				"he",
+				"huo"
+			]
+		}
+	]
+}

@@ -13,7 +13,6 @@ public class PianPangSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		PinZiGM.PrepareQnList ();
 		GenerateQn ();
 
 	}
@@ -21,13 +20,12 @@ public class PianPangSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown (1)) {
-			PinZiGM.PrepareQnList ();
 			GenerateQn ();
 		}
 	}
 
 	void GenerateQn(){
-		PinZiGM.SetChooseZero ();
+		PinZiGM.ResetGame ();
 		for(int i = 0; i < 4; i++){
 			pos[i] = new Vector3 (-3 + i * 2, 1, -3);
 		}

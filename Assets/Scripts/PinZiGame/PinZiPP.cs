@@ -24,7 +24,7 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 
 	public void Restart(){
 		lifetime = 2f;
-		spriteNo = PinZiGM.GetNextNo ();
+		spriteNo = 0;
 		var renderer = GetComponent<SpriteRenderer> ();
 		renderer.sprite = spritePianPang [7 - spriteNo];
 	}
