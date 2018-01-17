@@ -13,19 +13,25 @@ public class PinZiGM : MonoBehaviour {
 	static Vector2Int v2Ans;
 	static Dictionary<Vector2Int, string> theDic = new Dictionary<Vector2Int, string>();
 	static int Choose;
+	static int qnNo;
+	static List<int> qnList = new List<int>();
 	public GameObject sprAns;
 
 	// Use this for initialization
 	void Awake() {
 		Choose = 0;
+		qnNo = 0;
 		v2Ans = new Vector2Int (999, 999);
 		theList.Clear ();
 		theDic.Clear ();
+
+		//Get QnList
 		for (int i = 0; i < 8; i++) {
 			theList.Add (i);
-			Debug.Log (i + " added to the list");
+			//Debug.Log (i + " added to the list");
 		}
 
+		//Get AnsDic
 		theDic.Add (new Vector2Int (0, 1), "an");
 		theDic.Add (new Vector2Int (1, 0), "an");
 		theDic.Add (new Vector2Int (2, 3), "an");
@@ -72,8 +78,49 @@ public class PinZiGM : MonoBehaviour {
 	public static Dictionary<Vector2Int, string> AnswerDictionary(){
 		return theDic;
 	}
+
+	
+	public static void PrepareQnList(){
+		qnList.Clear ();
+		qnList.Add (0);
+		qnList.Add (1);
+		qnList.Add (2);
+		qnList.Add (3);
+		
+	}
+
+	public static int GetNextNo(){
+		if (qnNo > 3)
+			qnNo = 0;
+		Debug.Log (qnNo);
+		int nextNo = 0;
+		switch (qnNo) {
+		case 0:
+			qnNo += 1;
+			nextNo = qnList[0];
+			break;
+		case 1:
+			qnNo += 1;
+			nextNo = qnList[1];
+			break;
+		case 2:
+			qnNo += 1;
+			nextNo = qnList[2];
+			break;
+		case 3:
+			qnNo += 1;
+			nextNo = qnList[3];
+			break;
+		}
+		return nextNo;
+	}
+
 	public static void SetChooseZero(){
 		Choose = 0;
 		v2Ans = new Vector2Int (999, 999);
+	}
+	public static void GetReady(){
+		SetChooseZero ();
+		PrepareQnList ();
 	}
 }

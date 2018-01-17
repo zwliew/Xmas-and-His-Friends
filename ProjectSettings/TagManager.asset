@@ -11,6 +11,7 @@ TagManager:
   - Obstacles3
   - Obstacles4
   - PianPang
+  - EnterGame
   layers:
   - Default
   - TransparentFX

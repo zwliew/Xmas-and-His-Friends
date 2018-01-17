@@ -8,7 +8,8 @@ using UnityEngine;
 public class AnimationManager : MonoBehaviour {
 
 	private Animator animatorXmas;
-    private static int state = 0;
+	[HideInInspector]
+    public static int state = 0;
 
 	public static void SetState(int stateno){
 		state = stateno;
