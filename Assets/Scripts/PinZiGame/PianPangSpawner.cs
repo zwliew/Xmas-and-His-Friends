@@ -9,7 +9,6 @@ public class PianPangSpawner : MonoBehaviour {
 
 
 	public GameObject prefabPianPang;
-	public GameObject prefabGlowingEffect;
 	private Vector3 [] pos = new Vector3[5];
 
 	// Use this for initialization
@@ -34,7 +33,6 @@ public class PianPangSpawner : MonoBehaviour {
 
 		for (int i = 0; i < 4; i++) {
 			GameObjectUtility.customInstantiate (prefabPianPang, pos [i]);
-			GameObjectUtility.customInstantiate (prefabGlowingEffect, pos [i]);
 		}
 	}
 

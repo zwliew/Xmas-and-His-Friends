@@ -9,12 +9,11 @@ using UnityEngine;
 public class PinZiPP : MonoBehaviour, IRecycle {
 
 	public Sprite[] spritePianPang;
+	public GameObject prefabGlowingEffect;
 
 	[HideInInspector]
 	public int spriteNo;
-
-	private float lifetime = 2f;
-
+	public bool dead;
 	public static List<int> theList = new List<int> ();
 
 	// Use this for initialization
@@ -23,8 +22,8 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	public void Restart(){
-		lifetime = 2f;
 		spriteNo = 0;
+		dead = false;
 		var renderer = GetComponent<SpriteRenderer> ();
 		renderer.sprite = spritePianPang [7 - spriteNo];
 	}
@@ -32,16 +31,14 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	// Not Very Useful
 	void Update () {
 		//delete the pianpangs after some time
-		if (lifetime > 0) {
-			lifetime -= Time.deltaTime;
-		} else {
+		if (dead == true)
 			GameObjectUtility.customDestroy (gameObject);
-		}
 	}
 
 	public void SetSelected(){
 		var renderer = GetComponent<SpriteRenderer> ();
 		renderer.sprite = spritePianPang[spriteNo];
+		GameObjectUtility.customInstantiate (prefabGlowingEffect, this.transform.position);
 	}
 	
 	public void Shutdown(){

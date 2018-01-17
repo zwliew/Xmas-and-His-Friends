@@ -7,11 +7,13 @@ using UnityEngine;
  */
 public class DestroyTouchSpawner : MonoBehaviour {
 
-	private float lifetime = 2f;
-	private float lifeTime = 2f;
+	public float lifetime;
+	private float lifeTime;
 	private bool dead;
 
-
+	void Start(){
+		lifeTime = lifetime;
+	}
 	// Update is called once per frame
 	void Update () {
 		if (lifeTime > 0) {
