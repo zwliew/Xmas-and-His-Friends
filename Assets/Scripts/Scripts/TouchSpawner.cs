@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /*
  * This script generates a feedback animation for touch inputs
- */
+ *
 public class TouchSpawner : MonoBehaviour {
 
 	public GameObject objTouch;
@@ -28,7 +28,7 @@ public class TouchSpawner : MonoBehaviour {
 
 			Ray ray = Camera.main.ScreenPointToRay (v3TouchLocation);//从摄像机发出到点击坐标的射线
 			RaycastHit hitInfo;
-			/*
+
 			if (Physics.Raycast (ray, out hitInfo, Mathf.Infinity, 1 << LayerMask.NameToLayer ("Objects"))) {
 				MovementXmasRB2D.SetDestination (MovementXmasRB2D.GetLocation (), 
 					new Vector3 (
@@ -38,7 +38,7 @@ public class TouchSpawner : MonoBehaviour {
 				
 
 			}
-			*/
+
 
 
 
@@ -46,3 +46,4 @@ public class TouchSpawner : MonoBehaviour {
 
 	}
 }
+*/

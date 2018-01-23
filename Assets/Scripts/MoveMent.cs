@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/* 
+ *This script is not in use anymore
+ */
+/*
 public class MoveMent : MonoBehaviour {
 
 	private UnityEngine.AI.NavMeshAgent navAgent;
@@ -21,6 +24,10 @@ public class MoveMent : MonoBehaviour {
 	private Vector3 node2 = new Vector3 (25.4f, 47.6f, -32.5f);//Between 1 & 3
 	private Vector3 node3 = new Vector3 (24.2f, 49.48f, 0.23f);//Between 3 & 4
 	private Vector3 node4 = new Vector3 (24.2f, 56.57f, 7.56f);//Between 4 & 3
+
+	private Vector3[] nodes = new Vector3[]{};
+
+	public GameObject[] node = new GameObject[9];
 
 	void Start (){
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
@@ -189,3 +196,4 @@ public class MoveMent : MonoBehaviour {
 		return destination;
 	}
 }
+*/

@@ -5,6 +5,10 @@ using UnityEngine;
 public class DebugScript : MonoBehaviour {
 	private Rigidbody rbXmas;
 	int i = 0;
+	private UnityEngine.AI.NavMeshAgent navAgent;
+
+	public GameObject oneNode;
+
 	void Start(){
 		i = 0;
 		rbXmas = GetComponent<Rigidbody> ();
@@ -12,8 +16,9 @@ public class DebugScript : MonoBehaviour {
 
 	void Update(){
 		if(Input.GetMouseButtonDown(1)){
-			Debug.Log ("go up please");
-				StartCoroutine (GoUp ());
+			Debug.Log ("go there please");
+			navAgent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
+			navAgent.SetDestination (oneNode.transform.position);
 		}
 	}
 

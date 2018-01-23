@@ -6,4 +6,5 @@ public class RoadProperty : MonoBehaviour {
 	
 	public string direction;
 
+	public int regionNumber;
 }

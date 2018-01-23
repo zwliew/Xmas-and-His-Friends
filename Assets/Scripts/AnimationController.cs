@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimationController : MonoBehaviour {
 	[HideInInspector]
@@ -28,6 +29,7 @@ public class AnimationController : MonoBehaviour {
 			if (holdFlag) {
 				holdFlag = false;
 				Camera.main.GetComponent<CameraMovement> ().followState = 1;
+				StartCoroutine (EnterGame ());
 			}
 		}
 		if(other.gameObject.tag.Equals("ElevatorOne") && holdFlagTwo){
@@ -72,6 +74,10 @@ public class AnimationController : MonoBehaviour {
 			yield return new WaitForFixedUpdate ();
 			StartCoroutine (GoForward ());
 		}
+	}
+	IEnumerator EnterGame(){
+		yield return new WaitForSeconds (1f);
+		SceneManager.LoadScene ("PinZiGame");
 	}
 
 }

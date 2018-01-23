@@ -6,8 +6,10 @@ public class CameraMovement : MonoBehaviour {
 	float xOffset;
 	float yOffset;
 	float zOffset;
+
 	GameObject target;
 
+	[HideInInspector]
 	public int followState;
 
 	GameObject furniture = null;
@@ -17,7 +19,7 @@ public class CameraMovement : MonoBehaviour {
 
 	Vector3 smoothV = Vector3.zero;
 	// Use this for initialization
-	void Start () {	
+	void Awake () {	
 		followState = 0;
 		target = GameObject.FindGameObjectsWithTag ("Player") [0];
 	    cam = GetComponent<Camera> ();
@@ -31,13 +33,15 @@ public class CameraMovement : MonoBehaviour {
 	void Update () {
 		switch (followState) {
 		case 0:
+			
 			transform.position = Vector3.SmoothDamp (
 				transform.position, 
-				new Vector3 (173f, 212f, -175f),
+				new Vector3 (-117f, 211f, 125f),
 				ref smoothV,
 				0.1f);
 			transform.rotation = Quaternion.Lerp (transform.rotation, camRotation, 0.2f);
-			cam.orthographicSize = Vector2.Lerp (new Vector2 (cam.orthographicSize, cam.orthographicSize), new Vector2 (50f, 50f), 0.2f).x;
+			cam.orthographicSize = Vector2.Lerp (new Vector2 (cam.orthographicSize, cam.orthographicSize), new Vector2 (72f, 72f), 0.2f).x;
+
 			break;
 		case 1:
 			SpotlightCamera ();
@@ -65,11 +69,11 @@ public class CameraMovement : MonoBehaviour {
 
 		transform.position = Vector3.SmoothDamp(
 			transform.position, 
-			furniture.transform.position - new Vector3(-300f, 0f, 0f),
+			furniture.transform.position + new Vector3(-300f, 0f, 0f),
 			ref smoothV,
 			0.1f);
 		
-		cam.orthographicSize = Vector2.Lerp (new Vector2 (cam.orthographicSize, cam.orthographicSize), new Vector2 (4f, 4f), 0.4f).x;
+		cam.orthographicSize = Vector2.Lerp (new Vector2 (cam.orthographicSize, cam.orthographicSize), new Vector2 (11f, 11f), 0.4f).x;
 		transform.LookAt (furniture.transform.position);
 	}
 
