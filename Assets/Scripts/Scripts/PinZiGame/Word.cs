@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PinZiWord {
+public class Word {
     public string name;
-    public int index;
-    public int[] sideIndices;
-    public int[] correctSideIndices;
+    public string[] sides;
+    public string[] correctSides;
 }

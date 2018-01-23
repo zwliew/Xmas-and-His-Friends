@@ -10,13 +10,13 @@ using UnityEngine;
  */ 
 public class PinZiGM : MonoBehaviour {
     private static string pinZiDataFileName = "PinZiData.json";
-	private static PinZiWord[] words;
+	private static Word[] words;
 
 	private static int curChoice;
 	public GameObject sprAns;
 
 	private static string[] curSelection;
-    private static PinZiWord curWord;
+    private static Word curWord;
 
 	// Use this for initialization
 	void Awake()
@@ -31,7 +31,7 @@ public class PinZiGM : MonoBehaviour {
 		if (File.Exists(filePath))
 		{
 			string dataAsJson = File.ReadAllText(filePath);
-			PinZiWordData wordData = JsonUtility.FromJson<PinZiWordData>(dataAsJson);
+			JsonData wordData = JsonUtility.FromJson<JsonData>(dataAsJson);
 			words = wordData.words;
 		}
 		else
@@ -40,7 +40,7 @@ public class PinZiGM : MonoBehaviour {
 		}
 	}
 
-	public static PinZiWord GetRandomWord()
+	public static Word GetRandomWord()
 	{
 		int wordIndex = UnityEngine.Random.Range(0, words.Length);
 		return words[wordIndex];
@@ -76,8 +76,8 @@ public class PinZiGM : MonoBehaviour {
 	}
 
 	private void DisplayResult() {
-        if (Array.Exists(curWord.correctSideIndices, element => string.Equals(element, curSelection[0])) &&
-            Array.Exists(curWord.correctSideIndices, element => string.Equals(element, curSelection[1])))
+		if (Array.Exists(curWord.correctSides, element => string.Equals(element, curSelection[0])) &&
+            Array.Exists(curWord.correctSides, element => string.Equals(element, curSelection[1])))
         {
             DisplayCorrectResult();
         } else

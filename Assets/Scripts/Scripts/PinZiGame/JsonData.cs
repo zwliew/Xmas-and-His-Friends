@@ -3,6 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PinZiWordData {
-    public PinZiWord[] words;
+public class JsonData {
+    public Word[] words;
 }
