@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		string selectedSide = GetSelectedSide (Input.mousePosition);
-		if (selectedSide) {
+		if (selectedSide == "") {
 			displayController.SelectSide (selectedSide);
 			SelectSide (selectedSide);
 		}
