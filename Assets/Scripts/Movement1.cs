@@ -14,8 +14,11 @@ public class Movement1 : MonoBehaviour {
 	private List<Vector3> v3destinations;
 	int currentPoint;
 
+	private AnimationController xmasAnimator;
+
 	void Awake(){
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
+		xmasAnimator = GetComponent<AnimationController> ();
 
 	}
 
@@ -42,6 +45,7 @@ public class Movement1 : MonoBehaviour {
 	}
 
 	IEnumerator Move(){
+		xmasAnimator.movingState = 1;
 		navAgent.SetDestination (v3destinations [currentPoint]);
 		//Debug.Log ("Move()");
 		yield return StartCoroutine (WaitForDestination ());
@@ -86,6 +90,7 @@ public class Movement1 : MonoBehaviour {
 	IEnumerator NextWayPoint(){
 		currentPoint++;
 		if (currentPoint >= v3destinations.Count) {
+			xmasAnimator.movingState = 0;
 			StopAllCoroutines ();
 		} else {
 			Vector3 v3next = v3destinations [currentPoint];

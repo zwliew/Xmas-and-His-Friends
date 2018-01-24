@@ -7,7 +7,7 @@ using UnityEngine;
  * This script pulls the listQuestions<intPianp> and dicAnswer<Vector2Int(intPianp1, intPianp2), strZi> from the data base
  * TODO the above mentioned function is yet achieved
  * PinZiGM.ResetGame(): reset the counter for selected pianpang by player
- */ 
+
 public class PinZiGM : MonoBehaviour {
     private static string pinZiDataFileName = "PinZiData.json";
 	private static Word[] words;
@@ -99,3 +99,4 @@ public class PinZiGM : MonoBehaviour {
     }
 
 }
+ */

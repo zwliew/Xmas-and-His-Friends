@@ -23,6 +23,10 @@ public class DisplayController {
 	private void DisplayAllSides () {
 		string[] sides = word.sides;
 		// TODO: Display all 4 side indices of the current word
+		/* Initialize a pianpang at vec3location
+		 * Get the PinZiPP script by GetComponent
+		 * PinZiPP.SetDisplay(Texture2D texture2D);
+		 */
 	}
 
 	public void DisplayWin () {

@@ -13,14 +13,19 @@ public class AnimationController : MonoBehaviour {
 
 	private Rigidbody rbXmas;
 
-	int stepCountOne = 0;
-	int stepCountTwo = 0;
+	[HideInInspector]
+	public int movingState = 0;
+	private Animator xmasAnimator;
+
+	private int stepCountOne = 0;
+	private int stepCountTwo = 0;
 
 	void Awake(){
 		holdFlag = false;
 		holdFlagTwo = false;
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 		rbXmas = GetComponent<Rigidbody> ();
+		xmasAnimator = GetComponent<Animator> ();
 	}
 		
 
@@ -45,6 +50,10 @@ public class AnimationController : MonoBehaviour {
 			//TODO after things are done, set active
 
 		}
+	}
+
+	void Update(){
+		xmasAnimator.SetInteger ("MoveState", movingState);
 	}
 	/*
 	IEnumerator ElevatorUp(){

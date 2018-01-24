@@ -25,7 +25,7 @@ public class PianPangSpawner : MonoBehaviour {
 	}
 
 	void NextRound(){
-		PinZiGM.ResetGame ();
+		//PinZiGM.ResetGame ();
 
 		for(int i = 0; i < 4; i++){
 			pos[i] = new Vector3 (-3 + i * 2, 1, -3);
