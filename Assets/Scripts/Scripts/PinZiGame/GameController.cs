@@ -37,14 +37,21 @@ public class GameController : MonoBehaviour {
 			return;
 		}
 
-		if (!Input.GetMouseButtonDown (0)) {
-			return;
+		if (Input.GetMouseButtonDown (0)) {
+			string selectedSide = GetSelectedSide (Input.mousePosition);
+			if (selectedSide != null) {
+				displayController.SelectSide (selectedSide);
+				SelectSide (selectedSide);
+			}
 		}
+		if (Input.GetMouseButtonDown (1)) {// Just for clearing selected effects. Merge with Display controller in the future
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hitInfo;
 
-		string selectedSide = GetSelectedSide (Input.mousePosition);
-		if (selectedSide != null) {
-			displayController.SelectSide (selectedSide);
-			SelectSide (selectedSide);
+			if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, 1 << LayerMask.NameToLayer("PinZiSide")))
+			{
+				hitInfo.collider.gameObject.GetComponent<PinZiPP> ().SetUnselected ();
+			}
 		}
 	}
 
@@ -65,7 +72,7 @@ public class GameController : MonoBehaviour {
 		}
 		string[] correctSelections = curWord.sides;
 		return Array.Exists (correctSelections, element => string.Equals (element, curSelections [0]))
-					&& Array.Exists (correctSelections, element => string.Equals (element, curSelections [1]));
+			&& Array.Exists (correctSelections, element => string.Equals (element, curSelections [1]));
 	}
 
 	private void SelectSide(string side) {
@@ -88,6 +95,7 @@ public class GameController : MonoBehaviour {
         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, 1 << LayerMask.NameToLayer("PinZiSide")))
         {
             side = hitInfo.collider.gameObject.GetComponent<PinZiPP>().name;
+			hitInfo.collider.gameObject.GetComponent<PinZiPP> ().SetSelected ();
         }
 		return side;
 	}
