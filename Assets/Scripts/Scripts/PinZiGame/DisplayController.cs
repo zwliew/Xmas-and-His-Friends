@@ -34,7 +34,7 @@ public class DisplayController {
 	}
 
 	public void SelectSide (string side) {
-		// TODO: Indicate that a particular side, sideIndex, is selected
+		// TODO: Indicate that a particular side is selected
 	}
 
 	public void UnselectAllSides() {

@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		string selectedSide = GetSelectedSide (Input.mousePosition);
-		if (selectedSide == "") {
+		if (selectedSide != null) {
 			displayController.SelectSide (selectedSide);
 			SelectSide (selectedSide);
 		}
@@ -81,7 +81,14 @@ public class GameController : MonoBehaviour {
 	 * Returns null if no side is being selected
 	 */
 	private string GetSelectedSide (Vector3 position) {
-		// TODO: Get the selected side based on position (or based on something else if it's easier)
-		return null;
+        Ray ray = Camera.main.ScreenPointToRay(position);
+        RaycastHit hitInfo;
+        string side = null;
+
+        if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, 1 << LayerMask.NameToLayer("PinZiSide")))
+        {
+            side = hitInfo.collider.gameObject.GetComponent<PinZiPP>().name;
+        }
+		return side;
 	}
 }

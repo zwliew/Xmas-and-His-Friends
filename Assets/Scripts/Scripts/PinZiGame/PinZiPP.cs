@@ -9,6 +9,7 @@ using UnityEngine;
 public class PinZiPP : MonoBehaviour, IRecycle {
 
 	private Material curMat;
+    public string name;
 
 
 	public void Restart(){
