@@ -9,17 +9,33 @@ public class Movement1 : MonoBehaviour {
 	[HideInInspector]
 	public float delay = 0f;
 
+	public GameObject elevatorUp;
+	public GameObject elevatorDown;
+
+	[HideInInspector]
+	public bool goingUp;
+
+	private Vector3 v3elevatorUp;
+	private Vector3 v3elevatorDown;
+
 	private UnityEngine.AI.NavMeshAgent navAgent;
 
+	private Rigidbody rbXmas;
+	private int stepCountOne = 0;
+	private int stepCountTwo = 0;
+
 	private List<Vector3> v3destinations;
-	int currentPoint;
+	private int currentPoint;
 
 	private AnimationController xmasAnimator;
 
 	void Awake(){
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		xmasAnimator = GetComponent<AnimationController> ();
-
+		rbXmas = GetComponent<Rigidbody> ();
+		v3elevatorUp = elevatorUp.transform.position;
+		v3elevatorDown = elevatorDown.transform.position;
+		goingUp = true;
 	}
 
 	void Start(){
@@ -30,8 +46,7 @@ public class Movement1 : MonoBehaviour {
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		navAgent.updateRotation = true;
 		StopAllCoroutines ();
-		currentPoint = 0;
-
+		currentPoint = -1;
 
 		v3destinations = deses;
 
@@ -45,11 +60,8 @@ public class Movement1 : MonoBehaviour {
 	}
 
 	IEnumerator Move(){
-		xmasAnimator.movingState = 1;
-		navAgent.SetDestination (v3destinations [currentPoint]);
-		//Debug.Log ("Move()");
-		yield return StartCoroutine (WaitForDestination ());
-		StartCoroutine (NextWayPoint ());
+		xmasAnimator.SetMovingState(1);
+		yield return NextWayPoint ();
 	}
 
 	IEnumerator WaitForDestination(){//wait for Xmas to reach the current destination
@@ -90,13 +102,71 @@ public class Movement1 : MonoBehaviour {
 	IEnumerator NextWayPoint(){
 		currentPoint++;
 		if (currentPoint >= v3destinations.Count) {
-			xmasAnimator.movingState = 0;
+			xmasAnimator.SetMovingState (0);
 			StopAllCoroutines ();
 		} else {
 			Vector3 v3next = v3destinations [currentPoint];
-			navAgent.SetDestination (v3next);
-			yield return StartCoroutine (WaitForDestination ());
-			StartCoroutine (NextWayPoint ());
+			if (v3next.Equals (v3elevatorUp) && goingUp) {
+				Debug.Log ("elevatorUp");
+				navAgent.enabled = false;
+				yield return StartCoroutine (GoUp());
+				navAgent.enabled = true;
+			} else {
+				if (v3next.Equals (v3elevatorDown) && !goingUp) {
+					Debug.Log ("elevatorDown");
+					navAgent.enabled = false;
+					yield return StartCoroutine (GoBackward());
+					navAgent.enabled = true;
+				} else {
+					navAgent.SetDestination (v3next);
+				}
+			}
 		}
+		yield return StartCoroutine (WaitForDestination ());
+		StartCoroutine (NextWayPoint ());
+	}
+
+	IEnumerator GoUp(){
+		Debug.Log ("GoUpMove " + stepCountOne);
+		while(stepCountOne < 50) {
+			stepCountOne += 1;
+			rbXmas.MovePosition (transform.position + new Vector3(0f, 0.5f, 0f));
+			yield return new WaitForFixedUpdate ();
+		}
+		stepCountOne = 0;
+		Debug.Log ("Go up finished");
+		yield return StartCoroutine(GoForward ());
+	}
+	IEnumerator GoForward(){
+		Debug.Log ("GoForwardMove " + stepCountTwo);
+		while (stepCountTwo < 5) {
+			stepCountTwo += 1;
+			rbXmas.MovePosition(transform.position + new Vector3(0.5f, 0f, 0f));
+			yield return new WaitForFixedUpdate ();
+		}
+		stepCountTwo = 0;
+	}
+	
+	IEnumerator GoBackward(){
+		Debug.Log ("GoBackwardMove " + stepCountTwo);
+		while (stepCountTwo < 10) {
+			stepCountTwo += 1;
+			rbXmas.MovePosition(transform.position + new Vector3(-0.5f, 0f, 0f));
+			yield return new WaitForFixedUpdate ();
+		}
+		stepCountTwo = 0;
+		yield return StartCoroutine(GoDown());
+	}
+
+	IEnumerator GoDown(){
+		Debug.Log ("GoDownMove " + stepCountOne);
+		while(stepCountOne < 50) {
+			rbXmas.rotation =Quaternion.Lerp(rbXmas.rotation, Quaternion.Euler (new Vector3 (0f, 90f, 0f)), 0.2f);
+			stepCountOne += 1;
+			rbXmas.MovePosition (transform.position + new Vector3(0f, -0.5f, 0f));
+			yield return new WaitForFixedUpdate ();
+		}
+		rbXmas.rotation = Quaternion.Euler (new Vector3 (0f, -90f, 0f));
+		stepCountOne = 0;
 	}
 }

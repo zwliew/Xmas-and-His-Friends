@@ -13,8 +13,6 @@ public class AnimationController : MonoBehaviour {
 
 	private Rigidbody rbXmas;
 
-	[HideInInspector]
-	public int movingState = 0;
 	private Animator xmasAnimator;
 
 	private int stepCountOne = 0;
@@ -26,6 +24,7 @@ public class AnimationController : MonoBehaviour {
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 		rbXmas = GetComponent<Rigidbody> ();
 		xmasAnimator = GetComponent<Animator> ();
+		xmasAnimator.SetInteger ("MoveState", 0);
 	}
 		
 
@@ -52,7 +51,7 @@ public class AnimationController : MonoBehaviour {
 		}
 	}
 
-	void Update(){
+	public void SetMovingState(int movingState){
 		xmasAnimator.SetInteger ("MoveState", movingState);
 	}
 	/*

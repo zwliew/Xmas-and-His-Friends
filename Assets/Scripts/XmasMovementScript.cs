@@ -86,22 +86,31 @@ public class XmasMovementScript : MonoBehaviour {
 		if (Physics.Raycast (ray, out hitInfoLocal, 80f, 1 << LayerMask.NameToLayer ("Road"))) {//Determine the region Xmas is in
 			standOn = hitInfoLocal.collider.gameObject.GetComponent<RoadProperty>().regionNumber;
 		}
+		if (Physics.Raycast (ray, out hitInfoLocal, 80f, 1 << LayerMask.NameToLayer ("Ignore Raycast"))) {//Determine the region Xmas is in
+			standOn = hitInfoLocal.collider.gameObject.GetComponent<RoadProperty>().regionNumber;
+		}
 
 		//Debug.Log (standOn); //0, 1, 2, 3,, 4, 5, 6, 7, 8, 9
 
 		//Debug.Log (destOn);  //0, 1, 2, 3,, 4, 5, 6, 7, 8, 9
-		if (standOn > destOn) {
+		if (standOn > destOn) {//eg. region 5->0 : node 4 3 2 1 0
 			//Debug.Log ("for loop1");
 			for (int j = standOn - 1; j >= destOn; j--) {
+				if (j == 3) {
+					movementScript.goingUp = false;
+				}
 				v3destinations.Add (v3nodes [j]);
 				//Debug.Log ("j = " + j + " " + v3nodes[j]);
 			}
 			//Debug.Log ("for loop1 end");
 			v3destinations.Add (v3destination);
 		} else {
-			if (standOn < destOn) {
+			if (standOn < destOn) {//eg. region 0->4 : node 0 1 2 3 
 				//Debug.Log ("for loop2");
 				for (int k = standOn; k < destOn; k++) {
+					if (k == 3) {
+						movementScript.goingUp = true;
+					}
 					v3destinations.Add (v3nodes [k]);
 					//Debug.Log ("k = " + k + " " + v3nodes[k]);
 				}
