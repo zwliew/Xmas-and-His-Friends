@@ -42,7 +42,7 @@ public class XmasMovementScript : MonoBehaviour {
 
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			//Debug.DrawLine (ray.origin, ray.origin + 300 * ray.direction, Color.red, 2f);
-			if (Physics.Raycast (ray, out hitInfo, 300f, 1 << LayerMask.NameToLayer ("Road"))) {//Navigate to the destination
+			if (Physics.Raycast (ray, out hitInfo, 300f, 1 << LayerMask.NameToLayer ("Road")) && movementScript.navAgentOn) {//Navigate to the destination
 				v3destination = FineTuneDestination(hitInfo.point, hitInfo);
 				destOn = hitInfo.collider.gameObject.GetComponent<RoadProperty>().regionNumber;//Determine the region destination is in
 				GetComponent<AnimationController> ().holdFlag = false;
@@ -83,10 +83,10 @@ public class XmasMovementScript : MonoBehaviour {
 		RaycastHit hitInfoLocal;
 		Ray ray = new Ray (v3location + new Vector3 (0f, 5f, 0f), new Vector3 (0f, -1f, 0f));
 		Debug.DrawLine (ray.origin, ray.origin + 300 * ray.direction, Color.red, 2f);
-		if (Physics.Raycast (ray, out hitInfoLocal, 80f, 1 << LayerMask.NameToLayer ("Road"))) {//Determine the region Xmas is in
+		if (Physics.Raycast (ray, out hitInfoLocal, 40f, 1 << LayerMask.NameToLayer ("Road"))) {//Determine the region Xmas is in
 			standOn = hitInfoLocal.collider.gameObject.GetComponent<RoadProperty>().regionNumber;
 		}
-		if (Physics.Raycast (ray, out hitInfoLocal, 80f, 1 << LayerMask.NameToLayer ("Ignore Raycast"))) {//Determine the region Xmas is in
+		if (Physics.Raycast (ray, out hitInfoLocal, 40f, 1 << LayerMask.NameToLayer ("Ignore Raycast"))) {//Determine the region Xmas is in
 			standOn = hitInfoLocal.collider.gameObject.GetComponent<RoadProperty>().regionNumber;
 		}
 
