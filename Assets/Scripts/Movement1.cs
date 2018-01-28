@@ -14,6 +14,8 @@ public class Movement1 : MonoBehaviour {
 
 	[HideInInspector]
 	public bool goingUp;
+	[HideInInspector]
+	public bool navAgentOn;
 
 	private Vector3 v3elevatorUp;
 	private Vector3 v3elevatorDown;
@@ -36,6 +38,7 @@ public class Movement1 : MonoBehaviour {
 		v3elevatorUp = elevatorUp.transform.position;
 		v3elevatorDown = elevatorDown.transform.position;
 		goingUp = true;
+		navAgentOn = true;
 	}
 
 	void Start(){
@@ -51,11 +54,10 @@ public class Movement1 : MonoBehaviour {
 		v3destinations = deses;
 
 		for (int i = 1; i < v3destinations.Count; i++) {
-			//Debug.Log (v3destinations [i]);
+
 			Debug.DrawLine (v3destinations [i - 1], v3destinations [i], Color.red, 2f);
 		}
-
-		//Debug.Log ("Destination set, ready to go" + v3destinations);
+			
 		StartCoroutine (Move ());
 	}
 
@@ -66,34 +68,20 @@ public class Movement1 : MonoBehaviour {
 
 	IEnumerator WaitForDestination(){//wait for Xmas to reach the current destination
 		yield return new WaitForEndOfFrame ();
-		//Debug.Log ("Wait for destination to complete");
+
 		while (navAgent.pathPending) {//When the path is being computed, wait
-			//Debug.Log("Finding path");
+			
 			yield return null;
-			//Debug.Log ("break point three");
-		}
-		yield return new WaitForEndOfFrame();
-		//Debug.Log ("break point four");
-		//Debug.Log (GetComponent<UnityEngine.AI.NavMeshAgent> ().enabled);
-		/*
-		while (!GetComponent<UnityEngine.AI.NavMeshAgent> ().enabled) {
-			yield return null;
-			//Debug.Log ("disabled nav agent one");
 
 		}
-        */
-		//Debug.Log ("break point five");
+		yield return new WaitForEndOfFrame();
+
 		float remain = navAgent.remainingDistance;
 		while(remain == Mathf.Infinity || remain - navAgent.stoppingDistance > float.Epsilon
 			|| navAgent.pathStatus != UnityEngine.AI.NavMeshPathStatus.PathComplete){//cannot reach||did not reach||haven't reached
-			/*
-			while (!GetComponent<UnityEngine.AI.NavMeshAgent> ().enabled) {
-				yield return new WaitForSeconds(1f);
-				//Debug.Log ("disabled nav agent two");
-			}
-			*/
+
 			remain = navAgent.remainingDistance;
-			//Debug.Log ("nav agent has " + remain + " to go");
+
 			yield return null;
 		}
 
@@ -107,16 +95,18 @@ public class Movement1 : MonoBehaviour {
 		} else {
 			Vector3 v3next = v3destinations [currentPoint];
 			if (v3next.Equals (v3elevatorUp) && goingUp) {
-				Debug.Log ("elevatorUp");
 				navAgent.enabled = false;
+				navAgentOn = false;
 				yield return StartCoroutine (GoUp());
 				navAgent.enabled = true;
+				navAgentOn = true;
 			} else {
 				if (v3next.Equals (v3elevatorDown) && !goingUp) {
-					Debug.Log ("elevatorDown");
 					navAgent.enabled = false;
+					navAgentOn = false;
 					yield return StartCoroutine (GoBackward());
 					navAgent.enabled = true;
+					navAgentOn = true;
 				} else {
 					navAgent.SetDestination (v3next);
 				}
@@ -127,19 +117,18 @@ public class Movement1 : MonoBehaviour {
 	}
 
 	IEnumerator GoUp(){
-		Debug.Log ("GoUpMove " + stepCountOne);
 		while(stepCountOne < 50) {
+			rbXmas.rotation =Quaternion.Lerp(rbXmas.rotation, Quaternion.Euler (new Vector3 (0f, 90f, 0f)), 0.2f);
 			stepCountOne += 1;
 			rbXmas.MovePosition (transform.position + new Vector3(0f, 0.5f, 0f));
 			yield return new WaitForFixedUpdate ();
 		}
 		stepCountOne = 0;
-		Debug.Log ("Go up finished");
 		yield return StartCoroutine(GoForward ());
 	}
+
 	IEnumerator GoForward(){
-		Debug.Log ("GoForwardMove " + stepCountTwo);
-		while (stepCountTwo < 5) {
+		while (stepCountTwo < 10) {
 			stepCountTwo += 1;
 			rbXmas.MovePosition(transform.position + new Vector3(0.5f, 0f, 0f));
 			yield return new WaitForFixedUpdate ();
@@ -148,7 +137,6 @@ public class Movement1 : MonoBehaviour {
 	}
 	
 	IEnumerator GoBackward(){
-		Debug.Log ("GoBackwardMove " + stepCountTwo);
 		while (stepCountTwo < 10) {
 			stepCountTwo += 1;
 			rbXmas.MovePosition(transform.position + new Vector3(-0.5f, 0f, 0f));
@@ -159,14 +147,13 @@ public class Movement1 : MonoBehaviour {
 	}
 
 	IEnumerator GoDown(){
-		Debug.Log ("GoDownMove " + stepCountOne);
 		while(stepCountOne < 50) {
 			rbXmas.rotation =Quaternion.Lerp(rbXmas.rotation, Quaternion.Euler (new Vector3 (0f, 90f, 0f)), 0.2f);
 			stepCountOne += 1;
 			rbXmas.MovePosition (transform.position + new Vector3(0f, -0.5f, 0f));
 			yield return new WaitForFixedUpdate ();
 		}
-		rbXmas.rotation = Quaternion.Euler (new Vector3 (0f, -90f, 0f));
+
 		stepCountOne = 0;
 	}
 }

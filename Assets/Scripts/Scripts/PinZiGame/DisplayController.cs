@@ -6,11 +6,12 @@ using UnityEngine;
  * Handles displaying of the game, including the
  * 4 sides, the selections, and the winning screen
  */
-public class DisplayController {
+public class DisplayController : MonoBehaviour{
 
 	// The current word being displayed
 	private Word word;
-
+    public GameObject winScreen;
+    public GameObject button;
 	public void Initialize (Word word) {
 		this.word = word;
 		DisplayAllSides ();
@@ -30,10 +31,11 @@ public class DisplayController {
 	}
 
 	public void DisplayWin () {
-		// TODO: Display the winning screen and the correct word
-	}
+        winScreen.SetActive(true);
+        button.SetActive(true);
+    }
 
-	public void SelectSide (string side) {
+    public void SelectSide (string side) {
 		// TODO: Indicate that a particular side is selected
 	}
 

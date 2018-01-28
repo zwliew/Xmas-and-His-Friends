@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using UnityEngine;
-
 /**
  * Controls the loading and serving of game data,
  * containing all the possible words and their sides
+
  */
 public class DataController {
 
@@ -15,10 +15,10 @@ public class DataController {
 		LoadData ();
 	}
 
-	private void LoadData () {
-		string dataFilePath = Path.Combine(Application.streamingAssetsPath, dataFileName);
+	private void LoadData () {		string dataFilePath = Path.Combine(Application.streamingAssetsPath, dataFileName);
 		if (File.Exists (dataFilePath)) {
 			string dataAsJson = File.ReadAllText (dataFilePath);
+
 			JsonData wordData = JsonUtility.FromJson<JsonData> (dataAsJson);
 			words = wordData.words;
 		} else {
