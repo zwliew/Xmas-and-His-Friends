@@ -11,6 +11,7 @@ TagManager:
   - RegionFour
   - ElevatorOne
   - ElevatorTwo
+  - note
   layers:
   - Default
   - TransparentFX
@@ -47,4 +48,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: activator
+    uniqueID: 356961755
     locked: 0
