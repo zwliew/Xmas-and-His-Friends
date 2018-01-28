@@ -40,6 +40,7 @@ public class DisplayController : MonoBehaviour{
 			Debug.Log ("Loaded " + texture2DSides [i].name);
 			GameObjectUtility.customInstantiate (prefabPianPangs[i], v3Positions[i]);
 			prefabPianPangs[i].GetComponent<PinZiPP> ().SetDisplay (texture2DSides [i]);
+			prefabPianPangs[i].GetComponent<PinZiPP> ().SetOriginalPosition(v3Positions[i]);
 		}
 	}
 

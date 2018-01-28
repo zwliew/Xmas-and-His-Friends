@@ -34,10 +34,18 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	public void SetDisplay (Texture2D texture2D){
 		curMat = GetComponent<Renderer>().sharedMaterial;
 		curMat.SetTexture ("_MainTex", texture2D);
-		v3originalPosition = transform.position;
 		name = texture2D.name;
 	}
 
+	public void SetOriginalPosition(Vector3 pos){
+		v3originalPosition = pos;
+		Debug.Log ("v3originalPosition is set to " + pos);
+		Debug.Log (v3originalPosition);
+	}
+
+	void Update(){
+		if(Time.frameCount % 5 == 0 && name.Equals("Nv")) Debug.Log (v3originalPosition);
+	}
 	
 	public void Shutdown(){
 		
@@ -47,20 +55,23 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 		Debug.Log ("Selected: " + curMat.mainTexture.name);
 		particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Play ();
-		StopCoroutine ("MoveTo");
+		StopAllCoroutines ();
+		Debug.Log ("when selected, the original location is " + v3originalPosition);
 		StartCoroutine (MoveTo (v3center));
 	}
 
 	public void SetUnselected(){
 		particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Stop();
-		StopCoroutine ("MoveTo");
+		StopAllCoroutines ();
+		Debug.Log ("when unselected, the original location is " + v3originalPosition);
 		StartCoroutine (MoveTo (v3originalPosition));
 	}
 
 	IEnumerator MoveTo (Vector3 pos){
-		while (!transform.position.Equals (pos)) {
-			Vector3 vel = Vector3.zero;
+		for(int i = 0; i < 20; i++) {
+			Vector3 vel = new Vector3(1f, 1f, 1f);
+			//Debug.Log (name + transform.position + " is moving to " + pos);
 			transform.position = Vector3.SmoothDamp (transform.position, pos, ref vel, 0.1f);
 			yield return null;
 		}
