@@ -1,14 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-//GetComponent<Renderer>().material.SetTexture ("_MainTex", (Texture2D)listTextures[2]);  //Set texture
 
-public class DebugScript : MonoBehaviour{
+public class FadeOut : MonoBehaviour {
 	CanvasGroup canvasGroup;
 	float velocity;
 
-	public void FadeOut(){
+	public void FadeOutOnLoad(){
 		canvasGroup = GetComponent<CanvasGroup> ();
 		StartCoroutine (Fade ());
 	}
@@ -20,5 +19,4 @@ public class DebugScript : MonoBehaviour{
 			yield return null;
 		}
 	}
-	
 }

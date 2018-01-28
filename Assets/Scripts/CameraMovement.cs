@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour {
 				transform.position, 
 				new Vector3 (-117f, 211f, 125f),
 				ref smoothV,
-				0.1f);
+				1f);
 			transform.rotation = Quaternion.Lerp (transform.rotation, camRotation, 0.2f);
 			cam.orthographicSize = Vector2.Lerp (new Vector2 (cam.orthographicSize, cam.orthographicSize), new Vector2 (72f, 72f), 0.2f).x;
 			break;
@@ -45,7 +45,7 @@ public class CameraMovement : MonoBehaviour {
 		case 1:
 			SpotlightCamera ();
 			break;
-		case 2:
+		case 2://Start Animation
 			transform.position = Vector3.SmoothDamp (
 				transform.position, 
 				new Vector3 (-117f, 211f, 125f),
