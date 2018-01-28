@@ -10,11 +10,16 @@ public class DisplayController : MonoBehaviour{
 
 	// The current word being displayed
 	private Word word;
+
+    public GameObject winScreen;
+    public GameObject button;
+
 	private Texture2D[] texture2DSides;
 
 	private Vector3[] v3Positions = new Vector3[4]{new Vector3(-1.64f, 1.96f, 0f), new Vector3(-0.04f, 3.32f, 0f), new Vector3(1.72f, 2.32f, 0f), new Vector3(0.02f, -0.37f, 0f)};
 	private PinZiPP[] selectedSides = new PinZiPP[2];
 	public GameObject[] prefabPianPangs;
+
 
 	public void Initialize (Word word) {
 		this.word = word;
@@ -45,11 +50,15 @@ public class DisplayController : MonoBehaviour{
 	}
 
 	public void DisplayWin () {
-		// TODO: Display the winning screen and the correct word
+
+        winScreen.SetActive(true);
+        button.SetActive(true);
 		Debug.Log ("Win!");
-	}
+    }
+
 
 	public void SelectSide (PinZiPP side) {
+
 		// TODO: Indicate that a particular side is selected
 
 		side.SetSelected ();
