@@ -43,16 +43,23 @@ public class DisplayController : MonoBehaviour{
 			Debug.Log ("Loading side" + i + " " +strTexturePath);
 			texture2DSides[i] =	Resources.Load (strTexturePath) as Texture2D;
 			Debug.Log ("Loaded " + texture2DSides [i].name);
-			GameObjectUtility.customInstantiate (prefabPianPangs[i], v3Positions[i]);
-			prefabPianPangs[i].GetComponent<PinZiPP> ().SetDisplay (texture2DSides [i]);
-			prefabPianPangs[i].GetComponent<PinZiPP> ().SetOriginalPosition(v3Positions[i]);
+
+		}
+
+		for (int i = 0; i < sides.Length; i++) {
+			GameObjectUtility.customInstantiate (prefabPianPangs [i], v3Positions [i]);
+			PinZiPP pinZiScript = prefabPianPangs [i].GetComponent<PinZiPP> ();
+			pinZiScript.SetDisplay (texture2DSides [i]);
+			pinZiScript.GetComponent<PinZiPP> ().SetOriginalPosition (v3Positions [i]);
+			pinZiScript.GetComponent<PinZiPP> ().sidename = texture2DSides [i].name;
 		}
 	}
-
+	private void WaitAWhile(){
+	}
 	public void DisplayWin () {
 
-        winScreen.SetActive(true);
-        button.SetActive(true);
+        //winScreen.SetActive(true);
+        //button.SetActive(true);
 		Debug.Log ("Win!");
     }
 

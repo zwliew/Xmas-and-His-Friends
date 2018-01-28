@@ -87,12 +87,12 @@ public class GameController : MonoBehaviour {
 	private void SelectSide(PinZiPP side) {
 		if (curSelections [0] == null) {
 			displayController.SelectSide (side);
-			curSelections [0] = side.name;
-			Debug.Log ("curSelection[0] is " + side.name);
+			curSelections [0] = side.sidename;
+			Debug.Log ("curSelection[0] is " + side.sidename);
 		} else {
 			displayController.SelectSide (side);
-			curSelections [1] = side.name;
-			Debug.Log ("curSelection[1] is " + side.name);
+			curSelections [1] = side.sidename;
+			Debug.Log ("curSelection[1] is " + side.sidename);
 
 			if (HasPlayerWon ()) {
 				displayController.DisplayWin ();
@@ -114,7 +114,7 @@ public class GameController : MonoBehaviour {
 		if (!AreSelectionsFilled()) {
 			return false;
 		}
-		string[] correctSelections = curWord.sides;
+		string[] correctSelections = curWord.correctSides;
 		return Array.Exists (correctSelections, element => string.Equals (element, curSelections [0]))
 			&& Array.Exists (correctSelections, element => string.Equals (element, curSelections [1]));
 	}

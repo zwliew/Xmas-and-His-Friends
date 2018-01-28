@@ -15,36 +15,31 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	private Material curMat;
 	private ParticleSystem particalSys;
 	[HideInInspector]
-    public string name;
+    public string sidename;
 
 	private Vector3 v3originalPosition;
 	private static Vector3 v3center = new Vector3(0f, 1.43f, 0f);
-	/*
-	void Start(){
-		curMat = GetComponent<Renderer>().sharedMaterial;
-		particalSys = GetComponent<ParticleSystem> ();
 
-	}*/
-
-	public void Restart(){
+	void Awake(){
 		curMat = GetComponent<Renderer>().sharedMaterial;
 		particalSys = GetComponent<ParticleSystem> ();
 	}
 
+	public void Restart(){
+		
+	}
+
 	public void SetDisplay (Texture2D texture2D){
-		curMat = GetComponent<Renderer>().sharedMaterial;
 		curMat.SetTexture ("_MainTex", texture2D);
-		name = texture2D.name;
 	}
 
 	public void SetOriginalPosition(Vector3 pos){
 		v3originalPosition = pos;
-		Debug.Log ("v3originalPosition is set to " + pos);
-		Debug.Log (v3originalPosition);
+		//Debug.Log (sidename +"'s v3originalPosition is set to "+ v3originalPosition);
 	}
 
 	void Update(){
-		if(Time.frameCount % 5 == 0 && name.Equals("Nv")) Debug.Log (v3originalPosition);
+		//if(Time.frameCount % 5 == 0 && sidename.Equals("Nv")) Debug.Log (v3originalPosition);
 	}
 	
 	public void Shutdown(){
@@ -53,26 +48,27 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 
 	public void SetSelected(){
 		Debug.Log ("Selected: " + curMat.mainTexture.name);
-		particalSys = GetComponent<ParticleSystem> ();
+		//particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Play ();
 		StopAllCoroutines ();
-		Debug.Log ("when selected, the original location is " + v3originalPosition);
+		sidename = curMat.mainTexture.name;
+		//Debug.Log ("when selected, the original location is " + v3originalPosition);
 		StartCoroutine (MoveTo (v3center));
 	}
 
 	public void SetUnselected(){
-		particalSys = GetComponent<ParticleSystem> ();
+		//particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Stop();
 		StopAllCoroutines ();
-		Debug.Log ("when unselected, the original location is " + v3originalPosition);
+		//Debug.Log ("when unselected, the original location is " + v3originalPosition);
 		StartCoroutine (MoveTo (v3originalPosition));
 	}
 
 	IEnumerator MoveTo (Vector3 pos){
-		for(int i = 0; i < 20; i++) {
+		while(!transform.position.Equals(pos)) {
 			Vector3 vel = new Vector3(1f, 1f, 1f);
 			//Debug.Log (name + transform.position + " is moving to " + pos);
-			transform.position = Vector3.SmoothDamp (transform.position, pos, ref vel, 0.1f);
+			//transform.position = Vector3.SmoothDamp (transform.position, pos, ref vel, 0.1f);
 			yield return null;
 		}
 	}

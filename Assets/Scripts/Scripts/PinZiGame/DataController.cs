@@ -28,7 +28,7 @@ public class DataController : MonoBehaviour{
 	}
 
 	public Word GetRandomWord() {
-		int wordIndex = UnityEngine.Random.Range(0, 0 /*words.Length*/);
+		int wordIndex = UnityEngine.Random.Range(0, words.Length);
 		return words[wordIndex];
 	}
 }
