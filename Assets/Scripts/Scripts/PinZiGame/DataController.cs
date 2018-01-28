@@ -5,7 +5,7 @@ using UnityEngine;
  * containing all the possible words and their sides
 
  */
-public class DataController {
+public class DataController : MonoBehaviour{
 
 	private string dataFileName = "PinZiData.json";
 
@@ -28,7 +28,7 @@ public class DataController {
 	}
 
 	public Word GetRandomWord() {
-		int wordIndex = UnityEngine.Random.Range(0, words.Length);
+		int wordIndex = UnityEngine.Random.Range(0, 0 /*words.Length*/);
 		return words[wordIndex];
 	}
 }
