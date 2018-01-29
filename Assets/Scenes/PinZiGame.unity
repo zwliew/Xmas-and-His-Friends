@@ -152,6 +152,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1303858166094118, guid: d26fff530ec158e4783e4eaae18122d8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d26fff530ec158e4783e4eaae18122d8, type: 2}
   m_IsPrefabParent: 0
@@ -289,6 +293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe78c87cef687ab4ab23356fd2c7223d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winScreen: {fileID: 0}
+  button: {fileID: 0}
   prefabPianPangs:
   - {fileID: 1643113125790848, guid: e65d94f107c4eac4da0a4da0363042f8, type: 2}
   - {fileID: 1739263365190442, guid: c88b7f921fd9a6445b0b2ea2a1134d4a, type: 2}

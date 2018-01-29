@@ -110,7 +110,7 @@ public class GameController : MonoBehaviour {
 		return curSelections [0] != null && curSelections [1] != null;
 	}
 
-	private bool HasPlayerWon () { // got bug. Go back debug!
+	private bool HasPlayerWon () {
 		if (!AreSelectionsFilled()) {
 			return false;
 		}

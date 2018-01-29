@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b078a3e3e837c4bbd23f7b227feb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: wei
+  sidename: 
 --- !u!198 &198064525304662424
 ParticleSystem:
   m_ObjectHideFlags: 1

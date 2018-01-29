@@ -31,31 +31,36 @@ public class DisplayController : MonoBehaviour{
 	}
 
 	private void DisplayAllSides () {
-		string[] sides = word.sides;
-		texture2DSides = new Texture2D[sides.Length];
 		// TODO: Display all 4 side indices of the current word
 		/* Initialize a pianpang at vec3location
 		 * Get the PinZiPP script by GetComponent
 		 * PinZiPP.SetDisplay(Texture2D texture2D);
 		 */
+		StartCoroutine (LoadPinZiResources ());
+	}
+
+	IEnumerator LoadPinZiResources(){
+		string[] sides = word.sides;
+		texture2DSides = new Texture2D[sides.Length];
 		for (int i = 0; i < sides.Length; i++) {
 			string strTexturePath = "PinZiPianPang/" + sides [i].ToString ();
-			Debug.Log ("Loading side" + i + " " +strTexturePath);
+			Debug.Log ("Loading side" + (i+1) + " " +strTexturePath);
 			texture2DSides[i] =	Resources.Load (strTexturePath) as Texture2D;
 			Debug.Log ("Loaded " + texture2DSides [i].name);
-
+			yield return new WaitForFixedUpdate ();
 		}
-
+		
 		for (int i = 0; i < sides.Length; i++) {
 			GameObjectUtility.customInstantiate (prefabPianPangs [i], v3Positions [i]);
 			PinZiPP pinZiScript = prefabPianPangs [i].GetComponent<PinZiPP> ();
 			pinZiScript.SetDisplay (texture2DSides [i]);
-			pinZiScript.GetComponent<PinZiPP> ().SetOriginalPosition (v3Positions [i]);
-			pinZiScript.GetComponent<PinZiPP> ().sidename = texture2DSides [i].name;
+			pinZiScript.SetOriginalPosition (v3Positions [i]);
+			pinZiScript.sidename = texture2DSides [i].name;
+			yield return new WaitForFixedUpdate ();
 		}
+		
 	}
-	private void WaitAWhile(){
-	}
+
 	public void DisplayWin () {
 
         //winScreen.SetActive(true);
@@ -69,7 +74,6 @@ public class DisplayController : MonoBehaviour{
 		// TODO: Indicate that a particular side is selected
 
 		side.SetSelected ();
-
 		if (selectedSides [0] == null) {// record what has been selected for UnselectAllSides
 			selectedSides [0] = side;
 		} else {

@@ -22,7 +22,9 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 
 	void Awake(){
 		curMat = GetComponent<Renderer>().sharedMaterial;
+		Debug.Log ("curMat Get");
 		particalSys = GetComponent<ParticleSystem> ();
+		v3originalPosition = transform.position;
 	}
 
 	public void Restart(){
@@ -65,11 +67,21 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	IEnumerator MoveTo (Vector3 pos){
-		while(!transform.position.Equals(pos)) {
-			Vector3 vel = new Vector3(1f, 1f, 1f);
+		if (NearMa (transform.position, pos)) {
+			yield break;
+		}else{
+			Vector3 vel = Vector3.zero;
 			//Debug.Log (name + transform.position + " is moving to " + pos);
-			//transform.position = Vector3.SmoothDamp (transform.position, pos, ref vel, 0.1f);
+			transform.position = Vector3.SmoothDamp (transform.position, pos, ref vel, 0.1f);
 			yield return null;
+		}
+	}
+
+	private bool NearMa(Vector3 pos1, Vector3 pos2){
+		if (Mathf.Abs (pos1.x - pos2.x) + Mathf.Abs (pos1.y - pos2.y) + Mathf.Abs (pos1.z - pos2.z) < 0.5f) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 }
