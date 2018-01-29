@@ -9,35 +9,41 @@ using UnityEngine;
  * PinZiPP.selected = bool; //Set selected
  * 
  */
-
+[System.Serializable]
 public class PinZiPP : MonoBehaviour, IRecycle {
 
 	private Material curMat;
 	private ParticleSystem particalSys;
+
 	[HideInInspector]
     public string sidename;
 
 	private Vector3 v3originalPosition;
 	private static Vector3 v3center = new Vector3(0f, 1.43f, 0f);
 
-	void Awake(){
-		curMat = GetComponent<Renderer>().sharedMaterial;
-		Debug.Log ("curMat Get");
-		particalSys = GetComponent<ParticleSystem> ();
-		v3originalPosition = transform.position;
+	public void Start(){
 	}
 
 	public void Restart(){
 		
 	}
 
+
+	public void Initialize(){
+		Debug.Log ("Getting Renderer.shareMaterial");
+		curMat = GetComponent<Renderer> ().sharedMaterial;
+		particalSys = GetComponent<ParticleSystem> ();
+	}
+
 	public void SetDisplay (Texture2D texture2D){
 		curMat.SetTexture ("_MainTex", texture2D);
+		Debug.Log ("Texture " + texture2D.name + " is set");
+		sidename = texture2D.name;
 	}
 
 	public void SetOriginalPosition(Vector3 pos){
 		v3originalPosition = pos;
-		//Debug.Log (sidename +"'s v3originalPosition is set to "+ v3originalPosition);
+		Debug.Log (sidename +"'s v3originalPosition is set to "+ v3originalPosition);
 	}
 
 	void Update(){
@@ -49,17 +55,15 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	public void SetSelected(){
-		Debug.Log ("Selected: " + curMat.mainTexture.name);
-		//particalSys = GetComponent<ParticleSystem> ();
+		particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Play ();
 		StopAllCoroutines ();
-		sidename = curMat.mainTexture.name;
+		Debug.Log ("Selected: " + sidename);
 		//Debug.Log ("when selected, the original location is " + v3originalPosition);
 		StartCoroutine (MoveTo (v3center));
 	}
 
 	public void SetUnselected(){
-		//particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Stop();
 		StopAllCoroutines ();
 		//Debug.Log ("when unselected, the original location is " + v3originalPosition);
@@ -67,9 +71,7 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	IEnumerator MoveTo (Vector3 pos){
-		if (NearMa (transform.position, pos)) {
-			yield break;
-		}else{
+		while(!NearMa (transform.position, pos)) {
 			Vector3 vel = Vector3.zero;
 			//Debug.Log (name + transform.position + " is moving to " + pos);
 			transform.position = Vector3.SmoothDamp (transform.position, pos, ref vel, 0.1f);

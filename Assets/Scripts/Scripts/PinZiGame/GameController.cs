@@ -22,10 +22,10 @@ public class GameController : MonoBehaviour {
 		dataController = GetComponent<DataController>();
 
 		//displayController = new DisplayController ();
-
 		displayController = GetComponent<DisplayController> ();
 
 		RestartGame ();
+
 	}
 
 	private void RestartGame () {
