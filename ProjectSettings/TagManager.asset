@@ -12,6 +12,11 @@ TagManager:
   - ElevatorOne
   - ElevatorTwo
   - note
+  - PPone
+  - PPtwo
+  - PPthree
+  - PPfour
+  - PP
   layers:
   - Default
   - TransparentFX

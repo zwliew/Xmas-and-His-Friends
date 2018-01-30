@@ -23,12 +23,12 @@ GameObject:
   - component: {fileID: 64925204116405664}
   - component: {fileID: 23595146312458832}
   - component: {fileID: 114341431971544024}
-  - component: {fileID: 114603453580261958}
   - component: {fileID: 199799381154122058}
   - component: {fileID: 198204019671389454}
+  - component: {fileID: 114751700523904580}
   m_Layer: 9
   m_Name: PinZiPianPang (3)
-  m_TagString: Untagged
+  m_TagString: PP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,12 +55,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b361747c76000054f9ded63f6754f082, type: 2}
+  - {fileID: 2100000, guid: e611a3d0364ba6c41b8ef3e0d960a99b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b078a3e3e837c4bbd23f7b227feb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: renzipang
---- !u!114 &114603453580261958
+  sidename: BaoGaiTou
+--- !u!114 &114751700523904580
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

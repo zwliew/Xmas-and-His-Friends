@@ -23,12 +23,12 @@ GameObject:
   - component: {fileID: 64692155741273326}
   - component: {fileID: 23881353673296118}
   - component: {fileID: 114772026164736074}
-  - component: {fileID: 114309796097305274}
   - component: {fileID: 199182058509904756}
   - component: {fileID: 198308683557140260}
+  - component: {fileID: 114922792674765130}
   m_Layer: 9
   m_Name: PinZiPianPang (2)
-  m_TagString: Untagged
+  m_TagString: PP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,12 +55,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ce687b4aba2b27d4b9b0e3d8d2bb2e9d, type: 2}
+  - {fileID: 2100000, guid: 19439201609d77d4085f2048f9f173db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101,17 +101,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114309796097305274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1739263365190442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610f4e7f7c635844cada340c3e2e60ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114772026164736074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,7 +112,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b078a3e3e837c4bbd23f7b227feb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Nv
+  sidename: jin
+--- !u!114 &114922792674765130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739263365190442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610f4e7f7c635844cada340c3e2e60ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198308683557140260
 ParticleSystem:
   m_ObjectHideFlags: 1

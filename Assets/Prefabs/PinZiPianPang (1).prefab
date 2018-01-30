@@ -23,12 +23,12 @@ GameObject:
   - component: {fileID: 64113774001666058}
   - component: {fileID: 23887803365141976}
   - component: {fileID: 114160297446831762}
-  - component: {fileID: 114380511404436966}
   - component: {fileID: 199694586858208228}
   - component: {fileID: 198712722962295108}
+  - component: {fileID: 114748360567415792}
   m_Layer: 9
   m_Name: PinZiPianPang (1)
-  m_TagString: Untagged
+  m_TagString: PP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643113125790848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -0.01, z: 0}
+  m_LocalPosition: {x: 5.4504714, y: 1.3374618, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55,12 +55,12 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 93f2cb4cd5c85e348b472c3ed7d1b792, type: 2}
+  - {fileID: 2100000, guid: 4038de5fdf8e0564b8e0d64562e9551e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b078a3e3e837c4bbd23f7b227feb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
---- !u!114 &114380511404436966
+  sidename: qin
+--- !u!114 &114748360567415792
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -184,7 +184,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 754122088
+  randomSeed: -150676667
   InitialModule:
     serializedVersion: 3
     enabled: 1
