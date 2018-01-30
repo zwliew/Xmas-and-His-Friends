@@ -3,9 +3,8 @@ using UnityEngine;
 /**
  * Controls the loading and serving of game data,
  * containing all the possible words and their sides
-
  */
-public class DataController : MonoBehaviour{
+public class DataController : MonoBehaviour {
 
 	private string dataFileName = "PinZiData.json";
 
