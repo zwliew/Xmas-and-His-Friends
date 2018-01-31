@@ -18,17 +18,16 @@ public class GameController : MonoBehaviour {
 	private string[] curSelections;
 
 	void Start () {
-		//dataController = new DataController ();
+
 		dataController = GetComponent<DataController>();
 
-		//displayController = new DisplayController ();
 		displayController = GetComponent<DisplayController> ();
 
 		RestartGame ();
 
 	}
 
-	private void RestartGame () {
+	public void RestartGame () {
 		dataController.Initialize ();
 		curWord = dataController.GetRandomWord ();
 		displayController.Initialize (curWord);
@@ -36,13 +35,6 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update () {
-
-		/*if (HasPlayerWon ()) {
-			displayController.DisplayWin ();
-			return;
-		}
-		*/
-
 		if (AreSelectionsFilled ()) {
 			// Reset selections
 			displayController.UnselectAllSides ();
@@ -90,18 +82,23 @@ public class GameController : MonoBehaviour {
 			curSelections [0] = side.sidename;
 			Debug.Log ("curSelection[0] is " + side.sidename);
 		} else {
-			displayController.SelectSide (side);
-			curSelections [1] = side.sidename;
-			Debug.Log ("curSelection[1] is " + side.sidename);
-
-			if (HasPlayerWon ()) {
-				displayController.DisplayWin ();
-				displayController.UnselectAllSides ();
-				return;
-			} else {
-				Debug.Log ("Wrong Selection!");
-				displayController.UnselectAllSides ();
+			if (curSelections [0] == side.sidename) {
 				curSelections = new string[2];
+				Debug.Log ("curSelection[0] is " + "de-selected.");
+				displayController.SelectSide (side);
+			} else {
+				displayController.SelectSide (side);
+				curSelections [1] = side.sidename;
+				Debug.Log ("curSelection[1] is " + side.sidename);
+
+				if (HasPlayerWon ()) {
+					displayController.DisplayWin ();
+					return;
+				} else {
+					Debug.Log ("Wrong Selection!" + " Correct answer is" + curWord.correctSides[0] + ", " + curWord.correctSides[1] );
+					displayController.UnselectAllSides ();
+					curSelections = new string[2];
+				}
 			}
 		}
 	}

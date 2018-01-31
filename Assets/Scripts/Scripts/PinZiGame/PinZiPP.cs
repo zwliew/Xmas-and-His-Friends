@@ -58,9 +58,25 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 		particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Play ();
 		StopAllCoroutines ();
-		Debug.Log ("Selected: " + sidename);
+		//Debug.Log ("Selected: " + sidename);
 		//Debug.Log ("when selected, the original location is " + v3originalPosition);
 		StartCoroutine (MoveTo (v3center));
+	}
+
+	public void SetSelected(float time){
+		particalSys = GetComponent<ParticleSystem> ();
+		particalSys.Play();
+		StartCoroutine (PlayForTime (time));
+		StopAllCoroutines ();
+
+	}
+
+	IEnumerator PlayForTime(float t){
+		while (t > 0f) {
+			t -= Time.deltaTime;
+			yield return null;
+		}
+		particalSys.Stop ();
 	}
 
 	public void SetUnselected(){
@@ -80,7 +96,7 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	private bool NearMa(Vector3 pos1, Vector3 pos2){
-		if (Mathf.Abs (pos1.x - pos2.x) + Mathf.Abs (pos1.y - pos2.y) + Mathf.Abs (pos1.z - pos2.z) < 0.5f) {
+		if (Mathf.Abs (pos1.x - pos2.x) + Mathf.Abs (pos1.y - pos2.y) + Mathf.Abs (pos1.z - pos2.z) < 0.01f) {
 			return true;
 		} else {
 			return false;

@@ -3,8 +3,8 @@ using UnityEngine;
 /**
  * Class handling the updates to the player data based on
  * actions made in the shop (purchasing, etc.)
- */
-public class DataController : MonoBehaviour
+ *
+public class ShopDataController : MonoBehaviour
 {
     private PlayerDataController playerDataController;
 
@@ -39,3 +39,4 @@ public class DataController : MonoBehaviour
         return success;
     }
 }
+*/

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DisplayController : MonoBehaviour
+public class ShopDisplayController : MonoBehaviour
 {
     private ShopItem curSelectedItem;
 

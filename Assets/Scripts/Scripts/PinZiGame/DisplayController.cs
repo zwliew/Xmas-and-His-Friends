@@ -12,8 +12,15 @@ public class DisplayController : MonoBehaviour{
 	private Word word;
 
 	private Texture2D[] texture2DSides;
+	private Texture2D texture2DAns;
 
-	private Vector3[] v3Positions = new Vector3[4]{new Vector3(-1.64f, 1.96f, 0f), new Vector3(-0.04f, 3.32f, 0f), new Vector3(1.72f, 2.32f, 0f), new Vector3(0.02f, -0.37f, 0f)};
+	private Vector3[] v3Positions = new Vector3[5]{
+		new Vector3(-1.64f, 1.96f, 0f), 
+		new Vector3(-0.04f, 3.32f, 0f), 
+		new Vector3(1.72f, 2.32f, 0f), 
+		new Vector3(0.02f, -0.37f, 0f),
+		new Vector3(0f, 0.8f, -3f)
+	};
 	private PinZiPP[] selectedSides = new PinZiPP[2];
 
 	
@@ -31,11 +38,6 @@ public class DisplayController : MonoBehaviour{
 	}
 
 	private void DisplayAllSides () {
-		// TODO: Display all 4 side indices of the current word
-		/* Initialize a pianpang at vec3location
-		 * Get the PinZiPP script by GetComponent
-		 * PinZiPP.SetDisplay(Texture2D texture2D);
-		 */
 		StartCoroutine (LoadPinZiResources ());
 	}
 
@@ -54,12 +56,16 @@ public class DisplayController : MonoBehaviour{
 			yield return new WaitForFixedUpdate ();
 		}
 
+		string strCorrectTexturePath = "PinZiPianPang/" + word.name.ToString ();
+		texture2DAns =	Resources.Load (strCorrectTexturePath) as Texture2D;
+		Debug.Log ("Loaded " + texture2DAns.name);
+
 		Debug.Log ("Start assigning");
 
 		for (int i = 0; i < sides.Length; i++) {
-			GameObjectUtility.customInstantiate (prefabPianPangs [i], v3Positions [i]);
+			GameObject PianPang = GameObjectUtility.customInstantiate (prefabPianPangs [i], v3Positions [i]);
 			Debug.Log ("Getting pinZiScript");
-			PinZiPP pinZiScript = prefabPianPangs [i].GetComponent<PinZiPP> ();
+			PinZiPP pinZiScript = PianPang.GetComponent<PinZiPP> ();
 			Debug.Log ("Initializing");
 			pinZiScript.Initialize ();
 			Debug.Log ("Setting texture");
@@ -69,14 +75,20 @@ public class DisplayController : MonoBehaviour{
 			Debug.Log ("-----------Assigned: " + (i + 1) + "/" + sides.Length + "------------");
 			yield return new WaitForFixedUpdate ();
 		}
-		
+
 	}
 
 	public void DisplayWin () {
-
-        //winScreen.SetActive(true);
+        winScreen.SetActive(true);
         //button.SetActive(true);
 		Debug.Log ("Win!");
+		GameObject PianPang = GameObjectUtility.customInstantiate (prefabPianPangs [4], v3Positions [4]);
+		Debug.Log ("Getting pinZiScript");
+		PinZiPP pinZiScript = PianPang.GetComponent<PinZiPP> ();
+		Debug.Log ("Initializing");
+		pinZiScript.Initialize ();
+		Debug.Log ("Setting texture");
+		pinZiScript.SetDisplay (texture2DAns);
 
     }
 
@@ -88,7 +100,11 @@ public class DisplayController : MonoBehaviour{
 		if (selectedSides [0] == null) {// record what has been selected for UnselectAllSides
 			selectedSides [0] = side;
 		} else {
-			selectedSides [1] = side;
+			if (selectedSides [0] == side) {
+				UnselectAllSides ();
+			} else {
+				selectedSides [1] = side;
+			}
 		}
 	}
 
