@@ -19,22 +19,27 @@ public class DisplayController : MonoBehaviour{
 		new Vector3(-0.04f, 3.32f, 0f), 
 		new Vector3(1.72f, 2.32f, 0f), 
 		new Vector3(0.02f, -0.37f, 0f),
-		new Vector3(0f, 0.8f, -3f)
+		new Vector3(0f, 1.5f, -3f)
 	};
+
 	private PinZiPP[] selectedSides = new PinZiPP[2];
 
 	
 	public GameObject[] prefabPianPangs;
+	private GameObject[] priPrefabPianPangs = new GameObject[5];
 	public GameObject winScreen;
 	public GameObject button;
 
 	public void Initialize (Word word) {
 		this.word = word;
+		winScreen.SetActive (false);
+		EndGame ();
+		priPrefabPianPangs = new GameObject[5];
 		DisplayAllSides ();
 	}
 
 	private void Reset () {
-		// TODO: Remove everything that is currently being displayed
+		EndGame ();
 	}
 
 	private void DisplayAllSides () {
@@ -63,9 +68,9 @@ public class DisplayController : MonoBehaviour{
 		Debug.Log ("Start assigning");
 
 		for (int i = 0; i < sides.Length; i++) {
-			GameObject PianPang = GameObjectUtility.customInstantiate (prefabPianPangs [i], v3Positions [i]);
+			priPrefabPianPangs[i] = GameObjectUtility.customInstantiate (prefabPianPangs [i], v3Positions [i]);
 			Debug.Log ("Getting pinZiScript");
-			PinZiPP pinZiScript = PianPang.GetComponent<PinZiPP> ();
+			PinZiPP pinZiScript = priPrefabPianPangs[i].GetComponent<PinZiPP> ();
 			Debug.Log ("Initializing");
 			pinZiScript.Initialize ();
 			Debug.Log ("Setting texture");
@@ -78,16 +83,15 @@ public class DisplayController : MonoBehaviour{
 
 	}
 
+
 	public void DisplayWin () {
         winScreen.SetActive(true);
         //button.SetActive(true);
+
 		Debug.Log ("Win!");
-		GameObject PianPang = GameObjectUtility.customInstantiate (prefabPianPangs [4], v3Positions [4]);
-		Debug.Log ("Getting pinZiScript");
-		PinZiPP pinZiScript = PianPang.GetComponent<PinZiPP> ();
-		Debug.Log ("Initializing");
+		priPrefabPianPangs[4] = GameObjectUtility.customInstantiate (prefabPianPangs [4], v3Positions [4]);
+		PinZiPP pinZiScript = priPrefabPianPangs[4].GetComponent<PinZiPP> ();
 		pinZiScript.Initialize ();
-		Debug.Log ("Setting texture");
 		pinZiScript.SetDisplay (texture2DAns);
 
     }
@@ -118,5 +122,15 @@ public class DisplayController : MonoBehaviour{
 		}
 
 		selectedSides = new PinZiPP[2];
+	}
+
+	public void EndGame(){
+		for (int i = 0; i < 5; i++) {
+			if (priPrefabPianPangs[i] != null) {
+				GameObjectUtility.customDestroy (priPrefabPianPangs [i]);
+
+			}
+		}
+		winScreen.SetActive (false);
 	}
 }

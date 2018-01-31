@@ -9,6 +9,7 @@ using UnityEngine;
  * Handling the data: DataController
  * Displaying the game: DisplayController
  */
+
 public class GameController : MonoBehaviour {
 
 	private DataController dataController;
@@ -35,12 +36,15 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update () {
+
+		/*
 		if (AreSelectionsFilled ()) {
 			// Reset selections
 			displayController.UnselectAllSides ();
 			curSelections = new string[2];
 			return;
 		}
+		*/
 
 		if (Input.GetMouseButtonDown (0)) {
 			PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
@@ -49,14 +53,8 @@ public class GameController : MonoBehaviour {
 				SelectSide (selectedSide);
 			}
 		}
-		if (Input.GetMouseButtonDown (1)) {// Just for clearing selected effects. Merge with Display controller in the future
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hitInfo;
-
-			if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, 1 << LayerMask.NameToLayer("PinZiSide")))
-			{
-				hitInfo.collider.gameObject.GetComponent<PinZiPP> ().SetUnselected ();
-			}
+		if (Input.GetMouseButtonDown (1)) {// Just for test purpose
+			RestartGame();
 		}
 	}
 
