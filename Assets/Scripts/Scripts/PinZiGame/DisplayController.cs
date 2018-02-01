@@ -32,6 +32,7 @@ public class DisplayController : MonoBehaviour{
 
 	public void Initialize (Word word) {
 		this.word = word;
+		selectedSides = new PinZiPP[2];
 		winScreen.SetActive (false);
 		EndGame ();
 		priPrefabPianPangs = new GameObject[5];
@@ -85,6 +86,7 @@ public class DisplayController : MonoBehaviour{
 
 
 	public void DisplayWin () {
+		
         winScreen.SetActive(true);
         //button.SetActive(true);
 

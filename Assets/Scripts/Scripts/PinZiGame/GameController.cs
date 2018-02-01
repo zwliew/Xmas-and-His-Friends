@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /**
  * Controls the logic and flow of the current game
@@ -114,5 +115,9 @@ public class GameController : MonoBehaviour {
 			&& Array.Exists (correctSelections, element => string.Equals (element, curSelections [1]));
 	}
 
-
+	public void ReturnToBuilding(){
+		SceneManager.LoadScene ("BuildingOne");
+		GameObjectUtility.ClearObjectPools ();
+		//Application.LoadLevel("BuildingOne");
+	}
 }
