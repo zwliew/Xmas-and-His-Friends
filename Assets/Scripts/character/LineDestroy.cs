@@ -11,8 +11,14 @@ public class LineDestroy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if(this.gameObject == null)
+        {
+            addScore();
+        }
 	}
 
-
+    void addScore()
+    {
+        PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("score") + 1);
+    }
 }
