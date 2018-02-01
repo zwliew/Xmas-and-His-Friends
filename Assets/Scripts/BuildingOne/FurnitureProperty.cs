@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FurnitureProperty : MonoBehaviour {
 
-	public string furnitureType = "Game";
-
+	public string furnitureType;
+	public string furnitureTag;
+	public Vector3 position;
 }

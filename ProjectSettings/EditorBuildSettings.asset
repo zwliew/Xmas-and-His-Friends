@@ -14,3 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BuildingTwo.unity
     guid: 0fdedc148a3e8a14a9cb5e67c79ac201
+  - enabled: 1
+    path: Assets/Scenes/tongue.unity
+    guid: a1551c8defa8a49499a2454a2f6fcc05
+  - enabled: 1
+    path: Assets/Scenes/CharacterRenzhe.unity
+    guid: f2ead6914fcedcf4bb1b614ac9372ea9

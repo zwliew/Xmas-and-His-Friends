@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class AnimationController : MonoBehaviour {
 	[HideInInspector]
-	public bool holdFlag;
+	public string holdFlag;
 	[HideInInspector]
 	public bool holdFlagTwo;
 
@@ -19,7 +19,7 @@ public class AnimationController : MonoBehaviour {
 	private int stepCountTwo = 0;
 
 	void Awake(){
-		holdFlag = false;
+		holdFlag = "";
 		holdFlagTwo = false;
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 		rbXmas = GetComponent<Rigidbody> ();
@@ -29,11 +29,12 @@ public class AnimationController : MonoBehaviour {
 		
 
 	void OnTriggerStay (Collider other){
-		if (other.gameObject.name.Equals ("GameStart")) {
-			if (holdFlag) {
-				holdFlag = false;
+		FurnitureProperty furScript = null;
+		furScript = other.gameObject.GetComponent<FurnitureProperty> ();
+		if (furScript != null) {
+			if(furScript.furnitureTag == holdFlag){
 				Camera.main.GetComponent<CameraMovement> ().followState = 1;
-				StartCoroutine (EnterGame ());
+				StartCoroutine (EnterGame (furScript.furnitureTag));
 			}
 		}
 		if(other.gameObject.tag.Equals("ElevatorOne") && holdFlagTwo){
@@ -83,9 +84,19 @@ public class AnimationController : MonoBehaviour {
 			StartCoroutine (GoForward ());
 		}
 	}
-	IEnumerator EnterGame(){
+	IEnumerator EnterGame(string gameName){
 		yield return new WaitForSeconds (1f);
-		SceneManager.LoadScene ("PinZiGame");
+		switch (gameName) {
+		case "PinZiGame":
+			SceneManager.LoadScene ("PinZiGame");
+			break;
+		case "GuiChu":
+			SceneManager.LoadScene ("tongue");
+			break;
+		case "RenZhe":
+			SceneManager.LoadScene ("CharacterRenZhe");
+			break;
+		}
 	}
 
 }

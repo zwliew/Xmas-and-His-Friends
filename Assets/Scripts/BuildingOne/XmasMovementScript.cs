@@ -45,16 +45,19 @@ public class XmasMovementScript : MonoBehaviour {
 			if (Physics.Raycast (ray, out hitInfo, 300f, 1 << LayerMask.NameToLayer ("Road")) && movementScript.navAgentOn) {//Navigate to the destination
 				v3destination = FineTuneDestination(hitInfo.point, hitInfo);
 				destOn = hitInfo.collider.gameObject.GetComponent<RoadProperty>().regionNumber;//Determine the region destination is in
-				GetComponent<AnimationController> ().holdFlag = false;
+				GetComponent<AnimationController> ().holdFlag = "";
 				GetComponent<AnimationController> ().holdFlagTwo = false;
 				camMovement.followState = 0;
-
-				if (hitInfo.collider.gameObject.GetComponent<FurnitureProperty> () != null) {
+				FurnitureProperty furScript = null;
+				furScript = hitInfo.collider.gameObject.GetComponent<FurnitureProperty> ();
+				if (furScript != null) {
 					if (hitInfo.collider.gameObject.GetComponent<FurnitureProperty> ().furnitureType.Equals ("Game")) {
-						Debug.Log ("Goint to play game");
+						Debug.Log ("Goint to play game " + furScript.furnitureTag);
 						camMovement.SetFurniture (hitInfo.collider.gameObject);
-						GetComponent<AnimationController> ().holdFlag = true;
-						v3destination = v3nodes[0];
+						GetComponent<AnimationController> ().holdFlag = furScript.furnitureTag;
+						v3destination = furScript.position;
+						Debug.Log (v3destination);
+						Debug.DrawLine(v3destination,(v3destination + new Vector3(0f, 20f, 0f)), Color.red, 2f);
 					}
 				}
 
@@ -69,7 +72,7 @@ public class XmasMovementScript : MonoBehaviour {
 
 		if (Input.GetMouseButtonDown(1)) {//For debug use only
 			navAgent.SetDestination (v3nodes[1]);//Crossing
-			GetComponent<AnimationController> ().holdFlag = false;
+			GetComponent<AnimationController> ().holdFlag = "";
 			GetComponent<AnimationController> ().holdFlagTwo = false;
 			camMovement.followState = 0;
 		}
@@ -82,7 +85,7 @@ public class XmasMovementScript : MonoBehaviour {
 
 		RaycastHit hitInfoLocal;
 		Ray ray = new Ray (v3location + new Vector3 (0f, 5f, 0f), new Vector3 (0f, -1f, 0f));
-		Debug.DrawLine (ray.origin, ray.origin + 300 * ray.direction, Color.red, 2f);
+		//Debug.DrawLine (ray.origin, ray.origin + 300 * ray.direction, Color.red, 2f);
 		if (Physics.Raycast (ray, out hitInfoLocal, 40f, 1 << LayerMask.NameToLayer ("Road"))) {//Determine the region Xmas is in
 			standOn = hitInfoLocal.collider.gameObject.GetComponent<RoadProperty>().regionNumber;
 		}

@@ -9,6 +9,7 @@ public class FadeOut : MonoBehaviour {
 
 	public void FadeOutOnLoad(){
 		canvasGroup = GetComponent<CanvasGroup> ();
+
 		StartCoroutine (Fade ());
 	}
 
@@ -18,5 +19,6 @@ public class FadeOut : MonoBehaviour {
 			canvasGroup.alpha -= 0.025f;
 			yield return null;
 		}
+		canvasGroup.interactable = false;
 	}
 }
