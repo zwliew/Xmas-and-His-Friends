@@ -9,16 +9,6 @@ public class ObjectPool : MonoBehaviour {
 	public RecycledGameObject prefab;
 	private List<RecycledGameObject> poolGameObjects = new List<RecycledGameObject>();
 
-	private RecycledGameObject CreateTouch(Vector3 position){
-		var cloneGameObject = GameObject.Instantiate (prefab);
-		cloneGameObject.transform.position = position;
-		cloneGameObject.transform.parent = transform;
-
-		poolGameObjects.Add (cloneGameObject);
-
-		return cloneGameObject;
-	}
-
 	public RecycledGameObject NextTouch(Vector3 position){
 		RecycledGameObject instance = null;
 
@@ -31,9 +21,22 @@ public class ObjectPool : MonoBehaviour {
 		if (instance == null) {
 			instance = CreateTouch (position);
 		}
+
 		instance.Restart ();
 
 		return instance;
 	}
+
+	private RecycledGameObject CreateTouch(Vector3 position){
+		var cloneGameObject = GameObject.Instantiate (prefab);
+		cloneGameObject.transform.position = position;
+		cloneGameObject.transform.parent = transform;
+		
+		poolGameObjects.Add (cloneGameObject);
+		
+		return cloneGameObject;
+	}
+	
+
 
 }

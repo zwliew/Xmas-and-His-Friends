@@ -86,6 +86,7 @@ public class DisplayController : MonoBehaviour{
 
 
 	public void DisplayWin () {
+		
         winScreen.SetActive(true);
         //button.SetActive(true);
 

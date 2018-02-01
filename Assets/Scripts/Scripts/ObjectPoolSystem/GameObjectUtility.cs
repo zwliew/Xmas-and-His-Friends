@@ -9,6 +9,7 @@ public class GameObjectUtility {
 
 	private static Dictionary<RecycledGameObject, ObjectPool> GameObjectsPool = new Dictionary<RecycledGameObject, ObjectPool> ();
 
+
 	public static GameObject customInstantiate(GameObject prefab, Vector3 position){
 
 		GameObject instance = null;
@@ -47,4 +48,7 @@ public class GameObjectUtility {
 		return pool;
 	}
 
+	public static void ClearObjectPools(){
+		GameObjectsPool = new Dictionary<RecycledGameObject, ObjectPool>();
+	}
 }

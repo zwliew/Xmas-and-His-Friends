@@ -117,6 +117,7 @@ public class GameController : MonoBehaviour {
 
 	public void ReturnToBuilding(){
 		SceneManager.LoadScene ("BuildingOne");
+		GameObjectUtility.ClearObjectPools ();
 		//Application.LoadLevel("BuildingOne");
 	}
 }
