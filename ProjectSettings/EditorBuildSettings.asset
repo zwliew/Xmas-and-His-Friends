@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
+    path: Assets/Scenes/BuildingOne.unity
     guid: 12d55ac2369559145b24a5d8329b1cc0
   - enabled: 1
     path: Assets/Scenes/PinZiGame.unity
     guid: 7d4803e1aaddb6549a3fc0c296aeeada
+  - enabled: 0
+    path: Assets/Scenes/BuildingTwo.unity
+    guid: 0fdedc148a3e8a14a9cb5e67c79ac201
