@@ -18,8 +18,8 @@ public class Note : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (rb.GetRelativePoint (centre).y < -6) {
+		/*if (rb.GetRelativePoint (centre).y < -6) {
 			Destroy (gameObject);//Try to use the object pool's GameObjectUtility.CustomInstantiate and .CustomDestroy to destroy the gameObject;
-        }
+        }*/
 	}
 }

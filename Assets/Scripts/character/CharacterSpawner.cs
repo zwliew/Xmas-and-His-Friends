@@ -15,7 +15,7 @@ public class CharacterSpawner : MonoBehaviour {
 	void Start () {
         maxX = 1.97f;
         minX = -1.97f;
-        maxThrowVelocity = 15f;
+        maxThrowVelocity = 12f;
         StartCoroutine(characterSP());
 	}
 	
