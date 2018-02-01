@@ -46,9 +46,10 @@ public class LineFollow : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        collision.gameObject.tag = "destroyed";
         Destroy(collision.gameObject);
-        if(collision.gameObject == null){
-            addScore(); }
+        /*if(collision.gameObject == null){
+            addScore(); }*/
     }
 
     void addScore()

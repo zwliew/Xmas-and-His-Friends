@@ -17,6 +17,7 @@ TagManager:
   - PPthree
   - PPfour
   - PP
+  - destroyed
   layers:
   - Default
   - TransparentFX
