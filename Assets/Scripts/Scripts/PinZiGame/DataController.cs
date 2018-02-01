@@ -16,20 +16,18 @@ public class DataController : MonoBehaviour {
 	}
 
 	private void LoadData () {
-		string dataFilePath = null;
-		if (AppUtility.platform == RuntimePlatform.Android) {
-			dataFilePath = Path.Combine("jar:file://" + Application.dataPath + "!/assets/" + dataFileName);
-		} else if (AppUtility.platform == RuntimePlatform.WindowsPlayer) {
-			dataFilePath = Path.Combine (Application.streamingAssetsPath, dataFileName);
-		} else if (AppUtility.platform == RuntimePlatform.OSXPlayer) {
-			dataFilePath = Application.dataPath + "/Raw" + dataFileName;
-		} else {
-			Debug.LogError("Unrecognized platform! dataFilePath is set to null.");
-		}
+		string dataFilePath = "jar:file:///data/app/com.hci.xmas-2/base.apk!/assets/PinZiData.json"; //Path.Combine (Application.streamingAssetsPath, dataFileName);
 
 		if (File.Exists (dataFilePath)) {
-			string dataAsJson = File.ReadAllText (dataFilePath);
-
+			string dataAsJson;
+			if (AppUtility.platform == RuntimePlatform.Android) {
+				WWW reader = new WWW (dataFilePath);
+				while (!reader.isDone) {
+				}
+				dataAsJson = reader.text;
+			} else {
+				dataAsJson = File.ReadAllText (dataFilePath);
+			}
 			JsonData wordData = JsonUtility.FromJson<JsonData> (dataAsJson);
 			words = wordData.words;
 		} else {
