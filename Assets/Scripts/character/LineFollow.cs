@@ -28,16 +28,22 @@ public class LineFollow : MonoBehaviour {
             BoxCollider2D collider = gameObject.AddComponent<BoxCollider2D>();
             collider.transform.position = line.transform.position;
             collider.size = new Vector2(0.2f, 0.2f);
-
-
+            
         }
         if (Input.GetMouseButtonUp(0))
         {
             vertexCount = 0;
             line.positionCount = 0;
+            BoxColliderDestroyer();
             mousedown = false;
+
         }
-	}
+        
+        /* if (!mousedown)
+         {
+         } */
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(collision.gameObject);
@@ -47,6 +53,13 @@ public class LineFollow : MonoBehaviour {
     void addScore()
     {
         PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("score") + 1);
-
+    }
+    void BoxColliderDestroyer()
+    {
+        BoxCollider2D[] boxes = line.GetComponents<BoxCollider2D>();
+        foreach(BoxCollider2D _box in boxes)
+        {
+            Destroy(_box);
+        }
     }
 }
