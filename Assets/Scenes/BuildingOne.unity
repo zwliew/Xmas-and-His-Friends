@@ -256,11 +256,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112475189}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.8, y: 35.1, z: 9.3}
-  m_LocalScale: {x: 7.1214156, y: 14.341786, z: 7.121423}
+  m_LocalPosition: {x: -1.8000135, y: 103.200005, z: 25.199995}
+  m_LocalScale: {x: 9.257844, y: 18.64433, z: 9.257855}
   m_Children: []
-  m_Father: {fileID: 1378745227}
-  m_RootOrder: 27
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &146371012
 Prefab:
@@ -1036,7 +1036,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &562580446
 Prefab:
@@ -1118,7 +1118,7 @@ Transform:
   m_LocalScale: {x: 3.8880887, y: 14.3417845, z: 9.317659}
   m_Children: []
   m_Father: {fileID: 1378745227}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &589864984
 MonoBehaviour:
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   furnitureType: Game
   furnitureTag: GuiChu
-  position: {x: -17.8, y: 35.1, z: 9.33}
+  position: {x: -23.5, y: 43.9, z: 13.2}
 --- !u!65 &589864986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1477,11 +1477,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 875902869}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 86.1, z: 14.6}
-  m_LocalScale: {x: 7.1214156, y: 14.3417845, z: 7.121423}
+  m_LocalPosition: {x: -2.5, y: 86.1, z: 15.4}
+  m_LocalScale: {x: 7.1214156, y: 14.3417845, z: 8.442179}
   m_Children: []
   m_Father: {fileID: 1378745227}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &875902871
 MonoBehaviour:
@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   furnitureType: Game
   furnitureTag: RenZhe
-  position: {x: -2.5, y: 80.3, z: 19.8}
+  position: {x: -1.8, y: 103.2, z: 25.2}
 --- !u!65 &875902873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1585,7 +1585,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 42.784, y: 478.98102, z: 434.97}
 --- !u!1 &995680256
 GameObject:
@@ -1616,7 +1616,7 @@ Transform:
   m_LocalScale: {x: 7.121416, y: 14.341786, z: 7.1214232}
   m_Children: []
   m_Father: {fileID: 1378745227}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &995680258
 MonoBehaviour:
@@ -1631,7 +1631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   furnitureType: Game
   furnitureTag: PinZiGame
-  position: {x: -17.8, y: 34.7, z: -12.7}
+  position: {x: 0, y: 34.7, z: -12.7}
 --- !u!65 &995680259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2607,7 +2607,7 @@ RectTransform:
   - {fileID: 661459275}
   - {fileID: 1280698213}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

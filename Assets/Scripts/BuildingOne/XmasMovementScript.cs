@@ -56,7 +56,7 @@ public class XmasMovementScript : MonoBehaviour {
 						camMovement.SetFurniture (hitInfo.collider.gameObject);
 						GetComponent<AnimationController> ().holdFlag = furScript.furnitureTag;
 						v3destination = furScript.position;
-						Debug.Log (v3destination);
+						//Debug.Log (v3destination);
 						Debug.DrawLine(v3destination,(v3destination + new Vector3(0f, 20f, 0f)), Color.red, 2f);
 					}
 				}
@@ -89,7 +89,7 @@ public class XmasMovementScript : MonoBehaviour {
 		if (Physics.Raycast (ray, out hitInfoLocal, 40f, 1 << LayerMask.NameToLayer ("Road"))) {//Determine the region Xmas is in
 			standOn = hitInfoLocal.collider.gameObject.GetComponent<RoadProperty>().regionNumber;
 		}
-		if (Physics.Raycast (ray, out hitInfoLocal, 40f, 1 << LayerMask.NameToLayer ("Ignore Raycast"))) {//Determine the region Xmas is in
+		if (Physics.Raycast (ray, out hitInfoLocal, 40f, 1 << LayerMask.NameToLayer ("Ignore Raycast"))) {
 			standOn = hitInfoLocal.collider.gameObject.GetComponent<RoadProperty>().regionNumber;
 		}
 
@@ -123,11 +123,11 @@ public class XmasMovementScript : MonoBehaviour {
 				v3destinations.Add (v3destination);
 			}
 
-			for (int haha = 0; haha < v3destinations.Count; haha++) {
-				//Debug.Log (v3destinations [haha]);
-			}
-
 		}
+		for (int haha = 0; haha < v3destinations.Count; haha++) {
+			Debug.Log (v3destinations [haha]);
+		}
+		
 		movementScript.SetDestinations (v3destinations);
 		//Debug.Log ("XMS called Set des");
 

@@ -17,8 +17,8 @@ public class DataController : MonoBehaviour {
 
 	private void LoadData () {
 		string dataFilePath = "jar:file:///data/app/com.hci.xmas-2/base.apk!/assets/PinZiData.json"; //Path.Combine (Application.streamingAssetsPath, dataFileName);
-
-		if (File.Exists (dataFilePath)) {
+		dataFilePath = "PinZiData.json";
+		/*if (File.Exists (dataFilePath)) {
 			string dataAsJson;
 			if (AppUtility.platform == RuntimePlatform.Android) {
 				WWW reader = new WWW (dataFilePath);
@@ -34,6 +34,18 @@ public class DataController : MonoBehaviour {
 			Debug.LogError ("PinZiData.json does not exist! dataFilePath is: " + dataFilePath);
 			words = null;
 		}
+		*/
+		string filePath = Path.Combine(Application.streamingAssetsPath, dataFilePath);
+ 		if (File.Exists(filePath))
+ 		{
+ 			string dataAsJson = File.ReadAllText(filePath);
+ 			JsonData wordData = JsonUtility.FromJson<JsonData>(dataAsJson);
+ 		words = wordData.words;
+ 		}
+ 		else
+ 		{
+ 			Debug.LogError("PinZiData file does not exist!");
+ 		}
 	}
 
 	public Word GetRandomWord() {
