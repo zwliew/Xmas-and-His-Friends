@@ -10,7 +10,8 @@ public class LineFollow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         line = GetComponent<LineRenderer>();
-	}
+        PlayerPrefs.SetInt("score", 0);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -37,4 +38,15 @@ public class LineFollow : MonoBehaviour {
             mousedown = false;
         }
 	}
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(collision.gameObject);
+        addScore();
+    }
+
+    void addScore()
+    {
+        PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("score") + 1);
+
+    }
 }
