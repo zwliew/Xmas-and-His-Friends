@@ -22,6 +22,10 @@ public class XmasMovementScript : MonoBehaviour {
 
 
 	void Awake (){
+		Initialize ();
+	}
+
+	private void Initialize(){
 		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 		v3location = transform.position;
 		v3destination = v3location;
@@ -34,6 +38,7 @@ public class XmasMovementScript : MonoBehaviour {
 			//Debug.DrawRay (v3nodes [i], new Vector3(0f, -10f, 0f), Color.red, 2f);
 		}
 	}
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown(0)) {

@@ -35,6 +35,7 @@ public class DataController : MonoBehaviour {
 			words = null;
 		}
 		*/
+		/*
 		string filePath = Path.Combine(Application.streamingAssetsPath, dataFilePath);
  		if (File.Exists(filePath))
  		{
@@ -46,6 +47,11 @@ public class DataController : MonoBehaviour {
  		{
  			Debug.LogError("PinZiData file does not exist!");
  		}
+		*/
+		TextAsset dataAsJson = Resources.Load<TextAsset> ("PinZiPianPang/PinZiData");
+		JsonData wordData = JsonUtility.FromJson<JsonData>(dataAsJson.text);
+		words = wordData.words;
+
 	}
 
 	public Word GetRandomWord() {
