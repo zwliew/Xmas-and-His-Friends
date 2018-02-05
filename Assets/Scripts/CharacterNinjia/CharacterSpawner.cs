@@ -14,6 +14,7 @@ public class CharacterSpawner : MonoBehaviour {
 	private DataController dataController;
 
 	private static Dictionary <string, string[]> dicAnswers = new Dictionary<string, string[]>();
+	private static Dictionary<string, Sprite> dicSides = new Dictionary<string, Sprite> ();
 	private static Sprite[] sprWords;
 	private static Sprite[] sprSides;
         
@@ -23,22 +24,27 @@ public class CharacterSpawner : MonoBehaviour {
         minX = -1.97f;
         maxThrowVelocity = 12f;
 
-		sprWords = Resources.LoadAll<Sprite>("CharNinjia/Words");
-		sprSides = Resources.LoadAll<Sprite>("CharNinjia/Sides");
 
 		dataController = GetComponent<DataController> ();
 		dataController.Initialize ();
 		words = dataController.GetAllWords ();
-		PrepareDicAnswers ();
+
+		foreach(Word curword in words){
+			
+			string sidepath = "CharNinjia/Sides/" + curword.correctSides [0];
+			dicSides.Add(curword.correctSides [0], Resources.Load<Sprite>(sidepath));
+
+			sidepath = "CharNinjia/Sides/" + curword.correctSides [1];
+			dicSides.Add(curword.correctSides [1], Resources.Load<Sprite>(sidepath));
+
+			dicAnswers.Add (curword.name, curword.correctSides);
+		}
+		sprWords = Resources.LoadAll<Sprite>("CharNinjia/Words");
 
         StartCoroutine(characterSP());
 	}
 
-	private void PrepareDicAnswers(){
-		foreach (Word word in words) {
-			dicAnswers.Add (word.name, word.correctSides);
-		}
-	}
+
 
 	public static Sprite GetRandomSprite(){
 		return sprWords[Random.Range (0, sprWords.Length - 1)];
@@ -51,15 +57,23 @@ public class CharacterSpawner : MonoBehaviour {
 		
 		if (dicAnswers.TryGetValue (charSpriteName.ToUpper(), out strCorrectSides)) {
 			sprCorrectSides = new Sprite[2];
-			sprCorrectSides [0] = null;
-			Debug.Log (strCorrectSides [0]);
-			sprCorrectSides [1] = null;
-			Debug.Log (strCorrectSides [1]);
+
+			if(dicSides.TryGetValue(strCorrectSides [0], out sprCorrectSides[0])){
+			}else{
+				Debug.Log("Did not get side one for this word: " + strCorrectSides[0]);
+			}
+
+			if(dicSides.TryGetValue(strCorrectSides [1], out sprCorrectSides[1])){
+			}else{
+				Debug.Log("Did not get side one for this word: " + strCorrectSides[1]);
+			}
+
 		} else {
 			Debug.Log ("Did not get the correct sides for this word: " + charSpriteName.ToUpper());
 		}
 
 		return sprCorrectSides;
+
 	}
 
     IEnumerator characterSP()

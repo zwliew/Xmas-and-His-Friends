@@ -37,6 +37,7 @@ public class DisplayController : MonoBehaviour{
 		EndGame ();
 		priPrefabPianPangs = new GameObject[5];
 		DisplayAllSides ();
+		Resources.UnloadUnusedAssets ();
 	}
 
 	private void Reset () {
