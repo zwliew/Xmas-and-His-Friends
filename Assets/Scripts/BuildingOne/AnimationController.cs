@@ -45,7 +45,6 @@ public class AnimationController : MonoBehaviour {
 			break;
 		}
 	}
-	/*
 	void OnTriggerStay (Collider other){
 		FurnitureProperty furScript = null;
 		furScript = other.gameObject.GetComponent<FurnitureProperty> ();
@@ -55,6 +54,9 @@ public class AnimationController : MonoBehaviour {
 				StartCoroutine (EnterGame (furScript.furnitureTag));
 			}
 		}
+	}
+
+		/*
 		if(other.gameObject.tag.Equals("ElevatorOne") && holdFlagTwo){
 			Debug.Log("Going up");
 			holdFlagTwo = false;

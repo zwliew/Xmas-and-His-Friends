@@ -16,6 +16,7 @@ public class OverallSceneManager : MonoBehaviour {
 	}
 
 	public void LoadSceneForUI(){
+		GameObjectUtility.ClearObjectPools ();
 		SceneManager.LoadScene ("BuildingOne");
 	}
 
