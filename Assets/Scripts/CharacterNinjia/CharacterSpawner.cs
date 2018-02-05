@@ -26,7 +26,7 @@ public class CharacterSpawner : MonoBehaviour {
 
     IEnumerator characterSP()
     {
-        GameObject _character = Instantiate(character);
+		GameObject _character =GameObjectUtility.customInstantiate(character, Vector3.zero);
         float number = Random.Range(minX, maxX);
         float waitTime = Random.Range(0.5f, 3f);
         _character.transform.position = new Vector3(number, this.transform.position.y, _character.transform.position.z);

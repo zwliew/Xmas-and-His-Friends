@@ -27,7 +27,25 @@ public class AnimationController : MonoBehaviour {
 		xmasAnimator.SetInteger ("MoveState", 0);
 	}
 		
+	public void SetMovingState(int movingState){
+		xmasAnimator.SetInteger ("MoveState", movingState);
+	}
 
+	IEnumerator EnterGame(string gameName){
+		yield return new WaitForSeconds (1f);
+		switch (gameName) {
+		case "PinZiGame":
+			SceneManager.LoadScene ("PinZiGame");
+			break;
+		case "GuiChu":
+			SceneManager.LoadScene ("tongue");
+			break;
+		case "RenZhe":
+			SceneManager.LoadScene ("CharacterRenZhe");
+			break;
+		}
+	}
+	/*
 	void OnTriggerStay (Collider other){
 		FurnitureProperty furScript = null;
 		furScript = other.gameObject.GetComponent<FurnitureProperty> ();
@@ -42,26 +60,23 @@ public class AnimationController : MonoBehaviour {
 			holdFlagTwo = false;
 			navAgent.isStopped = true;
 			navAgent.enabled = false;
-
+			
 			//Bring the character to second floor
 			stepCountOne = 0;
 			stepCountTwo = 0;
 			StartCoroutine(GoUp ());
 			//TODO after things are done, set active
-
+			
 		}
 	}
-
-	public void SetMovingState(int movingState){
-		xmasAnimator.SetInteger ("MoveState", movingState);
-	}
+	*/
 	/*
 	IEnumerator ElevatorUp(){
 		stepCountOne = 0;
 	    stepCountTwo = 0;
 		yield return StartCoroutine(GoUp ());
 	}
-	*/
+
 
 	IEnumerator GoUp(){
 		rbXmas.MovePosition (transform.position + new Vector3(0f, 0.5f, 0f));
@@ -84,19 +99,6 @@ public class AnimationController : MonoBehaviour {
 			StartCoroutine (GoForward ());
 		}
 	}
-	IEnumerator EnterGame(string gameName){
-		yield return new WaitForSeconds (1f);
-		switch (gameName) {
-		case "PinZiGame":
-			SceneManager.LoadScene ("PinZiGame");
-			break;
-		case "GuiChu":
-			SceneManager.LoadScene ("tongue");
-			break;
-		case "RenZhe":
-			SceneManager.LoadScene ("CharacterRenZhe");
-			break;
-		}
-	}
+*/
 
 }
