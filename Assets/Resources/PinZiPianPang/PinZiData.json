@@ -38,6 +38,19 @@
         "he",
         "huo"
       ]
+    },
+		{
+      "name": "WEICAP",
+      "sides": [
+        "renzipang",
+        "huo",
+        "wei",
+        "nv"
+      ],
+      "correctSides": [
+        "renzipang",
+        "wei"
+      ]
     }
   ]
 }

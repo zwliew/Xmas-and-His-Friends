@@ -621,6 +621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 544932792}
   - component: {fileID: 544932793}
+  - component: {fileID: 544932794}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -653,6 +654,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1417347077820846, guid: a667cfc540b079b46a571f2d40a43ce8, type: 2}
+--- !u!114 &544932794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 544932791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6fa3c22f6a5fa42ae0d002a9a17c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1062279191
 Prefab:
   m_ObjectHideFlags: 0

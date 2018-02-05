@@ -58,4 +58,7 @@ public class DataController : MonoBehaviour {
 		int wordIndex = UnityEngine.Random.Range(0, words.Length);
 		return words[wordIndex];
 	}
+	public Word[] GetAllWords(){
+		return words;
+	}
 }

@@ -10,18 +10,56 @@ public class CharacterSpawner : MonoBehaviour {
     float maxX;
     float minX;
 
+	private Word[] words;
+	private DataController dataController;
+
+	private static Dictionary <string, string[]> dicAnswers = new Dictionary<string, string[]>();
+	private static Sprite[] sprWords;
+	private static Sprite[] sprSides;
         
 	// Use this for initialization
 	void Start () {
         maxX = 1.97f;
         minX = -1.97f;
         maxThrowVelocity = 12f;
+
+		sprWords = Resources.LoadAll<Sprite>("CharNinjia/Words");
+		sprSides = Resources.LoadAll<Sprite>("CharNinjia/Sides");
+
+		dataController = GetComponent<DataController> ();
+		dataController.Initialize ();
+		words = dataController.GetAllWords ();
+		PrepareDicAnswers ();
+
         StartCoroutine(characterSP());
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	private void PrepareDicAnswers(){
+		foreach (Word word in words) {
+			dicAnswers.Add (word.name, word.correctSides);
+		}
+	}
+
+	public static Sprite GetRandomSprite(){
+		return sprWords[Random.Range (0, sprWords.Length - 1)];
+	}
+
+	public static Sprite[] GetSprSides(string charSpriteName){
 		
+		string[] strCorrectSides = null;
+		Sprite[] sprCorrectSides = null;
+		
+		if (dicAnswers.TryGetValue (charSpriteName.ToUpper(), out strCorrectSides)) {
+			sprCorrectSides = new Sprite[2];
+			sprCorrectSides [0] = null;
+			Debug.Log (strCorrectSides [0]);
+			sprCorrectSides [1] = null;
+			Debug.Log (strCorrectSides [1]);
+		} else {
+			Debug.Log ("Did not get the correct sides for this word: " + charSpriteName.ToUpper());
+		}
+
+		return sprCorrectSides;
 	}
 
     IEnumerator characterSP()
