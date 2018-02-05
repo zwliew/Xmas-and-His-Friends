@@ -23,7 +23,8 @@ public class CharacterSpawner : MonoBehaviour {
         maxX = 1.97f;
         minX = -1.97f;
         maxThrowVelocity = 12f;
-
+		dicAnswers = new Dictionary<string, string[]>();
+		dicSides = new Dictionary<string, Sprite> ();
 
 		dataController = GetComponent<DataController> ();
 		dataController.Initialize ();
