@@ -17,7 +17,9 @@ public class CharacterSpawner : MonoBehaviour {
 	private static Dictionary<string, Sprite> dicSides = new Dictionary<string, Sprite> ();
 	private static Sprite[] sprWords;
 	private static Sprite[] sprSides;
-        
+
+	private ObjectPool objectPool;
+
 	// Use this for initialization
 	void Start () {
         maxX = 1.97f;
@@ -26,6 +28,7 @@ public class CharacterSpawner : MonoBehaviour {
 		dicAnswers = new Dictionary<string, string[]>();
 		dicSides = new Dictionary<string, Sprite> ();
 
+		objectPool = new ObjectPool ();
 		dataController = GetComponent<DataController> ();
 		dataController.Initialize ();
 		words = dataController.GetAllWords ();
@@ -40,11 +43,16 @@ public class CharacterSpawner : MonoBehaviour {
 
 			dicAnswers.Add (curword.name, curword.correctSides);
 		}
+
 		sprWords = Resources.LoadAll<Sprite>("CharNinjia/Words");
 
         StartCoroutine(characterSP());
 	}
 
+	public static void EndGameClear(){
+		dicAnswers = new Dictionary<string, string[]>();
+		dicSides = new Dictionary<string, Sprite> ();
+	}
 
 
 	public static Sprite GetRandomSprite(){
