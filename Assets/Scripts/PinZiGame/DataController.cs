@@ -6,7 +6,7 @@ using UnityEngine;
  */
 public class DataController : MonoBehaviour {
 
-	private string dataFileName = "PinZiData.json";
+	//private string dataFileName = "PinZiData.json";
 
 	private Word[] words;
 
@@ -16,8 +16,11 @@ public class DataController : MonoBehaviour {
 	}
 
 	private void LoadData () {
-		string dataFilePath = "jar:file:///data/app/com.hci.xmas-2/base.apk!/assets/PinZiData.json"; //Path.Combine (Application.streamingAssetsPath, dataFileName);
-		dataFilePath = "PinZiData.json";
+		TextAsset dataAsJson = Resources.Load<TextAsset> ("PinZiPianPang/PinZiData");
+		JsonData wordData = JsonUtility.FromJson<JsonData>(dataAsJson.text);
+		words = wordData.words;
+		//string dataFilePath = "jar:file:///data/app/com.hci.xmas-2/base.apk!/assets/PinZiData.json"; //Path.Combine (Application.streamingAssetsPath, dataFileName);
+		//dataFilePath = "PinZiData.json";
 		/*if (File.Exists (dataFilePath)) {
 			string dataAsJson;
 			if (AppUtility.platform == RuntimePlatform.Android) {
@@ -48,9 +51,6 @@ public class DataController : MonoBehaviour {
  			Debug.LogError("PinZiData file does not exist!");
  		}
 		*/
-		TextAsset dataAsJson = Resources.Load<TextAsset> ("PinZiPianPang/PinZiData");
-		JsonData wordData = JsonUtility.FromJson<JsonData>(dataAsJson.text);
-		words = wordData.words;
 
 	}
 
