@@ -25,6 +25,22 @@ public class GameObjectUtility {
 		return instance;
 	}
 
+	public static GameObject customInstantiate(GameObject prefab, Vector3 position, Quaternion rotation){
+
+		GameObject instance = null;
+
+		var recycleScript = prefab.GetComponent<RecycledGameObject> ();
+		if (recycleScript != null) {
+			var pool = GetObjectPool (recycleScript);
+			instance = pool.NextTouch (position).gameObject;
+		} else {
+			instance = GameObject.Instantiate (prefab);
+			instance.transform.position = position;
+		}
+		instance.transform.rotation = rotation;
+		return instance;
+	}
+
 	public static void customDestroy(GameObject gameObject){
 		var RecycledGameObject = gameObject.GetComponent<RecycledGameObject> ();
 		if (RecycledGameObject != null) {

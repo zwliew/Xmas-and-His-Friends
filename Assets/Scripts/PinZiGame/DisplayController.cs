@@ -11,6 +11,8 @@ public class DisplayController : MonoBehaviour{
 	// The current word being displayed
 	private Word word;
 
+	public GameObject[] goPlaceHolders;
+
 	private Texture2D[] texture2DSides;
 	private Texture2D texture2DAns;
 
@@ -70,7 +72,7 @@ public class DisplayController : MonoBehaviour{
 		Debug.Log ("Start assigning");
 
 		for (int i = 0; i < sides.Length; i++) {
-			priPrefabPianPangs[i] = GameObjectUtility.customInstantiate (prefabPianPangs [i], v3Positions [i]);
+			priPrefabPianPangs[i] = GameObjectUtility.customInstantiate (prefabPianPangs [i], goPlaceHolders[i].transform.position, goPlaceHolders[i].transform.rotation);
 			Debug.Log ("Getting pinZiScript");
 			PinZiPP pinZiScript = priPrefabPianPangs[i].GetComponent<PinZiPP> ();
 			Debug.Log ("Initializing");

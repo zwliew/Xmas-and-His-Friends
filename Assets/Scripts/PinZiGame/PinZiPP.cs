@@ -47,7 +47,7 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	void Update(){
-		//if(Time.frameCount % 5 == 0 && sidename.Equals("Nv")) Debug.Log (v3originalPosition);
+
 	}
 	
 	public void Shutdown(){
@@ -60,7 +60,7 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 		StopAllCoroutines ();
 		//Debug.Log ("Selected: " + sidename);
 		//Debug.Log ("when selected, the original location is " + v3originalPosition);
-		StartCoroutine (MoveTo (v3center));
+		//StartCoroutine (MoveTo (v3center));
 	}
 
 	public void SetSelected(float time){
@@ -81,9 +81,9 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 
 	public void SetUnselected(){
 		particalSys.Stop();
-		StopAllCoroutines ();
+		//StopAllCoroutines ();
 		//Debug.Log ("when unselected, the original location is " + v3originalPosition);
-		StartCoroutine (MoveTo (v3originalPosition));
+		//StartCoroutine (MoveTo (v3originalPosition));
 	}
 
 	IEnumerator MoveTo (Vector3 pos){
