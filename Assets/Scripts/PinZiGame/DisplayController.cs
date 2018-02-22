@@ -29,6 +29,9 @@ public class DisplayController : MonoBehaviour{
 	
 	public GameObject[] prefabPianPangs;
 	private GameObject[] priPrefabPianPangs = new GameObject[5];
+	public GameObject goTetra;
+	public GameObject goRotateCubeScriptHolder;
+	private RotateCube rotateCubeScript;
 	public GameObject winScreen;
 	public GameObject button;
 
@@ -36,6 +39,7 @@ public class DisplayController : MonoBehaviour{
 		this.word = word;
 		selectedSides = new PinZiPP[2];
 		winScreen.SetActive (false);
+		rotateCubeScript = goRotateCubeScriptHolder.GetComponent<RotateCube> ();
 		EndGame ();
 		priPrefabPianPangs = new GameObject[5];
 		DisplayAllSides ();
@@ -43,7 +47,19 @@ public class DisplayController : MonoBehaviour{
 	}
 
 	private void Reset () {
-		EndGame ();
+		EndGame ();//Just lazy to rename alr
+	}
+
+	public void EndGame(){
+
+		//rotateCubeScript.PlayRotateAnimation ();
+
+		for (int i = 0; i < 5; i++) {
+			if (priPrefabPianPangs[i] != null) {
+				GameObjectUtility.customDestroy (priPrefabPianPangs [i]);
+			}
+		}
+		winScreen.SetActive (false);
 	}
 
 	private void DisplayAllSides () {
@@ -73,6 +89,7 @@ public class DisplayController : MonoBehaviour{
 
 		for (int i = 0; i < sides.Length; i++) {
 			priPrefabPianPangs[i] = GameObjectUtility.customInstantiate (prefabPianPangs [i], goPlaceHolders[i].transform.position, goPlaceHolders[i].transform.rotation);
+			priPrefabPianPangs [i].transform.parent = goTetra.transform; 
 			Debug.Log ("Getting pinZiScript");
 			PinZiPP pinZiScript = priPrefabPianPangs[i].GetComponent<PinZiPP> ();
 			Debug.Log ("Initializing");
@@ -129,13 +146,4 @@ public class DisplayController : MonoBehaviour{
 		selectedSides = new PinZiPP[2];
 	}
 
-	public void EndGame(){
-		for (int i = 0; i < 5; i++) {
-			if (priPrefabPianPangs[i] != null) {
-				GameObjectUtility.customDestroy (priPrefabPianPangs [i]);
-
-			}
-		}
-		winScreen.SetActive (false);
-	}
 }

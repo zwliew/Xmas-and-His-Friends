@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+/*
+ * Currently, I need to combine this script to the GameController script
+ * But I don't know what to do
+ */
 public class RotateCube : MonoBehaviour {
 
 	public GameObject goTetra;
@@ -25,8 +28,8 @@ public class RotateCube : MonoBehaviour {
 		isPlaying = true;
 		rbTetra = goTetra.GetComponent<Rigidbody> ();	
 		animatorTetra = goTetra.GetComponent<Animator> ();
-		animatorTetra.updateMode = AnimatorUpdateMode.Normal; 
-		animatorTetra.Play ("TetrahedronRotateAnimation");
+		//animatorTetra.updateMode = AnimatorUpdateMode.Normal; 
+		//animatorTetra.Play ("TetrahedronRotateAnimation");
 		v3ViewPointPosition = goViewPoint.transform.position;
 		for (int i = 0; i < 4; i++) {
 			v3Nodes [i] = goNodes [i].transform.position;
@@ -38,7 +41,7 @@ public class RotateCube : MonoBehaviour {
 		if (isPlaying) {
 			
 			if (Input.GetMouseButton (0)) {//Hold mouse left btn to drag
-				animatorTetra.updateMode = AnimatorUpdateMode.AnimatePhysics;
+				//animatorTetra.updateMode = AnimatorUpdateMode.AnimatePhysics;
 				isDragging = true;
 			} else {
 				isDragging = false;
@@ -86,5 +89,20 @@ public class RotateCube : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	public void PlayRotateAnimation(){
+		StartCoroutine (RotateAnimation ());
+	}
+
+	IEnumerator RotateAnimation(){
+		isPlaying = false;
+
+		for (int i = 0; i < 100; i++) {
+			rbTetra.AddTorque (new Vector3 (5f, 0f, 0f), ForceMode.Impulse);
+			yield return new WaitForFixedUpdate ();
+		}
+
+		isPlaying = true;
 	}
 }

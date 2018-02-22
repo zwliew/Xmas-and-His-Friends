@@ -50,7 +50,6 @@ public class GameController : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
 			if (selectedSide != null) {
-				//displayController.SelectSide (selectedSide);
 				SelectSide (selectedSide);
 			}
 		}
@@ -70,7 +69,9 @@ public class GameController : MonoBehaviour {
 		
 		if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, 1 << LayerMask.NameToLayer("PinZiSide")))
 		{
-			side = hitInfo.collider.gameObject.GetComponent<PinZiPP>();
+			if (hitInfo.collider.gameObject.GetComponent<PinZiPP> () != null) {
+				side = hitInfo.collider.gameObject.GetComponent<PinZiPP> ();
+			}
 		}
 		return side;
 	}

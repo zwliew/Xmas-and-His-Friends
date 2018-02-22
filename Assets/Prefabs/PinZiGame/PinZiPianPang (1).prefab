@@ -20,12 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4151897642386824}
   - component: {fileID: 33648890090915086}
-  - component: {fileID: 64113774001666058}
   - component: {fileID: 23887803365141976}
   - component: {fileID: 114160297446831762}
   - component: {fileID: 199694586858208228}
   - component: {fileID: 198712722962295108}
   - component: {fileID: 114748360567415792}
+  - component: {fileID: 65729957834204102}
   m_Layer: 9
   m_Name: PinZiPianPang (1)
   m_TagString: PP
@@ -41,7 +41,7 @@ Transform:
   m_GameObject: {fileID: 1643113125790848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.4504714, y: 1.3374618, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -87,8 +87,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643113125790848}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64113774001666058
-MeshCollider:
+--- !u!65 &65729957834204102
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -96,11 +96,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: -1
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 6.1232336e-17}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114160297446831762
 MonoBehaviour:
   m_ObjectHideFlags: 1
