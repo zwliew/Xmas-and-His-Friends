@@ -41,7 +41,7 @@ public class RotateCube : MonoBehaviour {
 		if (isPlaying) {
 			
 			if (Input.GetMouseButton (0)) {//Hold mouse left btn to drag
-				//animatorTetra.updateMode = AnimatorUpdateMode.AnimatePhysics;
+				animatorTetra.updateMode = AnimatorUpdateMode.AnimatePhysics;
 				isDragging = true;
 			} else {
 				isDragging = false;
@@ -99,7 +99,7 @@ public class RotateCube : MonoBehaviour {
 		isPlaying = false;
 
 		for (int i = 0; i < 100; i++) {
-			rbTetra.AddTorque (new Vector3 (5f, 0f, 0f), ForceMode.Impulse);
+			rbTetra.AddTorque (new Vector3 (0f, 5f, 0f)*Mathf.Abs(i-50), ForceMode.Impulse);
 			yield return new WaitForFixedUpdate ();
 		}
 

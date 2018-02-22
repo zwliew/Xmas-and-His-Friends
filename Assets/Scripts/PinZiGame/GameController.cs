@@ -37,17 +37,8 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update () {
-
-		/*
-		if (AreSelectionsFilled ()) {
-			// Reset selections
-			displayController.UnselectAllSides ();
-			curSelections = new string[2];
-			return;
-		}
-		*/
-
-		if (Input.GetMouseButtonDown (0)) {
+		
+		if (Input.GetMouseButtonUp (0)) {//Avoid accidental clicking
 			PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
 			if (selectedSide != null) {
 				SelectSide (selectedSide);
@@ -119,6 +110,5 @@ public class GameController : MonoBehaviour {
 	public void ReturnToBuilding(){
 		SceneManager.LoadScene ("BuildingOne");
 		GameObjectUtility.ClearObjectPools ();
-		//Application.LoadLevel("BuildingOne");
 	}
 }

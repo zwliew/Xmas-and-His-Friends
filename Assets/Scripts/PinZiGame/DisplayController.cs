@@ -40,19 +40,15 @@ public class DisplayController : MonoBehaviour{
 		selectedSides = new PinZiPP[2];
 		winScreen.SetActive (false);
 		rotateCubeScript = goRotateCubeScriptHolder.GetComponent<RotateCube> ();
-		EndGame ();
+		Reset ();
 		priPrefabPianPangs = new GameObject[5];
 		DisplayAllSides ();
 		Resources.UnloadUnusedAssets ();
 	}
 
-	private void Reset () {
-		EndGame ();//Just lazy to rename alr
-	}
+	public void Reset(){
 
-	public void EndGame(){
-
-		//rotateCubeScript.PlayRotateAnimation ();
+		rotateCubeScript.PlayRotateAnimation ();
 
 		for (int i = 0; i < 5; i++) {
 			if (priPrefabPianPangs[i] != null) {
@@ -77,46 +73,34 @@ public class DisplayController : MonoBehaviour{
 			//Debug.Log ("Loading " + (i+1) + " " +strTexturePath);
 			texture2DSides[i] =	Resources.Load (strTexturePath) as Texture2D;
 			//Debug.Log ("Loaded " + texture2DSides [i].name);
-			Debug.Log ("Loading... " + (i+1) + "/" + sides.Length);
+			//Debug.Log ("Loading... " + (i+1) + "/" + sides.Length);
 			yield return new WaitForFixedUpdate ();
 		}
 
 		string strCorrectTexturePath = "PinZiPianPang/" + word.name.ToString ();
 		texture2DAns =	Resources.Load (strCorrectTexturePath) as Texture2D;
-		Debug.Log ("Loaded " + texture2DAns.name);
+		//Debug.Log ("Loaded " + texture2DAns.name);
 
-		Debug.Log ("Start assigning");
+		//Debug.Log ("Start assigning");
 
 		for (int i = 0; i < sides.Length; i++) {
 			priPrefabPianPangs[i] = GameObjectUtility.customInstantiate (prefabPianPangs [i], goPlaceHolders[i].transform.position, goPlaceHolders[i].transform.rotation);
 			priPrefabPianPangs [i].transform.parent = goTetra.transform; 
-			Debug.Log ("Getting pinZiScript");
+			//Debug.Log ("Getting pinZiScript");
 			PinZiPP pinZiScript = priPrefabPianPangs[i].GetComponent<PinZiPP> ();
-			Debug.Log ("Initializing");
+			//Debug.Log ("Initializing");
 			pinZiScript.Initialize ();
-			Debug.Log ("Setting texture");
+			//Debug.Log ("Setting texture");
 			pinZiScript.SetDisplay (texture2DSides [i]);
 			pinZiScript.SetOriginalPosition (v3Positions [i]);
 			pinZiScript.sidename = texture2DSides [i].name;
-			Debug.Log ("-----------Assigned: " + (i + 1) + "/" + sides.Length + "------------");
+			//Debug.Log ("-----------Assigned: " + (i + 1) + "/" + sides.Length + "------------");
 			yield return new WaitForFixedUpdate ();
 		}
 
 	}
 
 
-	public void DisplayWin () {
-		
-        winScreen.SetActive(true);
-        //button.SetActive(true);
-
-		Debug.Log ("Win!");
-		priPrefabPianPangs[4] = GameObjectUtility.customInstantiate (prefabPianPangs [4], v3Positions [4]);
-		PinZiPP pinZiScript = priPrefabPianPangs[4].GetComponent<PinZiPP> ();
-		pinZiScript.Initialize ();
-		pinZiScript.SetDisplay (texture2DAns);
-
-    }
 
 
 	public void SelectSide (PinZiPP side) {
@@ -144,6 +128,19 @@ public class DisplayController : MonoBehaviour{
 		}
 
 		selectedSides = new PinZiPP[2];
+	}
+
+	public void DisplayWin () {
+		
+		winScreen.SetActive(true);
+		//button.SetActive(true);
+		
+		Debug.Log ("Win!");
+		priPrefabPianPangs[4] = GameObjectUtility.customInstantiate (prefabPianPangs [4], v3Positions [4]);
+		PinZiPP pinZiScript = priPrefabPianPangs[4].GetComponent<PinZiPP> ();
+		pinZiScript.Initialize ();
+		pinZiScript.SetDisplay (texture2DAns);
+		
 	}
 
 }
