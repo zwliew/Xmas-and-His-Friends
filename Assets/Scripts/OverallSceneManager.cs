@@ -7,7 +7,7 @@ public class OverallSceneManager : MonoBehaviour {
 
 	private AsyncOperation async;
 
-	public static void LoadScene(string sceneName){
+	public void LoadScene(string sceneName){
 		switch(sceneName){
 		case "":
 			break;

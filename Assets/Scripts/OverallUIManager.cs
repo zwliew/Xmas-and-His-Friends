@@ -5,11 +5,17 @@ using UnityEngine;
 public class OverallUIManager : MonoBehaviour {
 
 	public CanvasGroup homeScreenCanvasGroup;
-	public CanvasGroup BuildingSelectionCanvasGroup;
+	public CanvasGroup RoomSelectionCanvasGroup;
+	public CanvasGroup ShopCanvasGroup;
+	public CanvasGroup EditorModeCanvasGroup;
+	public CanvasGroup InGameUICanvasGroup;
 
 	void Awake(){
 		homeScreenCanvasGroup.gameObject.SetActive (true);
-		BuildingSelectionCanvasGroup.gameObject.SetActive (false);
+		RoomSelectionCanvasGroup.gameObject.SetActive (false);
+		ShopCanvasGroup.gameObject.SetActive (false);
+		EditorModeCanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (false);
 	}
 
 	public void EnterBuildingSelection(){
@@ -22,7 +28,7 @@ public class OverallUIManager : MonoBehaviour {
 	}
 
 	public void FadeInBuildingSelection(){
-		StartCoroutine (FadeInCoroutine (BuildingSelectionCanvasGroup));
+		StartCoroutine (FadeInCoroutine (RoomSelectionCanvasGroup));
 	}
 
 	IEnumerator FadeOutCoroutine(CanvasGroup cvsGrp){
@@ -53,4 +59,58 @@ public class OverallUIManager : MonoBehaviour {
 		cvsGrp.alpha = 1f;
 		Debug.Log ("Enabled cvsGrp");
 	}
+	//-------------InGameUI---------------
+	public void EnterShop(){
+		homeScreenCanvasGroup.gameObject.SetActive (false);
+		RoomSelectionCanvasGroup.gameObject.SetActive (false);
+		ShopCanvasGroup.gameObject.SetActive (true);
+		EditorModeCanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (false);
+	}
+
+	public void EnterEditorMode(){
+		homeScreenCanvasGroup.gameObject.SetActive (false);
+		RoomSelectionCanvasGroup.gameObject.SetActive (false);
+		ShopCanvasGroup.gameObject.SetActive (false);
+		EditorModeCanvasGroup.gameObject.SetActive (true);
+		InGameUICanvasGroup.gameObject.SetActive (false);
+	}
+	public void ReturnToRoomSelection(){
+		homeScreenCanvasGroup.gameObject.SetActive (false);
+		RoomSelectionCanvasGroup.gameObject.SetActive (true);
+		ShopCanvasGroup.gameObject.SetActive (false);
+		EditorModeCanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (false);
+	}
+	//-------------InGameUI---------------
+
+	//-------------EditorMode---------------
+	public void ExitEditorMode(){
+		homeScreenCanvasGroup.gameObject.SetActive (false);
+		RoomSelectionCanvasGroup.gameObject.SetActive (false);
+		ShopCanvasGroup.gameObject.SetActive (false);
+		EditorModeCanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (true);
+	}
+	//-------------EditorMode---------------
+
+	//-------------Shop---------------
+	public void ExitShop(){
+		homeScreenCanvasGroup.gameObject.SetActive (false);
+		RoomSelectionCanvasGroup.gameObject.SetActive (false);
+		ShopCanvasGroup.gameObject.SetActive (false);
+		EditorModeCanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (true);
+	}
+	//-------------Shop---------------
+
+	//-------------SelectionOfRoom---------------
+	public void EnterRoom(){
+		homeScreenCanvasGroup.gameObject.SetActive (false);
+		RoomSelectionCanvasGroup.gameObject.SetActive (false);
+		ShopCanvasGroup.gameObject.SetActive (false);
+		EditorModeCanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (true);
+	}
+	//-------------SelectionOfRoom---------------
 }

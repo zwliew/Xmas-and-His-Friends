@@ -255,6 +255,7 @@ MonoBehaviour:
   - {fileID: 678432596}
   goViewPoint: {fileID: 457552596}
   goBottomPoint: {fileID: 523406924}
+  fForceConstant: 3
 --- !u!1 &468294709
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,8 +730,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1637890761}
   m_LocalRotation: {x: -0.022755254, y: -0.40539035, z: 0.19604054, w: 0.8925856}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.180713, y: 2.1807127, z: 1.5324646}
+  m_LocalPosition: {x: -0.07, y: -0.83, z: -0.24}
+  m_LocalScale: {x: 4.1596622, y: 4.159662, z: 2.9231427}
   m_Children:
   - {fileID: 263720117}
   - {fileID: 369930853}

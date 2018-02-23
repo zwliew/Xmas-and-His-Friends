@@ -13,6 +13,8 @@ public class RotateCube : MonoBehaviour {
 	public GameObject goViewPoint;//is actually used to determine a point at the back
 	public GameObject goBottomPoint;
 
+	public float fForceConstant;
+
 	private Rigidbody rbTetra;
 	private Animator animatorTetra;
 
@@ -57,7 +59,7 @@ public class RotateCube : MonoBehaviour {
 				speed = Vector3.Lerp (speed, Vector3.zero, i);
 				//---------Copied from online---------------
 
-				rbTetra.AddTorque (new Vector3 (speed.y * 8f, speed.x * 8f, 0f));
+				rbTetra.AddTorque (new Vector3 (speed.y * 8f * fForceConstant, speed.x * 8f* fForceConstant, 0f));
 
 			} else {//To achieve snapping effect
 				
@@ -72,14 +74,14 @@ public class RotateCube : MonoBehaviour {
 					if (fDistances [i] == fMaxDistance) { //Find the vertex to be placed at the furthest
 						float fForceFactor = Mathf.Exp (-fDistances [i]) * 200f; //A simple damping
 						rbTetra.AddForceAtPosition (//Place the vertex at the furthest
-							(v3ViewPointPosition - v3Nodes [i] + new Vector3 (0f, 0f, 5f)) * fForceFactor,
+							(v3ViewPointPosition - v3Nodes [i] + new Vector3 (0f, 0f, 5f)) * fForceFactor* fForceConstant,
 							goNodes [i].transform.position,
 							ForceMode.Acceleration);
 						
 						float fBottomDistance = (goNodes [(i + 1) % 4].transform.position - goBottomPoint.transform.position).magnitude;
 						fForceFactor = Mathf.Exp (-fDistances [i]) * 200f;
 						rbTetra.AddForceAtPosition (//Place the vertex to the bottom, So that the character displayed is not upsideDown
-							(new Vector3 (0f, -1f, 0f)) * fForceFactor,
+							(new Vector3 (0f, -1f, 0f)) * fForceFactor* fForceConstant,
 							goNodes [(i + 1) % 4].transform.position,
 							ForceMode.Acceleration);
 					} else {
