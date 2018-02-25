@@ -11,11 +11,11 @@ public class OverallUIManager : MonoBehaviour {
 	public CanvasGroup InGameUICanvasGroup;
 
 	void Awake(){
-		homeScreenCanvasGroup.gameObject.SetActive (true);
+		homeScreenCanvasGroup.gameObject.SetActive (false);
 		RoomSelectionCanvasGroup.gameObject.SetActive (false);
 		ShopCanvasGroup.gameObject.SetActive (false);
 		EditorModeCanvasGroup.gameObject.SetActive (false);
-		InGameUICanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (true);
 	}
 
 	public void EnterBuildingSelection(){
@@ -36,7 +36,7 @@ public class OverallUIManager : MonoBehaviour {
 		cvsGrp.alpha = 1f;
 		while (cvsGrp.alpha > 0.01f) {
 			cvsGrp.alpha = Mathf.SmoothDamp (cvsGrp.alpha, 0f, ref currentVelocity, 1f);
-			Debug.Log ("Fading out cvsGrp");
+			//Debug.Log ("Fading out cvsGrp");
 			yield return null;
 		}
 		cvsGrp.alpha = 0f;
@@ -53,7 +53,7 @@ public class OverallUIManager : MonoBehaviour {
 		cvsGrp.gameObject.SetActive(true);
 		while (cvsGrp.alpha < 0.99f) {
 			cvsGrp.alpha = Mathf.SmoothDamp (cvsGrp.alpha, 1f, ref currentVelocity, 1f);
-			Debug.Log ("Fading in cvsGrp");
+			//Debug.Log ("Fading in cvsGrp");
 			yield return null;
 		}
 		cvsGrp.alpha = 1f;
@@ -61,19 +61,11 @@ public class OverallUIManager : MonoBehaviour {
 	}
 	//-------------InGameUI---------------
 	public void EnterShop(){
-		homeScreenCanvasGroup.gameObject.SetActive (false);
-		RoomSelectionCanvasGroup.gameObject.SetActive (false);
-		ShopCanvasGroup.gameObject.SetActive (true);
-		EditorModeCanvasGroup.gameObject.SetActive (false);
-		InGameUICanvasGroup.gameObject.SetActive (false);
+		StartCoroutine (ExitAfterTime (0.6f, InGameUICanvasGroup, ShopCanvasGroup));
 	}
 
 	public void EnterEditorMode(){
-		homeScreenCanvasGroup.gameObject.SetActive (false);
-		RoomSelectionCanvasGroup.gameObject.SetActive (false);
-		ShopCanvasGroup.gameObject.SetActive (false);
-		EditorModeCanvasGroup.gameObject.SetActive (true);
-		InGameUICanvasGroup.gameObject.SetActive (false);
+		StartCoroutine (ExitAfterTime (1f, InGameUICanvasGroup, EditorModeCanvasGroup));
 	}
 	public void ReturnToRoomSelection(){
 		homeScreenCanvasGroup.gameObject.SetActive (false);
@@ -82,35 +74,37 @@ public class OverallUIManager : MonoBehaviour {
 		EditorModeCanvasGroup.gameObject.SetActive (false);
 		InGameUICanvasGroup.gameObject.SetActive (false);
 	}
-	//-------------InGameUI---------------
+	//----------------------------
 
 	//-------------EditorMode---------------
 	public void ExitEditorMode(){
-		homeScreenCanvasGroup.gameObject.SetActive (false);
-		RoomSelectionCanvasGroup.gameObject.SetActive (false);
-		ShopCanvasGroup.gameObject.SetActive (false);
-		EditorModeCanvasGroup.gameObject.SetActive (false);
-		InGameUICanvasGroup.gameObject.SetActive (true);
+		StartCoroutine (ExitAfterTime (1f, EditorModeCanvasGroup, InGameUICanvasGroup));
 	}
-	//-------------EditorMode---------------
+	//----------------------------
 
 	//-------------Shop---------------
 	public void ExitShop(){
-		homeScreenCanvasGroup.gameObject.SetActive (false);
-		RoomSelectionCanvasGroup.gameObject.SetActive (false);
-		ShopCanvasGroup.gameObject.SetActive (false);
-		EditorModeCanvasGroup.gameObject.SetActive (false);
-		InGameUICanvasGroup.gameObject.SetActive (true);
+		StartCoroutine (ExitAfterTime (1.6f, ShopCanvasGroup, InGameUICanvasGroup));
 	}
-	//-------------Shop---------------
+	//---------------------------
 
 	//-------------SelectionOfRoom---------------
 	public void EnterRoom(){
-		homeScreenCanvasGroup.gameObject.SetActive (false);
-		RoomSelectionCanvasGroup.gameObject.SetActive (false);
-		ShopCanvasGroup.gameObject.SetActive (false);
-		EditorModeCanvasGroup.gameObject.SetActive (false);
-		InGameUICanvasGroup.gameObject.SetActive (true);
+		
 	}
-	//-------------SelectionOfRoom---------------
+	//---------------------------
+
+	IEnumerator ExitAfterTime(float time, CanvasGroup closedCvsGrp, CanvasGroup openedCvsGrp){
+		closedCvsGrp.GetComponent<Animator> ().SetTrigger ("Exit");
+
+		float t = time;
+		while (t > 0f) {
+			Debug.Log (closedCvsGrp.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).length);
+			t -= Time.deltaTime;
+			yield return new WaitForFixedUpdate();
+		}
+
+		closedCvsGrp.gameObject.SetActive (false);
+		openedCvsGrp.gameObject.SetActive (true);
+	}
 }
