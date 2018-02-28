@@ -1,4 +1,7 @@
 using UnityEngine;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 /**
  * This is the global data controller for the entire game.
@@ -29,7 +32,7 @@ public class PlayerDataController : MonoBehaviour
      * returns _false_ and does _not_ update the inventory.
      * Otherwise, it returns _true_.
      */
-    public bool UpdatePlayerCoins(int delta)
+    private bool UpdatePlayerCoins(int delta)
     {
         int initial = playerData.coins;
         int final = initial + delta;
@@ -40,6 +43,19 @@ public class PlayerDataController : MonoBehaviour
         playerData.coins = final;
         SavePlayerData();
         return true;
+    }
+
+    public bool PurchaseShopItem(string name, int cost) {
+        bool success = UpdatePlayerCoins(-cost);
+        if (!success) {
+            return false;
+        }
+        playerData.purchasedShopItems.Add(name);
+        return true;
+    }
+
+    public bool IsShopItemPurchased(string name) {
+        return playerData.purchasedShopItems.Contains(name);
     }
 
     private void LoadPlayerData()
@@ -60,11 +76,21 @@ public class PlayerDataController : MonoBehaviour
         {
             playerData.coins = 0;
         }
+
+        if (PlayerPrefs.HasKey("purchasedShopItems"))
+        {
+            string purchasedShopItemsString = PlayerPrefs.GetString("purchasedShopItems");
+            playerData.purchasedShopItems = purchasedShopItemsString.Split(',').ToList();
+        } else
+        {
+            playerData.purchasedShopItems = "";
+        }
     }
 
     private void SavePlayerData()
     {
         PlayerPrefs.SetInt("coins", playerData.coins);
         PlayerPrefs.SetString("name", playerData.name);
+        PlayerPrefs.SetString("purchasedShopItems", String.Join(",", playerData.purchasedShopItems));
     }
 }
