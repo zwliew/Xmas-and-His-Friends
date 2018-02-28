@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OverallUIManager : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class OverallUIManager : MonoBehaviour {
 	public CanvasGroup ShopCanvasGroup;
 	public CanvasGroup EditorModeCanvasGroup;
 	public CanvasGroup InGameUICanvasGroup;
+
+	public Sprite sprSelected;
 
 	void Awake(){
 		homeScreenCanvasGroup.gameObject.SetActive (false);
@@ -61,11 +64,11 @@ public class OverallUIManager : MonoBehaviour {
 	}
 	//-------------InGameUI---------------
 	public void EnterShop(){
-		StartCoroutine (ExitAfterTime (0.6f, InGameUICanvasGroup, ShopCanvasGroup));
+		StartCoroutine (ExitAfterTime (0.2f, InGameUICanvasGroup, ShopCanvasGroup));
 	}
 
 	public void EnterEditorMode(){
-		StartCoroutine (ExitAfterTime (1f, InGameUICanvasGroup, EditorModeCanvasGroup));
+		StartCoroutine (ExitAfterTime (0.2f, InGameUICanvasGroup, EditorModeCanvasGroup));
 	}
 	public void ReturnToRoomSelection(){
 		homeScreenCanvasGroup.gameObject.SetActive (false);
@@ -78,13 +81,17 @@ public class OverallUIManager : MonoBehaviour {
 
 	//-------------EditorMode---------------
 	public void ExitEditorMode(){
-		StartCoroutine (ExitAfterTime (1f, EditorModeCanvasGroup, InGameUICanvasGroup));
+		StartCoroutine (ExitAfterTime (0.2f, EditorModeCanvasGroup, InGameUICanvasGroup));
 	}
 	//----------------------------
 
 	//-------------Shop---------------
 	public void ExitShop(){
-		StartCoroutine (ExitAfterTime (1.6f, ShopCanvasGroup, InGameUICanvasGroup));
+		StartCoroutine (ExitAfterTime (0.2f, ShopCanvasGroup, InGameUICanvasGroup));
+	}
+
+	public void SelectShopItem(Image item){
+		item.sprite = sprSelected;
 	}
 	//---------------------------
 
@@ -98,8 +105,8 @@ public class OverallUIManager : MonoBehaviour {
 		closedCvsGrp.GetComponent<Animator> ().SetTrigger ("Exit");
 
 		float t = time;
-		while (t > 0f) {
-			Debug.Log (closedCvsGrp.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).length);
+		while (t > 0f || !closedCvsGrp.GetComponent<Animator> ().IsInTransition(0)) {
+			Debug.Log (closedCvsGrp.GetComponent<Animator> ().IsInTransition(0));
 			t -= Time.deltaTime;
 			yield return new WaitForFixedUpdate();
 		}
@@ -107,4 +114,6 @@ public class OverallUIManager : MonoBehaviour {
 		closedCvsGrp.gameObject.SetActive (false);
 		openedCvsGrp.gameObject.SetActive (true);
 	}
+		
+
 }
