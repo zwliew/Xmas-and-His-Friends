@@ -106,7 +106,7 @@ public class OverallUIManager : MonoBehaviour {
 
 		float t = time;
 		while (t > 0f || !closedCvsGrp.GetComponent<Animator> ().IsInTransition(0)) {
-			Debug.Log (closedCvsGrp.GetComponent<Animator> ().IsInTransition(0));
+			//Debug.Log (closedCvsGrp.GetComponent<Animator> ().IsInTransition(0));
 			t -= Time.deltaTime;
 			yield return new WaitForFixedUpdate();
 		}

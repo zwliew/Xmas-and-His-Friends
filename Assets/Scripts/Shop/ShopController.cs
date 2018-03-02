@@ -1,16 +1,18 @@
 using UnityEngine;
 using System;
-/*
+using System.Collections.Generic;
+using System.Linq;
+
 public class ShopController : MonoBehaviour
 {
-    private DataController dataController;
-    private DisplayController displayController;
+	private ShopDataController  dataController;
+	private ShopDisplayController  displayController;
 
     void Start()
     {
-        dataController = GetComponent<DataController>();
-        displayController = GetComponent<DisplayController>();
-        StartShop();
+		dataController = GetComponent<ShopDataController>();
+		displayController = GetComponent<ShopDisplayController>();
+		StartShop();
     }
 
     void Update()
@@ -38,6 +40,7 @@ public class ShopController : MonoBehaviour
     {
         dataController.Initialize();
         displayController.Initialize();
+		displayController.DisableItems(dataController.purchasedItems);
     }
 
     private void PurchaseSelectedItem()
@@ -70,7 +73,7 @@ public class ShopController : MonoBehaviour
     /**
     * Gets the side being selected based on position
     * Returns null if no side is being selected
-    *
+    */
     private ShopItem GetSelectedShopItem(Vector3 position)
     {
         Ray ray = Camera.main.ScreenPointToRay(position);
@@ -85,4 +88,3 @@ public class ShopController : MonoBehaviour
         return item;
     }
 }
-*/
