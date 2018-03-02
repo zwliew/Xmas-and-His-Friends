@@ -17,6 +17,7 @@ public class ShopController : MonoBehaviour
 
     void Update()
     {
+		/* This part no need as inputs are handled by individual buttons using onClick Listeners, which is a feature of the UI
         if (!Input.GetMouseButtonDown(0))
         {
             // No player input received
@@ -34,6 +35,7 @@ public class ShopController : MonoBehaviour
         {
             SelectItem(selectedItem);
         }
+        */
     }
 
     private void StartShop()
@@ -56,7 +58,7 @@ public class ShopController : MonoBehaviour
         dataController.UnselectSelectedItem();
     }
 
-    private void SelectItem(ShopItem item)
+    private void SelectItem_Master(ShopItem item)
     {
         dataController.SelectItem(item);
         displayController.SelectItem(item);
@@ -71,9 +73,8 @@ public class ShopController : MonoBehaviour
     }
 
     /**
-    * Gets the side being selected based on position
-    * Returns null if no side is being selected
-    */
+    * button.onClick is used in place of raycast 
+    *
     private ShopItem GetSelectedShopItem(Vector3 position)
     {
         Ray ray = Camera.main.ScreenPointToRay(position);
@@ -87,4 +88,5 @@ public class ShopController : MonoBehaviour
         }
         return item;
     }
+    */
 }

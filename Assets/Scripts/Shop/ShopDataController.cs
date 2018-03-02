@@ -7,6 +7,17 @@ using System.Linq;
  * Class handling the updates to the player data based on
  * actions made in the shop (purchasing, etc.)
  */
+[System.Serializable]
+public class ShopItemData{//The Class for data 
+	public int cost;
+	public string fullName;
+	public Sprite selectedSprite;
+	public Sprite unselectedSprite;
+	public bool isBuyable;
+	public bool isOnSale;
+	public bool isSelected;
+}
+
 public class ShopDataController : MonoBehaviour
 {
     private PlayerDataController playerDataController;
@@ -27,7 +38,7 @@ public class ShopDataController : MonoBehaviour
         ShopJsonData shopJsonData = JsonUtility.FromJson<ShopJsonData>(dataAsJson.text);
         shopItems = shopJsonData.shopItems;
 
-        foreach (ShopItem shopItem in shopItems) {
+		foreach (ShopItem shopItem in shopItems) {//Need two steps: One, Load the data from Json(cost, fullName, etc); Two, Load the corresponding sprites and assign to the shop item
             if (playerDataController.IsShopItemPurchased(shopItem.fullName)) {
                 purchasedItems.Add(shopItem);
             }
@@ -36,6 +47,7 @@ public class ShopDataController : MonoBehaviour
 
     public void SelectItem(ShopItem item)
     {
+		//Debug.Log("ShopDataController is selecting items");
         curSelectedItem = item;
     }
 
