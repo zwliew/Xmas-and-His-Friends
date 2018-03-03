@@ -5,19 +5,13 @@ using UnityEngine.UI;
 //GetComponent<Renderer>().material.SetTexture ("_MainTex", (Texture2D)listTextures[2]);  //Set texture
 
 public class DebugScript : MonoBehaviour{
-	CanvasGroup canvasGroup;
-	float velocity;
-
-	public void FadeOut(){
-		canvasGroup = GetComponent<CanvasGroup> ();
-		StartCoroutine (Fade ());
-	}
-
-	IEnumerator Fade(){
-		yield return new WaitForSeconds (0.5f);
-		while (canvasGroup.alpha > 0f) {
-			canvasGroup.alpha -= 0.025f;
-			yield return null;
+	public void Update(){
+		if (Input.GetMouseButtonDown (0)) {
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			RaycastHit hitInfo;
+			if (Physics.Raycast (ray, out hitInfo, Mathf.Infinity, 1 << LayerMask.NameToLayer ("Default"))) {
+				Debug.Log (hitInfo.collider.gameObject.name);
+			}
 		}
 	}
 	
