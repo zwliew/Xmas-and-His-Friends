@@ -36,17 +36,13 @@ public class ShopDisplayController : MonoBehaviour
 
 	public Text DescriptionText;
 
-	public void Start(){//for debug purposes only
-		Initialize();
-	}
-
     public void Initialize()
     {
 		items = TempGetSomeItem ();
 		pageNumber = 0;
 		pagePositions = new float[items.Count / 4 + 1];
 		for(int i = 0; i < items.Count/4 + 1; i++){
-			pagePositions [i] = - 435f - 870f * i;
+			pagePositions [i] = - 880f * i;
 		}
 		curSelectedItem = null;
 		RefreshShopDisplay ();
@@ -70,6 +66,12 @@ public class ShopDisplayController : MonoBehaviour
 
 		DescriptionText.text = "";
 
+		//TODO Clear the content of the shopWindowContent
+		//Loop through the children and set them to inactive
+		while(shopWindowContent.transform.childCount > 1){
+			shopWindowContent.transform.GetChild(0).gameObject.SetActive(false);
+		}
+
 		foreach (ShopItemData itemData in items) {
 			Button item = Instantiate (prefabItemButton, shopWindowContent.transform);
 			ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
@@ -88,12 +90,10 @@ public class ShopDisplayController : MonoBehaviour
         // TODO: Display an item as 'selected', and unselect any previous 'selected' item
 
 		if (item.isSelected) {
-			item.SetUnselected ();
-			DescriptionText.text = "";
-			curSelectedItem = null;
+			UnselectItem (item);
 		} else {
 			if (curSelectedItem)
-				curSelectedItem.SetUnselected ();
+				UnselectItem (curSelectedItem);
 			item.SetSelected();
 			DescriptionText.text = item.fullName.ToString ();
 			curSelectedItem = item;
@@ -109,7 +109,9 @@ public class ShopDisplayController : MonoBehaviour
             return;
         }
         // TODO: Unselected the item given as a parameter
+		DescriptionText.text = "";
 		item.SetUnselected();
+		curSelectedItem = null;
     }
 
     public void UnselectSelectedItem()
@@ -131,14 +133,16 @@ public class ShopDisplayController : MonoBehaviour
 
 	public void UIShopItemNextPage(){
 		StopAllCoroutines ();
-		//Debug.Log ("current page" + pageNumber + " " + items.Count/4 + " is the max page number");
+		if (curSelectedItem)
+			UnselectItem (curSelectedItem);
 		pageNumber += 1;
 		pageNumber = Mathf.Clamp (pageNumber, 0, items.Count / 4);
 		StartCoroutine( MoveItemPage (new Vector3 (pagePositions[pageNumber], 0f, 0f)));
 	}
 	public void UIShopItemPreviousPage(){
 		StopAllCoroutines ();
-		//Debug.Log ("current page" + pageNumber + " " + items.Count/4 + " is the max page number");
+		if(curSelectedItem)
+			UnselectItem (curSelectedItem);
 		pageNumber -= 1;
 		pageNumber = Mathf.Clamp (pageNumber, 0, items.Count / 4);
 		StartCoroutine( MoveItemPage (new Vector3 (pagePositions[pageNumber], 0f, 0f)));
@@ -146,9 +150,9 @@ public class ShopDisplayController : MonoBehaviour
 
 	IEnumerator MoveItemPage(Vector3 PagePosition){
 		Vector3 desiredPosition = PagePosition;
-		Debug.Log (desiredPosition.x + " is where I am heading to" + " i am at" + shopWindowContent.GetComponent<RectTransform> ().localPosition.x);
-		while (Mathf.Abs (shopWindowContent.GetComponent<RectTransform> ().localPosition.x - desiredPosition.x) > 4f) {
-			shopWindowContent.GetComponent<RectTransform> ().localPosition = Vector3.Lerp (shopWindowContent.GetComponent<RectTransform> ().localPosition, desiredPosition, 0.1f);
+		//Debug.Log (desiredPosition.x + " is where I am heading to" + " i am at" + shopWindowContent.GetComponent<RectTransform> ().anchoredPosition.x);
+		while (Mathf.Abs (shopWindowContent.GetComponent<RectTransform> ().anchoredPosition.x - desiredPosition.x) > 0.1f) {
+			shopWindowContent.GetComponent<RectTransform> ().anchoredPosition = Vector3.Lerp (shopWindowContent.GetComponent<RectTransform> ().anchoredPosition, desiredPosition, 0.1f);
 			yield return new WaitForFixedUpdate ();
 		}
 	}

@@ -40,9 +40,10 @@ public class ShopController : MonoBehaviour
 
     private void StartShop()
     {
-        dataController.Initialize();
+		Debug.Log ("Shop Started");
+        //dataController.Initialize();
         displayController.Initialize();
-		displayController.DisableItems(dataController.purchasedItems);
+		//displayController.DisableItems(dataController.purchasedItems);
     }
 
     private void PurchaseSelectedItem()

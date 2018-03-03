@@ -70,24 +70,24 @@ public class OverallUIManager : MonoBehaviour {
 	public void EnterEditorMode(){
 		StartCoroutine (ExitAfterTime (0.2f, InGameUICanvasGroup, EditorModeCanvasGroup));
 	}
-	public void ReturnToRoomSelection(){
+	public void ReturnToRoomSelection(){//Does not return actually, for some debug purposes
 		homeScreenCanvasGroup.gameObject.SetActive (false);
-		RoomSelectionCanvasGroup.gameObject.SetActive (true);
+		RoomSelectionCanvasGroup.gameObject.SetActive (false);
 		ShopCanvasGroup.gameObject.SetActive (false);
 		EditorModeCanvasGroup.gameObject.SetActive (false);
-		InGameUICanvasGroup.gameObject.SetActive (false);
+		InGameUICanvasGroup.gameObject.SetActive (true);
 	}
 	//----------------------------
 
 	//-------------EditorMode---------------
 	public void ExitEditorMode(){
-		StartCoroutine (ExitAfterTime (0.2f, EditorModeCanvasGroup, InGameUICanvasGroup));
+		StartCoroutine (ExitAfterTime (0.1f, EditorModeCanvasGroup, InGameUICanvasGroup));
 	}
 	//----------------------------
 
 	//-------------Shop---------------
 	public void ExitShop(){
-		StartCoroutine (ExitAfterTime (0.2f, ShopCanvasGroup, InGameUICanvasGroup));
+		StartCoroutine (ExitAfterTime (0.1f, ShopCanvasGroup, InGameUICanvasGroup));
 	}
 
 	public void SelectShopItem(Image item){

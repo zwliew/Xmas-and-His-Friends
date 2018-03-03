@@ -6,6 +6,8 @@ using System.Linq;
 /**
  * Class handling the updates to the player data based on
  * actions made in the shop (purchasing, etc.)
+ * 
+ * TODO Load up the corresponding item sprite after loading item data(see line 43)
  */
 [System.Serializable]
 public class ShopItemData{//The Class for data 
