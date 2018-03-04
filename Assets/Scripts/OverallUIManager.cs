@@ -114,6 +114,9 @@ public class OverallUIManager : MonoBehaviour {
 
 		closedCvsGrp.gameObject.SetActive (false);
 		openedCvsGrp.gameObject.SetActive (true);
+		if (openedCvsGrp.GetComponent<ShopController> ()) {
+			openedCvsGrp.GetComponent<ShopController> ().Initialize ();
+		}
 	}
 		
 

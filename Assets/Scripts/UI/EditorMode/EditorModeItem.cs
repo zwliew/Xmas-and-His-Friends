@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EditorModeItem : MonoBehaviour {
+public class EditorModeItem : MonoBehaviour, IRecycle {
 
 	public int cost;
 	public string fullName;
@@ -45,6 +45,11 @@ public class EditorModeItem : MonoBehaviour {
 	public void SetDisabled(){
 		itemButton.onClick.RemoveAllListeners ();
 		Debug.Log ("One item has been disabled");
+	}
+
+	public void Restart(){
+	}
+	public void Shutdown(){
 	}
 }
 

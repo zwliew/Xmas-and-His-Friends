@@ -50,15 +50,22 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	private List<EditorModeItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
 		List<EditorModeItemData> itemList = new List<EditorModeItemData> ();
+
         itemList.Add(new EditorModeItemData { cost = 2, fullName = "Item2", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Fire")});
 		itemList.Add (new EditorModeItemData { cost = 3, fullName = "Item3", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("ChristmasTree")});
 		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item4", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Carpet") });
 		itemList.Add (new EditorModeItemData{cost = 5, fullName = "Item5", isBuyable = false, isOnSale = false});
+
+		itemList.Add (new EditorModeItemData{cost = 2, fullName = "Item1", isBuyable = false, isOnSale = false});
+		itemList.Add (new EditorModeItemData{cost = 3, fullName = "Item2", isBuyable = false, isOnSale = false});
+		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item3", isBuyable = false, isOnSale = false});
+		itemList.Add (new EditorModeItemData{cost = 5, fullName = "Item4", isBuyable = false, isOnSale = false});
+		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item5", isBuyable = false, isOnSale = false});
+
 		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
 		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item7", isBuyable = false, isOnSale = false});
 		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item8", isBuyable = false, isOnSale = false});
 		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item9", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
 		return itemList;
 	}
 
@@ -66,13 +73,17 @@ public class EditorModeDisplayController : MonoBehaviour
 
 		//TODO Clear the content of the editorModeWindowContent
 		//Loop through the children and set them to inactive
-		Debug.Log("one");
-		while(editorModeWindowContent.transform.childCount > 1){
-			editorModeWindowContent.transform.GetChild(0).gameObject.SetActive(false);
+		for(int i = 0; i < editorModeWindowContent.transform.childCount; i++){
+			editorModeWindowContent.transform.GetChild(i).gameObject.SetActive(false);
+			Debug.Log("clearing existing items in the shop");// Somehow this does not work. Possible reason is that the shop items are inactive
+			//GameObjectUtility.customDestroy (editorModeWindowContent.transform.GetChild (0).gameObject);
 		}
-		Debug.Log("two");
+
 		foreach (EditorModeItemData itemData in items) {
 			Button item = Instantiate (prefabItemButton, editorModeWindowContent.transform);
+			/*Button item = GameObjectUtility.customInstantiate(prefabItemButton.gameObject, Vector3.zero).GetComponent<Button>();
+			item.transform.SetParent (editorModeWindowContent.transform, false);
+			*/
 			EditorModeItem itemScript = item.gameObject.GetComponent<EditorModeItem> ();
 			itemScript.fullName = itemData.fullName;
             itemScript.furniture = itemData.furniture;
@@ -80,12 +91,12 @@ public class EditorModeDisplayController : MonoBehaviour
 			//Pass in the values here
 			itemScript.Initialize ();
 		}
-		Debug.Log("trhee");
+
 		for (int i = 0; i < 4 - items.Count % 4; i++) {
 			Button item = Instantiate (prefabItemButton, editorModeWindowContent.transform);
 			item.interactable = false;
 		}
-		Debug.Log("four");
+
 	}
 
 	public void SelectItem(EditorModeItem item)
