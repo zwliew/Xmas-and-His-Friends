@@ -51,9 +51,9 @@ public class EditorModeDisplayController : MonoBehaviour
 	private List<EditorModeItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
 		List<EditorModeItemData> itemList = new List<EditorModeItemData> ();
 
-        itemList.Add(new EditorModeItemData { cost = 2, fullName = "Item2", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Fire"), position = new Vector3(0f,0f,0f), rotation = new Vector3(0f,90f,0f)});
-		itemList.Add (new EditorModeItemData { cost = 3, fullName = "Item3", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("ChristmasTree"), position = new Vector3(0f, 0f, 0f), rotation = new Vector3(0f, 90f, 0f) });
-		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item4", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Carpet"), position = new Vector3(-1f, 0f, 0.4f), rotation = new Vector3(0f, 0f, 0f) });
+        itemList.Add(new EditorModeItemData { cost = 2, fullName = "Item2", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Fire"), position = new Vector3(0f,0f,0f), rotation = new Vector3(0f,0f,0f)});
+		itemList.Add (new EditorModeItemData { cost = 3, fullName = "Item3", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("ChristmasTree"), position = new Vector3(0f, 0f, 0f), rotation = new Vector3(0f, 0f, 0f) });
+		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item4", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Carpet"), position = new Vector3(0f, 0f, 0f), rotation = new Vector3(0f, 0f, 0f) });
 		itemList.Add (new EditorModeItemData{cost = 5, fullName = "Item5", isBuyable = false, isOnSale = false});
 
 		itemList.Add (new EditorModeItemData{cost = 2, fullName = "Item1", isBuyable = false, isOnSale = false});
