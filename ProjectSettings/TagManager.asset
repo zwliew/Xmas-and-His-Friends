@@ -18,6 +18,9 @@ TagManager:
   - PPfour
   - PP
   - destroyed
+  - ChristmasTree
+  - Fire
+  - Carpet
   layers:
   - Default
   - TransparentFX
