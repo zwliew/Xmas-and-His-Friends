@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 75183e6522a4e7f41a958c49f2fd5ec5
+timeCreated: 1520147283
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube.072
+    100004: Cube.073
+    100006: Cube.074
+    100008: Cylinder.012
+    100010: Cylinder.013
+    100012: Cylinder.014
+    100014: Cylinder.015
+    100016: Empty
+    100018: Empty.001
+    100020: Empty.002
+    100022: Empty.003
+    100024: Icosphere.016
+    100026: Icosphere.017
+    100028: Icosphere.018
+    100030: Icosphere.019
+    100032: Icosphere.020
+    100034: Icosphere.021
+    100036: Icosphere.022
+    100038: Icosphere.023
+    100040: Icosphere.024
+    100042: Icosphere.025
+    100044: Plane.009
+    100046: Plane.010
+    100048: Plane.011
+    100050: Plane.012
+    100052: Plane.013
+    100054: Plane.014
+    400000: //RootNode
+    400002: Cube.072
+    400004: Cube.073
+    400006: Cube.074
+    400008: Cylinder.012
+    400010: Cylinder.013
+    400012: Cylinder.014
+    400014: Cylinder.015
+    400016: Empty
+    400018: Empty.001
+    400020: Empty.002
+    400022: Empty.003
+    400024: Icosphere.016
+    400026: Icosphere.017
+    400028: Icosphere.018
+    400030: Icosphere.019
+    400032: Icosphere.020
+    400034: Icosphere.021
+    400036: Icosphere.022
+    400038: Icosphere.023
+    400040: Icosphere.024
+    400042: Icosphere.025
+    400044: Plane.009
+    400046: Plane.010
+    400048: Plane.011
+    400050: Plane.012
+    400052: Plane.013
+    400054: Plane.014
+    2100000: Material.048
+    2100002: Material.047
+    2100004: Material.046
+    2100006: Material.045
+    2100008: Material.044
+    2100010: Material.043
+    2100012: Material.042
+    2100014: Material.041
+    2100016: Material.040
+    2100018: No Name
+    2100020: Material.039
+    2100022: Material.038
+    2100024: Material.037
+    2300000: Cube.072
+    2300002: Cube.073
+    2300004: Cube.074
+    2300006: Cylinder.012
+    2300008: Cylinder.013
+    2300010: Cylinder.014
+    2300012: Cylinder.015
+    2300014: Icosphere.016
+    2300016: Icosphere.017
+    2300018: Icosphere.018
+    2300020: Icosphere.019
+    2300022: Icosphere.020
+    2300024: Icosphere.021
+    2300026: Icosphere.022
+    2300028: Icosphere.023
+    2300030: Icosphere.024
+    2300032: Icosphere.025
+    2300034: Plane.009
+    2300036: Plane.010
+    2300038: Plane.011
+    2300040: Plane.012
+    2300042: Plane.013
+    2300044: Plane.014
+    3300000: Cube.072
+    3300002: Cube.073
+    3300004: Cube.074
+    3300006: Cylinder.012
+    3300008: Cylinder.013
+    3300010: Cylinder.014
+    3300012: Cylinder.015
+    3300014: Icosphere.016
+    3300016: Icosphere.017
+    3300018: Icosphere.018
+    3300020: Icosphere.019
+    3300022: Icosphere.020
+    3300024: Icosphere.021
+    3300026: Icosphere.022
+    3300028: Icosphere.023
+    3300030: Icosphere.024
+    3300032: Icosphere.025
+    3300034: Plane.009
+    3300036: Plane.010
+    3300038: Plane.011
+    3300040: Plane.012
+    3300042: Plane.013
+    3300044: Plane.014
+    4300000: Cube.074
+    4300002: Cube.073
+    4300004: Cube.072
+    4300006: Cylinder.015
+    4300008: Cylinder.014
+    4300010: Cylinder.013
+    4300012: Cylinder.012
+    4300014: Icosphere.025
+    4300016: Icosphere.024
+    4300018: Icosphere.023
+    4300020: Icosphere.022
+    4300022: Icosphere.021
+    4300024: Icosphere.020
+    4300026: Icosphere.019
+    4300028: Icosphere.018
+    4300030: Icosphere.017
+    4300032: Icosphere.016
+    4300034: Plane.014
+    4300036: Plane.013
+    4300038: Plane.012
+    4300040: Plane.011
+    4300042: Plane.010
+    4300044: Plane.009
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
