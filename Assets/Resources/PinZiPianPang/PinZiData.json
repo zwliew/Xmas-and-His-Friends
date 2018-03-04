@@ -1,0 +1,56 @@
+{
+  "words": [
+    {
+      "name": "AN",
+      "sides": [
+        "baogaitou",
+        "nv",
+        "renzipang",
+        "qin"
+      ],
+      "correctSides": [
+        "baogaitou",
+        "nv"
+      ]
+    },
+    {
+      "name": "XIN",
+      "sides": [
+        "qin",
+        "jin",
+        "baogaitou",
+        "wei"
+      ],
+      "correctSides": [
+        "qin",
+        "jin"
+      ]
+    },
+    {
+      "name": "QIU",
+      "sides": [
+        "he",
+        "huo",
+        "qin",
+        "nv"
+      ],
+      "correctSides": [
+        "he",
+        "huo"
+      ]
+    },
+		{
+      "name": "WEICAP",
+      "sides": [
+        "renzipang",
+        "huo",
+        "wei",
+        "nv"
+      ],
+      "correctSides": [
+        "renzipang",
+        "wei"
+      ]
+    }
+  ]
+}

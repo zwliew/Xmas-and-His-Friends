@@ -1,0 +1,9 @@
+{
+	"shopItems": [
+		{
+			"name": "christmasTree",
+			"fullName": "Christmas Tree",
+			"cost": "100"
+		}
+	]
+}

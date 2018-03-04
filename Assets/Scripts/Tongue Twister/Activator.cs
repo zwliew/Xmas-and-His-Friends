@@ -34,11 +34,11 @@ public class Activator : MonoBehaviour {
         }
         else
         {
-            if (Input.GetKeyDown(key))
+			if (Input.GetKeyDown(key)||Input.GetMouseButtonDown(0))
             {
                 StartCoroutine(pressed());
             }
-            if (Input.GetKeyDown(key) && active)//Input.GetTouch(0).position.x>-6&& Input.GetTouch(0).position.x<-3&&Input.GetTouch(0).position.y>-4&& Input.GetTouch(0).position.x < -2 && active) //detect area touched
+			if ((Input.GetKeyDown(key)||Input.GetMouseButtonDown(0)) && active)//Input.GetTouch(0).position.x>-6&& Input.GetTouch(0).position.x<-3&&Input.GetTouch(0).position.y>-4&& Input.GetTouch(0).position.x < -2 && active) //detect area touched
             {
                 Destroy(note);
                 addScore();
