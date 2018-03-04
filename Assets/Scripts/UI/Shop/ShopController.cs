@@ -8,7 +8,7 @@ public class ShopController : MonoBehaviour
 	private ShopDataController  dataController;
 	private ShopDisplayController  displayController;
 
-    void Start()
+    public void Initialize()
     {
 		dataController = GetComponent<ShopDataController>();
 		displayController = GetComponent<ShopDisplayController>();

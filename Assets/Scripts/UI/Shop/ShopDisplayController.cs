@@ -50,15 +50,15 @@ public class ShopDisplayController : MonoBehaviour
 
 	private List<ShopItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
 		List<ShopItemData> itemList = new List<ShopItemData> ();
-		itemList.Add (new ShopItemData{cost = 2, fullName = "Item2", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 3, fullName = "Item3", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 4, fullName = "Item4", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 5, fullName = "Item5", isBuyable = false, isOnSale = false});
+		itemList.Add (new ShopItemData{cost = 2, fullName = "Item1", isBuyable = false, isOnSale = false});
+		itemList.Add (new ShopItemData{cost = 3, fullName = "Item2", isBuyable = false, isOnSale = false});
+		itemList.Add (new ShopItemData{cost = 4, fullName = "Item3", isBuyable = false, isOnSale = false});
+		itemList.Add (new ShopItemData{cost = 5, fullName = "Item4", isBuyable = false, isOnSale = false});
+		itemList.Add (new ShopItemData{cost = 6, fullName = "Item5", isBuyable = false, isOnSale = false});
 		itemList.Add (new ShopItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
 		itemList.Add (new ShopItemData{cost = 6, fullName = "Item7", isBuyable = false, isOnSale = false});
 		itemList.Add (new ShopItemData{cost = 6, fullName = "Item8", isBuyable = false, isOnSale = false});
 		itemList.Add (new ShopItemData{cost = 6, fullName = "Item9", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
 		return itemList;
 	}
 
@@ -68,8 +68,9 @@ public class ShopDisplayController : MonoBehaviour
 
 		//TODO Clear the content of the shopWindowContent
 		//Loop through the children and set them to inactive
-		while(shopWindowContent.transform.childCount > 1){
-			shopWindowContent.transform.GetChild(0).gameObject.SetActive(false);
+		for(int i = 0; i < shopWindowContent.transform.childCount; i++){
+			shopWindowContent.transform.GetChild(i).gameObject.SetActive(false);
+			Debug.Log("clearing existing items in the shop");// Somehow this does not work. Possible reason is that the shop items are inactive
 		}
 
 		foreach (ShopItemData itemData in items) {
