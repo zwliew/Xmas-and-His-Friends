@@ -16,8 +16,10 @@ public class EditorModeItem : MonoBehaviour, IRecycle {
     public GameObject furniture;
 	private Button itemButton;
 	private EditorModeItem editorModeItem;
+    public Vector3 position;
+    public Vector3 rotation;
 
-	public void Initialize(){
+    public void Initialize(){
 		isSelected = false;
 		itemButton = GetComponent<Button> ();
 		editorModeItem = GetComponent<EditorModeItem> ();
@@ -63,4 +65,6 @@ public class EditorModeItemData{
 	public bool isOnSale;
 	public bool isSelected;
     public GameObject furniture;
+    public Vector3 position;
+    public Vector3 rotation;
 }
