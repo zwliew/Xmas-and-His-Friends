@@ -63,6 +63,7 @@ public class EditorModeController : MonoBehaviour
 	{
 		//dataController.SelectItem(item);
 		displayController.SelectItem(item);
+        Debug.Log("SelectItem_Master() called");
 	}
 
 	private bool UserSelectedPurchase(Vector3 position)

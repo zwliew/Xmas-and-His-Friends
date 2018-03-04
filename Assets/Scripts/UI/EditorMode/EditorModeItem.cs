@@ -13,7 +13,7 @@ public class EditorModeItem : MonoBehaviour {
 	public bool isBuyable;
 	public bool isOnSale;
 	public bool isSelected;
-
+    public GameObject furniture;
 	private Button itemButton;
 	private EditorModeItem editorModeItem;
 
@@ -34,6 +34,7 @@ public class EditorModeItem : MonoBehaviour {
 		Debug.Log (fullName + " is selected");
 		itemButton.GetComponent<Image> ().sprite = selectedSprite;
 		isSelected = true;
+
 	}
 
 	public void SetUnselected(){
@@ -56,4 +57,5 @@ public class EditorModeItemData{
 	public bool isBuyable;
 	public bool isOnSale;
 	public bool isSelected;
+    public GameObject furniture;
 }

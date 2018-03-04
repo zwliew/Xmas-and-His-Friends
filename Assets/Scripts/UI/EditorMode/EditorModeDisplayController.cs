@@ -30,7 +30,7 @@ public class EditorModeDisplayController : MonoBehaviour
 	private int pageNumber;
 	private float[] pagePositions;
 
-	//public List<EditorModeItem> purchasedItems;
+    //public List<EditorModeItem> purchasedItems;
 	public GameObject editorModeWindowContent;//The parent of the button
 	public Button prefabItemButton;
 
@@ -50,9 +50,9 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	private List<EditorModeItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
 		List<EditorModeItemData> itemList = new List<EditorModeItemData> ();
-		itemList.Add (new EditorModeItemData{cost = 2, fullName = "Item2", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 3, fullName = "Item3", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item4", isBuyable = false, isOnSale = false});
+        itemList.Add(new EditorModeItemData { cost = 2, fullName = "Item2", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Fire")});
+		itemList.Add (new EditorModeItemData { cost = 3, fullName = "Item3", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("ChristmasTree")});
+		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item4", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Carpet") });
 		itemList.Add (new EditorModeItemData{cost = 5, fullName = "Item5", isBuyable = false, isOnSale = false});
 		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
 		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item7", isBuyable = false, isOnSale = false});
@@ -75,6 +75,8 @@ public class EditorModeDisplayController : MonoBehaviour
 			Button item = Instantiate (prefabItemButton, editorModeWindowContent.transform);
 			EditorModeItem itemScript = item.gameObject.GetComponent<EditorModeItem> ();
 			itemScript.fullName = itemData.fullName;
+            itemScript.furniture = itemData.furniture;
+            itemScript.furniture.SetActive(false);
 			//Pass in the values here
 			itemScript.Initialize ();
 		}
@@ -93,10 +95,12 @@ public class EditorModeDisplayController : MonoBehaviour
 		if (item.isSelected) {
 			UnselectItem (item);
 		} else {
-			if (curSelectedItem)
-				UnselectItem (curSelectedItem);
+			//if (curSelectedItem)
+				//UnselectItem (curSelectedItem);
 			item.SetSelected();
 			curSelectedItem = item;
+            item.furniture.SetActive(true);
+ 
 		}
 
 	}
@@ -111,6 +115,7 @@ public class EditorModeDisplayController : MonoBehaviour
 		// TODO: Unselected the item given as a parameter
 		item.SetUnselected();
 		curSelectedItem = null;
+        item.furniture.SetActive(false);
 	}
 
 	public void UnselectSelectedItem()

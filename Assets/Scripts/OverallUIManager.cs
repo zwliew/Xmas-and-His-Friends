@@ -19,6 +19,7 @@ public class OverallUIManager : MonoBehaviour {
 		ShopCanvasGroup.gameObject.SetActive (false);
 		EditorModeCanvasGroup.gameObject.SetActive (false);
 		InGameUICanvasGroup.gameObject.SetActive (true);
+        Debug.Log("awaken");
 	}
 
 	public void EnterBuildingSelection(){
