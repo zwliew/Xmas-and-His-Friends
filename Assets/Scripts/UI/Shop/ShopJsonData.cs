@@ -5,5 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class ShopJsonData
 {
-    public ShopItem[] shopItems;
+    public ShopItemData[] shopItemsData;
+}
+
+[System.Serializable]
+public class EditorModeJsonData{
+	public EditorModeItemData[] editorModeItemsData;
 }

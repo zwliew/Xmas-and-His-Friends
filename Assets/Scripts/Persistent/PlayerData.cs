@@ -8,4 +8,5 @@ public class PlayerData
     public int coins;
     public string name;
     public List<string> purchasedShopItems; // String list of all the names of the purchased shop items
+	public List<string> equippedItems;
 }

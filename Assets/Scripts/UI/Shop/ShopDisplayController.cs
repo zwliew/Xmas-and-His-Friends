@@ -83,6 +83,8 @@ public class ShopDisplayController : MonoBehaviour
 		for (int i = 0; i < 4 - items.Count % 4; i++) {
 			Button item = Instantiate (prefabItemButton, shopWindowContent.transform);
 			item.interactable = false;
+			item.transform.GetChild (0).GetComponent<Image> ().color = Color.clear;
+			item.GetComponent<Image> ().color= Color.clear;
 		}
 	}
 

@@ -36,7 +36,7 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	public void Initialize()
 	{
-		items = TempGetSomeItem ();
+		items = GetComponent<EditorModeDataController> ().GetEquippedItemsData();
 
 		pageNumber = 0;
 		pagePositions = new float[items.Count / 4 + 1];
@@ -75,7 +75,7 @@ public class EditorModeDisplayController : MonoBehaviour
 		//Loop through the children and set them to inactive
 		for(int i = 0; i < editorModeWindowContent.transform.childCount; i++){
 			editorModeWindowContent.transform.GetChild(i).gameObject.SetActive(false);
-			Debug.Log("clearing existing items in the shop");// Somehow this does not work. Possible reason is that the shop items are inactive
+			//Debug.Log("clearing existing items in the editorMode");
 			//GameObjectUtility.customDestroy (editorModeWindowContent.transform.GetChild (0).gameObject);
 		}
 
@@ -89,7 +89,7 @@ public class EditorModeDisplayController : MonoBehaviour
             itemScript.furniture = itemData.furniture;
             itemScript.position = itemData.position;
             itemScript.rotation = itemData.rotation;
-            Debug.Log("parameters passed successfully!");
+            //Debug.Log("parameters passed successfully!");
             //Pass in the values here
             itemScript.Initialize ();
 		}
@@ -97,6 +97,8 @@ public class EditorModeDisplayController : MonoBehaviour
 		for (int i = 0; i < 4 - items.Count % 4; i++) {
 			Button item = Instantiate (prefabItemButton, editorModeWindowContent.transform);
 			item.interactable = false;
+			item.transform.GetChild (0).GetComponent<Image> ().color = Color.clear;
+			item.GetComponent<Image> ().color= Color.clear;
 		}
 
 	}
@@ -108,12 +110,11 @@ public class EditorModeDisplayController : MonoBehaviour
 		if (item.isSelected) {
 			UnselectItem (item);
 		} else {
-			//if (curSelectedItem)
-				//UnselectItem (curSelectedItem);
 			item.SetSelected();
 			curSelectedItem = item;
-            item.furniture.transform.position = item.position;
-            Debug.Log(item.furniture.transform.position.x);
+			if (item.furniture)
+			item.furniture.transform.position = item.position;
+            //Debug.Log(item.furniture.transform.position.x);
             //item.furniture.transform.rotation = Quaternion.Euler(item.position);
             //Debug.Log(item.furniture.transform.rotation.y);
             item.furniture.SetActive(true);
@@ -140,30 +141,15 @@ public class EditorModeDisplayController : MonoBehaviour
 		UnselectItem(curSelectedItem);
 	}
 
-	public void DisplayFailedPurchase()
-	{
-		// TODO: Display an indicator that the purchase failed
-		// (maybe a red ring around the 'purchase' button?)
-	}
-
-	public void DisableItems(List<EditorModeItem> items) {
-		// TODO: Disable the items by 'greying' them out and preventing
-		// the user from selecting them.
-		// This is usually used for items that have already been purchased.
-	}
 
 	public void UIShopItemNextPage(){
 		StopAllCoroutines ();
-		if (curSelectedItem)
-			UnselectItem (curSelectedItem);
 		pageNumber += 1;
 		pageNumber = Mathf.Clamp (pageNumber, 0, items.Count / 4);
 		StartCoroutine( MoveItemPage (new Vector3 (0f, pagePositions[pageNumber], 0f)));
 	}
 	public void UIShopItemPreviousPage(){
 		StopAllCoroutines ();
-		if(curSelectedItem)
-			UnselectItem (curSelectedItem);
 		pageNumber -= 1;
 		pageNumber = Mathf.Clamp (pageNumber, 0, items.Count / 4);
 		StartCoroutine( MoveItemPage (new Vector3 (0f, pagePositions[pageNumber], 0f)));
@@ -171,11 +157,20 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	IEnumerator MoveItemPage(Vector3 PagePosition){
 		Vector3 desiredPosition = PagePosition;
-		//Debug.Log (desiredPosition + " is where I am heading to" + " i am at" + editorModeWindowContent.GetComponent<RectTransform> ().anchoredPosition);
-		//Debug.Log ("PageNumber is " + pageNumber + " Total pages are " + items.Count/4);
 		while (Mathf.Abs (editorModeWindowContent.GetComponent<RectTransform> ().anchoredPosition.y - desiredPosition.y) > 0.1f) {
 			editorModeWindowContent.GetComponent<RectTransform> ().anchoredPosition = Vector3.Lerp (editorModeWindowContent.GetComponent<RectTransform> ().anchoredPosition, desiredPosition, 0.1f);
 			yield return new WaitForFixedUpdate ();
 		}
+	}
+	public void DisplayFailedPurchase()
+	{
+		// TODO: Display an indicator that the purchase failed
+		// (maybe a red ring around the 'purchase' button?)
+	}
+	
+	public void DisableItems(List<EditorModeItem> items) {
+		// TODO: Disable the items by 'greying' them out and preventing
+		// the user from selecting them.
+		// This is usually used for items that have already been purchased.
 	}
 }

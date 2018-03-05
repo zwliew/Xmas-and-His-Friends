@@ -13,13 +13,15 @@ public class OverallUIManager : MonoBehaviour {
 
 	public Sprite sprSelected;
 
+	public GameObject playerDataControllerGameObject;
+
 	void Awake(){
 		homeScreenCanvasGroup.gameObject.SetActive (false);
 		RoomSelectionCanvasGroup.gameObject.SetActive (false);
 		ShopCanvasGroup.gameObject.SetActive (false);
 		EditorModeCanvasGroup.gameObject.SetActive (false);
 		InGameUICanvasGroup.gameObject.SetActive (true);
-        Debug.Log("awaken");
+ 
 	}
 
 	public void EnterBuildingSelection(){
@@ -63,6 +65,7 @@ public class OverallUIManager : MonoBehaviour {
 		cvsGrp.alpha = 1f;
 		Debug.Log ("Enabled cvsGrp");
 	}
+
 	//-------------InGameUI---------------
 	public void EnterShop(){
 		StartCoroutine (ExitAfterTime (0.2f, InGameUICanvasGroup, ShopCanvasGroup));
@@ -90,10 +93,6 @@ public class OverallUIManager : MonoBehaviour {
 	public void ExitShop(){
 		StartCoroutine (ExitAfterTime (0.1f, ShopCanvasGroup, InGameUICanvasGroup));
 	}
-
-	public void SelectShopItem(Image item){
-		item.sprite = sprSelected;
-	}
 	//---------------------------
 
 	//-------------SelectionOfRoom---------------
@@ -114,8 +113,13 @@ public class OverallUIManager : MonoBehaviour {
 
 		closedCvsGrp.gameObject.SetActive (false);
 		openedCvsGrp.gameObject.SetActive (true);
+
 		if (openedCvsGrp.GetComponent<ShopController> ()) {
 			openedCvsGrp.GetComponent<ShopController> ().Initialize ();
+		}
+
+		if (openedCvsGrp.GetComponent<EditorModeController> ()) {
+			openedCvsGrp.GetComponent<EditorModeController> ().Initialize ();
 		}
 	}
 		

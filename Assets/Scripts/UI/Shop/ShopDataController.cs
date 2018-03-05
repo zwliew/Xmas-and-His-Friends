@@ -24,10 +24,10 @@ public class ShopDataController : MonoBehaviour
 {
     private PlayerDataController playerDataController;
 
-    private ShopItem[] shopItems;
-    public List<ShopItem> purchasedItems;
+    private ShopItemData[] shopItems;
+	private ShopItem curSelectedItem;
 
-    private ShopItem curSelectedItem;
+	public List<ShopItemData> purchasedItems;
 
     public void Initialize()
     {
@@ -38,9 +38,9 @@ public class ShopDataController : MonoBehaviour
 
         TextAsset dataAsJson = Resources.Load<TextAsset> ("Shop/ShopData");
         ShopJsonData shopJsonData = JsonUtility.FromJson<ShopJsonData>(dataAsJson.text);
-        shopItems = shopJsonData.shopItems;
+        shopItems = shopJsonData.shopItemsData;
 
-		foreach (ShopItem shopItem in shopItems) {//Need two steps: One, Load the data from Json(cost, fullName, etc); Two, Load the corresponding sprites and assign to the shop item
+		foreach (ShopItemData shopItem in shopItems) {//Need two steps: One, Load the data from Json(cost, fullName, etc); Two, Load the corresponding sprites and assign to the shop item
             if (playerDataController.IsShopItemPurchased(shopItem.fullName)) {
                 purchasedItems.Add(shopItem);
             }

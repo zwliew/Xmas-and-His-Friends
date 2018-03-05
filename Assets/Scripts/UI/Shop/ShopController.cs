@@ -15,29 +15,6 @@ public class ShopController : MonoBehaviour
 		StartShop();
     }
 
-    void Update()
-    {
-		/* This part no need as inputs are handled by individual buttons using onClick Listeners, which is a feature of the UI
-        if (!Input.GetMouseButtonDown(0))
-        {
-            // No player input received
-            return;
-        }
-
-        if (UserSelectedPurchase(Input.mousePosition))
-        {
-            PurchaseSelectedItem();
-            return;
-        }
-
-        ShopItem selectedItem = GetSelectedShopItem(Input.mousePosition);
-        if (selectedItem != null)
-        {
-            SelectItem(selectedItem);
-        }
-        */
-    }
-
     private void StartShop()
     {
 		Debug.Log ("Shop Started");

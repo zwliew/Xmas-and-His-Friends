@@ -59,12 +59,12 @@ public class EditorModeItem : MonoBehaviour, IRecycle {
 public class EditorModeItemData{
 	public int cost;
 	public string fullName;
+	public GameObject furniture;
 	public Sprite selectedSprite;
 	public Sprite unselectedSprite;
 	public bool isBuyable;
 	public bool isOnSale;
 	public bool isSelected;
-    public GameObject furniture;
     public Vector3 position;
     public Vector3 rotation;
 }

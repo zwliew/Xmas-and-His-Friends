@@ -54,19 +54,23 @@ public class PlayerDataController : MonoBehaviour
         return true;
     }
 
+	public void EquipEditorModeItem(string itemName){
+		playerData.equippedItems.Add (itemName);
+	}
+
     public bool IsShopItemPurchased(string name) {
         return playerData.purchasedShopItems.Contains(name);
     }
 
     private void LoadPlayerData()
     {
-
+		playerData = new PlayerData ();
         if (PlayerPrefs.HasKey("name"))
         {
             playerData.name = PlayerPrefs.GetString("name");
         } else
         {
-            playerData.name = null;
+			PlayerPrefs.SetString ("name", null);
         }
 
         if (PlayerPrefs.HasKey("coins"))
@@ -74,7 +78,7 @@ public class PlayerDataController : MonoBehaviour
             playerData.coins = PlayerPrefs.GetInt("coins");
         } else
         {
-            playerData.coins = 0;
+			PlayerPrefs.SetInt ("coins", 0);
         }
 
         if (PlayerPrefs.HasKey("purchasedShopItems"))
@@ -83,14 +87,33 @@ public class PlayerDataController : MonoBehaviour
             playerData.purchasedShopItems = purchasedShopItemsString.Split(',').ToList();
         } else
         {
-			playerData.purchasedShopItems = null;
+			PlayerPrefs.SetString ("purchasedShopItems", null);
         }
+		if (PlayerPrefs.HasKey("equippedItems"))
+		{
+			string equippedItemsString = PlayerPrefs.GetString("equippedItems");
+			playerData.equippedItems = equippedItemsString.Split (',').ToList ();
+		} else
+		{
+			PlayerPrefs.SetString ("equippedItems", null);
+		}
+
+		PlayerPrefs.Save ();
+
     }
+
+	public PlayerData GetPlayerData(){
+		LoadPlayerData ();
+		return playerData;
+	}
 
     private void SavePlayerData()
     {
         PlayerPrefs.SetInt("coins", playerData.coins);
         PlayerPrefs.SetString("name", playerData.name);
 		PlayerPrefs.SetString("purchasedShopItems", null);//String.Join(",", playerData.purchasedShopItems));
+		PlayerPrefs.SetString("equippedItems", null);//String.Join(",", playerData.equippedItems));
+
+		PlayerPrefs.Save ();
     }
 }
