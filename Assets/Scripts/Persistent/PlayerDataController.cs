@@ -12,7 +12,7 @@ public class PlayerDataController : MonoBehaviour
 {
     private PlayerData playerData;
 
-    void Start()
+    void Awake()
     {
         DontDestroyOnLoad(gameObject);
         LoadPlayerData();
@@ -45,7 +45,7 @@ public class PlayerDataController : MonoBehaviour
         return true;
     }
 
-    public bool PurchaseShopItem(string name, int cost) {
+    public bool PurchaseShopItem(string name, int cost) {//Use UpdatePurchasedShopItems instead
         bool success = UpdatePlayerCoins(-cost);
         if (!success) {
             return false;
@@ -54,8 +54,11 @@ public class PlayerDataController : MonoBehaviour
         return true;
     }
 
-	public void EquipEditorModeItem(string itemName){
-		playerData.equippedItems.Add (itemName);
+	public void UpdateEquippedEditorModeItem(List<String> itemNames){
+		playerData.equippedItems.Clear ();
+		foreach (string itemName in itemNames) {
+			playerData.equippedItems.Add (itemName);
+		}
 	}
 
     public bool IsShopItemPurchased(string name) {
@@ -97,7 +100,7 @@ public class PlayerDataController : MonoBehaviour
 		{
 			PlayerPrefs.SetString ("equippedItems", null);
 		}
-
+		PlayerPrefs.SetString ("purchasedShopItems", "ChristmasTree,Fire");//Manually add ChristmasTree
 		PlayerPrefs.Save ();
 
     }
@@ -111,8 +114,8 @@ public class PlayerDataController : MonoBehaviour
     {
         PlayerPrefs.SetInt("coins", playerData.coins);
         PlayerPrefs.SetString("name", playerData.name);
-		PlayerPrefs.SetString("purchasedShopItems", null);//String.Join(",", playerData.purchasedShopItems));
-		PlayerPrefs.SetString("equippedItems", null);//String.Join(",", playerData.equippedItems));
+		PlayerPrefs.SetString("purchasedShopItems", String.Join(",", playerData.purchasedShopItems.ToArray()));//String.Join(",", playerData.purchasedShopItems));
+		PlayerPrefs.SetString("equippedItems", String.Join(",", playerData.equippedItems.ToArray()));//String.Join(",", playerData.equippedItems));
 
 		PlayerPrefs.Save ();
     }

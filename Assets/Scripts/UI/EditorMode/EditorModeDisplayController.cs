@@ -6,7 +6,8 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
-/*
+/**
+ * The following comments are not about this script
  * ShopItem is displayed as buttons with an image as its child.
  * This is because I cannot figure out how to add event triggers onto Image
  * 
@@ -23,7 +24,6 @@ using System.Collections.Generic;
 public class EditorModeDisplayController : MonoBehaviour
 {
 	private EditorModeItem curSelectedItem;
-	//private ShopItem previouslySelectedItem;
 	private List<EditorModeItemData> items;//Stores the item data
 	private List<Button> itemButton;//Stores button instantiated on runtime;
 
@@ -38,36 +38,20 @@ public class EditorModeDisplayController : MonoBehaviour
 	{
 		items = GetComponent<EditorModeDataController> ().GetEquippedItemsData();
 
+		foreach (EditorModeItemData itemData in items) {
+			itemData.furniture = GameObject.FindGameObjectWithTag (itemData.fullName);
+		}
+
 		pageNumber = 0;
 		pagePositions = new float[items.Count / 4 + 1];
 		for(int i = 0; i < items.Count/4 + 1; i++){
-			pagePositions [i] = 210f*4 * i;
+			pagePositions [i] = 210f * 4 * i;
 		}
 
 		curSelectedItem = null;
 		RefreshEditorModeDisplay ();
 	}
 
-	private List<EditorModeItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
-		List<EditorModeItemData> itemList = new List<EditorModeItemData> ();
-
-        itemList.Add(new EditorModeItemData { cost = 2, fullName = "Item2", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Fire"), position = new Vector3(0f,0f,0f), rotation = new Vector3(0f,0f,0f)});
-		itemList.Add (new EditorModeItemData { cost = 3, fullName = "Item3", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("ChristmasTree"), position = new Vector3(0f, 0f, 0f), rotation = new Vector3(0f, 0f, 0f) });
-		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item4", isBuyable = false, isOnSale = false, furniture = GameObject.FindGameObjectWithTag("Carpet"), position = new Vector3(0f, 0f, 0f), rotation = new Vector3(0f, 0f, 0f) });
-		itemList.Add (new EditorModeItemData{cost = 5, fullName = "Item5", isBuyable = false, isOnSale = false});
-
-		itemList.Add (new EditorModeItemData{cost = 2, fullName = "Item1", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 3, fullName = "Item2", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 4, fullName = "Item3", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 5, fullName = "Item4", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item5", isBuyable = false, isOnSale = false});
-
-		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item7", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item8", isBuyable = false, isOnSale = false});
-		itemList.Add (new EditorModeItemData{cost = 6, fullName = "Item9", isBuyable = false, isOnSale = false});
-		return itemList;
-	}
 
 	private void RefreshEditorModeDisplay (){
 
@@ -76,7 +60,7 @@ public class EditorModeDisplayController : MonoBehaviour
 		for(int i = 0; i < editorModeWindowContent.transform.childCount; i++){
 			editorModeWindowContent.transform.GetChild(i).gameObject.SetActive(false);
 			//Debug.Log("clearing existing items in the editorMode");
-			//GameObjectUtility.customDestroy (editorModeWindowContent.transform.GetChild (0).gameObject);
+			//GameObjectUtility.customDestroy (editorModeWindowContent.transform.GetChild (0).gameObject); <Implement this in the future>
 		}
 
 		foreach (EditorModeItemData itemData in items) {
@@ -161,11 +145,6 @@ public class EditorModeDisplayController : MonoBehaviour
 			editorModeWindowContent.GetComponent<RectTransform> ().anchoredPosition = Vector3.Lerp (editorModeWindowContent.GetComponent<RectTransform> ().anchoredPosition, desiredPosition, 0.1f);
 			yield return new WaitForFixedUpdate ();
 		}
-	}
-	public void DisplayFailedPurchase()
-	{
-		// TODO: Display an indicator that the purchase failed
-		// (maybe a red ring around the 'purchase' button?)
 	}
 	
 	public void DisableItems(List<EditorModeItem> items) {

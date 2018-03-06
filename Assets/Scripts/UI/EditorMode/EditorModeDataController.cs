@@ -2,6 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class EditorModeItemData : ItemData{
+	//public int cost;
+	//public string fullName;
+	public GameObject furniture;
+	public Sprite selectedSprite;
+	public Sprite unselectedSprite;
+
+	public bool isSelected;
+	public Vector3 position;
+	public Vector3 rotation;
+}
+
 public class EditorModeDataController : MonoBehaviour {
 
 	private PlayerDataController playerDataController;
@@ -14,14 +27,14 @@ public class EditorModeDataController : MonoBehaviour {
 	public List<EditorModeItemData> purchasedItemsData;
 	public List<EditorModeItemData> equippedItemsData;
 
-	private Dictionary<EditorModeItem, EditorModeItemData> itemMappingDictionary;
-
 	public void Initialize()
 	{
 		playerDataController = GameObject.FindGameObjectWithTag("Persistent")//Get the PlayerDataController
 			.GetComponent<PlayerDataController>();
 
-		itemMappingDictionary = new Dictionary<EditorModeItem, EditorModeItemData> ();//Empty dictionary and lists
+		if (playerDataController)
+			Debug.Log ("playerDataController is found successfully");
+
 		purchasedItemsData = new List<EditorModeItemData>();
 		equippedItemsData = new List<EditorModeItemData> ();
 
@@ -36,37 +49,57 @@ public class EditorModeDataController : MonoBehaviour {
 		foreach (EditorModeItemData itemData in itemsDataArray) {
 			itemsData.Add(itemData);
 		}
-
-		equippedItemsData = ParseItems (equippedItemNames);
-		purchasedItemsData = ParseItems (purchasedItemNames);
+		equippedItemsData = ParseItems (equippedItemNames, "equippedItems");
+		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
+		
 	}
 
-	private List<EditorModeItemData> ParseItems(List<string> itemsStringList){//Self-explainatory method
+	private List<EditorModeItemData> ParseItems(List<string> itemsStringList, string mode){//Self-explainatory method, also modifies the itemsData
 
-		List<EditorModeItemData> tempEquippedItemsData = new List<EditorModeItemData> ();
-		foreach (string itemName in itemsStringList) {
-			foreach (EditorModeItemData itemData in itemsData) {
-				if (itemData.fullName.Equals (itemName)) {
-					tempEquippedItemsData.Add (itemData);
-					Debug.Log ("ItemFindSuccessfully" + itemData.fullName);
+		List<EditorModeItemData> tempItemsData = new List<EditorModeItemData> ();
+
+		switch (mode) {
+		case "equippedItems":
+			foreach (string itemName in itemsStringList) {
+				foreach (EditorModeItemData itemData in itemsData) {
+					if (itemData.fullName.Equals (itemName)) {//I don't know if this part works
+						itemData.equipped = true;
+						tempItemsData.Add (itemData);
+						Debug.Log ("ItemSetEquippedSuccessfully" + itemData.fullName);
+					}
 				}
 			}
+			break;
+
+		case "purchasedItems":
+			foreach (string itemName in itemsStringList) {
+				foreach (EditorModeItemData itemData in itemsData) {
+					if (itemData.fullName.Equals (itemName)) {
+						itemData.purchased = true;
+						tempItemsData.Add (itemData);
+						Debug.Log ("ItemSetPurchasedSuccessfully" + itemData.fullName);
+					}
+				}
+			}
+			break;
 		}
 
-		return tempEquippedItemsData;
+
+		return tempItemsData;
 	}
 
-	private EditorModeItemData ParseItems(string itemsString){//Overload method for single string
+	private EditorModeItemData ParseItems(string itemsString, string mode = ""){//Overload method for single string
 
-		EditorModeItemData tempEquippedItemsData = new EditorModeItemData ();
-
+		EditorModeItemData tempItemsData = new EditorModeItemData ();
 		foreach (EditorModeItemData itemData in itemsData) {
 			if (itemData.fullName.Equals (itemsString)) {
-				tempEquippedItemsData = itemData;
-				Debug.Log ("ItemFindSuccessfully" + itemData.fullName);
+				itemData.equipped = false;
+				tempItemsData = itemData;
+				Debug.Log ("ItemRemovedSuccessfully" + itemData.fullName);
 			}
 		}
-		return tempEquippedItemsData;
+
+		return tempItemsData;
 	}
 
 	public List<EditorModeItemData> GetEquippedItemsData(){
@@ -78,12 +111,20 @@ public class EditorModeDataController : MonoBehaviour {
 
 		//Debug.Log ("EMDC is selecting items");
 		if (item.isSelected) {
-			Debug.Log ("Removing equippedItem in EditorModeData" + item.fullName);
+			Debug.Log ("Removing equippedItem in EditorModeData: " + item.fullName);
 			equippedItemsData.Remove(ParseItems(item.fullName));
 		} else {
-			Debug.Log ("Adding equippedItem in EditorModeData" + item.fullName);
+			Debug.Log ("Adding equippedItem in EditorModeData: " + item.fullName);
 			equippedItemsData.Add (ParseItems(item.fullName));
 		}
+	}
+
+	public void EndandSave(){
+		equippedItemNames.Clear ();
+		foreach (EditorModeItemData itemData in equippedItemsData) {
+			equippedItemNames.Add (itemData.fullName.ToString ());
+		}
+		playerDataController.UpdateEquippedEditorModeItem (equippedItemNames);
 	}
 		
 }

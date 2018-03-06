@@ -16,9 +16,9 @@ public class EditorModeController : MonoBehaviour
 
 	private void StartEditorMode()
 	{
+		Debug.Log ("EditorMode Started");
 		dataController.Initialize();
 		displayController.Initialize();
-		Debug.Log ("EditorMode Started");
 	}
 
 	private void SelectItem_Master(EditorModeItem item)
@@ -26,5 +26,8 @@ public class EditorModeController : MonoBehaviour
 		dataController.SelectItem(item);
 		displayController.SelectItem(item);
         //Debug.Log("SelectItem_Master() called");
+	}
+	public void EndandSave(){
+		dataController.EndandSave ();
 	}
 }

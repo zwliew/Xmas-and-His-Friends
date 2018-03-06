@@ -8,6 +8,7 @@ public class OverallSceneManager : MonoBehaviour {
 	private AsyncOperation async;
 
 	public void LoadScene(string sceneName){
+		GameObjectUtility.ClearObjectPools ();
 		switch(sceneName){
 		case "":
 			break;

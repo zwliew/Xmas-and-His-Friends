@@ -111,6 +111,10 @@ public class OverallUIManager : MonoBehaviour {
 			yield return new WaitForFixedUpdate();
 		}
 
+		if (closedCvsGrp.GetComponent<EditorModeController> ()) {
+			closedCvsGrp.GetComponent<EditorModeController> ().EndandSave ();
+		}
+
 		closedCvsGrp.gameObject.SetActive (false);
 		openedCvsGrp.gameObject.SetActive (true);
 

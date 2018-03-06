@@ -2,8 +2,14 @@
 	"shopItemsData": [
 		{
 			"name": "christmasTree",
-			"fullName": "Christmas Tree",
+			"fullName": "ChristmasTree",
 			"cost": "100"
+		},
+		{
+			"name": "Fire",
+			"fullName": "Fire",
+            "cost": "50"
+            
 		}
 	]
 }

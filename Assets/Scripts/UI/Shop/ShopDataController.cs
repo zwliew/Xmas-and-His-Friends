@@ -10,9 +10,9 @@ using System.Linq;
  * TODO Load up the corresponding item sprite after loading item data(see line 43)
  */
 [System.Serializable]
-public class ShopItemData{//The Class for data 
-	public int cost;
-	public string fullName;
+public class ShopItemData : ItemData{//The Class for data 
+	//public int cost;
+	//public string fullName;
 	public Sprite selectedSprite;
 	public Sprite unselectedSprite;
 	public bool isBuyable;
@@ -67,7 +67,7 @@ public class ShopDataController : MonoBehaviour
         }
         bool success = playerDataController.PurchaseShopItem(curSelectedItem.fullName, curSelectedItem.cost);
         if (success) {
-            purchasedItems.Add(curSelectedItem);
+             //purchasedItems.Add(curSelectedItem);
         }
         return success;
     }

@@ -5,6 +5,12 @@
 			"fullName": "ChristmasTree",
             "cost": "100"
             
+		},
+		{
+			"name": "Fire",
+			"fullName": "Fire",
+            "cost": "50"
+            
 		}
 	]
 }

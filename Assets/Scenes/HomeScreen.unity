@@ -2152,7 +2152,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2723976c52573ce4882a08ec90de4711, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.92
+      value: -6.45
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2723976c52573ce4882a08ec90de4711, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2776,7 +2776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb427db4c606b824f95b55aa46073e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equippedItems: []
+  itemsData: []
+  purchasedItemsData: []
+  equippedItemsData: []
 --- !u!1 &1161066942
 GameObject:
   m_ObjectHideFlags: 0
@@ -4059,15 +4061,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 36138284}
-        m_MethodName: ReturnToRoomSelection
-        m_Mode: 1
+      - m_Target: {fileID: 36138285}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: NewPinZiGame
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

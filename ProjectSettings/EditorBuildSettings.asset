@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/UITestScene.unity
+    path: Assets/Scenes/HomeScreen.unity
     guid: 034598ac0ed62584da9650431c88f192
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/NewPinZiGame.unity
     guid: 0a897bb2caabdbc43b9120af4a78b755
   - enabled: 0
