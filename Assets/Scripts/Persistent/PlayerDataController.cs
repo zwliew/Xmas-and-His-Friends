@@ -12,9 +12,10 @@ public class PlayerDataController : MonoBehaviour
 {
     private PlayerData playerData;
 
-    void Awake()
+    void Start()
     {
         DontDestroyOnLoad(gameObject);
+		PlayerPrefs.DeleteAll ();
         LoadPlayerData();
     }
 
@@ -59,6 +60,7 @@ public class PlayerDataController : MonoBehaviour
 		foreach (string itemName in itemNames) {
 			playerData.equippedItems.Add (itemName);
 		}
+		Debug.Log ("EquippedItems has been updated");
 	}
 
     public bool IsShopItemPurchased(string name) {
@@ -68,45 +70,49 @@ public class PlayerDataController : MonoBehaviour
     private void LoadPlayerData()
     {
 		playerData = new PlayerData ();
+
+		PlayerPrefs.SetString ("purchasedShopItems", "ChristmasTree,Fire");//Manually add ChristmasTree
+		PlayerPrefs.SetString("equippedItems", "ChristmasTree,Fire");
         if (PlayerPrefs.HasKey("name"))
         {
-            playerData.name = PlayerPrefs.GetString("name");
         } else
         {
-			PlayerPrefs.SetString ("name", null);
+			PlayerPrefs.SetString ("name", "");
         }
+		playerData.name = PlayerPrefs.GetString("name");
 
         if (PlayerPrefs.HasKey("coins"))
         {
-            playerData.coins = PlayerPrefs.GetInt("coins");
         } else
         {
 			PlayerPrefs.SetInt ("coins", 0);
         }
+		playerData.coins = PlayerPrefs.GetInt("coins");
 
         if (PlayerPrefs.HasKey("purchasedShopItems"))
         {
-            string purchasedShopItemsString = PlayerPrefs.GetString("purchasedShopItems");
-            playerData.purchasedShopItems = purchasedShopItemsString.Split(',').ToList();
         } else
         {
-			PlayerPrefs.SetString ("purchasedShopItems", null);
+			PlayerPrefs.SetString ("purchasedShopItems", ",");
         }
+		string purchasedShopItemsString = PlayerPrefs.GetString("purchasedShopItems");
+		playerData.purchasedShopItems = purchasedShopItemsString.Split(',').ToList();
 		if (PlayerPrefs.HasKey("equippedItems"))
 		{
-			string equippedItemsString = PlayerPrefs.GetString("equippedItems");
-			playerData.equippedItems = equippedItemsString.Split (',').ToList ();
 		} else
 		{
-			PlayerPrefs.SetString ("equippedItems", null);
+			PlayerPrefs.SetString ("equippedItems", ",");
+			Debug.Log ("Initializing equippedItems");
 		}
-		PlayerPrefs.SetString ("purchasedShopItems", "ChristmasTree,Fire");//Manually add ChristmasTree
-		PlayerPrefs.Save ();
+		string equippedItemsString = PlayerPrefs.GetString("equippedItems");
+		playerData.equippedItems = equippedItemsString.Split (',').ToList ();
+
+		SavePlayerData ();
 
     }
 
 	public PlayerData GetPlayerData(){
-		LoadPlayerData ();
+		Debug.Log ("Getting Player Data");
 		return playerData;
 	}
 

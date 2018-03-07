@@ -36,7 +36,7 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	public void Initialize()
 	{
-		items = GetComponent<EditorModeDataController> ().GetEquippedItemsData();
+		items = GetComponent<EditorModeDataController> ().GetPurchasedItemsData();
 
 		foreach (EditorModeItemData itemData in items) {
 			itemData.furniture = GameObject.FindGameObjectWithTag (itemData.fullName);
@@ -55,26 +55,23 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	private void RefreshEditorModeDisplay (){
 
-		//TODO Clear the content of the editorModeWindowContent
-		//Loop through the children and set them to inactive
-		for(int i = 0; i < editorModeWindowContent.transform.childCount; i++){
+		for(int i = 0; i < editorModeWindowContent.transform.childCount; i++){//Clear the content of the editorModeWindowContent, Loop through the children and set them to inactive
 			editorModeWindowContent.transform.GetChild(i).gameObject.SetActive(false);
-			//Debug.Log("clearing existing items in the editorMode");
-			//GameObjectUtility.customDestroy (editorModeWindowContent.transform.GetChild (0).gameObject); <Implement this in the future>
+//			GameObjectUtility.customDestroy (editorModeWindowContent.transform.GetChild (0).gameObject); <Implement this in the future>
 		}
 
 		foreach (EditorModeItemData itemData in items) {
 			Button item = Instantiate (prefabItemButton, editorModeWindowContent.transform);
-			/*Button item = GameObjectUtility.customInstantiate(prefabItemButton.gameObject, Vector3.zero).GetComponent<Button>();
-			item.transform.SetParent (editorModeWindowContent.transform, false);
-			*/
+//			Button item = GameObjectUtility.customInstantiate(prefabItemButton.gameObject, Vector3.zero).GetComponent<Button>();
+//			item.transform.SetParent (editorModeWindowContent.transform, false);
+
 			EditorModeItem itemScript = item.gameObject.GetComponent<EditorModeItem> ();
-			itemScript.fullName = itemData.fullName;
+			itemScript.fullName = itemData.fullName;//Pass in the values here
             itemScript.furniture = itemData.furniture;
             itemScript.position = itemData.position;
             itemScript.rotation = itemData.rotation;
-            //Debug.Log("parameters passed successfully!");
-            //Pass in the values here
+			itemScript.isSelected = true;//itemData.equipped;
+//			Debug.Log("parameters passed successfully!" +itemScript.isSelected );
             itemScript.Initialize ();
 		}
 

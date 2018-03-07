@@ -20,12 +20,18 @@ public class EditorModeItem : MonoBehaviour, IRecycle {
     public Vector3 rotation;
 
     public void Initialize(){
-		isSelected = false;
 		itemButton = GetComponent<Button> ();
 		editorModeItem = GetComponent<EditorModeItem> ();
 		itemButton.gameObject.transform.GetChild(0).GetComponentInChildren<Image> ().sprite = itemSprite;
 		itemButton.onClick.RemoveAllListeners ();
 		itemButton.onClick.AddListener (()=>{SelectItem();});
+		if (isSelected) {
+			isSelected = false;
+			SelectItem ();
+			Debug.Log ("Setting this item as equipped");
+		} else {
+			Debug.Log ("did not set this item as equipped");
+		}
 	}
 
 	public void SelectItem(){

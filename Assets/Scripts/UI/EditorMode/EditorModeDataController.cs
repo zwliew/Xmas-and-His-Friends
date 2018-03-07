@@ -33,13 +33,15 @@ public class EditorModeDataController : MonoBehaviour {
 			.GetComponent<PlayerDataController>();
 
 		if (playerDataController)
-			Debug.Log ("playerDataController is found successfully");
+			//Debug.Log ("playerDataController is found successfully");
 
 		purchasedItemsData = new List<EditorModeItemData>();
 		equippedItemsData = new List<EditorModeItemData> ();
 
 		equippedItemNames = playerDataController.GetPlayerData ().equippedItems;//Get the List<string> of items
+//		Debug.Log("equipped Items are" + equippedItemNames[0].ToString());
 		purchasedItemNames = playerDataController.GetPlayerData ().purchasedShopItems;
+//		Debug.Log("purchased Items are" + purchasedItemNames[0].ToString());
 
 		TextAsset dataAsJson = Resources.Load<TextAsset> ("EditorMode/EditorModeData");//Load textual data for EditorModeItemData
 		EditorModeJsonData editorModeJsonData = JsonUtility.FromJson<EditorModeJsonData>(dataAsJson.text);
@@ -104,6 +106,9 @@ public class EditorModeDataController : MonoBehaviour {
 
 	public List<EditorModeItemData> GetEquippedItemsData(){
 		return equippedItemsData;
+	}
+	public List<EditorModeItemData> GetPurchasedItemsData(){
+		return purchasedItemsData;
 	}
 
 	public void SelectItem(EditorModeItem item)

@@ -66,7 +66,7 @@ public class DisplayController : MonoBehaviour{
 		string[] sides = word.sides;
 		texture2DSides = new Texture2D[sides.Length];
 
-		Debug.Log ("Start Loading");
+		//Debug.Log ("Start Loading");
 
 		for (int i = 0; i < sides.Length; i++) {
 			string strTexturePath = "PinZiPianPang/" + sides [i].ToString ();

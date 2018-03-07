@@ -30,20 +30,20 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 
 
 	public void Initialize(){
-		Debug.Log ("Getting Renderer.shareMaterial");
+		//Debug.Log ("Getting Renderer.shareMaterial");
 		curMat = GetComponent<Renderer> ().sharedMaterial;
 		particalSys = GetComponent<ParticleSystem> ();
 	}
 
 	public void SetDisplay (Texture2D texture2D){
 		curMat.SetTexture ("_MainTex", texture2D);
-		Debug.Log ("Texture " + texture2D.name + " is set");
+		//Debug.Log ("Texture " + texture2D.name + " is set");
 		sidename = texture2D.name;
 	}
 
 	public void SetOriginalPosition(Vector3 pos){
 		v3originalPosition = pos;
-		Debug.Log (sidename +"'s v3originalPosition is set to "+ v3originalPosition);
+		//Debug.Log (sidename +"'s v3originalPosition is set to "+ v3originalPosition);
 	}
 
 	void Update(){
