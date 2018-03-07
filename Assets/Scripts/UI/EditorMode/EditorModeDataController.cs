@@ -6,6 +6,8 @@ using UnityEngine;
 public class EditorModeItemData : ItemData{
 	//public int cost;
 	//public string fullName;
+	//public bool equipped;
+	//public bool purchased;
 	public GameObject furniture;
 	public Sprite selectedSprite;
 	public Sprite unselectedSprite;
@@ -38,9 +40,10 @@ public class EditorModeDataController : MonoBehaviour {
 		purchasedItemsData = new List<EditorModeItemData>();
 		equippedItemsData = new List<EditorModeItemData> ();
 
-		equippedItemNames = playerDataController.GetPlayerData ().equippedItems;//Get the List<string> of items
+		PlayerData playerData = playerDataController.GetPlayerData ();
+		equippedItemNames = playerData.equippedItems;//Get the List<string> of items
 //		Debug.Log("equipped Items are" + equippedItemNames[0].ToString());
-		purchasedItemNames = playerDataController.GetPlayerData ().purchasedShopItems;
+		purchasedItemNames = playerData.purchasedShopItems;
 //		Debug.Log("purchased Items are" + purchasedItemNames[0].ToString());
 
 		TextAsset dataAsJson = Resources.Load<TextAsset> ("EditorMode/EditorModeData");//Load textual data for EditorModeItemData
@@ -67,7 +70,7 @@ public class EditorModeDataController : MonoBehaviour {
 					if (itemData.fullName.Equals (itemName)) {//I don't know if this part works
 						itemData.equipped = true;
 						tempItemsData.Add (itemData);
-						Debug.Log ("ItemSetEquippedSuccessfully" + itemData.fullName);
+						Debug.Log ("ItemSetEquippedSuccessfully: " + itemData.fullName);
 					}
 				}
 			}
@@ -79,7 +82,7 @@ public class EditorModeDataController : MonoBehaviour {
 					if (itemData.fullName.Equals (itemName)) {
 						itemData.purchased = true;
 						tempItemsData.Add (itemData);
-						Debug.Log ("ItemSetPurchasedSuccessfully" + itemData.fullName);
+						Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
 					}
 				}
 			}

@@ -70,12 +70,12 @@ public class EditorModeDisplayController : MonoBehaviour
             itemScript.furniture = itemData.furniture;
             itemScript.position = itemData.position;
             itemScript.rotation = itemData.rotation;
-			itemScript.isSelected = true;//itemData.equipped;
+			itemScript.isSelected = itemData.equipped;
 //			Debug.Log("parameters passed successfully!" +itemScript.isSelected );
             itemScript.Initialize ();
 		}
 
-		for (int i = 0; i < 4 - items.Count % 4; i++) {
+		for (int i = 0; i < 4 - items.Count % 4; i++) {//fill up the pages with invisible buttons
 			Button item = Instantiate (prefabItemButton, editorModeWindowContent.transform);
 			item.interactable = false;
 			item.transform.GetChild (0).GetComponent<Image> ().color = Color.clear;
