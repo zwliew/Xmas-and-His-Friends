@@ -19,7 +19,9 @@ public class HomescreenController : MonoBehaviour {
         {
             Debug.Log(itemName);
             GameObject equippedGameObject = GameObject.Find(itemName);
-            equippedGameObject.transform.position = new Vector3(0, 0, 0);
+            if (equippedGameObject != null) {
+                equippedGameObject.transform.position = new Vector3(0, 0, 0);
+            }
         }
     }
 
