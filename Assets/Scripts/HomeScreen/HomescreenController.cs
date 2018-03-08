@@ -14,9 +14,11 @@ public class HomescreenController : MonoBehaviour {
             .GetComponent<PlayerDataController>();
         PlayerData playerData = playerDataController.GetPlayerData();
         equippedItemNames = playerData.equippedItems;
+        Debug.Log(equippedItemNames.Count);
         foreach (string itemName in equippedItemNames)
         {
-            GameObject equippedGameObject = equippedGameObject.Find(itemName);
+            Debug.Log(itemName);
+            GameObject equippedGameObject = GameObject.Find(itemName);
             equippedGameObject.transform.position = new Vector3(0, 0, 0);
         }
     }
