@@ -56,10 +56,12 @@ public class PlayerDataController : MonoBehaviour
     }
 
 	public void UpdateEquippedEditorModeItem(List<String> itemNames){
-		playerData.equippedItems.Clear ();
-		foreach (string itemName in itemNames) {
-			playerData.equippedItems.Add (itemName);
-		}
+        List<string> newEquippedItems = new List<string>();
+        foreach (string itemName in itemNames)
+        {
+            newEquippedItems.Add(itemName);
+        }
+        playerData.equippedItems = newEquippedItems;
 		Debug.Log ("EquippedItems has been updated");
 	}
 
@@ -72,7 +74,6 @@ public class PlayerDataController : MonoBehaviour
 		playerData = new PlayerData ();
 
 		PlayerPrefs.SetString ("purchasedShopItems", "ChristmasTree,Fire");//Manually add ChristmasTree
-		PlayerPrefs.SetString("equippedItems", "Fire,");
 
         if (PlayerPrefs.HasKey("name"))
         {
