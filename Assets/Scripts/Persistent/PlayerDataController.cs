@@ -12,9 +12,9 @@ public class PlayerDataController : MonoBehaviour
 {
     private PlayerData playerData;
 
-    void Start()
+    void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+		DontDestroyOnLoad (gameObject);
 		PlayerPrefs.DeleteAll ();
         LoadPlayerData();
     }
