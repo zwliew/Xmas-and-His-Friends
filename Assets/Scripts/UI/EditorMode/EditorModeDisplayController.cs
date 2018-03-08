@@ -93,12 +93,14 @@ public class EditorModeDisplayController : MonoBehaviour
 		} else {
 			item.SetSelected();
 			curSelectedItem = item;
-			if (item.furniture)
-			item.furniture.transform.position = item.position;
-            //Debug.Log(item.furniture.transform.position.x);
-            //item.furniture.transform.rotation = Quaternion.Euler(item.position);
-            //Debug.Log(item.furniture.transform.rotation.y);
-            item.furniture.SetActive(true);
+            if (item.furniture)
+            {
+                item.furniture.transform.position = item.position;
+                //Debug.Log(item.furniture.transform.position.x);
+                //item.furniture.transform.rotation = Quaternion.Euler(item.position);
+                //Debug.Log(item.furniture.transform.rotation.y);
+                item.furniture.SetActive(true);
+            }
  
 		}
 
