@@ -40,6 +40,8 @@ public class EditorModeDisplayController : MonoBehaviour
 
 		foreach (EditorModeItemData itemData in items) {
 			itemData.furniture = GameObject.FindGameObjectWithTag (itemData.fullName);
+			if(!itemData.furniture)
+				itemData.furniture = GameObject.Find (itemData.fullName);//Find again
 		}
 
 		pageNumber = 0;
@@ -86,7 +88,7 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	public void SelectItem(EditorModeItem item)
 	{
-		// TODO: Display an item as 'selected', and unselect any previous 'selected' item
+		//Display an item as 'selected', and unselect any previous 'selected' item
 
 		if (item.isSelected) {
 			UnselectItem (item);
@@ -116,14 +118,7 @@ public class EditorModeDisplayController : MonoBehaviour
 		// TODO: Unselected the item given as a parameter
 		item.SetUnselected();
 		curSelectedItem = null;
-        item.furniture.SetActive(false);
 	}
-
-	public void UnselectSelectedItem()
-	{
-		UnselectItem(curSelectedItem);
-	}
-
 
 	public void UIShopItemNextPage(){
 		StopAllCoroutines ();

@@ -29,7 +29,7 @@ public class EditorModeDataController : MonoBehaviour {
 	public List<EditorModeItemData> purchasedItemsData;
 	public List<EditorModeItemData> equippedItemsData;
 
-	public void Initialize()
+	public void Initialize()//One bug lies here: when loaded, the equipped items data is not cleared
 	{
 		playerDataController = GameObject.FindGameObjectWithTag("Persistent")//Get the PlayerDataController
 			.GetComponent<PlayerDataController>();
@@ -41,10 +41,8 @@ public class EditorModeDataController : MonoBehaviour {
 		equippedItemsData = new List<EditorModeItemData> ();
 
 		PlayerData playerData = playerDataController.GetPlayerData ();
-		equippedItemNames = playerData.equippedItems;//Get the List<string> of items
-//		Debug.Log("equipped Items are" + equippedItemNames[0].ToString());
+		equippedItemNames = playerData.equippedItems;
 		purchasedItemNames = playerData.purchasedShopItems;
-//		Debug.Log("purchased Items are" + purchasedItemNames[0].ToString());
 
 		TextAsset dataAsJson = Resources.Load<TextAsset> ("EditorMode/EditorModeData");//Load textual data for EditorModeItemData
 		EditorModeJsonData editorModeJsonData = JsonUtility.FromJson<EditorModeJsonData>(dataAsJson.text);
@@ -54,6 +52,7 @@ public class EditorModeDataController : MonoBehaviour {
 		foreach (EditorModeItemData itemData in itemsDataArray) {
 			itemsData.Add(itemData);
 		}
+
 		equippedItemsData = ParseItems (equippedItemNames, "equippedItems");
 		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
 		
@@ -93,15 +92,31 @@ public class EditorModeDataController : MonoBehaviour {
 		return tempItemsData;
 	}
 
-	private EditorModeItemData ParseItems(string itemsString, string mode = ""){//Overload method for single string
+	private EditorModeItemData ParseItems(string itemsString, string mode){
 
 		EditorModeItemData tempItemsData = new EditorModeItemData ();
-		foreach (EditorModeItemData itemData in itemsData) {
-			if (itemData.fullName.Equals (itemsString)) {
-				itemData.equipped = false;
-				tempItemsData = itemData;
-				Debug.Log ("ItemRemovedSuccessfully" + itemData.fullName);
+		switch(mode){
+		case "remove":
+			foreach (EditorModeItemData itemData in itemsData) {
+				if (itemData.fullName.Equals (itemsString)) {
+					itemData.equipped = false;
+					tempItemsData = itemData;
+					Debug.Log ("ItemRemovedSuccessfully: " + itemData.fullName);
+				}
 			}
+			break;
+		case "add":
+			foreach (EditorModeItemData itemData in itemsData) {
+				if (itemData.fullName.Equals (itemsString)) {
+					itemData.equipped = true;
+					tempItemsData = itemData;
+					Debug.Log ("ItemAddedSuccessfully: " + itemData.fullName);
+				}
+			}
+			break;
+		default:
+			Debug.Log("ParseItems(single string version) got error");
+			break;
 		}
 
 		return tempItemsData;
@@ -118,12 +133,14 @@ public class EditorModeDataController : MonoBehaviour {
 	{
 
 		//Debug.Log ("EMDC is selecting items");
-		if (item.isSelected) {
+		if (item.isSelected) {//The logic here a bit confusing since displayController will select the item first
 			Debug.Log ("Removing equippedItem in EditorModeData: " + item.fullName);
-			equippedItemsData.Remove(ParseItems(item.fullName));
+			Debug.Log("No of equippedItemsData before removing: " + equippedItemsData.Count);
+			equippedItemsData.Remove(ParseItems(item.fullName, "remove"));
+			Debug.Log("No of equippedItemsData after removing: " + equippedItemsData.Count);
 		} else {
 			Debug.Log ("Adding equippedItem in EditorModeData: " + item.fullName);
-			equippedItemsData.Add (ParseItems(item.fullName));
+			equippedItemsData.Add (ParseItems(item.fullName, "add"));
 		}
 	}
 
@@ -133,6 +150,12 @@ public class EditorModeDataController : MonoBehaviour {
 			equippedItemNames.Add (itemData.fullName.ToString ());
 		}
 		playerDataController.UpdateEquippedEditorModeItem (equippedItemNames);
+		playerDataController.SavePlayerData ();
+		equippedItemsData.Clear ();
+//		purchasedItemsData.Clear ();
+//		itemsData.Clear ();
+//		purchasedItemNames.Clear ();
+//		equippedItemNames.Clear();
 	}
 		
 }

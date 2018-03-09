@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EditorModeItem : MonoBehaviour, IRecycle {
+public class EditorModeItem : MonoBehaviour {
 
 	public int cost;
 	public string fullName;
@@ -28,9 +28,9 @@ public class EditorModeItem : MonoBehaviour, IRecycle {
 		if (isSelected) {
 			isSelected = false;
 			SelectItem ();
-			Debug.Log ("Setting this item as equipped");
+			Debug.Log ("Setting this item as equipped: " + fullName);
 		} else {
-			Debug.Log ("did not set this item as equipped");
+			Debug.Log ("did not set this item as equipped: " + fullName);
 		}
 	}
 
@@ -47,12 +47,14 @@ public class EditorModeItem : MonoBehaviour, IRecycle {
 
 	public void SetUnselected(){
 		itemButton.GetComponent<Image> ().sprite = unselectedSprite;
+		if (furniture)
+			furniture.transform.position = new Vector3 (99f, 99f, 99f);
 		isSelected = false;
 	}
 
 	public void SetDisabled(){
 		itemButton.onClick.RemoveAllListeners ();
-		Debug.Log ("One item has been disabled");
+		Debug.Log ("One item has been disabled: " + fullName);
 	}
 
 	public void Restart(){

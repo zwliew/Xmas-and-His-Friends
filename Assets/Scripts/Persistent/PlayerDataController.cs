@@ -61,8 +61,12 @@ public class PlayerDataController : MonoBehaviour
         {
             newEquippedItems.Add(itemName);
         }
+		playerData.equippedItems.Clear ();
         playerData.equippedItems = newEquippedItems;
-		Debug.Log ("EquippedItems has been updated");
+		Debug.Log ("EquippedItems has been updated in PlayerDataController");
+		foreach (string str in playerData.equippedItems) {
+			Debug.Log ("This item is saved to playerpref as equipped: " + str.ToString());
+		}
 	}
 
     public bool IsShopItemPurchased(string name) {
@@ -95,7 +99,7 @@ public class PlayerDataController : MonoBehaviour
         {
         } else
         {
-			PlayerPrefs.SetString ("purchasedShopItems", ",");
+			PlayerPrefs.SetString ("purchasedShopItems", "");
         }
 		string purchasedShopItemsString = PlayerPrefs.GetString("purchasedShopItems");
 		playerData.purchasedShopItems = purchasedShopItemsString.Split(',').ToList();
@@ -103,7 +107,7 @@ public class PlayerDataController : MonoBehaviour
 		{
 		} else
 		{
-			PlayerPrefs.SetString ("equippedItems", ",");
+			PlayerPrefs.SetString ("equippedItems", "");
 			Debug.Log ("Initializing equippedItems");
 		}
 		string equippedItemsString = PlayerPrefs.GetString("equippedItems");
@@ -118,12 +122,12 @@ public class PlayerDataController : MonoBehaviour
 		return playerData;
 	}
 
-    private void SavePlayerData()
+    public void SavePlayerData()
     {
         PlayerPrefs.SetInt("coins", playerData.coins);
         PlayerPrefs.SetString("name", playerData.name);
-		PlayerPrefs.SetString("purchasedShopItems", String.Join(",", playerData.purchasedShopItems.ToArray()));//String.Join(",", playerData.purchasedShopItems));
-		PlayerPrefs.SetString("equippedItems", String.Join(",", playerData.equippedItems.ToArray()));//String.Join(",", playerData.equippedItems));
+		PlayerPrefs.SetString("purchasedShopItems", String.Join(",", playerData.purchasedShopItems.ToArray()));
+		PlayerPrefs.SetString("equippedItems", String.Join(",", playerData.equippedItems.ToArray()));
 
 		PlayerPrefs.Save ();
     }
