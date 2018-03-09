@@ -113,8 +113,6 @@ public class PlayerDataController : MonoBehaviour
 		string equippedItemsString = PlayerPrefs.GetString("equippedItems");
 		playerData.equippedItems = equippedItemsString.Split (',').ToList ();
 
-		SavePlayerData ();
-
     }
 
 	public PlayerData GetPlayerData(){

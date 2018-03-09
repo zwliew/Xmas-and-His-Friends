@@ -30,7 +30,7 @@ public class EditorModeDisplayController : MonoBehaviour
 	private int pageNumber;
 	private float[] pagePositions;
 
-    //public List<EditorModeItem> purchasedItems;
+
 	public GameObject editorModeWindowContent;//The parent of the button
 	public Button prefabItemButton;
 

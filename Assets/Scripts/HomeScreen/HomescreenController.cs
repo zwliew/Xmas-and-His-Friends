@@ -22,12 +22,12 @@ public class HomescreenController : MonoBehaviour {
             if (equippedGameObject != null) {
                 equippedGameObject.transform.position = new Vector3(0, 0, 0);
 				EditorModeItem itemScript =
-					equippedGameObject.GetComponent<EditorModeItem> ();
+					equippedGameObject.GetComponent<EditorModeItem> ();//The editor Mode Item script is attached to buttons not gameObjects!
 				if(itemScript != null){
 					Debug.Log (itemScript);
-					//itemScript.isSelected = true;
+					itemScript.isSelected = true;
 				}else{
-					Debug.Log ("did not find the itemScript");
+					Debug.LogError ("did not find the itemScript, The editor Mode Item script is attached to buttons not gameObjects!");
 				}
             }
         }

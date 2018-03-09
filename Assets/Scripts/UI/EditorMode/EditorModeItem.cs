@@ -28,9 +28,9 @@ public class EditorModeItem : MonoBehaviour {
 		if (isSelected) {
 			isSelected = false;
 			SelectItem ();
-			Debug.Log ("Setting this item as equipped: " + fullName);
+			//Debug.Log ("Setting this item as equipped: " + fullName);
 		} else {
-			Debug.Log ("did not set this item as equipped: " + fullName);
+			//Debug.Log ("did not set this item as equipped: " + fullName);
 		}
 	}
 

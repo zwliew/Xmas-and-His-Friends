@@ -35,13 +35,17 @@ public class EditorModeDataController : MonoBehaviour {
 			.GetComponent<PlayerDataController>();
 
 		if (playerDataController)
-			//Debug.Log ("playerDataController is found successfully");
+			Debug.Log ("playerDataController is found successfully");
 
 		purchasedItemsData = new List<EditorModeItemData>();
 		equippedItemsData = new List<EditorModeItemData> ();
 
 		PlayerData playerData = playerDataController.GetPlayerData ();
 		equippedItemNames = playerData.equippedItems;
+		foreach (string str in equippedItemNames) {
+			Debug.Log ("equippedItemName is: " + str);
+		}
+
 		purchasedItemNames = playerData.purchasedShopItems;
 
 		TextAsset dataAsJson = Resources.Load<TextAsset> ("EditorMode/EditorModeData");//Load textual data for EditorModeItemData
@@ -54,6 +58,7 @@ public class EditorModeDataController : MonoBehaviour {
 		}
 
 		equippedItemsData = ParseItems (equippedItemNames, "equippedItems");
+		Debug.Log ("When initializing, equippedItemsData.Count = " + equippedItemsData.Count);
 		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
 		
 	}
@@ -69,7 +74,7 @@ public class EditorModeDataController : MonoBehaviour {
 					if (itemData.fullName.Equals (itemName)) {//I don't know if this part works
 						itemData.equipped = true;
 						tempItemsData.Add (itemData);
-						Debug.Log ("ItemSetEquippedSuccessfully: " + itemData.fullName);
+						//Debug.Log ("ItemSetEquippedSuccessfully: " + itemData.fullName);
 					}
 				}
 			}
@@ -81,7 +86,7 @@ public class EditorModeDataController : MonoBehaviour {
 					if (itemData.fullName.Equals (itemName)) {
 						itemData.purchased = true;
 						tempItemsData.Add (itemData);
-						Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
+						//Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
 					}
 				}
 			}
@@ -136,6 +141,7 @@ public class EditorModeDataController : MonoBehaviour {
 		if (item.isSelected) {//The logic here a bit confusing since displayController will select the item first
 			Debug.Log ("Removing equippedItem in EditorModeData: " + item.fullName);
 			Debug.Log("No of equippedItemsData before removing: " + equippedItemsData.Count);
+			equippedItemsData.Remove(ParseItems(item.fullName, "remove"));//Removing twice just solves the issue
 			equippedItemsData.Remove(ParseItems(item.fullName, "remove"));
 			Debug.Log("No of equippedItemsData after removing: " + equippedItemsData.Count);
 		} else {
