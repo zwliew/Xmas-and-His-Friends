@@ -141,8 +141,11 @@ public class EditorModeDataController : MonoBehaviour {
 		if (item.isSelected) {//The logic here a bit confusing since displayController will select the item first
 			Debug.Log ("Removing equippedItem in EditorModeData: " + item.fullName);
 			Debug.Log("No of equippedItemsData before removing: " + equippedItemsData.Count);
-			equippedItemsData.Remove(ParseItems(item.fullName, "remove"));//Removing twice just solves the issue
-			equippedItemsData.Remove(ParseItems(item.fullName, "remove"));
+			EditorModeItemData itemToBeRemoved = ParseItems(item.fullName, "remove");//Removing all just solves the issue
+			while (equippedItemsData.Contains(itemToBeRemoved)) {
+				equippedItemsData.Remove (itemToBeRemoved);
+			}
+
 			Debug.Log("No of equippedItemsData after removing: " + equippedItemsData.Count);
 		} else {
 			Debug.Log ("Adding equippedItem in EditorModeData: " + item.fullName);
