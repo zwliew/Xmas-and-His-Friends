@@ -156,7 +156,6 @@ public class ShopDataController : MonoBehaviour
     {
 		purchasedItemsData.Add(ParseItems(curSelectedItem.fullName, "purchase"));
 		displayedItemsData.Remove(ParseItems(curSelectedItem.fullName, "remove"));
-        Debug.Log("PurchaseSelectedItem1");
     }
 
 	public void EndandSave(){

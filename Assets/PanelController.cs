@@ -13,7 +13,6 @@ public class PanelController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         text.text = "是否花" + itemCost + "元购买" + itemName + " ?";
-        yesBtn.onClick.AddListener(()=> { PurchaseItem(); });
 	}
 
     private void PurchaseItem()

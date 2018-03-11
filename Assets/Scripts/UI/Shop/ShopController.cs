@@ -35,6 +35,7 @@ public class ShopController : MonoBehaviour
 		dataController.PurchaseSelectedItem1 ();
 		displayController.UnselectSelectedItem();
 		dataController.UnselectSelectedItem();
+        
 	}
 		
 	public void EndandSave(){
