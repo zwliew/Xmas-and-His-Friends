@@ -52,6 +52,7 @@ public class PlayerDataController : MonoBehaviour
             return false;
         }
         playerData.purchasedShopItems.Add(name);
+        UpdatePlayerCoins(-cost);
         return true;
     }
 

@@ -149,7 +149,8 @@ public class ShopDataController : MonoBehaviour
         }
         bool success = playerDataController.PurchaseShopItem(curSelectedItem.fullName, curSelectedItem.cost);//Do not do this. It messes up two controllers. Use UpdatePlayerCoins and UpdatePurchasedItems instead
         if (success) {
-             //purchasedItems.Add(curSelectedItem);
+            //purchasedItems.Add(curSelectedItem);
+            ParseItems(curSelectedItem.fullName, "remove");
         }
         return success;
     }

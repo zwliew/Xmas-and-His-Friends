@@ -22,18 +22,18 @@ public class ShopItem : MonoBehaviour
 	public bool isBuyable;
 	public bool isOnSale;
 	public bool isSelected;
-
 	private Button itemButton;
 	private ShopItem shopItem;
 
-	public void Initialize(){
-		isSelected = false;
-		itemButton = GetComponent<Button> ();
-		shopItem = GetComponent<ShopItem> ();
-		itemButton.gameObject.transform.GetChild(0).GetComponentInChildren<Image> ().sprite = itemSprite;
-		itemButton.onClick.RemoveAllListeners ();
-		itemButton.onClick.AddListener (()=>{SelectItem();});
-	}
+    public void Initialize()
+    {
+        isSelected = false;
+        itemButton = GetComponent<Button>();
+        shopItem = GetComponent<ShopItem>();
+        itemButton.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().sprite = itemSprite;
+        itemButton.onClick.RemoveAllListeners();
+        itemButton.onClick.AddListener(() => { SelectItem(); });
+    }
 
 	public void SelectItem(){
 		SendMessageUpwards ("SelectItem_Master", shopItem);

@@ -33,7 +33,7 @@ public class ShopDisplayController : MonoBehaviour
 	public List<ShopItem> purchasedItems;
 	public GameObject shopWindowContent;//The parent of the button
 	public Button prefabItemButton;
-
+    public Button purchaseButton;
 	public Text DescriptionText;
 
     public void Initialize()
@@ -98,8 +98,11 @@ public class ShopDisplayController : MonoBehaviour
 			if (curSelectedItem)
 				UnselectItem (curSelectedItem);
 			item.SetSelected();
+            purchaseButton.gameObject.SetActive(true);
+            Debug.Log("button is active: " + purchaseButton.gameObject.active);
 			DescriptionText.text = item.fullName.ToString ();
 			curSelectedItem = item;
+
 		}
 
     }
@@ -113,6 +116,7 @@ public class ShopDisplayController : MonoBehaviour
 		DescriptionText.text = "";
 		item.SetUnselected();
 		curSelectedItem = null;
+        purchaseButton.gameObject.SetActive(false);
     }
 
     public void UnselectSelectedItem()
