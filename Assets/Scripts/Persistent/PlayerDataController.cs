@@ -76,7 +76,7 @@ public class PlayerDataController : MonoBehaviour
     private void LoadPlayerData()
     {
 		playerData = new PlayerData ();
-
+		PlayerPrefs.SetString ("displayedShopItems", "ChristmasTree,Fire");
 		PlayerPrefs.SetString ("purchasedShopItems", "ChristmasTree,Fire");//Manually add ChristmasTree
 
         if (PlayerPrefs.HasKey("name"))
@@ -95,6 +95,15 @@ public class PlayerDataController : MonoBehaviour
         }
 		playerData.coins = PlayerPrefs.GetInt("coins");
 
+		if (PlayerPrefs.HasKey("displayedShopItems"))
+		{
+		} else
+		{
+			PlayerPrefs.SetString ("displayedShopItems", "");
+		}
+		string displayedShopItemsString = PlayerPrefs.GetString("displayedShopItems");
+		playerData.displayedShopItems = displayedShopItemsString.Split(',').ToList();
+
         if (PlayerPrefs.HasKey("purchasedShopItems"))
         {
         } else
@@ -103,6 +112,7 @@ public class PlayerDataController : MonoBehaviour
         }
 		string purchasedShopItemsString = PlayerPrefs.GetString("purchasedShopItems");
 		playerData.purchasedShopItems = purchasedShopItemsString.Split(',').ToList();
+
 		if (PlayerPrefs.HasKey("equippedItems"))
 		{
 		} else
@@ -124,6 +134,7 @@ public class PlayerDataController : MonoBehaviour
     {
         PlayerPrefs.SetInt("coins", playerData.coins);
         PlayerPrefs.SetString("name", playerData.name);
+		PlayerPrefs.SetString("displayedShopItems", String.Join(",", playerData.displayedShopItems.ToArray()));
 		PlayerPrefs.SetString("purchasedShopItems", String.Join(",", playerData.purchasedShopItems.ToArray()));
 		PlayerPrefs.SetString("equippedItems", String.Join(",", playerData.equippedItems.ToArray()));
 

@@ -24,32 +24,114 @@ public class ShopDataController : MonoBehaviour
 {
     private PlayerDataController playerDataController;
 
-    private ShopItemData[] shopItems;
 	private ShopItem curSelectedItem;
 
-	public List<ShopItemData> purchasedItems;
 
-    public void Initialize()
-    {
-        curSelectedItem = null;
-        // TODO: Add a "Persistent" game object scene with the PlayerDataController script attached
-		playerDataController = GameObject.FindGameObjectWithTag("Persistent")
-                .GetComponent<PlayerDataController>();
+	private List<ShopItemData> itemsData;
+	private ShopItemData[] itemsDataArray;
+	private List<string> purchasedItemNames;
+	private List<ShopItemData> purchasedItemsData;
+	private List<string> displayedItemNames;
+	private List<ShopItemData> displayedItemsData;
 
-        TextAsset dataAsJson = Resources.Load<TextAsset> ("Shop/ShopData");
-        ShopJsonData shopJsonData = JsonUtility.FromJson<ShopJsonData>(dataAsJson.text);
-        shopItems = shopJsonData.shopItemsData;
+	public void Initialize()//One bug lies here: when loaded, the equipped items data is not cleared
+	{
+		playerDataController = GameObject.FindGameObjectWithTag("Persistent")//Get the PlayerDataController
+			.GetComponent<PlayerDataController>();
 
-		foreach (ShopItemData shopItem in shopItems) {//Need two steps: One, Load the data from Json(cost, fullName, etc); Two, Load the corresponding sprites and assign to the shop item
-            if (playerDataController.IsShopItemPurchased(shopItem.fullName)) {
-                purchasedItems.Add(shopItem);
-            }
-        }
-    }
+		if (playerDataController)
+			Debug.Log ("playerDataController is found successfully");
+
+		purchasedItemsData = new List<ShopItemData>();
+
+		PlayerData playerData = playerDataController.GetPlayerData ();
+		purchasedItemNames = playerData.purchasedShopItems;
+		displayedItemNames = playerData.displayedShopItems;
+
+		TextAsset dataAsJson = Resources.Load<TextAsset> ("Shop/ShopData");//Load textual data for ShopItemData
+		ShopJsonData shopJsonData = JsonUtility.FromJson<ShopJsonData>(dataAsJson.text);
+		itemsDataArray = shopJsonData.shopItemsData;
+
+		itemsData = new List<ShopItemData> ();//Convert to list, fill up the rest of the ShopSItemData
+		foreach (ShopItemData itemData in itemsDataArray) {
+			itemsData.Add(itemData);
+		}
+			
+		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
+		displayedItemsData = ParseItems (displayedItemNames, "displayedItems");
+
+	}
+
+	private List<ShopItemData> ParseItems(List<string> itemsStringList, string mode){//Self-explainatory method, also modifies the itemsData
+
+		List<ShopItemData> tempItemsData = new List<ShopItemData> ();
+
+		switch (mode) {
+		case "displayedItems":
+			foreach (string itemName in itemsStringList) {
+				foreach (ShopItemData itemData in itemsData) {
+					if (itemData.fullName.Equals (itemName)) {
+						itemData.isOnSale = true;
+						tempItemsData.Add (itemData);
+						//Debug.Log ("ItemSetEquippedSuccessfully: " + itemData.fullName);
+					}
+				}
+			}
+			break;
+
+		case "purchasedItems":
+			foreach (string itemName in itemsStringList) {
+				foreach (ShopItemData itemData in itemsData) {
+					if (itemData.fullName.Equals (itemName)) {
+						itemData.purchased = true;
+						tempItemsData.Add (itemData);
+						//Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
+					}
+				}
+			}
+			break;
+		}
+
+
+		return tempItemsData;
+	}
+
+	private ShopItemData ParseItems(string itemsString, string mode){
+
+		ShopItemData tempItemsData = new ShopItemData ();
+		switch(mode){
+		case "remove":
+			foreach (ShopItemData itemData in itemsData) {
+				if (itemData.fullName.Equals (itemsString)) {
+					itemData.equipped = false;
+					tempItemsData = itemData;
+					Debug.Log ("Item Deselected Successfully: " + itemData.fullName);
+				}
+			}
+			break;
+		case "add":
+			foreach (ShopItemData itemData in itemsData) {
+				if (itemData.fullName.Equals (itemsString)) {
+					itemData.equipped = true;
+					tempItemsData = itemData;
+					Debug.Log ("Item Selected Successfully: " + itemData.fullName);
+				}
+			}
+			break;
+		default:
+			Debug.Log("ParseItems(single string version) got error");
+			break;
+		}
+
+		return tempItemsData;
+	}
+
+	public List<ShopItemData> GetDisplayedItems(){
+		return displayedItemsData;
+	}
 
     public void SelectItem(ShopItem item)
     {
-		//Debug.Log("ShopDataController is selecting items");
         curSelectedItem = item;
     }
 
@@ -65,7 +147,7 @@ public class ShopDataController : MonoBehaviour
             // No item to purchase
             return false;
         }
-        bool success = playerDataController.PurchaseShopItem(curSelectedItem.fullName, curSelectedItem.cost);
+        bool success = playerDataController.PurchaseShopItem(curSelectedItem.fullName, curSelectedItem.cost);//Do not do this. It messes up two controllers. Use UpdatePlayerCoins and UpdatePurchasedItems instead
         if (success) {
              //purchasedItems.Add(curSelectedItem);
         }

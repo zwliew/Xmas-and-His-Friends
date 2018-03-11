@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class ShopJsonData
 {
-    public ShopItemData[] shopItemsData;
+	public ShopItemData[] shopItemsData;
 }
 
 [System.Serializable]

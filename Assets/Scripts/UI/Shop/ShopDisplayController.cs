@@ -38,7 +38,7 @@ public class ShopDisplayController : MonoBehaviour
 
     public void Initialize()
     {
-		items = TempGetSomeItem ();
+		items = GetComponent<ShopDataController>().GetDisplayedItems();
 		pageNumber = 0;
 		pagePositions = new float[items.Count / 4 + 1];
 		for(int i = 0; i < items.Count/4 + 1; i++){
@@ -108,10 +108,8 @@ public class ShopDisplayController : MonoBehaviour
     {
         if (item == null)
         {
-            // No item to unselect
             return;
         }
-        // TODO: Unselected the item given as a parameter
 		DescriptionText.text = "";
 		item.SetUnselected();
 		curSelectedItem = null;

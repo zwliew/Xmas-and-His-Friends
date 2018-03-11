@@ -18,7 +18,7 @@ public class ShopController : MonoBehaviour
     private void StartShop()
     {
 		Debug.Log ("Shop Started");
-        //dataController.Initialize();
+        dataController.Initialize();
         displayController.Initialize();
 		//displayController.DisableItems(dataController.purchasedItems);
     }

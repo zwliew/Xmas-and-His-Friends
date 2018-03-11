@@ -112,10 +112,8 @@ public class EditorModeDisplayController : MonoBehaviour
 	{
 		if (item == null)
 		{
-			// No item to unselect
 			return;
 		}
-		// TODO: Unselected the item given as a parameter
 		item.SetUnselected();
 		curSelectedItem = null;
 	}
