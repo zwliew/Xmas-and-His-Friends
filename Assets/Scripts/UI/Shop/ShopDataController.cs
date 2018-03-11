@@ -158,10 +158,15 @@ public class ShopDataController : MonoBehaviour
 
 	public void EndandSave(){
 		purchasedItemNames.Clear ();
-		foreach (ShopItemData itemData in purchasedItemsData) {
+		foreach (ShopItemData	 itemData in purchasedItemsData) {
 			purchasedItemNames.Add (itemData.fullName.ToString ());
 		}
 		playerDataController.UpdatePurchasedShopItem (purchasedItemNames);
 
+		displayedItemNames.Clear ();
+		foreach (ShopItemData itemData in displayedItemsData) {
+			displayedItemNames.Add (itemData.fullName.ToString ());
+		}
+		playerDataController.UpdateDisplayedShopItem (displayedItemNames);
 	}
 }

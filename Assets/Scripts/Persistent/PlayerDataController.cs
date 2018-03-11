@@ -39,6 +39,12 @@ public class PlayerDataController : MonoBehaviour
         SavePlayerData();
     }
 
+	public void UpdateDisplayedShopItem(List<string> displayedItemNames){
+		playerData.displayedShopItems = displayedItemNames;
+		Debug.Log ("DisplayedShopItems has ve updated in PlayerDataController");
+		SavePlayerData ();
+	}
+
 	public void UpdatePurchasedShopItem(List<string> purchasedItemNames) {
 		
 		playerData.purchasedShopItems = purchasedItemNames;
