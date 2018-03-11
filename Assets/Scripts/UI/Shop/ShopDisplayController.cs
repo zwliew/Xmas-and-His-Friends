@@ -53,7 +53,12 @@ public class ShopDisplayController : MonoBehaviour
 
     private void purchaseItem()
     {
-        SendMessageUpwards("PurchaseSelectedItem");
+        if(curSelectedItem.isBuyable == false)
+        {
+            purchaseButton.interactable = false;
+            return;
+        }
+
     }
 
     private List<ShopItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
@@ -138,8 +143,6 @@ public class ShopDisplayController : MonoBehaviour
 
     public void DisplayFailedPurchase()
     {
-        // TODO: Display an indicator that the purchase failed
-        // (maybe a red ring around the 'purchase' button?)
     }
 
     public void DisableItems(List<ShopItem> items) {

@@ -15,14 +15,15 @@ public class ShopItemData : ItemData{//The Class for data
 	//public string fullName;
 	public Sprite selectedSprite;
 	public Sprite unselectedSprite;
-	public bool isBuyable;
-	public bool isOnSale;
+	public bool isBuyable;//being displayed in the shop but cannot be purchased
+	public bool isOnSale;//being displayed in the shop and can be purchased
 	public bool isSelected;
 }
 
 public class ShopDataController : MonoBehaviour
 {
     private PlayerDataController playerDataController;
+    private PlayerData playerData;
 
 	private ShopItem curSelectedItem;
 
@@ -44,7 +45,7 @@ public class ShopDataController : MonoBehaviour
 
 		purchasedItemsData = new List<ShopItemData>();
 
-		PlayerData playerData = playerDataController.GetPlayerData ();
+		playerData = playerDataController.GetPlayerData ();
 		purchasedItemNames = playerData.purchasedShopItems;
 		displayedItemNames = playerData.displayedShopItems;
 
@@ -103,7 +104,7 @@ public class ShopDataController : MonoBehaviour
 		case "remove":
 			foreach (ShopItemData itemData in itemsData) {
 				if (itemData.fullName.Equals (itemsString)) {
-					itemData.equipped = false;
+					itemData.isOnSale = false;
 					tempItemsData = itemData;
 					Debug.Log ("Item Deselected Successfully: " + itemData.fullName);
 				}
@@ -112,12 +113,22 @@ public class ShopDataController : MonoBehaviour
 		case "add":
 			foreach (ShopItemData itemData in itemsData) {
 				if (itemData.fullName.Equals (itemsString)) {
-					itemData.equipped = true;
+					itemData.isOnSale = true;
 					tempItemsData = itemData;
 					Debug.Log ("Item Selected Successfully: " + itemData.fullName);
 				}
 			}
 			break;
+		case "purchase":
+			foreach (ShopItemData itemData in itemsData) {
+				if (itemData.fullName.Equals (itemsString)) {
+					itemData.purchased = true;
+					tempItemsData = itemData;
+					Debug.Log ("Item Purchased Successfully: " + itemData.fullName);
+				}
+			}
+			break;
+
 		default:
 			Debug.Log("ParseItems(single string version) got error");
 			break;
@@ -133,6 +144,7 @@ public class ShopDataController : MonoBehaviour
     public void SelectItem(ShopItem item)
     {
         curSelectedItem = item;
+        item.isBuyable = (item.cost <= playerData.coins);
     }
 
     public void UnselectSelectedItem()
@@ -140,18 +152,18 @@ public class ShopDataController : MonoBehaviour
         curSelectedItem = null;
     }
 
-    public bool PurchaseSelectedItem()
+    public void PurchaseSelectedItem()
     {
-        if (curSelectedItem == null)
-        {
-            // No item to purchase
-            return false;
-        }
-        bool success = playerDataController.PurchaseShopItem(curSelectedItem.fullName, curSelectedItem.cost);//Do not do this. It messes up two controllers. Use UpdatePlayerCoins and UpdatePurchasedItems instead
-        if (success) {
-            //purchasedItems.Add(curSelectedItem);
-            ParseItems(curSelectedItem.fullName, "remove");
-        }
-        return success;
+		purchasedItemsData.Add(ParseItems(curSelectedItem.fullName, "purchase"));
+		displayedItemsData.Remove(ParseItems(curSelectedItem.fullName, "remove"));
     }
+
+	public void EndandSave(){
+		purchasedItemNames.Clear ();
+		foreach (ShopItemData itemData in purchasedItemsData) {
+			purchasedItemNames.Add (itemData.fullName.ToString ());
+		}
+		playerDataController.UpdatePurchasedShopItem (purchasedItemNames);
+
+	}
 }

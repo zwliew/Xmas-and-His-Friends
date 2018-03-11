@@ -159,8 +159,6 @@ public class EditorModeDataController : MonoBehaviour {
 			equippedItemNames.Add (itemData.fullName.ToString ());
 		}
 		playerDataController.UpdateEquippedEditorModeItem (equippedItemNames);
-		playerDataController.SavePlayerData ();
-		equippedItemsData.Clear ();
 //		purchasedItemsData.Clear ();
 //		itemsData.Clear ();
 //		purchasedItemNames.Clear ();
