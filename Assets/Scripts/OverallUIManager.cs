@@ -115,6 +115,10 @@ public class OverallUIManager : MonoBehaviour {
 			closedCvsGrp.GetComponent<EditorModeController> ().EndandSave ();
 		}
 
+		if (closedCvsGrp.GetComponent<ShopController> ()) {
+			closedCvsGrp.GetComponent<ShopController> ().EndandSave ();
+		}
+
 		closedCvsGrp.gameObject.SetActive (false);
 		openedCvsGrp.gameObject.SetActive (true);
 

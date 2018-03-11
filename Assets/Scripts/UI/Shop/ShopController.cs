@@ -50,6 +50,11 @@ public class ShopController : MonoBehaviour
                 1 << LayerMask.NameToLayer("BuyItem"));
     }
 
+	public void EndandSave(){
+		displayController.EndandSave ();
+//		dataController.EndandSave ();
+	}
+
     /**
     * button.onClick is used in place of raycast 
     *

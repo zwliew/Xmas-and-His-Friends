@@ -951,7 +951,7 @@ RectTransform:
   m_Children:
   - {fileID: 471249323}
   m_Father: {fileID: 1054660208}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1574,9 +1574,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316145368}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 316145372}
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1828,31 +1828,31 @@ GameObject:
   - component: {fileID: 833568031}
   - component: {fileID: 833568030}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PurchaseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &833568029
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833568028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_Children:
   - {fileID: 659924855}
-  m_Father: {fileID: 1054660208}
+  m_Father: {fileID: 1195284326}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.47244895, y: 0.027278913}
-  m_AnchorMax: {x: 0.5306327, y: 0.5}
-  m_AnchoredPosition: {x: -3.5, y: -206}
-  m_SizeDelta: {x: 47, y: -492}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_SizeDelta: {x: 157.3269, y: 18.214142}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &833568030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2724,7 +2724,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 915711355}
-  - {fileID: 833568029}
   - {fileID: 316145369}
   m_Father: {fileID: 36138283}
   m_RootOrder: 2
@@ -3253,6 +3252,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1973369145}
+  - {fileID: 833568029}
   m_Father: {fileID: 1643226607}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3610,9 +3610,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 316145368}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 316145372}
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4450,7 +4450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1783392578
 RectTransform:
   m_ObjectHideFlags: 0

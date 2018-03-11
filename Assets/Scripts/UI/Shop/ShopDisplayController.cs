@@ -70,7 +70,7 @@ public class ShopDisplayController : MonoBehaviour
 		//Loop through the children and set them to inactive
 		for(int i = 0; i < shopWindowContent.transform.childCount; i++){
 			shopWindowContent.transform.GetChild(i).gameObject.SetActive(false);
-			Debug.Log("clearing existing items in the shop");// Somehow this does not work. Possible reason is that the shop items are inactive
+			Debug.Log("clearing existing items in the shop");
 		}
 
 		foreach (ShopItemData itemData in items) {
@@ -135,6 +135,10 @@ public class ShopDisplayController : MonoBehaviour
         // the user from selecting them.
         // This is usually used for items that have already been purchased.
     }
+
+	public void EndandSave(){
+		purchaseButton.gameObject.SetActive (false);
+	}
 
 	public void UIShopItemNextPage(){
 		StopAllCoroutines ();
