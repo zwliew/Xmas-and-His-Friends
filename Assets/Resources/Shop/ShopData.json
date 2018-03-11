@@ -10,6 +10,12 @@
 			"fullName": "Fire",
             "cost": "50"
             
+		},
+		{
+			"name": "mat",
+			"fullName": "Mat",
+            "cost": "23"
+            
 		}
 	]
 }
