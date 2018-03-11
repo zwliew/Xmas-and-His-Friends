@@ -29,31 +29,25 @@ public class PlayerDataController : MonoBehaviour
      * Updates the number of coins in the player's inventory
      * given a parameter 'delta'.
      * 
-     * If the resulting number of coins is negative, this method
-     * returns _false_ and does _not_ update the inventory.
-     * Otherwise, it returns _true_.
      */
-    private bool UpdatePlayerCoins(int delta)
+    public void UpdatePlayerCoins(int delta)
     {
         int initial = playerData.coins;
         int final = initial + delta;
-        if (final < 0)
-        {
-            return false;
-        }
         playerData.coins = final;
+		Debug.Log ("Player's coins have been updated. Coins: " + final);
         SavePlayerData();
-        return true;
     }
 
-    public bool PurchaseShopItem(string name, int cost) {//Use UpdatePurchasedShopItems instead
-        bool success = UpdatePlayerCoins(-cost);
-        if (!success) {
-            return false;
-        }
-        playerData.purchasedShopItems.Add(name);
-        UpdatePlayerCoins(-cost);
-        return true;
+	public void UpdatePurchasedShopItem(List<string> purchasedItemNames) {
+		
+		playerData.purchasedShopItems = purchasedItemNames;
+		
+		Debug.Log ("PurchasedShopItems has been updated in PlayerDataController");
+		foreach (string str in playerData.purchasedShopItems) {
+			Debug.Log ("This item is saved to playerpref as purchased: " + str.ToString());
+		}
+		SavePlayerData();
     }
 
 	public void UpdateEquippedEditorModeItem(List<String> itemNames){
@@ -68,6 +62,7 @@ public class PlayerDataController : MonoBehaviour
 		foreach (string str in playerData.equippedItems) {
 			Debug.Log ("This item is saved to playerpref as equipped: " + str.ToString());
 		}
+		SavePlayerData();
 	}
 
     public bool IsShopItemPurchased(string name) {
@@ -131,7 +126,7 @@ public class PlayerDataController : MonoBehaviour
 		return playerData;
 	}
 
-    public void SavePlayerData()
+    private void SavePlayerData()
     {
         PlayerPrefs.SetInt("coins", playerData.coins);
         PlayerPrefs.SetString("name", playerData.name);

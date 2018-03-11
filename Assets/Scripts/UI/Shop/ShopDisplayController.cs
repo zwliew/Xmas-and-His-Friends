@@ -126,8 +126,6 @@ public class ShopDisplayController : MonoBehaviour
 
     public void DisplayFailedPurchase()
     {
-        // TODO: Display an indicator that the purchase failed
-        // (maybe a red ring around the 'purchase' button?)
     }
 
     public void DisableItems(List<ShopItem> items) {
