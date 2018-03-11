@@ -35,6 +35,7 @@ public class ShopDisplayController : MonoBehaviour
 	public Button prefabItemButton;
     public Button purchaseButton;
 	public Text DescriptionText;
+    public ShowPanel panel;
 
     public void Initialize()
     {
@@ -46,9 +47,16 @@ public class ShopDisplayController : MonoBehaviour
 		}
 		curSelectedItem = null;
 		RefreshShopDisplay ();
+        purchaseButton.gameObject.SetActive(false);
+        purchaseButton.onClick.AddListener(() => { purchaseItem(); });
     }
 
-	private List<ShopItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
+    private void purchaseItem()
+    {
+        SendMessageUpwards("PurchaseSelectedItem");
+    }
+
+    private List<ShopItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
 		List<ShopItemData> itemList = new List<ShopItemData> ();
 		itemList.Add (new ShopItemData{cost = 2, fullName = "Item1", isBuyable = false, isOnSale = false});
 		itemList.Add (new ShopItemData{cost = 3, fullName = "Item2", isBuyable = false, isOnSale = false});
@@ -88,6 +96,8 @@ public class ShopDisplayController : MonoBehaviour
 		}
 	}
 
+
+
     public void SelectItem(ShopItem item)
     {
         // TODO: Display an item as 'selected', and unselect any previous 'selected' item
@@ -99,6 +109,7 @@ public class ShopDisplayController : MonoBehaviour
 				UnselectItem (curSelectedItem);
 			item.SetSelected();
             purchaseButton.gameObject.SetActive(true);
+            purchaseButton.interactable = true;
             Debug.Log("button is active: " + purchaseButton.gameObject.active);
 			DescriptionText.text = item.fullName.ToString ();
 			curSelectedItem = item;
@@ -117,6 +128,7 @@ public class ShopDisplayController : MonoBehaviour
 		item.SetUnselected();
 		curSelectedItem = null;
         purchaseButton.gameObject.SetActive(false);
+        purchaseButton.interactable = false;
     }
 
     public void UnselectSelectedItem()

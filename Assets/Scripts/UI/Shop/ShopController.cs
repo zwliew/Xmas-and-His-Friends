@@ -32,6 +32,7 @@ public class ShopController : MonoBehaviour
             // in the inventory or the lack of selected items
             displayController.DisplayFailedPurchase();
         }
+
         displayController.UnselectSelectedItem();
         dataController.UnselectSelectedItem();
     }
