@@ -14,7 +14,7 @@ using System.Collections.Generic;
  */
 public class ShopItem : MonoBehaviour
 {
-    public int cost;
+    public int cost = 20;
 	public string fullName;
 	public Sprite itemSprite;
 	public Sprite selectedSprite;

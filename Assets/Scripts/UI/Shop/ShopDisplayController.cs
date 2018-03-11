@@ -35,8 +35,8 @@ public class ShopDisplayController : MonoBehaviour
 	public Button prefabItemButton;
     public Button purchaseButton;
 	public Text DescriptionText;
-    public ShowPanel panel;
-
+    public GameObject panel;
+    public PanelController panelController;
     public void Initialize()
     {
 		items = GetComponent<ShopDataController>().GetDisplayedItems();
@@ -48,18 +48,10 @@ public class ShopDisplayController : MonoBehaviour
 		curSelectedItem = null;
 		RefreshShopDisplay ();
         purchaseButton.gameObject.SetActive(false);
-        purchaseButton.onClick.AddListener(() => { purchaseItem(); });
+        panelController = panel.gameObject.GetComponent<PanelController>();
     }
 
-    private void purchaseItem()
-    {
-        if(curSelectedItem.isBuyable == false)
-        {
-            purchaseButton.interactable = false;
-            return;
-        }
 
-    }
 
     private List<ShopItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
 		List<ShopItemData> itemList = new List<ShopItemData> ();
@@ -114,12 +106,23 @@ public class ShopDisplayController : MonoBehaviour
 				UnselectItem (curSelectedItem);
 			item.SetSelected();
             purchaseButton.gameObject.SetActive(true);
-            purchaseButton.interactable = true;
+            if (!item.isBuyable)
+            {
+                purchaseButton.interactable = false;
+            }
+            else
+            {
+                purchaseButton.interactable = true;
+            }
             Debug.Log("button is active: " + purchaseButton.gameObject.active);
-			DescriptionText.text = item.fullName.ToString ();
+			DescriptionText.text = item.fullName.ToString () + Environment.NewLine + "cost: " + item.cost.ToString();
 			curSelectedItem = item;
+            Debug.Log("item.fullName: " + item.fullName);
+            panelController.itemName = item.fullName;
+            panelController.itemCost = item.cost.ToString();
 
-		}
+
+        }
 
     }
 

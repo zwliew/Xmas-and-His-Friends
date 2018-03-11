@@ -78,6 +78,7 @@ public class PlayerDataController : MonoBehaviour
     private void LoadPlayerData()
     {
 		playerData = new PlayerData ();
+        PlayerPrefs.SetInt("coins", 0);
 		PlayerPrefs.SetString ("displayedShopItems", "ChristmasTree,Fire");
 		PlayerPrefs.SetString ("purchasedShopItems", "ChristmasTree,Fire");//Manually add ChristmasTree
 

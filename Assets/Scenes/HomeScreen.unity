@@ -932,6 +932,7 @@ GameObject:
   - component: {fileID: 316145371}
   - component: {fileID: 316145370}
   - component: {fileID: 316145372}
+  - component: {fileID: 316145373}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1008,6 +1009,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &316145373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316145368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b046db9caac0b64f822245cb6a81705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yesBtn: {fileID: 764749613}
+  noBtn: {fileID: 1293456501}
+  text: {fileID: 421190863}
+  itemName: fire
+  itemCost: 1
 --- !u!1 &341164325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,6 +1090,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &421190861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 421190862}
+  - component: {fileID: 421190864}
+  - component: {fileID: 421190863}
+  m_Layer: 5
+  m_Name: DisplayText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &421190862
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421190861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 471249323}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.135, y: 0.61800003}
+  m_AnchorMax: {x: 0.88250005, y: 0.82000005}
+  m_AnchoredPosition: {x: -7, y: -11.6199875}
+  m_SizeDelta: {x: 12.5, y: -1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &421190863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421190861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &421190864
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421190861}
 --- !u!1 &471249322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1194,7 @@ RectTransform:
   - {fileID: 1861398269}
   - {fileID: 764749612}
   - {fileID: 1293456500}
+  - {fileID: 421190862}
   m_Father: {fileID: 316145369}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2811,6 +2903,8 @@ MonoBehaviour:
     type: 2}
   purchaseButton: {fileID: 833568030}
   DescriptionText: {fileID: 1973369146}
+  panel: {fileID: 316145368}
+  panelController: {fileID: 0}
 --- !u!114 &1054660214
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,13 +24,6 @@ public class ShopController : MonoBehaviour
     }
 
 
-    private void PurchaseSelectedItem()
-    {
-        displayController.UnselectSelectedItem();
-        dataController.UnselectSelectedItem();
-    }
-
-
     private void SelectItem_Master(ShopItem item)
     {
         dataController.SelectItem(item);
@@ -39,7 +32,7 @@ public class ShopController : MonoBehaviour
 
 	private void PurchaseSelectedItem()
 	{
-		dataController.PurchaseSelectedItem ();
+		dataController.PurchaseSelectedItem1 ();
 		displayController.UnselectSelectedItem();
 		dataController.UnselectSelectedItem();
 	}

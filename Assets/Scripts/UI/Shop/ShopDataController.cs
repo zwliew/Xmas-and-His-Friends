@@ -144,7 +144,7 @@ public class ShopDataController : MonoBehaviour
     public void SelectItem(ShopItem item)
     {
         curSelectedItem = item;
-        item.isBuyable = (item.cost <= playerData.coins);
+        item.isBuyable = ((int)item.cost <= (int)playerData.coins);
     }
 
     public void UnselectSelectedItem()
@@ -152,10 +152,11 @@ public class ShopDataController : MonoBehaviour
         curSelectedItem = null;
     }
 
-    public void PurchaseSelectedItem()
+    public void PurchaseSelectedItem1()
     {
 		purchasedItemsData.Add(ParseItems(curSelectedItem.fullName, "purchase"));
 		displayedItemsData.Remove(ParseItems(curSelectedItem.fullName, "remove"));
+        Debug.Log("PurchaseSelectedItem1");
     }
 
 	public void EndandSave(){
