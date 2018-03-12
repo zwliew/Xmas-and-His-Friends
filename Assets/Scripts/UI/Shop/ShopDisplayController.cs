@@ -53,19 +53,19 @@ public class ShopDisplayController : MonoBehaviour
 
 
 
-    private List<ShopItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
-		List<ShopItemData> itemList = new List<ShopItemData> ();
-		itemList.Add (new ShopItemData{cost = 2, fullName = "Item1", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 3, fullName = "Item2", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 4, fullName = "Item3", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 5, fullName = "Item4", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 6, fullName = "Item5", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 6, fullName = "Item7", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 6, fullName = "Item8", isBuyable = false, isOnSale = false});
-		itemList.Add (new ShopItemData{cost = 6, fullName = "Item9", isBuyable = false, isOnSale = false});
-		return itemList;
-	}
+//    private List<ShopItemData> TempGetSomeItem(){//Useanother container for data for ShopItems as Class ShopItem is used as the script controllling the shopitem attached
+//		List<ShopItemData> itemList = new List<ShopItemData> ();
+//		itemList.Add (new ShopItemData{cost = 2, fullName = "Item1", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 3, fullName = "Item2", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 4, fullName = "Item3", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 5, fullName = "Item4", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 6, fullName = "Item5", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 6, fullName = "Item6", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 6, fullName = "Item7", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 6, fullName = "Item8", isBuyable = false, isOnSale = false});
+//		itemList.Add (new ShopItemData{cost = 6, fullName = "Item9", isBuyable = false, isOnSale = false});
+//		return itemList;
+//	}
 
 	private void RefreshShopDisplay (){
 
@@ -75,7 +75,7 @@ public class ShopDisplayController : MonoBehaviour
 		//Loop through the children and set them to inactive
 		for(int i = 0; i < shopWindowContent.transform.childCount; i++){
 			shopWindowContent.transform.GetChild(i).gameObject.SetActive(false);
-			Debug.Log("clearing existing items in the shop");
+			//Debug.Log("clearing existing items in the shop");
 		}
 
 		foreach (ShopItemData itemData in items) {
@@ -114,10 +114,10 @@ public class ShopDisplayController : MonoBehaviour
             {
                 purchaseButton.interactable = true;
             }
-            Debug.Log("button is active: " + purchaseButton.gameObject.active);
+            //Debug.Log("button is active: " + purchaseButton.gameObject.active);
 			DescriptionText.text = item.fullName.ToString () + Environment.NewLine + "cost: " + item.cost.ToString();
 			curSelectedItem = item;
-            Debug.Log("item.fullName: " + item.fullName);
+            //Debug.Log("item.fullName: " + item.fullName);
             panelController.itemName = item.fullName;
             panelController.itemCost = item.cost.ToString();
 

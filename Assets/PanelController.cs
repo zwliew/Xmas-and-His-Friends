@@ -13,16 +13,14 @@ public class PanelController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         text.text = "是否花" + itemCost + "元购买" + itemName + " ?";
+		yesBtn.onClick.AddListener (PurchaseItem);
 	}
 
     private void PurchaseItem()
     {
-        SendMessageUpwards("PurchaseSelectedItem");
+        SendMessageUpwards("PurchaseSelectedItem_Master");
         Debug.Log("item purchased");
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
+
 }

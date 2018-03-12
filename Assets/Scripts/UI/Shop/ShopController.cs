@@ -30,9 +30,9 @@ public class ShopController : MonoBehaviour
         displayController.SelectItem(item);
     }
 
-	private void PurchaseSelectedItem()
+	private void PurchaseSelectedItem_Master()
 	{
-		dataController.PurchaseSelectedItem1 ();
+		dataController.PurchaseSelectedItem ();
 		displayController.UnselectSelectedItem();
 		dataController.UnselectSelectedItem();
         
@@ -40,7 +40,7 @@ public class ShopController : MonoBehaviour
 		
 	public void EndandSave(){
 		displayController.EndandSave ();
-//		dataController.EndandSave ();
+		dataController.EndandSave ();
 	}
 
 }

@@ -74,7 +74,7 @@ public class ShopDataController : MonoBehaviour
 					if (itemData.fullName.Equals (itemName)) {
 						itemData.isOnSale = true;
 						tempItemsData.Add (itemData);
-						//Debug.Log ("ItemSetEquippedSuccessfully: " + itemData.fullName);
+						Debug.Log ("ItemSetDisplayedSuccessfully: " + itemData.fullName);
 					}
 				}
 			}
@@ -86,7 +86,7 @@ public class ShopDataController : MonoBehaviour
 					if (itemData.fullName.Equals (itemName)) {
 						itemData.purchased = true;
 						tempItemsData.Add (itemData);
-						//Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
+						Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
 					}
 				}
 			}
@@ -152,10 +152,13 @@ public class ShopDataController : MonoBehaviour
         curSelectedItem = null;
     }
 
-    public void PurchaseSelectedItem1()
+    public void PurchaseSelectedItem()
     {
+		Debug.Log (purchasedItemsData);
 		purchasedItemsData.Add(ParseItems(curSelectedItem.fullName, "purchase"));
 		displayedItemsData.Remove(ParseItems(curSelectedItem.fullName, "remove"));
+		EndandSave ();
+		GetComponent<ShopDisplayController> ().Initialize ();
     }
 
 	public void EndandSave(){

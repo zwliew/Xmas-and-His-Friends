@@ -41,7 +41,7 @@ public class PlayerDataController : MonoBehaviour
 
 	public void UpdateDisplayedShopItem(List<string> displayedItemNames){
 		playerData.displayedShopItems = displayedItemNames;
-		Debug.Log ("DisplayedShopItems has ve updated in PlayerDataController");
+		Debug.Log ("DisplayedShopItems has been updated in PlayerDataController"+ displayedItemNames.Count.ToString());
 		SavePlayerData ();
 	}
 
@@ -49,7 +49,7 @@ public class PlayerDataController : MonoBehaviour
 		
 		playerData.purchasedShopItems = purchasedItemNames;
 		
-		Debug.Log ("PurchasedShopItems has been updated in PlayerDataController");
+		Debug.Log ("PurchasedShopItems has been updated in PlayerDataController" + purchasedItemNames.Count.ToString());
 		foreach (string str in playerData.purchasedShopItems) {
 			Debug.Log ("This item is saved to playerpref as purchased: " + str.ToString());
 		}
@@ -78,9 +78,9 @@ public class PlayerDataController : MonoBehaviour
     private void LoadPlayerData()
     {
 		playerData = new PlayerData ();
-        PlayerPrefs.SetInt("coins", 0);
+        PlayerPrefs.SetInt("coins", 10);
 		PlayerPrefs.SetString ("displayedShopItems", "ChristmasTree,Fire");
-		PlayerPrefs.SetString ("purchasedShopItems", "ChristmasTree,Fire");//Manually add ChristmasTree
+		PlayerPrefs.SetString ("purchasedShopItems", "");
 
         if (PlayerPrefs.HasKey("name"))
         {
