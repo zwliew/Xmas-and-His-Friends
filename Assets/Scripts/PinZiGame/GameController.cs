@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour {
 
 	private Word curWord;
 	private string[] curSelections;
+	private bool hasWon; //So that each round can only be won once;
 
 	void Start () {
 
@@ -30,6 +31,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void RestartGame () {
+		hasWon = false;
 		dataController.Initialize ();
 		curWord = dataController.GetRandomWord ();
 		displayController.Initialize (curWord);
@@ -43,9 +45,6 @@ public class GameController : MonoBehaviour {
 			if (selectedSide != null) {
 				SelectSide (selectedSide);
 			}
-		}
-		if (Input.GetMouseButtonDown (1)) {// Just for test purpose
-			RestartGame();
 		}
 	}
 
@@ -83,8 +82,13 @@ public class GameController : MonoBehaviour {
 				Debug.Log ("curSelection[1] is " + side.sidename);
 
 				if (HasPlayerWon ()) {
+					if (hasWon) {
+						Debug.Log ("has already won this round");
+						return;
+					}
+					hasWon = true;
 					displayController.DisplayWin ();
-					return;
+					dataController.WinThisRound ();
 				} else {
 					Debug.Log ("Wrong Selection!" + " Correct answer is" + curWord.correctSides[0] + ", " + curWord.correctSides[1] );
 					displayController.UnselectAllSides ();
@@ -106,9 +110,5 @@ public class GameController : MonoBehaviour {
 		return Array.Exists (correctSelections, element => string.Equals (element, curSelections [0]))
 			&& Array.Exists (correctSelections, element => string.Equals (element, curSelections [1]));
 	}
-
-	public void ReturnToBuilding(){
-		SceneManager.LoadScene ("BuildingOne");
-		GameObjectUtility.ClearObjectPools ();
-	}
+		
 }

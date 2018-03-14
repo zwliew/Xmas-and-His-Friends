@@ -13,7 +13,7 @@ public class OverallUIManager : MonoBehaviour {
 
 	public Sprite sprSelected;
 
-	public GameObject playerDataControllerGameObject;
+	private PlayerDataController playerDataController;
 
 	void Awake(){
 		homeScreenCanvasGroup.gameObject.SetActive (false);
@@ -21,7 +21,13 @@ public class OverallUIManager : MonoBehaviour {
 		ShopCanvasGroup.gameObject.SetActive (false);
 		EditorModeCanvasGroup.gameObject.SetActive (false);
 		InGameUICanvasGroup.gameObject.SetActive (true);
- 
+
+		playerDataController = GameObject.FindGameObjectWithTag ("Persistent")//Get the PlayerDataController
+			.GetComponent<PlayerDataController> ();
+		if (playerDataController)
+			Debug.Log ("playerDataController is found successfully");
+		
+		RefreshCoinDisplay ();
 	}
 
 	public void EnterBuildingSelection(){
@@ -104,10 +110,16 @@ public class OverallUIManager : MonoBehaviour {
 	IEnumerator ExitAfterTime(float time, CanvasGroup closedCvsGrp, CanvasGroup openedCvsGrp){
 		closedCvsGrp.GetComponent<Animator> ().SetTrigger ("Exit");
 
+		RefreshCoinDisplay ();
+
 		float t = time;
+		int autobreak = 200;
 		while (t > 0f || !closedCvsGrp.GetComponent<Animator> ().IsInTransition(0)) {
 			//Debug.Log (closedCvsGrp.GetComponent<Animator> ().IsInTransition(0));
 			t -= Time.deltaTime;
+			autobreak -= 1;
+			if (autobreak < 0)
+				break;
 			yield return new WaitForFixedUpdate();
 		}
 
@@ -129,6 +141,11 @@ public class OverallUIManager : MonoBehaviour {
 		if (openedCvsGrp.GetComponent<EditorModeController> ()) {
 			openedCvsGrp.GetComponent<EditorModeController> ().Initialize ();
 		}
+	}
+
+	private void RefreshCoinDisplay (){
+		Text coinTxt = InGameUICanvasGroup.GetComponentInChildren<Text> ();
+		coinTxt.text = "Coins: " + playerDataController.GetPlayerData ().coins.ToString ();
 	}
 		
 
