@@ -79,7 +79,7 @@ public class PlayerDataController : MonoBehaviour
     {
 		playerData = new PlayerData ();
         PlayerPrefs.SetInt("coins", 10);
-		PlayerPrefs.SetString ("displayedShopItems", "ChristmasTree,Fire");
+		PlayerPrefs.SetString ("displayedShopItems", "ChristmasTree,Fire,Desk,Deer,Shelves,Sofa");
 		PlayerPrefs.SetString ("purchasedShopItems", "");
 
         if (PlayerPrefs.HasKey("name"))

@@ -39,7 +39,8 @@ public class EditorModeDisplayController : MonoBehaviour
 		items = GetComponent<EditorModeDataController> ().GetPurchasedItemsData();
 
 		foreach (EditorModeItemData itemData in items) {
-			itemData.furniture = GameObject.FindGameObjectWithTag (itemData.fullName);
+			itemData.furniture = null;
+			//itemData.furniture = GameObject.FindGameObjectWithTag (itemData.fullName);
 			if(!itemData.furniture)
 				itemData.furniture = GameObject.Find (itemData.fullName);//Find again
 		}
