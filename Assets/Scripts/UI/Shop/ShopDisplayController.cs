@@ -116,12 +116,12 @@ public class ShopDisplayController : MonoBehaviour
                 purchaseButton.interactable = true;
             }
             //Debug.Log("button is active: " + purchaseButton.gameObject.active);
-			DescriptionText.text = item.fullName.ToString () + Environment.NewLine + "cost: " + item.cost.ToString();
 			curSelectedItem = item;
+			DescriptionText.text = item.fullName.ToString () + Environment.NewLine + "cost: " + item.cost.ToString();
             //Debug.Log("item.fullName: " + item.fullName);
             panelController.itemName = item.fullName;
             panelController.itemCost = item.cost.ToString();
-
+			panelController.Refresh ();
 
         }
 
