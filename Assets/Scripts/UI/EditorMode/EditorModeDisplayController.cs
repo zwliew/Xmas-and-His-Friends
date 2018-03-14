@@ -73,6 +73,7 @@ public class EditorModeDisplayController : MonoBehaviour
             itemScript.position = itemData.position;
             itemScript.rotation = itemData.rotation;
 			itemScript.isSelected = itemData.equipped;
+			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemScript.fullName);
 //			Debug.Log("parameters passed successfully!" +itemScript.isSelected );
             itemScript.Initialize ();
 		}

@@ -82,6 +82,7 @@ public class ShopDisplayController : MonoBehaviour
 			Button item = Instantiate (prefabItemButton, shopWindowContent.transform);
 			ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
 			itemScript.fullName = itemData.fullName;
+			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemScript.fullName);
 			//Pass in the values here
 			itemScript.Initialize ();
 		}
