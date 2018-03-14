@@ -68,6 +68,9 @@ MonoBehaviour:
   isBuyable: 0
   isOnSale: 0
   isSelected: 0
+  furniture: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &114030201413104646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -232,7 +235,7 @@ RectTransform:
   m_GameObject: {fileID: 1844814992079560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 224007053254354774}
   m_RootOrder: 0
