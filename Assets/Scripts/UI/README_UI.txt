@@ -13,3 +13,5 @@
 //
 //Class ItemData is saved under PlayerData.cs
 //
+//Pass in the values for itemsScript at displayControllers
+//

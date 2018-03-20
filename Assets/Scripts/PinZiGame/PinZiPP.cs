@@ -20,6 +20,7 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 
 	private Vector3 v3originalPosition;
 	private static Vector3 v3center = new Vector3(0f, 1.43f, 0f);
+	private Behaviour halo;
 
 	public void Start(){
 	}
@@ -33,6 +34,8 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 		//Debug.Log ("Getting Renderer.shareMaterial");
 		curMat = GetComponent<Renderer> ().sharedMaterial;
 		particalSys = GetComponent<ParticleSystem> ();
+		halo = (Behaviour)GetComponent ("Halo");
+		halo.enabled = false;
 	}
 
 	public void SetDisplay (Texture2D texture2D){
@@ -57,19 +60,27 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	public void SetSelected(){
 		particalSys = GetComponent<ParticleSystem> ();
 		particalSys.Play ();
+		halo.enabled = true;
 		StopAllCoroutines ();
 		//Debug.Log ("Selected: " + sidename);
 		//Debug.Log ("when selected, the original location is " + v3originalPosition);
 		//StartCoroutine (MoveTo (v3center));
 	}
-
-	public void SetSelected(float time){
-		particalSys = GetComponent<ParticleSystem> ();
-		particalSys.Play();
-		StartCoroutine (PlayForTime (time));
-		StopAllCoroutines ();
-
+	public void SetUnselected(){
+		particalSys.Stop();
+		halo.enabled = false;
+		//StopAllCoroutines ();
+		//Debug.Log ("when unselected, the original location is " + v3originalPosition);
+		//StartCoroutine (MoveTo (v3originalPosition));
 	}
+//
+//	public void SetSelected(float time){
+//		particalSys = GetComponent<ParticleSystem> ();
+//		particalSys.Play();
+//		StartCoroutine (PlayForTime (time));
+//		StopAllCoroutines ();
+//
+//	}
 
 	IEnumerator PlayForTime(float t){
 		while (t > 0f) {
@@ -79,12 +90,6 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 		particalSys.Stop ();
 	}
 
-	public void SetUnselected(){
-		particalSys.Stop();
-		//StopAllCoroutines ();
-		//Debug.Log ("when unselected, the original location is " + v3originalPosition);
-		//StartCoroutine (MoveTo (v3originalPosition));
-	}
 
 	IEnumerator MoveTo (Vector3 pos){
 		while(!NearMa (transform.position, pos)) {

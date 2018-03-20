@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /**
  * Handles displaying of the game, including the
@@ -12,6 +13,9 @@ public class DisplayController : MonoBehaviour{
 	private Word word;
 
 	public GameObject[] goPlaceHolders;
+	public Image ansImage;
+	public CanvasGroup endGameUICanvasGroup;
+
 
 	private Texture2D[] texture2DSides;
 	private Texture2D texture2DAns;
@@ -32,18 +36,16 @@ public class DisplayController : MonoBehaviour{
 	public GameObject goTetra;
 	public GameObject goRotateCubeScriptHolder;
 	private RotateCube rotateCubeScript;
-	public GameObject winScreen;
-	public GameObject button;
 
 	public void Initialize (Word word) {
 		this.word = word;
 		selectedSides = new PinZiPP[2];
-		winScreen.SetActive (false);
 		rotateCubeScript = goRotateCubeScriptHolder.GetComponent<RotateCube> ();
 		Reset ();
 		priPrefabPianPangs = new GameObject[5];
 		DisplayAllSides ();
 		Resources.UnloadUnusedAssets ();
+		endGameUICanvasGroup.gameObject.SetActive (false);
 	}
 
 	public void Reset(){
@@ -55,7 +57,6 @@ public class DisplayController : MonoBehaviour{
 				GameObjectUtility.customDestroy (priPrefabPianPangs [i]);
 			}
 		}
-		winScreen.SetActive (false);
 	}
 
 	private void DisplayAllSides () {
@@ -132,14 +133,11 @@ public class DisplayController : MonoBehaviour{
 
 	public void DisplayWin () {
 		
-		winScreen.SetActive(true);
-		//button.SetActive(true);
 		
 		Debug.Log ("Win!");
-		priPrefabPianPangs[4] = GameObjectUtility.customInstantiate (prefabPianPangs [4], v3Positions [4]);
-		PinZiPP pinZiScript = priPrefabPianPangs[4].GetComponent<PinZiPP> ();
-		pinZiScript.Initialize ();
-		pinZiScript.SetDisplay (texture2DAns);
+		endGameUICanvasGroup.gameObject.SetActive (true);
+		Sprite ans = Sprite.Create (texture2DAns, new Rect(0f, 0f, texture2DAns.width, texture2DAns.height), new Vector2(0f, 0f));
+		ansImage.sprite = ans;
 		
 	}
 

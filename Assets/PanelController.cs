@@ -18,13 +18,14 @@ public class PanelController : MonoBehaviour {
 
 	public void Refresh(){
 		text.text = "是否花" + itemCost + "元购买" + itemName + " ?";
+		yesBtn.onClick.RemoveAllListeners ();
 		yesBtn.onClick.AddListener (PurchaseItem);
 	}
 
     private void PurchaseItem()
     {
         SendMessageUpwards("PurchaseSelectedItem_Master");
-        Debug.Log("item purchased");
+        Debug.Log("item purchased btn click in panel");
     }
 
 

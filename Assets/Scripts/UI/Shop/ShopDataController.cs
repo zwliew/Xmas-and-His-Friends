@@ -154,9 +154,10 @@ public class ShopDataController : MonoBehaviour
 
     public void PurchaseSelectedItem()
     {
-		Debug.Log (purchasedItemsData);
+		//Debug.Log (purchasedItemsData[0]);
 		purchasedItemsData.Add(ParseItems(curSelectedItem.fullName, "purchase"));
 		displayedItemsData.Remove(ParseItems(curSelectedItem.fullName, "remove"));
+		playerDataController.UpdatePlayerCoins (-(int)curSelectedItem.cost);
 		EndandSave ();
 		GetComponent<ShopDisplayController> ().Initialize ();
     }

@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 198712722962295108}
   - component: {fileID: 114748360567415792}
   - component: {fileID: 65729957834204102}
+  - component: {fileID: 122639339574746894}
   m_Layer: 9
   m_Name: PinZiPianPang (1)
   m_TagString: PP
@@ -122,6 +123,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610f4e7f7c635844cada340c3e2e60ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!122 &122639339574746894
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643113125790848}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+  m_Size: 1
 --- !u!198 &198712722962295108
 ParticleSystem:
   m_ObjectHideFlags: 1
