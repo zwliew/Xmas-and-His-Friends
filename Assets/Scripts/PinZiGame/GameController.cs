@@ -39,12 +39,20 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update () {
-		
+		#if UNITY_EDITOR	
 		if (Input.GetMouseButtonUp (0)) {//Avoid accidental clicking
 			PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
 			if (selectedSide != null) {
 				SelectSide (selectedSide);
 			}
+		}
+		#endif
+	}
+
+	public void ClickedHere(Vector3 touchPosition){//Receive touchInput from RotateCube
+		PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
+		if (selectedSide != null) {
+			SelectSide (selectedSide);
 		}
 	}
 
