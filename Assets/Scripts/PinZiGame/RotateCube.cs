@@ -53,7 +53,7 @@ public class RotateCube : MonoBehaviour {
 					touchStartPosition = touch0.position;
 					break;
 				case TouchPhase.Moved:
-					if(touch0.deltaPosition.magnitude > 5f){
+					if(touch0.deltaPosition.magnitude > 1f){
 						rbTetra.AddTorque (new Vector3 (touch0.deltaPosition.y * 4f * fForceConstant,-touch0.deltaPosition.x * 4f* fForceConstant, 0f));
 					}
 					break;
