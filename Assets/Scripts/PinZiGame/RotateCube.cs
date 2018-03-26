@@ -26,12 +26,16 @@ public class RotateCube : MonoBehaviour {
 	private Vector3 v3ViewPointPosition;
 	private Vector3 v3BottomPosition;
 
+	private Vector3 touchStartPosition;
+	private Vector3 touchEndPosition;
+
 	void Start(){
 		isPlaying = true;
 		rbTetra = goTetra.GetComponent<Rigidbody> ();	
 		animatorTetra = goTetra.GetComponent<Animator> ();
 		//animatorTetra.updateMode = AnimatorUpdateMode.Normal; 
 		//animatorTetra.Play ("TetrahedronRotateAnimation");
+		animatorTetra.updateMode = AnimatorUpdateMode.AnimatePhysics;
 		v3ViewPointPosition = goViewPoint.transform.position;
 		for (int i = 0; i < 4; i++) {
 			v3Nodes [i] = goNodes [i].transform.position;
@@ -41,12 +45,38 @@ public class RotateCube : MonoBehaviour {
 
 	void FixedUpdate(){
 		if (isPlaying) {
-			
+			#if UNITY_ANDROID			
+			if(Input.touchCount>0){
+				Touch touch0 = Input.GetTouch(0);
+				switch(touch0.phase){
+				case TouchPhase.Began:
+					touchStartPosition = touch0.position;
+					break;
+				case TouchPhase.Moved:
+					if(touch0.deltaPosition.magnitude > 1f){
+						rbTetra.AddTorque (new Vector3 (touch0.deltaPosition.y * 4f * fForceConstant,-touch0.deltaPosition.x * 4f* fForceConstant, 0f));
+					}
+					break;
+				case TouchPhase.Ended:
+					touchEndPosition = touch0.position;
+					if((touchEndPosition-touchStartPosition).magnitude< 10f){
+						GameObject.Find("GameController").GetComponent<GameController>().ClickedHere(touchStartPosition);
+					}
+					break;
+				case TouchPhase.Stationary:
+					break;
+				}
+			}
+
+
+
+			#endif
+
+			#if UNITY_EDITOR
 			if (Input.GetMouseButton (0)) {//Hold mouse left btn to drag
-				animatorTetra.updateMode = AnimatorUpdateMode.AnimatePhysics;
-				isDragging = true;
+			isDragging = true;
 			} else {
-				isDragging = false;
+			isDragging = false;
 			}
 
 			if (isDragging) {//To achieve rotation
@@ -61,7 +91,10 @@ public class RotateCube : MonoBehaviour {
 
 				rbTetra.AddTorque (new Vector3 (speed.y * 8f * fForceConstant, speed.x * 8f* fForceConstant, 0f));
 
-			} else {//To achieve snapping effect
+			} 
+			#endif
+
+			if(!isDragging){//To achieve snapping effect
 				
 				for (int i = 0; i < 4; i++) {//Find which one is at the most back
 					v3Nodes [i] = goNodes [i].transform.position;
