@@ -33,7 +33,7 @@ public class EditorModeDisplayController : MonoBehaviour
 
 	public GameObject editorModeWindowContent;//The parent of the button
 	public Button prefabItemButton;
-
+    public GameObject mas;
 	public void Initialize()
 	{
 		items = GetComponent<EditorModeDataController> ().GetPurchasedItemsData();
@@ -50,7 +50,8 @@ public class EditorModeDisplayController : MonoBehaviour
 		for(int i = 0; i < items.Count/4 + 1; i++){
 			pagePositions [i] = 210f * 4 * i;
 		}
-
+        mas.transform.position = new Vector3(-0.89f, 0.2f, 0.86f);
+        mas.SetActive(false);
 		curSelectedItem = null;
 		RefreshEditorModeDisplay ();
 	}

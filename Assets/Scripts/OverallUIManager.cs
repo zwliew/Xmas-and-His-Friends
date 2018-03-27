@@ -91,7 +91,9 @@ public class OverallUIManager : MonoBehaviour {
 
 	//-------------EditorMode---------------
 	public void ExitEditorMode(){
-		StartCoroutine (ExitAfterTime (0.1f, EditorModeCanvasGroup, InGameUICanvasGroup));
+        EditorModeCanvasGroup.GetComponent<EditorModeDisplayController>().mas.SetActive(true);
+        Debug.Log(EditorModeCanvasGroup.GetComponent<EditorModeDisplayController>().mas.name);
+        StartCoroutine (ExitAfterTime (0.1f, EditorModeCanvasGroup, InGameUICanvasGroup));
 	}
 	//----------------------------
 
