@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class RaycastDestinationSetter2 : MonoBehaviour {
 
@@ -45,7 +46,7 @@ public class RaycastDestinationSetter2 : MonoBehaviour {
 			{
                 // Set the end position for our laser line 
                 Debug.Log(hit.point);
-                directedAgent.MoveToLocation(hit.point);
+                StartCoroutine(directedAgent.MoveToLocation(hit.point));
 			}
 			else
 			{
