@@ -7,12 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: building
-  m_Shader: {fileID: 4800000, guid: 0aaac0dca790d624f87e217c2f4ef916, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -66,7 +66,9 @@ Material:
     - _DontMix: 0
     - _DstBlend: 0
     - _Fog: 0
+    - _GlossMapScale: 1
     - _Glossiness: 0.5
+    - _GlossyReflections: 1
     - _LM: 0
     - _LMPower: 0
     - _MainTexturePower: 1
@@ -75,6 +77,8 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RealtimeShadow: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1

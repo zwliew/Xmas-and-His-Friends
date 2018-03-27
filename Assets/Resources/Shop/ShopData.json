@@ -8,67 +8,85 @@
 		{
 			"name": "Fire",
 			"fullName": "Fire",
-            "cost": "50"
+            "cost": "40"
             
 		},
 		{
 			"name": "mat",
 			"fullName": "Mat",
-            "cost": "23"
+            "cost": "20"
             
 		},
 		{
 			"name": "ToyManBig",
 			"fullName": "ToyManBig",
-            "cost": "23"
+            "cost": "30"
             
 		},
 		{
 			"name": "Bed",
 			"fullName": "Bed",
-            "cost": "23"
+            "cost": "60"
             
 		},
 		{
 			"name": "Desk",
 			"fullName": "Desk",
-            "cost": "23"
+            "cost": "30"
             
 		},
 		{
 			"name": "Deer",
 			"fullName": "Deer",
-            "cost": "23"
+            "cost": "45"
             
 		},
 		{
 			"name": "Shelves",
 			"fullName": "Shelves",
-            "cost": "23"
+            "cost": "40"
             
 		},
 		{
 			"name": "Sofa",
 			"fullName": "Sofa",
-            "cost": "23"
+            "cost": "45"
             
 		},
 		{
 			"name": "Curtains",
 			"fullName": "Curtains",
-            "cost": "23"
+            "cost": "50"
             
 		},
 		{
 			"name": "Socks",
 			"fullName": "Socks",
-            "cost": "23"
+            "cost": "35"
             
 		},
 		{
-			"name": "ToyManSmall",
+			"name": "Fuckingboard",
 			"fullName": "ToyManSmall",
-            "cost": "23"
+            "cost": "30"
+            
+		},
+		{
+			"name": "Fuckingcandle",
+			"fullName": "ToyManSmall",
+            "cost": "25"
+            
+		},
+		{
+			"name": "Fuckingwreath",
+			"fullName": "ToyManSmall",
+            "cost": "50"
+            
+		},
+		{
+			"name": "Violincase",
+			"fullName": "ToyManSmall",
+            "cost": "40"
             
 		}
 	]
