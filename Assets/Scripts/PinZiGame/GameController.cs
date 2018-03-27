@@ -39,6 +39,11 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update () {
+		if (hasWon) {
+			if (Input.GetMouseButtonDown (1)) {
+				displayController.EndGameUINext ();
+			}
+		}
 		#if UNITY_EDITOR	
 		if (Input.GetMouseButtonUp (0)) {//Avoid accidental clicking
 			PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
@@ -47,6 +52,7 @@ public class GameController : MonoBehaviour {
 			}
 		}
 		#endif
+
 	}
 
 	public void ClickedHere(Vector3 touchPosition){//Receive touchInput from RotateCube
@@ -101,6 +107,7 @@ public class GameController : MonoBehaviour {
 					Debug.Log ("Wrong Selection!" + " Correct answer is" + curWord.correctSides[0] + ", " + curWord.correctSides[1] );
 					displayController.UnselectAllSides ();
 					curSelections = new string[2];
+					displayController.DisplayLose ();
 				}
 			}
 		}

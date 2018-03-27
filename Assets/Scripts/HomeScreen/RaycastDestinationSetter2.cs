@@ -5,7 +5,7 @@ public class RaycastDestinationSetter2 : MonoBehaviour {
 
 	public float fireRate = 0.25f;                                      // Number in seconds which controls how often the player can fire
 	public float weaponRange = 500f;                                     // Distance in Unity units over which the player can fire
-	public Transform gunEnd;                                            // Holds a reference to the gun end object, marking the muzzle location of the gun
+                                         
     public DirectedAgent directedAgent;
 	public Camera fpsCam;                                              // Holds a reference to the first person camera
 	private WaitForSeconds shotDuration = new WaitForSeconds(0.07f);    // WaitForSeconds object used by our ShotEffect coroutine, determines time laser line will remain visible

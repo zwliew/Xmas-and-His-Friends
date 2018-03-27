@@ -8,16 +8,20 @@ public class PanelController : MonoBehaviour {
 
     public Button yesBtn;
     public Button noBtn;
-    public Text text;
+	public Text price;
+	public Text nameText;
+	[HideInInspector]
     public string itemName;
+	[HideInInspector]
     public string itemCost;
 	// Use this for initialization
 	void Start () {
-		Refresh ();
+		//Refresh ();
 	}
 
 	public void Refresh(){
-		text.text = "是否花" + itemCost + "元购买" + itemName + " ?";
+		price.text = itemCost.ToString ();
+		nameText.text = "\"" + itemName.ToString () + "\"";
 		yesBtn.onClick.RemoveAllListeners ();
 		yesBtn.onClick.AddListener (PurchaseItem);
 	}

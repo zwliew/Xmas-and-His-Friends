@@ -17,7 +17,7 @@ public class RoomSelection : MonoBehaviour {
 	}
 
 	private void Refresh(){
-		fadeImage.GetComponent<Animator> ().SetTrigger ("Exit");
+		//fadeImage.GetComponent<Animator> ().SetTrigger ("Exit");
 		switch (currentRoomNumber) {
 		case 0:
 			roomOneBtn.gameObject.SetActive (true);
