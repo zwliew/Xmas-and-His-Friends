@@ -13,10 +13,8 @@ public class RaycastDestinationSetter2 : MonoBehaviour {
                                      // Reference to the audio source which will play our shooting sound effect                                  // Reference to the LineRenderer component which will display our laserline
 	private float nextFire;                                             // Float to store the time the player will be allowed to fire again, after firing
 
-
 	void Start () 
 	{
-
 	}
 
 
@@ -47,6 +45,7 @@ public class RaycastDestinationSetter2 : MonoBehaviour {
                 // Set the end position for our laser line 
                 Debug.Log(hit.point);
                 StartCoroutine(directedAgent.MoveToLocation(hit.point));
+                
 			}
 			else
 			{
