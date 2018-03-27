@@ -38,6 +38,7 @@ public class MazeDataController : MonoBehaviour {
         foreach(int no in numberPerRow)
         {
             Debug.Log(no);
+			Debug.Log (pointer);
         }
         Debug.Log("distribution complete: " + Time.deltaTime);
         return numberPerRow;

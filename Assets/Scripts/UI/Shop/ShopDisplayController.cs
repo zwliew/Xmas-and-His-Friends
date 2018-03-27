@@ -48,8 +48,9 @@ public class ShopDisplayController : MonoBehaviour
 			pagePositions [i] = - 880f * i;
 		}
 		curSelectedItem = null;
+		panelController = panel.gameObject.GetComponent<PanelController>();
+		shopWindowContent.GetComponent<RectTransform> ().anchoredPosition = new Vector3 (pagePositions[pageNumber], 0f, 0f);
 		RefreshShopDisplay ();
-        panelController = panel.gameObject.GetComponent<PanelController>();
     }
 
 
@@ -165,6 +166,7 @@ public class ShopDisplayController : MonoBehaviour
     }
 
 	public void EndandSave(){
+		Resources.UnloadUnusedAssets ();
 		purchaseButton.gameObject.SetActive (false);
 	}
 

@@ -18,8 +18,8 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	[HideInInspector]
     public string sidename;
 
-	private Vector3 v3originalPosition;
-	private static Vector3 v3center = new Vector3(0f, 1.43f, 0f);
+//	private Vector3 v3originalPosition;
+//	private static Vector3 v3center = new Vector3(0f, 1.43f, 0f);
 	private Behaviour halo;
 
 	public void Start(){
@@ -45,7 +45,7 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	public void SetOriginalPosition(Vector3 pos){
-		v3originalPosition = pos;
+//		v3originalPosition = pos;
 		//Debug.Log (sidename +"'s v3originalPosition is set to "+ v3originalPosition);
 	}
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class counter : MonoBehaviour {
 
-    public string name;
+//    public string name;
 	// Use this for initialization
 	void Start () {
 		
