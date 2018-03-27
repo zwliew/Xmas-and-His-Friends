@@ -17,16 +17,15 @@ public class DirectedAgent : MonoBehaviour {
     {
         Vector3 dir = targetLocation - mas.transform.position;
         Quaternion turn = Quaternion.LookRotation(dir);
-        Vector3 rotation = Quaternion.Slerp(mas.transform.rotation, turn, Time.deltaTime*40f).eulerAngles;
-        mas.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-        int difference = (int)Mathf.Abs(rotation.y - mas.transform.rotation.y);
-        for (int i = difference; i > 0; i--)
+       
+        for (int i = 30; i > 0; i--)
         {
-            mas.transform.Rotate(0f, rotation.y*(1/difference), 0f);
-            yield return new WaitForSeconds(0.3f / difference);
+            Vector3 rotation = Quaternion.Slerp(mas.transform.rotation, turn, Time.deltaTime).eulerAngles;
+            mas.transform.rotation = Quaternion.Euler(0f, rotation.y*Time.deltaTime/30, 0f);
+            mas.transform.Rotate(0f, rotation.y, 0f);
+            yield return new WaitForFixedUpdate();
         }
         //mas.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-        yield return new WaitForSeconds(0.3f);
         agent.SetDestination(targetLocation);
         agent.isStopped = false;
         Debug.Log("move to location is called");
