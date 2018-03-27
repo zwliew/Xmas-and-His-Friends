@@ -12,10 +12,12 @@ public class DisplayController : MonoBehaviour{
 	// The current word being displayed
 	private Word word;
 
+	public CanvasGroup endGameUICanvasGroup_Win;
+	public CanvasGroup endGameUICanvasGroup_Lost;
 	public GameObject[] goPlaceHolders;
 	public Image ansImage;
-	public CanvasGroup endGameUICanvasGroup;
-
+	public Text sampleVocabText;
+	public Text sampleSentenceText;
 
 	private Texture2D[] texture2DSides;
 	private Texture2D texture2DAns;
@@ -45,11 +47,13 @@ public class DisplayController : MonoBehaviour{
 		priPrefabPianPangs = new GameObject[5];
 		DisplayAllSides ();
 		Resources.UnloadUnusedAssets ();
-		endGameUICanvasGroup.gameObject.SetActive (false);
+		endGameUICanvasGroup_Win.gameObject.SetActive (false);
+		endGameUICanvasGroup_Lost.gameObject.SetActive (false);
 	}
 
 	public void Reset(){
 
+		goTetra.GetComponent<Animator> ().updateMode = AnimatorUpdateMode.AnimatePhysics;
 		rotateCubeScript.PlayRotateAnimation ();
 
 		for (int i = 0; i < 5; i++) {
@@ -135,10 +139,26 @@ public class DisplayController : MonoBehaviour{
 		
 		
 		Debug.Log ("Win!");
-		endGameUICanvasGroup.gameObject.SetActive (true);
+		goTetra.GetComponent<Animator> ().updateMode = AnimatorUpdateMode.Normal;
+		goTetra.GetComponent<Animator> ().Play ("TetrahedronRotateAnimation");
+		endGameUICanvasGroup_Win.gameObject.SetActive (true);
+		endGameUICanvasGroup_Lost.gameObject.SetActive (false);
 		Sprite ans = Sprite.Create (texture2DAns, new Rect(0f, 0f, texture2DAns.width, texture2DAns.height), new Vector2(0f, 0f));
 		ansImage.sprite = ans;
-		
+
+		sampleVocabText.text = word.sampleVocab [0].ToString () + "     " + word.sampleVocab [1].ToString ();
+		sampleSentenceText.text = word.sampleSentence.ToString ();
+
+
 	}
 
+	public void DisplayLose(){
+		Debug.Log ("Lost!");
+		endGameUICanvasGroup_Win.gameObject.SetActive (false);
+		endGameUICanvasGroup_Lost.gameObject.SetActive (true);
+	}
+
+	public void EndGameUINext(){
+		endGameUICanvasGroup_Win.GetComponentInChildren<Animator> ().SetTrigger ("Tap");
+	}
 }

@@ -11,7 +11,12 @@
       "correctSides": [
         "baogaitou",
         "nv"
-      ]
+      ],
+      "sampleVocab": [
+        "安妮",
+        "安安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
     },
     {
       "name": "XIN",
@@ -24,7 +29,12 @@
       "correctSides": [
         "qin",
         "jin"
-      ]
+      ],
+      "sampleVocab": [
+        "安妮",
+        "安安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
     },
     {
       "name": "QIU",
@@ -37,7 +47,12 @@
       "correctSides": [
         "he",
         "huo"
-      ]
+      ],
+      "sampleVocab": [
+        "安妮",
+        "安安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
     },
 		{
       "name": "WEICAP",
@@ -50,7 +65,12 @@
       "correctSides": [
         "renzipang",
         "wei"
-      ]
+      ],
+      "sampleVocab": [
+        "安妮",
+        "安安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
     }
   ]
 }

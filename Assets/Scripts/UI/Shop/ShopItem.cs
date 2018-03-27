@@ -24,15 +24,18 @@ public class ShopItem : MonoBehaviour
 	public bool isSelected;
 	private Button itemButton;
 	private ShopItem shopItem;
+	private Text nameText;
 
     public void Initialize()
     {
         isSelected = false;
         itemButton = GetComponent<Button>();
         shopItem = GetComponent<ShopItem>();
+		nameText = GetComponentInChildren<Text> ();
         itemButton.gameObject.transform.GetChild(0).GetComponentInChildren<Image>().sprite = itemSprite;
         itemButton.onClick.RemoveAllListeners();
         itemButton.onClick.AddListener(() => { SelectItem(); });
+		nameText.text = "";
     }
 
 	public void SelectItem(){
@@ -42,16 +45,19 @@ public class ShopItem : MonoBehaviour
 	public void SetSelected(){
 		Debug.Log (fullName + " is selected");
 		itemButton.GetComponent<Image> ().sprite = selectedSprite;
+		nameText.text = shopItem.fullName;
 		isSelected = true;
 	}
 
 	public void SetUnselected(){
 		itemButton.GetComponent<Image> ().sprite = unselectedSprite;
+		nameText.text = "";
 		isSelected = false;
 	}
 
 	public void SetDisabled(){
 		itemButton.onClick.RemoveAllListeners ();
+		nameText.text = "";
 		Debug.Log ("One item has been disabled");
 	}
 }

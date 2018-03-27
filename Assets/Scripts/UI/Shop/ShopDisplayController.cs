@@ -34,7 +34,9 @@ public class ShopDisplayController : MonoBehaviour
 	public GameObject shopWindowContent;//The parent of the button
 	public Button prefabItemButton;
     public Button purchaseButton;
-	public Text DescriptionText;
+	public Text descriptionText;
+	public Text priceText;
+	public Image priceImage;
     public GameObject panel;
     public PanelController panelController;
     public void Initialize()
@@ -47,7 +49,6 @@ public class ShopDisplayController : MonoBehaviour
 		}
 		curSelectedItem = null;
 		RefreshShopDisplay ();
-        purchaseButton.gameObject.SetActive(false);
         panelController = panel.gameObject.GetComponent<PanelController>();
     }
 
@@ -69,8 +70,10 @@ public class ShopDisplayController : MonoBehaviour
 
 	private void RefreshShopDisplay (){
 
-		DescriptionText.text = "";
-
+		descriptionText.text = "";
+		priceText.text = "";
+		priceImage.gameObject.SetActive (false);
+		purchaseButton.gameObject.SetActive(false);
 		//TODO Clear the content of the shopWindowContent
 		//Loop through the children and set them to inactive
 		for(int i = 0; i < shopWindowContent.transform.childCount; i++){
@@ -107,7 +110,9 @@ public class ShopDisplayController : MonoBehaviour
 			if (curSelectedItem)
 				UnselectItem (curSelectedItem);
 			item.SetSelected();
+			priceImage.gameObject.SetActive (true);
             purchaseButton.gameObject.SetActive(true);
+
             if (!item.isBuyable)
             {
                 purchaseButton.interactable = false;
@@ -118,7 +123,8 @@ public class ShopDisplayController : MonoBehaviour
             }
             //Debug.Log("button is active: " + purchaseButton.gameObject.active);
 			curSelectedItem = item;
-			DescriptionText.text = item.fullName.ToString () + Environment.NewLine + "cost: " + item.cost.ToString();
+			descriptionText.text = item.fullName.ToString ();
+			priceText.text = item.cost.ToString();
             //Debug.Log("item.fullName: " + item.fullName);
             panelController.itemName = item.fullName;
             panelController.itemCost = item.cost.ToString();
@@ -134,10 +140,12 @@ public class ShopDisplayController : MonoBehaviour
         {
             return;
         }
-		DescriptionText.text = "";
+		descriptionText.text = "";
+		priceText.text = "";
 		item.SetUnselected();
 		curSelectedItem = null;
         purchaseButton.gameObject.SetActive(false);
+		priceImage.gameObject.SetActive (false);
         purchaseButton.interactable = false;
     }
 
