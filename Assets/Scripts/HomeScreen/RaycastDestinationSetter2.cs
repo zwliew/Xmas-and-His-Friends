@@ -40,7 +40,7 @@ public class RaycastDestinationSetter2 : MonoBehaviour {
 
 
             // Check if our raycast has hit anything
-            if (Physics.Raycast (ray,  out hit, weaponRange, 1 << LayerMask.NameToLayer("Road")))
+            if (Physics.Raycast (ray,  out hit, weaponRange))
 			{
                 // Set the end position for our laser line 
                 Debug.Log(hit.point);

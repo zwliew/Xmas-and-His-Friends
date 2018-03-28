@@ -17,9 +17,8 @@ public class DirectedAgent : MonoBehaviour {
     private void Update()
     {
         
-        if ((agent.transform.position - agent.destination).magnitude < 0.3)
+        if ((agent.transform.position - agent.destination).magnitude < 0.3f && xmasAnimation)
         {
-            Debug.Log("Agent is stopped");
             xmasAnimation.SetMovingState(0);
         }
     }
