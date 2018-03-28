@@ -25,7 +25,8 @@ public class ShopDisplayController : MonoBehaviour
     private ShopItem curSelectedItem;
 	//private ShopItem previouslySelectedItem;
 	private List<ShopItemData> items;//Stores the item data
-	private List<Button> itemButton;//Stores button instantiated on runtime;
+
+	private UIObjectPool buttonPool; // The object pool storing the UI buttons
 
 	private int pageNumber;
 	private float[] pagePositions;
@@ -50,6 +51,7 @@ public class ShopDisplayController : MonoBehaviour
 		curSelectedItem = null;
 		panelController = panel.gameObject.GetComponent<PanelController>();
 		shopWindowContent.GetComponent<RectTransform> ().anchoredPosition = new Vector3 (pagePositions[pageNumber], 0f, 0f);
+		buttonPool = new UIObjectPool(prefabItemButton, shopWindowContent.transform);
 		RefreshShopDisplay ();
     }
 
@@ -75,15 +77,9 @@ public class ShopDisplayController : MonoBehaviour
 		priceText.text = "";
 		priceImage.gameObject.SetActive (false);
 		purchaseButton.gameObject.SetActive(false);
-		//TODO Clear the content of the shopWindowContent
-		//Loop through the children and set them to inactive
-		for(int i = 0; i < shopWindowContent.transform.childCount; i++){
-			shopWindowContent.transform.GetChild(i).gameObject.SetActive(false);
-			//Debug.Log("clearing existing items in the shop");
-		}
 
 		foreach (ShopItemData itemData in items) {
-			Button item = Instantiate (prefabItemButton, shopWindowContent.transform);
+			Button item = buttonPool.GetButton();
 			ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
 			itemScript.fullName = itemData.fullName;
 			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemScript.fullName);
@@ -92,7 +88,7 @@ public class ShopDisplayController : MonoBehaviour
 			itemScript.Initialize ();
 		}
 		for (int i = 0; i < 4 - items.Count % 4; i++) {
-			Button item = Instantiate (prefabItemButton, shopWindowContent.transform);
+			Button item = buttonPool.GetButton();
 			item.interactable = false;
 			item.transform.GetChild (0).GetComponent<Image> ().color = Color.clear;
 			item.GetComponent<Image> ().color= Color.clear;
