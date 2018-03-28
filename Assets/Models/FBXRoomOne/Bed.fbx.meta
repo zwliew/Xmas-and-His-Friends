@@ -1,89 +1,72 @@
 fileFormatVersion: 2
-guid: 7138362759ceb6441a36c4967b77aa4e
-timeCreated: 1521987364
+guid: f4ca914de483a47488c2365ffc9d251a
+timeCreated: 1522225552
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube.034
-    100004: Cube.043
-    100006: Cube.044
-    100008: Cube.045
+    100002: Cube.000
+    100004: Cube.002
+    100006: Cube.003
+    100008: Cube.034
     100010: Cube.046
-    100012: Cube.049
-    100014: Cube.050
-    100016: Cube.054
-    100018: Cube.055
-    100020: Cube.085
-    100022: Cube.086
-    100024: Cylinder.027
-    100026: Plane
-    100028: Sun.001
+    100012: Cube.055
+    100014: Cube.085
+    100016: Cube.086
+    100018: Cylinder.027
+    100020: Sun.001
     400000: //RootNode
-    400002: Cube.034
-    400004: Cube.043
-    400006: Cube.044
-    400008: Cube.045
+    400002: Cube.000
+    400004: Cube.002
+    400006: Cube.003
+    400008: Cube.034
     400010: Cube.046
-    400012: Cube.049
-    400014: Cube.050
-    400016: Cube.054
-    400018: Cube.055
-    400020: Cube.085
-    400022: Cube.086
-    400024: Cylinder.027
-    400026: Plane
-    400028: Sun.001
+    400012: Cube.055
+    400014: Cube.085
+    400016: Cube.086
+    400018: Cylinder.027
+    400020: Sun.001
     2100000: Material.026
-    2100002: Material.017
-    2100004: Material.062
-    2100006: Material.025
-    2100008: Material.049
-    2100010: Material.001
-    2100012: Material.089
-    2100014: Material.088
-    2100016: Material.071
-    2100018: Material.073
-    2300000: Cube.034
-    2300002: Cube.043
-    2300004: Cube.044
-    2300006: Cube.045
+    2100002: Material.001
+    2100004: Material.017
+    2100006: Material.014
+    2100008: Material.015
+    2100010: Material.016
+    2100012: Material.025
+    2100014: Material.049
+    2100016: Material.089
+    2100018: Material.088
+    2100020: Material.071
+    2100022: Material.000
+    2100024: Material.073
+    2300000: Cube.000
+    2300002: Cube.002
+    2300004: Cube.003
+    2300006: Cube.034
     2300008: Cube.046
-    2300010: Cube.049
-    2300012: Cube.050
-    2300014: Cube.054
-    2300016: Cube.055
-    2300018: Cube.085
-    2300020: Cube.086
-    2300022: Cylinder.027
-    2300024: Plane
-    3300000: Cube.034
-    3300002: Cube.043
-    3300004: Cube.044
-    3300006: Cube.045
+    2300010: Cube.055
+    2300012: Cube.085
+    2300014: Cube.086
+    2300016: Cylinder.027
+    3300000: Cube.000
+    3300002: Cube.002
+    3300004: Cube.003
+    3300006: Cube.034
     3300008: Cube.046
-    3300010: Cube.049
-    3300012: Cube.050
-    3300014: Cube.054
-    3300016: Cube.055
-    3300018: Cube.085
-    3300020: Cube.086
-    3300022: Cylinder.027
-    3300024: Plane
-    4300000: Cube.086
-    4300002: Cube.085
-    4300004: Cube.055
-    4300006: Cube.050
-    4300008: Cube.049
-    4300010: Cube.046
-    4300012: Cube.045
-    4300014: Cube.043
-    4300016: Cube.044
-    4300018: Plane
-    4300020: Cube.054
-    4300022: Cube.034
-    4300024: Cylinder.027
+    3300010: Cube.055
+    3300012: Cube.085
+    3300014: Cube.086
+    3300016: Cylinder.027
+    4300000: Cube.003
+    4300002: Cube.002
+    4300004: Cube.000
+    4300006: Cube.086
+    4300008: Cube.085
+    4300010: Cube.055
+    4300012: Cube.046
+    4300014: Cube.034
+    4300016: Cylinder.027
     10800000: Sun.001
   externalObjects: {}
   materials:
