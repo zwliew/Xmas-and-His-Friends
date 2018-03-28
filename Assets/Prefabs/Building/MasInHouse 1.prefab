@@ -234,7 +234,6 @@ GameObject:
   - component: {fileID: 195127994635028906}
   - component: {fileID: 114457852043261252}
   - component: {fileID: 114361801109779734}
-  - component: {fileID: 114807083991586594}
   - component: {fileID: 114227269200204386}
   m_Layer: 0
   m_Name: MasInHouse 1
@@ -509,21 +508,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mas: {fileID: 1954913549916556}
---- !u!114 &114807083991586594
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954913549916556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e386ff2c4176e84facc74c368f99fa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireRate: 0.25
-  weaponRange: 500
-  directedAgent: {fileID: 114457852043261252}
-  fpsCam: {fileID: 0}
 --- !u!137 &137440118740985598
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
