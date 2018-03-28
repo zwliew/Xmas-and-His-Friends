@@ -29,6 +29,7 @@ public class EditModeForFurnitures : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		EditorMode = false;
+		selectedGameObject = null;
 	}
 	
 	// Update is called once per frame

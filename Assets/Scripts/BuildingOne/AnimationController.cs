@@ -9,20 +9,20 @@ public class AnimationController : MonoBehaviour {
 	[HideInInspector]
 	public bool holdFlagTwo;
 
-	private UnityEngine.AI.NavMeshAgent navAgent;
+//	private UnityEngine.AI.NavMeshAgent navAgent;
 
-	private Rigidbody rbXmas;
+//	private Rigidbody rbXmas;
 
 	private Animator xmasAnimator;
 
 	private int stepCountOne = 0;
-	private int stepCountTwo = 0;
+//	private int stepCountTwo = 0;
 
 	void Awake(){
 		holdFlag = "";
 		holdFlagTwo = false;
-		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-		rbXmas = GetComponent<Rigidbody> ();
+//		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+//		rbXmas = GetComponent<Rigidbody> ();
 		xmasAnimator = GetComponent<Animator> ();
 		xmasAnimator.SetInteger ("MoveState", 0);
 	}

@@ -8,11 +8,8 @@ using UnityEngine;
 
 public class RoomFurnitureManager {
 
-	private Furniture[] furnitures;
+//	private Furniture[] furnitures;
 
-	public Furniture[] GetAllFurnitures(){
-		return furnitures;
-	}
 
 	public void GetFurniture(Furniture furniture){
 		
