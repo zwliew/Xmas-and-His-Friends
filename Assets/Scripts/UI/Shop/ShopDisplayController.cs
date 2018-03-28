@@ -83,8 +83,14 @@ public class ShopDisplayController : MonoBehaviour
 		}
 
 		foreach (ShopItemData itemData in items) {
-			Button item = Instantiate (prefabItemButton, shopWindowContent.transform);
-			ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
+            Button item = Instantiate (prefabItemButton, shopWindowContent.transform);
+            item.gameObject.SetActive(false);
+            item.gameObject.SetActive(true);
+            //Button item = Instantiate(prefabItemButton);
+            //item.transform.SetParent(shopWindowContent.transform);
+            //item.GetComponent<LayoutElement>().ignoreLayout = false;
+            //item.GetComponent<LayoutElement>().ignoreLayout = true;
+            ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
 			itemScript.fullName = itemData.fullName;
 			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemScript.fullName);
 			itemScript.cost = itemData.cost;
