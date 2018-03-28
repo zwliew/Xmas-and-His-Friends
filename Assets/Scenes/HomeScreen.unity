@@ -1162,8 +1162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yesBtn: {fileID: 764749613}
   noBtn: {fileID: 1293456501}
-  price: {fileID: 0}
-  nameText: {fileID: 0}
+  price: {fileID: 1612299347}
+  nameText: {fileID: 393159137}
   itemName: fire
   itemCost: 1
 --- !u!1001 &391113830
