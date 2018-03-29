@@ -54,7 +54,7 @@
       ],
 	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
     },
-		{
+	{
       "name": "WEICAP",
       "sides": [
         "renzipang",
@@ -71,6 +71,78 @@
         "安安妮"
       ],
 	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
+    },
+	{
+      "name": "chi101",
+      "sides": [
+        "chi111",
+        "chi121",
+        "dao421",
+        "dao411"
+      ],
+      "correctSides": [
+        "chi111",
+        "chi121"
+      ],
+      "sampleVocab": [
+        "安妮吃",
+        "吃安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
+    },
+	{
+      "name": "chi101",
+      "sides": [
+        "chi111",
+        "chi121",
+        "dao421",
+        "dao411"
+      ],
+      "correctSides": [
+        "chi111",
+        "chi121"
+      ],
+      "sampleVocab": [
+        "安妮吃",
+        "吃安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
+    },
+	{
+      "name": "chi101",
+      "sides": [
+        "chi111",
+        "chi121",
+        "dao421",
+        "dao411"
+      ],
+      "correctSides": [
+        "chi111",
+        "chi121"
+      ],
+      "sampleVocab": [
+        "安妮吃",
+        "吃安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
+    },
+	{
+      "name": "chi101",
+      "sides": [
+        "chi111",
+        "chi121",
+        "dao421",
+        "dao411"
+      ],
+      "correctSides": [
+        "chi111",
+        "chi121"
+      ],
+      "sampleVocab": [
+        "安妮吃",
+        "吃安妮"
+      ],
+	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
     }
   ]
 }

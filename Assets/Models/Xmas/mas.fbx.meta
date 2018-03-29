@@ -1,73 +1,57 @@
 fileFormatVersion: 2
-guid: f4ca914de483a47488c2365ffc9d251a
-timeCreated: 1522247490
+guid: a7a2804448cbb43ff9bce0317beca314
+timeCreated: 1522323220
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Cube.000
-    100004: Cube.002
-    100006: Cube.003
-    100008: Cube.034
-    100010: Cube.046
-    100012: Cube.055
-    100014: Cube.085
-    100016: Cube.086
-    100018: Cylinder.027
-    100020: Sun.001
-    400000: //RootNode
-    400002: Cube.000
-    400004: Cube.002
-    400006: Cube.003
-    400008: Cube.034
-    400010: Cube.046
-    400012: Cube.055
-    400014: Cube.085
-    400016: Cube.086
-    400018: Cylinder.027
-    400020: Sun.001
-    2100000: Material.026
-    2100002: Material.001
-    2100004: Material.017
-    2100006: Material.014
-    2100008: Material.015
-    2100010: Material.016
-    2100012: Material.025
-    2100014: Material.049
-    2100016: Material.089
-    2100018: Material.088
-    2100020: Material.071
-    2100022: Material.000
-    2100024: Material.073
-    2300000: Cube.000
-    2300002: Cube.002
-    2300004: Cube.003
-    2300006: Cube.034
-    2300008: Cube.046
-    2300010: Cube.055
-    2300012: Cube.085
-    2300014: Cube.086
-    2300016: Cylinder.027
-    3300000: Cube.000
-    3300002: Cube.002
-    3300004: Cube.003
-    3300006: Cube.034
-    3300008: Cube.046
-    3300010: Cube.055
-    3300012: Cube.085
-    3300014: Cube.086
-    3300016: Cylinder.027
-    4300000: Cube.003
-    4300002: Cube.002
-    4300004: Cube.000
-    4300006: Cube.086
-    4300008: Cube.085
-    4300010: Cube.055
-    4300012: Cube.046
-    4300014: Cube.034
-    4300016: Cylinder.027
-    10800000: Sun.001
+    100000: Armature
+    100002: Bone.001
+    100004: Bone.001_end
+    100006: Bone.002
+    100008: Bone.003
+    100010: Bone.004
+    100012: Bone.004_end
+    100014: Bone.005
+    100016: Bone.006
+    100018: Bone.006_end
+    100020: Bone.007
+    100022: Bone.008
+    100024: Bone.009
+    100026: Bone.009_end
+    100028: Bone.010
+    100030: Bone.011
+    100032: Bone.012
+    100034: Bone.012_end
+    100036: chr_spf
+    100038: //RootNode
+    400000: Armature
+    400002: Bone.001
+    400004: Bone.001_end
+    400006: Bone.002
+    400008: Bone.003
+    400010: Bone.004
+    400012: Bone.004_end
+    400014: Bone.005
+    400016: Bone.006
+    400018: Bone.006_end
+    400020: Bone.007
+    400022: Bone.008
+    400024: Bone.009
+    400026: Bone.009_end
+    400028: Bone.010
+    400030: Bone.011
+    400032: Bone.012
+    400034: Bone.012_end
+    400036: chr_spf
+    400038: //RootNode
+    2100000: Material.001
+    4300000: chr_spf
+    7400000: Armature|walk
+    7400002: Armature|wave
+    7400004: Armature|wave.001
+    9500000: //RootNode
+    13700000: chr_spf
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -98,7 +82,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -142,7 +126,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
