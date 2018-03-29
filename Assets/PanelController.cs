@@ -16,6 +16,8 @@ public class PanelController : MonoBehaviour {
     public string itemCost;
 	// Use this for initialization
 	void Start () {
+        itemCost = "0";
+        itemName = "";
 		//Refresh ();
 	}
 

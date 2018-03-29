@@ -7,10 +7,12 @@ public class MazeTileController : MonoBehaviour {
     private Rigidbody rgdBody;
     public NavMeshAgent xmas;
     private Rigidbody rgdXmas;
+    private Renderer rend;
 	// Use this for initialization
 	void Start () {
         rgdBody = GetComponent<Rigidbody>();
         rgdXmas = xmas.gameObject.GetComponent<Rigidbody>();
+        rend = GetComponent<Renderer>();
         Debug.Log("it is enabled" + !xmas.isActiveAndEnabled);
         rgdXmas.useGravity = false;
         xmas.gameObject.SetActive(true);
@@ -23,10 +25,12 @@ public class MazeTileController : MonoBehaviour {
 
 	}
 
-    private IEnumerator OnTriggerStay(Collider other)
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         Debug.Log("object detected");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
+        rend.material.color = Color.red;
+        Debug.Log("color is " + rend.material.color);
         rgdBody.useGravity = true;
         xmas.enabled = false;
         rgdXmas.useGravity = true;
