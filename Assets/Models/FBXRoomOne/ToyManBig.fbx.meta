@@ -32,6 +32,9 @@ ModelImporter:
     4300000: Cylinder.042
     4300002: Cylinder.041
     4300004: Cylinder.040
+    6400000: Cylinder.040
+    6400002: Cylinder.041
+    6400004: Cylinder.042
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -64,11 +67,11 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

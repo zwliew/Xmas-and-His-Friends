@@ -41,6 +41,10 @@ ModelImporter:
     4300002: Cylinder.015
     4300004: Icosphere.025
     4300006: Plane.014
+    6400000: Cube.073
+    6400002: Cylinder.015
+    6400004: Icosphere.025
+    6400006: Plane.014
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -73,11 +77,11 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

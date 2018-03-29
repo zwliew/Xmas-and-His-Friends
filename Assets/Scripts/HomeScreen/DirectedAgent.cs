@@ -8,6 +8,7 @@ public class DirectedAgent : MonoBehaviour {
     private NavMeshAgent agent;
     private AnimationController xmasAnimation;
     public GameObject mas;
+    public FurnitureInteraction furnitureInteractionScript;
 	// Use this for initialization
 	void Awake () {
         agent = GetComponent<NavMeshAgent>();
@@ -38,9 +39,9 @@ public class DirectedAgent : MonoBehaviour {
             yield return new WaitForFixedUpdate();
         }
         agent.SetDestination(targetLocation);
-        xmasAnimation.SetMovingState(1);
+        //xmasAnimation.SetMovingState(1);
         agent.isStopped = false;
         Debug.Log("move to location is called");
-
+        furnitureInteractionScript.ResetClickCount();
     }
 }
