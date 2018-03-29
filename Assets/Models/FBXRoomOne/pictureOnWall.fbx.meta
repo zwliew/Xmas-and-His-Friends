@@ -1,73 +1,22 @@
 fileFormatVersion: 2
-guid: f4ca914de483a47488c2365ffc9d251a
-timeCreated: 1522247490
+guid: fe99ecbc09cbee943ba6a2575728f2ca
+timeCreated: 1522250393
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube.000
-    100004: Cube.002
-    100006: Cube.003
-    100008: Cube.034
-    100010: Cube.046
-    100012: Cube.055
-    100014: Cube.085
-    100016: Cube.086
-    100018: Cylinder.027
-    100020: Sun.001
     400000: //RootNode
-    400002: Cube.000
-    400004: Cube.002
-    400006: Cube.003
-    400008: Cube.034
-    400010: Cube.046
-    400012: Cube.055
-    400014: Cube.085
-    400016: Cube.086
-    400018: Cylinder.027
-    400020: Sun.001
-    2100000: Material.026
-    2100002: Material.001
-    2100004: Material.017
-    2100006: Material.014
-    2100008: Material.015
-    2100010: Material.016
-    2100012: Material.025
-    2100014: Material.049
-    2100016: Material.089
-    2100018: Material.088
-    2100020: Material.071
-    2100022: Material.000
-    2100024: Material.073
-    2300000: Cube.000
-    2300002: Cube.002
-    2300004: Cube.003
-    2300006: Cube.034
-    2300008: Cube.046
-    2300010: Cube.055
-    2300012: Cube.085
-    2300014: Cube.086
-    2300016: Cylinder.027
-    3300000: Cube.000
-    3300002: Cube.002
-    3300004: Cube.003
-    3300006: Cube.034
-    3300008: Cube.046
-    3300010: Cube.055
-    3300012: Cube.085
-    3300014: Cube.086
-    3300016: Cylinder.027
-    4300000: Cube.003
-    4300002: Cube.002
-    4300004: Cube.000
-    4300006: Cube.086
-    4300008: Cube.085
-    4300010: Cube.055
-    4300012: Cube.046
-    4300014: Cube.034
-    4300016: Cylinder.027
-    10800000: Sun.001
+    2100000: Material.000
+    2100002: Material.022
+    2100004: Material.014
+    2100006: Material.015
+    2100008: Material.016
+    2100010: Material.020
+    2100012: Material.023
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube.002
   externalObjects: {}
   materials:
     importMaterials: 1
