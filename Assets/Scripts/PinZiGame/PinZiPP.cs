@@ -15,6 +15,9 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	private Material curMat;
 	private ParticleSystem particalSys;
 
+	private Texture2D side_Unselected;
+	private Texture2D side_Selected;
+
 	[HideInInspector]
     public string sidename;
 
@@ -33,20 +36,16 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	public void Initialize(){
 		//Debug.Log ("Getting Renderer.shareMaterial");
 		curMat = GetComponent<Renderer> ().sharedMaterial;
-		particalSys = GetComponent<ParticleSystem> ();
+		//particalSys = GetComponent<ParticleSystem> ();
 		halo = (Behaviour)GetComponent ("Halo");
 		halo.enabled = false;
 	}
 
-	public void SetDisplay (Texture2D texture2D){
-		curMat.SetTexture ("_MainTex", texture2D);
-		//Debug.Log ("Texture " + texture2D.name + " is set");
-		sidename = texture2D.name;
-	}
-
-	public void SetOriginalPosition(Vector3 pos){
-//		v3originalPosition = pos;
-		//Debug.Log (sidename +"'s v3originalPosition is set to "+ v3originalPosition);
+	public void SetDisplay (Texture2D texture2D_Unselected, Texture2D texture2D_Selected){
+		side_Unselected = texture2D_Unselected;
+		side_Selected = texture2D_Selected;
+		curMat.SetTexture ("_MainTex", side_Unselected);
+		//sidename = texture2D_Unselected.name;
 	}
 
 	void Update(){
@@ -58,17 +57,19 @@ public class PinZiPP : MonoBehaviour, IRecycle {
 	}
 
 	public void SetSelected(){
-		particalSys = GetComponent<ParticleSystem> ();
-		particalSys.Play ();
-		halo.enabled = true;
-		StopAllCoroutines ();
+		//halo.enabled = true;
+		curMat.SetTexture ("_MainTex", side_Selected);
+		//particalSys = GetComponent<ParticleSystem> ();
+		//particalSys.Play ();
+		//StopAllCoroutines ();
 		//Debug.Log ("Selected: " + sidename);
 		//Debug.Log ("when selected, the original location is " + v3originalPosition);
 		//StartCoroutine (MoveTo (v3center));
 	}
 	public void SetUnselected(){
-		particalSys.Stop();
 		halo.enabled = false;
+		curMat.SetTexture ("_MainTex", side_Unselected);
+		//particalSys.Stop();
 		//StopAllCoroutines ();
 		//Debug.Log ("when unselected, the original location is " + v3originalPosition);
 		//StartCoroutine (MoveTo (v3originalPosition));

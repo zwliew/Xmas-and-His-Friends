@@ -20,6 +20,7 @@ public class DisplayController : MonoBehaviour{
 	public Text sampleSentenceText;
 
 	private Texture2D[] texture2DSides;
+	private Texture2D[] texture2DSidesSelected;
 	private Texture2D texture2DAns;
 
 	private Vector3[] v3Positions = new Vector3[5]{
@@ -70,13 +71,14 @@ public class DisplayController : MonoBehaviour{
 	IEnumerator LoadPinZiResources(){
 		string[] sides = word.sides;
 		texture2DSides = new Texture2D[sides.Length];
-
+		texture2DSidesSelected = new Texture2D[sides.Length];
 		//Debug.Log ("Start Loading");
 
 		for (int i = 0; i < sides.Length; i++) {
 			string strTexturePath = "PinZiPianPang/" + sides [i].ToString ();
 			//Debug.Log ("Loading " + (i+1) + " " +strTexturePath);
 			texture2DSides[i] =	Resources.Load (strTexturePath) as Texture2D;
+			texture2DSidesSelected[i] =	Resources.Load (strTexturePath+"r") as Texture2D;
 			//Debug.Log ("Loaded " + texture2DSides [i].name);
 			//Debug.Log ("Loading... " + (i+1) + "/" + sides.Length);
 			yield return new WaitForFixedUpdate ();
@@ -96,8 +98,8 @@ public class DisplayController : MonoBehaviour{
 			//Debug.Log ("Initializing");
 			pinZiScript.Initialize ();
 			//Debug.Log ("Setting texture");
-			pinZiScript.SetDisplay (texture2DSides [i]);
-			pinZiScript.SetOriginalPosition (v3Positions [i]);
+			pinZiScript.SetDisplay (texture2DSides [i], texture2DSidesSelected[i]);
+
 			pinZiScript.sidename = texture2DSides [i].name;
 			//Debug.Log ("-----------Assigned: " + (i + 1) + "/" + sides.Length + "------------");
 			yield return new WaitForFixedUpdate ();

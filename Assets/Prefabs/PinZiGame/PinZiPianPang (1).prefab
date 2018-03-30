@@ -25,8 +25,10 @@ GameObject:
   - component: {fileID: 199694586858208228}
   - component: {fileID: 198712722962295108}
   - component: {fileID: 114748360567415792}
-  - component: {fileID: 65729957834204102}
   - component: {fileID: 122639339574746894}
+  - component: {fileID: 65651680068242012}
+  - component: {fileID: 65479765124514660}
+  - component: {fileID: 65180306345232810}
   m_Layer: 9
   m_Name: PinZiPianPang (1)
   m_TagString: PP
@@ -41,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643113125790848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4504714, y: 1.3374618, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -88,7 +90,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643113125790848}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65729957834204102
+--- !u!65 &65180306345232810
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -98,8 +100,32 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 6.1232336e-17}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.27576292, y: 0.31570834, z: 0.000000059604645}
+  m_Center: {x: -0.0021459837, y: 0.24925512, z: 0.0000010031642}
+--- !u!65 &65479765124514660
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643113125790848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48179314, y: 0.33903828, z: 0.00000005960476}
+  m_Center: {x: 0.004408696, y: -0.087881245, z: 0.00000027351805}
+--- !u!65 &65651680068242012
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643113125790848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.2316897, z: 0.000000059604496}
+  m_Center: {x: -0.000000002048313, y: -0.38415402, z: -0.0000007502854}
 --- !u!114 &114160297446831762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,7 +220,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -150676667
+  randomSeed: -1643816779
   InitialModule:
     serializedVersion: 3
     enabled: 1
