@@ -41,7 +41,7 @@ public class DirectedAgent : MonoBehaviour {
         agent.SetDestination(targetLocation);
         //xmasAnimation.SetMovingState(1);
         agent.isStopped = false;
-        Debug.Log("move to location is called");
+        //Debug.Log("move to location is called");
         furnitureInteractionScript.ResetClickCount();
     }
 }
