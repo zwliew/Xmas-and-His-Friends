@@ -1,23 +1,22 @@
 fileFormatVersion: 2
-guid: fe99ecbc09cbee943ba6a2575728f2ca
-timeCreated: 1522250393
+guid: 696a73a78d7b0ae4e942372e7f2c6e8a
+timeCreated: 1522414363
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material.000
-    2100002: Material.022
-    2100004: Material.014
+    2100000: Material.023
+    2100002: Material.020
+    2100004: Material.016
     2100006: Material.015
-    2100008: Material.016
-    2100010: Material.020
-    2100012: Material.023
+    2100008: Material.014
+    2100010: Material.022
+    2100012: Material.000
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube.002
-    6400000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -50,11 +49,11 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

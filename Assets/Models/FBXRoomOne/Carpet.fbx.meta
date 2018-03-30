@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3796049fda649d548af06f2cce388eb1
-timeCreated: 1521117147
+timeCreated: 1522415137
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -12,7 +12,6 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Plane.002
-    6400000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -45,11 +44,11 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

@@ -1,148 +1,148 @@
 {
   "words": [
     {
-      "name": "AN",
-      "sides": [
-        "baogaitou",
-        "nv",
-        "renzipang",
-        "qin"
-      ],
-      "correctSides": [
-        "baogaitou",
-        "nv"
-      ],
-      "sampleVocab": [
-        "安妮",
-        "安安妮"
-      ],
-	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
-    },
-    {
-      "name": "XIN",
-      "sides": [
-        "qin",
-        "jin",
-        "baogaitou",
-        "wei"
-      ],
-      "correctSides": [
-        "qin",
-        "jin"
-      ],
-      "sampleVocab": [
-        "安妮",
-        "安安妮"
-      ],
-	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
-    },
-    {
-      "name": "QIU",
-      "sides": [
-        "he",
-        "huo",
-        "qin",
-        "nv"
-      ],
-      "correctSides": [
-        "he",
-        "huo"
-      ],
-      "sampleVocab": [
-        "安妮",
-        "安安妮"
-      ],
-	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
-    },
-	{
-      "name": "WEICAP",
-      "sides": [
-        "renzipang",
-        "huo",
-        "wei",
-        "nv"
-      ],
-      "correctSides": [
-        "renzipang",
-        "wei"
-      ],
-      "sampleVocab": [
-        "安妮",
-        "安安妮"
-      ],
-	  "sampleSentence": "安妮妮妮安，妮妮妮安妮"
-    },
-	{
       "name": "chi101",
       "sides": [
-        "chi111",
-        "chi121",
-        "dao421",
-        "dao411"
+        "chi1111",
+        "chi1211",
+        "an1111",
+        "an1211"
       ],
       "correctSides": [
-        "chi111",
-        "chi121"
+        "chi1111",
+        "chi1211"
       ],
       "sampleVocab": [
-        "安妮吃",
-        "吃安妮"
+        "小吃",
+        "好吃"
       ],
-	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
+	  "sampleSentence": "牛车水有很多好吃的小吃。"
     },
 	{
-      "name": "chi101",
+      "name": "dao401",
       "sides": [
-        "chi111",
-        "chi121",
-        "dao421",
-        "dao411"
+        "dao4111",
+        "dao4211",
+        "an1111",
+        "an1211"
       ],
       "correctSides": [
-        "chi111",
-        "chi121"
+        "dao4111",
+        "dao4211"
       ],
       "sampleVocab": [
-        "安妮吃",
-        "吃安妮"
+        "到处",
+        "到达"
       ],
-	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
+	  "sampleSentence": "到处都是汽车。"
     },
 	{
-      "name": "chi101",
+      "name": "de001",
       "sides": [
-        "chi111",
-        "chi121",
-        "dao421",
-        "dao411"
+        "de0111",
+        "de0211",
+        "an1111",
+        "an1211"
       ],
       "correctSides": [
-        "chi111",
-        "chi121"
+        "de0111",
+        "de0211"
       ],
       "sampleVocab": [
-        "安妮吃",
-        "吃安妮"
+        "别的",
+        "有的"
       ],
-	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
+	  "sampleSentence": "春天，路边的野花全开了。有的是红色的，有的是黄色的。"
     },
 	{
-      "name": "chi101",
+      "name": "di401",
       "sides": [
-        "chi111",
-        "chi121",
-        "dao421",
-        "dao411"
+        "di4111",
+        "di4211",
+        "an1111",
+        "an1211"
       ],
       "correctSides": [
-        "chi111",
-        "chi121"
+         "di4111",
+        "di4211"
       ],
       "sampleVocab": [
-        "安妮吃",
-        "吃安妮"
+        "地铁",
+        "扫地"
       ],
-	  "sampleSentence": "安妮妮妮安吃掉了妮妮妮安妮"
+	  "sampleSentence": "外来劳工在地铁站认真地扫地。"
+    },
+	{
+      "name": "gao101",
+      "sides": [
+        "gao1111",
+        "gao1211",
+        "an1111",
+        "an1211"
+      ],
+      "correctSides": [
+        "gao1111",
+        "gao1211"
+      ],
+      "sampleVocab": [
+        "高兴",
+        "高大"
+      ],
+	  "sampleSentence": "今天真高兴！"
+    },
+	{
+      "name": "hao301",
+      "sides": [
+        "hao3111",
+        "hao3211",
+        "an1111",
+        "an1211"
+      ],
+      "correctSides": [
+        "hao3111",
+        "hao3211"
+      ],
+      "sampleVocab": [
+        "好像",
+        "好吃"
+      ],
+	  "sampleSentence": "农历新年好像是个很重要的日子。"
+    },
+	{
+      "name": "kuai401",
+      "sides": [
+        "kuai4111",
+        "kuai4211",
+        "an1111",
+        "an1211"
+      ],
+      "correctSides": [
+        "kuai4111",
+        "kuai4211"
+      ],
+      "sampleVocab": [
+        "快乐",
+        "快速"
+      ],
+	  "sampleSentence": "他们从此快乐地生活在了一起。"
+    },
+	{
+      "name": "ma001",
+      "sides": [
+        "ma0111",
+        "ma0211",
+        "an1111",
+        "an1211"
+      ],
+      "correctSides": [
+        "ma0111",
+        "ma0211"
+      ],
+      "sampleVocab": [
+        "好吗",
+        "是吗"
+      ],
+	  "sampleSentence": "你儿童节喝旺仔牛奶吗？"
     }
   ]
 }
