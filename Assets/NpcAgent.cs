@@ -6,6 +6,7 @@ public class NpcAgent : MonoBehaviour {
     private NavMeshAgent agent;
     private bool caught = false;
     public GameObject mas;
+    public int count = 26;
     // Use this for initialization
     void Awake()
     {
