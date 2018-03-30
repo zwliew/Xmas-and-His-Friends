@@ -5,12 +5,20 @@ using UnityEngine.UI;
 //GetComponent<Renderer>().material.SetTexture ("_MainTex", (Texture2D)listTextures[2]);  //Set texture
 
 public class DebugScript : MonoBehaviour{
-	public GameObject gameObjectBtn;
+    private AudioSource source;
+    public void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
-	void Start(){
-		Button btn = GameObjectUtility.customInstantiate (gameObjectBtn, Vector3.zero).GetComponent<Button> ();
-		Debug.Log (btn);
-		btn.GetComponent<EditorModeItem> ().Initialize ();
-	}
-	
+    public void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            AudioClip clip = Resources.Load<AudioClip>("Sounds/Audio/" + Random.Range(1, 5).ToString() + ".mp3");
+            source.PlayOneShot(clip);
+        }
+        
+    }
+
 }

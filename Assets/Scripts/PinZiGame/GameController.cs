@@ -20,7 +20,11 @@ public class GameController : MonoBehaviour {
 	private string[] curSelections;
 	private bool hasWon; //So that each round can only be won once;
 
-	void Start () {
+    public AudioSource audioSource;
+    public AudioClip winSound;
+    public AudioClip loseSound;
+
+    void Start () {
 
 		dataController = GetComponent<DataController>();
 
@@ -40,7 +44,7 @@ public class GameController : MonoBehaviour {
 
 	void Update () {
 		if (hasWon) {
-			if (Input.GetMouseButtonDown (1)) {
+			if (Input.GetMouseButtonDown (0)) {
 				displayController.EndGameUINext ();
 			}
 		}
@@ -101,13 +105,15 @@ public class GameController : MonoBehaviour {
 						return;
 					}
 					hasWon = true;
+                    audioSource.PlayOneShot(winSound);
 					displayController.DisplayWin ();
 					dataController.WinThisRound ();
 				} else {
 					Debug.Log ("Wrong Selection!" + " Correct answer is" + curWord.correctSides[0] + ", " + curWord.correctSides[1] );
 					displayController.UnselectAllSides ();
 					curSelections = new string[2];
-					displayController.DisplayLose ();
+                    audioSource.PlayOneShot(loseSound);
+                    displayController.DisplayLose ();
 				}
 			}
 		}

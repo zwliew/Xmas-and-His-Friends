@@ -110,7 +110,7 @@ public class OverallUIManager : MonoBehaviour {
 	//---------------------------
 
 	IEnumerator ExitAfterTime(float time, CanvasGroup closedCvsGrp, CanvasGroup openedCvsGrp){
-		closedCvsGrp.GetComponent<Animator> ().SetTrigger ("Exit");
+        closedCvsGrp.GetComponent<Animator>().SetTrigger("Exit");
 
 		RefreshCoinDisplay ();
 

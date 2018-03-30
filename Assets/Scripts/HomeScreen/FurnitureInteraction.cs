@@ -3,18 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FurnitureInteraction : MonoBehaviour {
+    /// <summary>
+    /// Controlles all local sounds including:
+    /// Furniture interaction
+    /// Idle Talk
+    /// </summary>
 
     private AudioSource source;
     private int clickCount;
+    private bool isPlayingFurniture;
+    private float idleTime;
+    public GameObject InGameUI;
+    [HideInInspector]
+    public bool isInRoom { get; set; }
 
     public void Start()
     {
         source = GetComponent<AudioSource>();
         clickCount = 0;
+        idleTime = 0f;
+        isInRoom = true;
+        isPlayingFurniture = false;
     }
 
     public void Update()
     {
+        isInRoom = InGameUI.activeSelf;
+        idleTime += Time.deltaTime * Random.Range(0.5f, 1.1f);
+        if (idleTime > 10f)
+        {
+            AudioClip idleClip = Resources.Load<AudioClip>("Sounds/Audio/" + Random.Range(1, 5).ToString() + ".mp3");//The file name is xxx.mp3.mp3 quite strange isnt it?
+            if (source != null && idleClip != null && !source.isPlaying && isInRoom)
+            {
+                source.PlayOneShot(idleClip, 1f);
+                Debug.Log("playing idle Sound: " + idleClip.name);
+            }
+            idleTime = 0f;
+            
+        }
         // Return early if nothing is being pressed
         if (!Input.GetMouseButtonDown(0))
         {
@@ -27,11 +53,11 @@ public class FurnitureInteraction : MonoBehaviour {
             return;
         }
 
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hitInfo;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo, 300f, 1 << LayerMask.NameToLayer("Furniture")))
         {
-            // Load AudioClip from Sounds/Furniture/<audioClipName>
+            // Load AudioClip from Sounds/Furniture/<soundName>
             string soundName = "";
             if (hitInfo.collider.gameObject.transform.parent != null)
             {
@@ -41,12 +67,15 @@ public class FurnitureInteraction : MonoBehaviour {
             {
                 soundName = hitInfo.collider.gameObject.name;
             }
+
             Debug.Log("Trying to play sound: " + soundName);
             AudioClip clip = Resources.Load<AudioClip>(
                 "Sounds/Furniture/" + soundName);
+
             if (source != null && clip != null)
             {
                 source.PlayOneShot(clip);
+                idleTime = 0f;
                 clickCount = 0;
             }
             else
@@ -61,7 +90,8 @@ public class FurnitureInteraction : MonoBehaviour {
                 }
             }
         }
-        else {
+        else
+        {
             clickCount += 1;
             if (clickCount > 4)
             {
@@ -70,9 +100,14 @@ public class FurnitureInteraction : MonoBehaviour {
                 clickCount = 0;
             }
         }
+        
     }
     public void ResetClickCount()
     {
         clickCount = 0;
+    }
+    public void ResetIdleTime()
+    {
+        idleTime = 0;
     }
 }
