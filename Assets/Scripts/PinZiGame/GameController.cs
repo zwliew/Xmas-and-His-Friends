@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
 
 	void Update () {
 		if (hasWon) {
-			if (Input.GetMouseButtonDown (1)) {
+			if (Input.GetMouseButtonDown (0)) {
 				displayController.EndGameUINext ();
 			}
 		}
