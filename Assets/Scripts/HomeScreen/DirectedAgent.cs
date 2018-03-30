@@ -13,7 +13,7 @@ public class DirectedAgent : MonoBehaviour {
 	void Awake () {
         agent = GetComponent<NavMeshAgent>();
         xmasAnimation = GetComponent<AnimationController>();
-        
+
     }
 
     private void Update()

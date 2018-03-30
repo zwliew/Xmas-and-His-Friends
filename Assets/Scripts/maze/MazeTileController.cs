@@ -5,19 +5,14 @@ using UnityEngine.AI;
 public class MazeTileController : MonoBehaviour {
 
     private Rigidbody rgdBody;
-    public NavMeshAgent xmas;
-    private Rigidbody rgdXmas;
     private Renderer rend;
     private NavMeshObstacle obs;
 	// Use this for initialization
 	void Start () {
         rgdBody = GetComponent<Rigidbody>();
-        rgdXmas = xmas.gameObject.GetComponent<Rigidbody>();
         rend = GetComponent<Renderer>();
-        Debug.Log("it is enabled" + !xmas.isActiveAndEnabled);
-        rgdXmas.useGravity = false;
-        xmas.gameObject.SetActive(true);
         rgdBody.useGravity = false;
+        rgdBody.isKinematic = false;
         obs = GetComponentInParent<NavMeshObstacle>();
         Debug.Log(obs.name);
         obs.enabled = false;
@@ -30,20 +25,20 @@ public class MazeTileController : MonoBehaviour {
 
     private IEnumerator OnTriggerStay(Collider other)
     {
-
-        yield return new WaitForSeconds(5f);
-
+        if (other.name == "Mas1") {
+            yield return new WaitForSeconds(0.5f);
+        }
+        else
+        {
+            yield return new WaitForSeconds(2f);
+        }
         rend.material.color = Color.red;
         rgdBody.useGravity = true;
         obs.enabled = true;
         Debug.Log(other.ClosestPointOnBounds(transform.position).z);
-        if ((other.ClosestPointOnBounds(transform.position) - transform.position).magnitude < 0.7)
-        {
-            xmas.enabled = false;
-            rgdXmas.useGravity = true;
-            rgdBody.detectCollisions = false;
-        }
-
+        other.GetComponent<NavMeshAgent>().enabled = false;
+        other.GetComponent<Rigidbody>().useGravity = true;
+        rgdBody.detectCollisions = false;
         yield return new WaitForSeconds(2f);
         rgdBody.useGravity = false;
         rgdBody.isKinematic = true;
