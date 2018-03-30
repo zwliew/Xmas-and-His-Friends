@@ -13,8 +13,8 @@ public class MazeDataController : MonoBehaviour {
             nodes = GetNodes();
         }*/
 
-          numberOfCharacters =  GetNodes(12);
-        Debug.Log(numberOfCharacters.Count);
+          //numberOfCharacters =  GetNodes(12);
+        //Debug.Log(numberOfCharacters.Count);
 
         
     }
