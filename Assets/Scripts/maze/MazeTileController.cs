@@ -11,7 +11,7 @@ public class MazeTileController : MonoBehaviour {
 	void Start () {
         rgdBody = GetComponent<Rigidbody>();
         rend = GetComponent<Renderer>();
-        rgdBody.useGravity = false;
+       // rgdBody.useGravity = false;
         rgdBody.isKinematic = false;
         obs = GetComponentInParent<NavMeshObstacle>();
         Debug.Log(obs.name);
@@ -25,13 +25,8 @@ public class MazeTileController : MonoBehaviour {
 
     private IEnumerator OnTriggerStay(Collider other)
     {
-        if (other.name == "Mas1") {
-            yield return new WaitForSeconds(0.5f);
-        }
-        else
-        {
-            yield return new WaitForSeconds(2f);
-        }
+
+        yield return new WaitForSeconds(2f);
         rend.material.color = Color.red;
         rgdBody.useGravity = true;
         obs.enabled = true;
@@ -39,9 +34,8 @@ public class MazeTileController : MonoBehaviour {
         other.GetComponent<NavMeshAgent>().enabled = false;
         other.GetComponent<Rigidbody>().useGravity = true;
         rgdBody.detectCollisions = false;
-        yield return new WaitForSeconds(2f);
-        rgdBody.useGravity = false;
-        rgdBody.isKinematic = true;
+        yield return new WaitForSeconds(5f);
+        //rgdBody.useGravity = false;
     }
 
 
