@@ -8,6 +8,7 @@ public class MazeTileController : MonoBehaviour {
     public NavMeshAgent xmas;
     private Rigidbody rgdXmas;
     private Renderer rend;
+    private NavMeshObstacle obs;
 	// Use this for initialization
 	void Start () {
         rgdBody = GetComponent<Rigidbody>();
@@ -17,7 +18,9 @@ public class MazeTileController : MonoBehaviour {
         rgdXmas.useGravity = false;
         xmas.gameObject.SetActive(true);
         rgdBody.useGravity = false;
-
+        obs = GetComponentInParent<NavMeshObstacle>();
+        Debug.Log(obs.name);
+        obs.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -25,15 +28,26 @@ public class MazeTileController : MonoBehaviour {
 
 	}
 
-    private IEnumerator OnTriggerEnter(Collider other)
+    private IEnumerator OnTriggerStay(Collider other)
     {
-        Debug.Log("object detected");
-        yield return new WaitForSeconds(1f);
+
+        yield return new WaitForSeconds(5f);
+
         rend.material.color = Color.red;
-        Debug.Log("color is " + rend.material.color);
         rgdBody.useGravity = true;
-        xmas.enabled = false;
-        rgdXmas.useGravity = true;
-        rgdBody.detectCollisions = false;
+        obs.enabled = true;
+        Debug.Log(other.ClosestPointOnBounds(transform.position).z);
+        if ((other.ClosestPointOnBounds(transform.position) - transform.position).magnitude < 0.7)
+        {
+            xmas.enabled = false;
+            rgdXmas.useGravity = true;
+            rgdBody.detectCollisions = false;
+        }
+
+        yield return new WaitForSeconds(2f);
+        rgdBody.useGravity = false;
+        rgdBody.isKinematic = true;
     }
+
+
 }
