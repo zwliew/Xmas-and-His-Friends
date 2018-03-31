@@ -2,59 +2,69 @@
 	"editorModeItemsData": [
 		{
 			"name": "christmasTree",
+			"englishName": "christmasTree",
 			"fullName": "christmasTree",
 			"cost": "100"
 		},
 		{
 			"name": "fire",
+			"englishName": "fire",
 			"fullName": "fire",
             "cost": "40"
             
 		},
 		{
 			"name": "mat",
+			"englishName": "mat",
 			"fullName": "mat",
             "cost": "20"
             
 		},
 		{
 			"name": "toyManBig",
+			"englishName": "toyManBig",
 			"fullName": "toyManBig",
             "cost": "30"
             
 		},
 		{
 			"name": "bed",
+			"englishName": "bed",
 			"fullName": "bed",
             "cost": "60"
             
 		},
 		{
 			"name": "desk",
+			"englishName": "desk",
 			"fullName": "desk",
             "cost": "30"
             
 		},
 		{
 			"name": "deer",
+			"englishName": "deer",
 			"fullName": "deer",
             "cost": "45"
             
 		},
 		{
 			"name": "shelves",
+			"englishName": "shelves",
 			"fullName": "shelves",
             "cost": "40"
             
 		},
 		{
 			"name": "sofa",
+			"englishName": "sofa",
 			"fullName": "sofa",
             "cost": "45"
             
 		},
 		{
 			"name": "curtains",
+			"englishName": "curtains",
 			"fullName": "curtains",
             "cost": "50"
             

@@ -149,7 +149,7 @@ public class DisplayController : MonoBehaviour{
 		Sprite ans = Sprite.Create (texture2DAns, new Rect(0f, 0f, texture2DAns.width, texture2DAns.height), new Vector2(0f, 0f));
 		ansImage.sprite = ans;
 
-		sampleVocabText.text = word.sampleVocab [0].ToString () + "     " + word.sampleVocab [1].ToString ();
+		sampleVocabText.text = word.sampleVocab [0].ToString () + "  " + word.sampleVocab [1].ToString ();
 		sampleSentenceText.text = word.sampleSentence.ToString ();
 
 

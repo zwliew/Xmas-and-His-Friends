@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class EditorModeItemData : ItemData{
 	//public int cost;
+	//public string englishName;
 	//public string fullName;
 	//public bool equipped;
 	//public bool purchased;
@@ -61,7 +62,7 @@ public class EditorModeDataController : MonoBehaviour {
 		}
 
 		equippedItemsData = ParseItems (equippedItemNames, "equippedItems");
-		Debug.Log ("When initializing, equippedItemsData.Count = " + equippedItemsData.Count);
+		Debug.Log ("When initializing, equippedItemsData.Count = " + (0+equippedItemsData.Count));
 		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
 		
 	}

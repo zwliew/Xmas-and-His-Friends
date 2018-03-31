@@ -30,6 +30,7 @@ public class BackGroudMusic : MonoBehaviour {
         switch (scene.name)
         {
             case "HomeScreen":
+			if(audioSource.clip != bgmClips[0])
                 PlaySceneBGM(0);
                 break;
             case "Intro":

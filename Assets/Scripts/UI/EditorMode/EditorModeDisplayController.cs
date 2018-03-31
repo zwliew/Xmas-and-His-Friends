@@ -34,6 +34,7 @@ public class EditorModeDisplayController : MonoBehaviour
 	public GameObject editorModeWindowContent;//The parent of the button
 	public Button prefabItemButton;
     public GameObject mas;
+	public List<GameObject> furnitures;
 	public void Initialize()
 	{
 		items = GetComponent<EditorModeDataController> ().GetPurchasedItemsData();
@@ -41,8 +42,12 @@ public class EditorModeDisplayController : MonoBehaviour
 		foreach (EditorModeItemData itemData in items) {
 			itemData.furniture = null;
 			//itemData.furniture = GameObject.FindGameObjectWithTag (itemData.fullName);
-			if(!itemData.furniture)
-				itemData.furniture = GameObject.Find (itemData.fullName);//Find again
+			foreach(GameObject furniture in furnitures){
+				if (furniture.name == itemData.englishName) {
+					itemData.furniture = furniture;
+				}
+			}
+			Debug.Assert(itemData.furniture != null);
 		}
 
 		pageNumber = 0;
@@ -100,11 +105,11 @@ public class EditorModeDisplayController : MonoBehaviour
 			curSelectedItem = item;
             if (item.furniture)
             {
-                item.furniture.transform.position = item.position;
+				item.furniture.transform.position = Vector3.zero;
+				Debug.Log ("Setting item to be displayed in emdc");
                 //Debug.Log(item.furniture.transform.position.x);
                 //item.furniture.transform.rotation = Quaternion.Euler(item.position);
                 //Debug.Log(item.furniture.transform.rotation.y);
-                item.furniture.SetActive(true);
             }
  
 		}

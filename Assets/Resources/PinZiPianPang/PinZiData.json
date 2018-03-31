@@ -4,9 +4,9 @@
       "name": "chi101",
       "sides": [
         "chi1111",
+        "dao4111",
         "chi1211",
-        "an1111",
-        "an1211"
+        "de0211"
       ],
       "correctSides": [
         "chi1111",
@@ -19,12 +19,12 @@
 	  "sampleSentence": "牛车水有很多好吃的小吃。"
     },
 	{
-      "name": "dao401#",
+      "name": "dao402",
       "sides": [
         "dao4111",
+        "chi1111",
         "dao4211",
-        "an1111",
-        "an1211"
+        "de0211"
       ],
       "correctSides": [
         "dao4111",
@@ -40,9 +40,9 @@
       "name": "de001",
       "sides": [
         "de0111",
+        "chi1111",
         "de0211",
-        "an1111",
-        "an1211"
+        "dao4211"
       ],
       "correctSides": [
         "de0111",
@@ -59,11 +59,11 @@
       "sides": [
         "di4111",
         "di4211",
-        "an1111",
-        "an1211"
+        "gao1111",
+        "hao3211"
       ],
       "correctSides": [
-         "di4111",
+        "di4111",
         "di4211"
       ],
       "sampleVocab": [
@@ -77,8 +77,8 @@
       "sides": [
         "gao1111",
         "gao1211",
-        "an1111",
-        "an1211"
+        "di4111",
+        "hao3211"
       ],
       "correctSides": [
         "gao1111",
@@ -93,10 +93,10 @@
 	{
       "name": "hao301",
       "sides": [
+        "di4111",
         "hao3111",
         "hao3211",
-        "an1111",
-        "an1211"
+        "gao1211"
       ],
       "correctSides": [
         "hao3111",
@@ -113,8 +113,8 @@
       "sides": [
         "kuai4111",
         "kuai4211",
-        "an1111",
-        "an1211"
+        "ma0111",
+        "gao1211"
       ],
       "correctSides": [
         "kuai4111",
@@ -127,12 +127,12 @@
 	  "sampleSentence": "他们从此快乐地生活在了一起。"
     },
 	{
-      "name": "ma001#",
+      "name": "ma001",
       "sides": [
         "ma0111",
         "ma0211",
-        "an1111",
-        "an1211"
+        "hao3111",
+        "gao1111"
       ],
       "correctSides": [
         "ma0111",
@@ -145,16 +145,16 @@
 	  "sampleSentence": "你儿童节喝旺仔牛奶吗？"
     },
 	  {
-      "name": "ma001#",
+      "name": "ma101",
       "sides": [
-        "ma0111",
-        "ma0211",
-        "an1111",
-        "an1211"
+        "ma1111",
+        "ma1211",
+        "yi3211",
+        "zhu4212"
       ],
       "correctSides": [
-        "ma0111",
-        "ma0211"
+        "ma1111",
+        "ma1211"
       ],
       "sampleVocab": [
         "妈妈",
@@ -167,8 +167,8 @@
       "sides": [
         "men0111",
         "men0211",
-        "an1111",
-        "an1211"
+        "yi3211",
+        "mai4211"
       ],
       "correctSides": [
         "men0111",
@@ -185,8 +185,8 @@
       "sides": [
         "ming2111",
         "ming2211",
-        "an1111",
-        "an1211"
+        "po1211",
+        "qing3211"
       ],
       "correctSides": [
         "ming2111",
@@ -203,8 +203,8 @@
       "sides": [
         "pi2111",
         "pi2211",
-        "an1111",
-        "an1211"
+        "mai4211",
+        "guang1211"
       ],
       "correctSides": [
         "pi2111",
@@ -221,8 +221,8 @@
       "sides": [
         "qing1111",
         "qing1211",
-        "an1111",
-        "an1211"
+        "guo2211",
+        "zhuo1211"
       ],
       "correctSides": [
         "qing1111",
@@ -239,8 +239,8 @@
       "sides": [
         "ren2111",
         "ren2211",
-        "an1111",
-        "an1211"
+        "he2211",
+        "jue2211"
       ],
       "correctSides": [
         "ren2111",
@@ -257,8 +257,8 @@
       "sides": [
         "san1111",
         "san1211",
-        "an1111",
-        "an1211"
+        "he2111",
+        "ke4211"
       ],
       "correctSides": [
         "san1111",
@@ -275,8 +275,8 @@
       "sides": [
         "shao3111",
         "shao3211",
-        "an1111",
-        "an1211"
+        "lu4211",
+        "shen2211"
       ],
       "correctSides": [
         "shao3111",
@@ -293,8 +293,8 @@
       "sides": [
         "shen2111",
         "shen2211",
-        "an1111",
-        "an1211"
+        "lu4211",
+        "lou2111"
       ],
       "correctSides": [
         "shen2111",
@@ -311,8 +311,8 @@
       "sides": [
         "shi4111",
         "shi4211",
-        "an1111",
-        "an1211"
+        "chao3211",
+        "chu4111"
       ],
       "correctSides": [
         "shi4111",
@@ -329,8 +329,8 @@
       "sides": [
         "shi1111",
         "shi1211",
-        "an1111",
-        "an1211"
+        "jie3211",
+        "mao1211"
       ],
       "correctSides": [
         "shi1111",
@@ -347,8 +347,8 @@
       "sides": [
         "shuang1111",
         "shunag1211",
-        "an1111",
-        "an1211"
+        "cao1211",
+        "jiu4211"
       ],
       "correctSides": [
         "shuang1111",
@@ -361,12 +361,12 @@
 	  "sampleSentence": "我有一双运动鞋。"
     },
 	  {
-      "name": "ta101#",
+      "name": "ta101",
       "sides": [
         "ta1111",
         "ta1211",
-        "an1111",
-        "an1211"
+        "ci4211",
+        "zuo4211"
       ],
       "correctSides": [
         "ta1111",
@@ -379,16 +379,16 @@
 	  "sampleSentence": "地上有一群蚂蚁。它们在搬家。"
     },
 	  {
-      "name": "ta101#",
+      "name": "ta102",
       "sides": [
-        "ta1111",
-        "ta1211",
-        "an1111",
-        "an1211"
+        "ta1112",
+        "ta1212",
+        "qi3111",
+        "pao3211"
       ],
       "correctSides": [
-        "ta1111",
-        "ta1211"
+        "ta1112",
+        "ta1212"
       ],
       "sampleVocab": [
         "他们",
@@ -397,16 +397,16 @@
 	  "sampleSentence": "我有一群男同学。他们喜欢打篮球。"
     },
 	  {
-      "name": "ta101#",
+      "name": "ta103",
       "sides": [
-        "ta1111",
-        "ta1211",
-        "an1111",
-        "an1211"
+        "ta1113",
+        "ta1213",
+        "mai4211",
+        "qing1211"
       ],
       "correctSides": [
-        "ta1111",
-        "ta1211"
+        "ta1113",
+        "ta1213"
       ],
       "sampleVocab": [
         "她们",
@@ -419,8 +419,8 @@
       "sides": [
         "tai2111",
         "tai2211",
-        "an1111",
-        "an1211"
+        "zheng4211",
+        "yun4211"
       ],
       "correctSides": [
         "tai2111",
@@ -437,8 +437,8 @@
       "sides": [
         "wen4111",
         "wen4211",
-        "an1111",
-        "an1211"
+        "tai2211",
+        "qi3211"
       ],
       "correctSides": [
         "wen4111",
@@ -455,8 +455,8 @@
       "sides": [
         "yi3111",
         "yi3211",
-        "an1111",
-        "an1211"
+        "ma0111",
+        "men0211"
       ],
       "correctSides": [
         "yi3111",
@@ -473,8 +473,8 @@
       "sides": [
         "yuan2111",
         "yuan2211",
-        "an1111",
-        "an1211"
+        "ma1211",
+        "men0211"
       ],
       "correctSides": [
         "yuan2111",
@@ -491,8 +491,8 @@
       "sides": [
         "zuo2111",
         "zuo2211",
-        "an1111",
-        "an1211"
+        "ke4211",
+        "lei2111"
       ],
       "correctSides": [
         "zuo2111",
@@ -509,8 +509,8 @@
       "sides": [
         "you2111",
         "you2211",
-        "an1111",
-        "an1211"
+        "qing1211",
+        "he2111"
       ],
       "correctSides": [
         "you2111",
@@ -527,8 +527,8 @@
       "sides": [
         "you3111",
         "you3211",
-        "an1111",
-        "an1211"
+        "jue2211",
+        "he2211"
       ],
       "correctSides": [
         "you3111",
@@ -545,8 +545,8 @@
       "sides": [
         "yu2111",
         "yu2211",
-        "an1111",
-        "an1211"
+        "lei2211",
+        "kong1111"
       ],
       "correctSides": [
         "yu2111",
@@ -563,8 +563,8 @@
       "sides": [
         "zhen1111",
         "zhen1211",
-        "an1111",
-        "an1211"
+        "yuan3211",
+        "bi3111"
       ],
       "correctSides": [
         "zhen1111",
@@ -577,16 +577,16 @@
 	  "sampleSentence": "我是真的想喝旺仔牛奶。"
     },
 	  {
-      "name": "zhu401#",
+      "name": "zhu402",
       "sides": [
-        "zhu4111",
-        "zhu4211",
-        "an1111",
-        "an1211"
+        "zhu4112",
+        "zhu4212",
+        "yuan3211",
+        "bi3111"
       ],
       "correctSides": [
-        "zhu4111",
-        "zhu4211"
+        "zhu4112",
+        "zhu4212"
       ],
       "sampleVocab": [
         "庆祝",
@@ -599,8 +599,8 @@
       "sides": [
         "zhuo1111",
         "zhuo1211",
-        "an1111",
-        "an1211"
+        "yi3211",
+        "ren2211"
       ],
       "correctSides": [
         "zhuo1111",
@@ -617,8 +617,8 @@
       "sides": [
         "zi4111",
         "zi4211",
-        "an1111",
-        "an1211"
+        "nai3111",
+        "pao3111"
       ],
       "correctSides": [
         "zi4111",
@@ -635,8 +635,8 @@
       "sides": [
         "zui4111",
         "zui4211",
-        "an1111",
-        "an1211"
+        "pao3111",
+        "bi3111"
       ],
       "correctSides": [
         "zui4111",
@@ -653,8 +653,8 @@
       "sides": [
         "zuo4111",
         "zuo4211",
-        "an1111",
-        "an1211"
+        "ci4211",
+        "pao3111"
       ],
       "correctSides": [
         "zuo4111",
@@ -671,8 +671,8 @@
       "sides": [
         "cai3111",
         "cai3211",
-        "an1111",
-        "an1211"
+        "lei2211",
+        "li4211"
       ],
       "correctSides": [
         "cai3111",
@@ -689,8 +689,8 @@
       "sides": [
         "cao3111",
         "cao3211",
-        "an1111",
-        "an1211"
+        "jie2111",
+        "shi1211"
       ],
       "correctSides": [
         "cao3111",
@@ -707,8 +707,8 @@
       "sides": [
         "cao1111",
         "cao1211",
-        "an1111",
-        "an1211"
+        "shunag1211",
+        "lu4211"
       ],
       "correctSides": [
         "cao1111",
@@ -725,8 +725,8 @@
       "sides": [
         "chao3111",
         "chao3211",
-        "an1111",
-        "an1211"
+        "ren2111",
+        "qing1211"
       ],
       "correctSides": [
         "chao3111",
@@ -743,8 +743,8 @@
       "sides": [
         "cheng2111",
         "cheng2211",
-        "an1111",
-        "an1211"
+        "shen2211",
+        "shi4211"
       ],
       "correctSides": [
         "cheng2111",
@@ -761,8 +761,8 @@
       "sides": [
         "chu4111",
         "chu4211",
-        "an1111",
-        "an1211"
+        "ai4211",
+        "xiang1211"
       ],
       "correctSides": [
         "chu4111",
@@ -779,8 +779,8 @@
       "sides": [
         "ci4111",
         "ci4211",
-        "an1111",
-        "an1211"
+        "qi3111",
+        "ta1111"
       ],
       "correctSides": [
         "ci4111",
@@ -797,8 +797,8 @@
       "sides": [
         "cong2111",
         "cong2211",
-        "an1111",
-        "an1211"
+        "xqi3111xxx",
+        "xiang1211"
       ],
       "correctSides": [
         "cong2111",
@@ -815,8 +815,8 @@
       "sides": [
         "dan4111",
         "dan4211",
-        "an1111",
-        "an1211"
+        "lu4111",
+        "xiang1211"
       ],
       "correctSides": [
         "dan4111",
@@ -833,8 +833,8 @@
       "sides": [
         "dao4111",
         "dao4211",
-        "an1111",
-        "an1211"
+        "yun4211",
+        "fan4211"
       ],
       "correctSides": [
         "dao4111",
@@ -851,8 +851,8 @@
       "sides": [
         "de0111",
         "de0211",
-        "an1111",
-        "an1211"
+        "yun4211",
+        "da3211"
       ],
       "correctSides": [
         "de0111",
@@ -869,8 +869,8 @@
       "sides": [
         "deng1111",
         "deng1211",
-        "an1111",
-        "an1211"
+        "zhong3111",
+        "yun4211"
       ],
       "correctSides": [
         "deng1111",
@@ -883,16 +883,16 @@
 	  "sampleSentence": "中秋节，我们挂灯笼。"
     },
 	  {
-      "name": "dui401#",
+      "name": "dui402",
       "sides": [
-        "dui4111",
-        "dui4211",
-        "an1111",
-        "an1211"
+        "dui4112",
+        "dui4212",
+        "da3211",
+        "zhen1111"
       ],
       "correctSides": [
-        "dui4111",
-        "dui4211"
+        "dui4112",
+        "dui4212"
       ],
       "sampleVocab": [
         "排队",
@@ -901,12 +901,12 @@
 	  "sampleSentence": "等德士时要记得排队。"
     },
 	  {
-      "name": "dui401#",
+      "name": "dui401",
       "sides": [
         "dui4111",
         "dui4211",
-        "an1111",
-        "an1211"
+        "zhen1111",
+        "xiang3211"
       ],
       "correctSides": [
         "dui4111",
@@ -923,8 +923,8 @@
       "sides": [
         "duo3111",
         "duo3211",
-        "an1111",
-        "an1211"
+        "huan1111",
+        "na2211"
       ],
       "correctSides": [
         "duo3111",
@@ -941,8 +941,8 @@
       "sides": [
         "fei1111",
         "fei1211",
-        "an1111",
-        "an1211"
+        "huan1111",
+        "na2211"
       ],
       "correctSides": [
         "fei1111",
@@ -959,8 +959,8 @@
       "sides": [
         "gao4111",
         "gao4211",
-        "an1111",
-        "an1211"
+        "lou2211",
+        "ni2211"
       ],
       "correctSides": [
         "gao4111",
@@ -977,8 +977,8 @@
       "sides": [
         "gei3111",
         "gei3211",
-        "an1111",
-        "an1211"
+        "mai4211",
+        "ni2211"
       ],
       "correctSides": [
         "gei3111",
@@ -995,8 +995,8 @@
       "sides": [
         "guang1111",
         "guang1211",
-        "an1111",
-        "an1211"
+        "mai4211",
+        "ta1213"
       ],
       "correctSides": [
         "guang1111",
@@ -1013,8 +1013,8 @@
       "sides": [
         "guo2111",
         "guo2211",
-        "an1111",
-        "an1211"
+        "qing1211",
+        "ta1213"
       ],
       "correctSides": [
         "guo2111",
@@ -1031,8 +1031,8 @@
       "sides": [
         "he2111",
         "he2211",
-        "an1111",
-        "an1211"
+        "kong1111",
+        "yu2211"
       ],
       "correctSides": [
         "he2111",
@@ -1049,8 +1049,8 @@
       "sides": [
         "jue2111",
         "jue2211",
-        "an1111",
-        "an1211"
+        "ren2111",
+        "qing1211"
       ],
       "correctSides": [
         "jue2111",
@@ -1067,8 +1067,8 @@
       "sides": [
         "ke4111",
         "ke4211",
-        "an1111",
-        "an1211"
+        "shan3211",
+        "zuo2211"
       ],
       "correctSides": [
         "ke4111",
@@ -1085,8 +1085,8 @@
       "sides": [
         "kong1111",
         "kong1211",
-        "an1111",
-        "an1211"
+        "zhen1211",
+        "yu2211"
       ],
       "correctSides": [
         "kong1111",
@@ -1103,8 +1103,8 @@
       "sides": [
         "lei2111",
         "lei2211",
-        "an1111",
-        "an1211"
+        "xiang1111",
+        "cheng2111"
       ],
       "correctSides": [
         "lei2111",
@@ -1121,8 +1121,8 @@
       "sides": [
         "li4111",
         "li4211",
-        "an1111",
-        "an1211"
+        "cai3211",
+        "cheng2111"
       ],
       "correctSides": [
         "li4111",
@@ -1139,8 +1139,8 @@
       "sides": [
         "lou2111",
         "lou2211",
-        "an1111",
-        "an1211"
+        "huan1111",
+        "gao4111"
       ],
       "correctSides": [
         "lou2111",
@@ -1157,8 +1157,8 @@
       "sides": [
         "lu4111",
         "lu4211",
-        "an1111",
-        "an1211"
+        "shen2111",
+        "shao3211"
       ],
       "correctSides": [
         "lu4111",
@@ -1175,8 +1175,8 @@
       "sides": [
         "mai4111",
         "mai4211",
-        "an1111",
-        "an1211"
+        "men0111",
+        "ming2211"
       ],
       "correctSides": [
         "mai4111",
@@ -1193,8 +1193,8 @@
       "sides": [
         "neng2111",
         "neng2211",
-        "an1111",
-        "an1211"
+        "duo1211",
+        "fang2111"
       ],
       "correctSides": [
         "neng2111",
@@ -1211,8 +1211,8 @@
       "sides": [
         "ni2111",
         "ni2211",
-        "an1111",
-        "an1211"
+        "dou1211",
+        "fang4211"
       ],
       "correctSides": [
         "ni2111",
@@ -1229,8 +1229,8 @@
       "sides": [
         "po1111",
         "po1211",
-        "an1111",
-        "an1211"
+        "pi2111",
+        "men0111"
       ],
       "correctSides": [
         "po1111",
@@ -1247,8 +1247,8 @@
       "sides": [
         "qing3111",
         "qing3211",
-        "an1111",
-        "an1211"
+        "ming2211",
+        "ni2111"
       ],
       "correctSides": [
         "qing3111",
@@ -1265,8 +1265,8 @@
       "sides": [
         "quan2111",
         "quan2211",
-        "an1111",
-        "an1211"
+        "shan3211",
+        "dan4211"
       ],
       "correctSides": [
         "quan2111",
@@ -1283,8 +1283,8 @@
       "sides": [
         "shan3111",
         "shan3211",
-        "an1111",
-        "an1211"
+        "bian1211",
+        "bi3211"
       ],
       "correctSides": [
         "shan3111",
@@ -1297,12 +1297,12 @@
 	  "sampleSentence": "天空中出现一道闪电。"
     },
 	  {
-      "name": "shu401#",
+      "name": "shu401",
       "sides": [
         "shu4111",
         "shu4211",
-        "an1111",
-        "an1211"
+        "chang3211",
+        "chang3111"
       ],
       "correctSides": [
         "shu4111",
@@ -1315,30 +1315,12 @@
 	  "sampleSentence": "大树上有很多树叶。"
     },
 	  {
-      "name": "shu401#",
-      "sides": [
-        "shu4111",
-        "shu4211",
-        "an1111",
-        "an1211"
-      ],
-      "correctSides": [
-        "shu4111",
-        "shu4211"
-      ],
-      "sampleVocab": [
-        "美术",
-        "魔术"
-      ],
-	  "sampleSentence": "儿童节，我们看了魔术表演。"
-    },
-	  {
       "name": "tiao401",
       "sides": [
         "tiao4111",
         "tiao4211",
-        "an1111",
-        "an1211"
+        "ge1211",
+        "guo4211"
       ],
       "correctSides": [
         "tiao4111",
@@ -1355,8 +1337,8 @@
       "sides": [
         "wei4111",
         "wei4211",
-        "an1111",
-        "an1211"
+        "guo4211",
+        "fang2211"
       ],
       "correctSides": [
         "wei4111",
@@ -1373,8 +1355,8 @@
       "sides": [
         "xiang3111",
         "xiang3211",
-        "an1111",
-        "an1211"
+        "cheng2111",
+        "dui4111"
       ],
       "correctSides": [
         "xiang3111",
@@ -1391,8 +1373,8 @@
       "sides": [
         "xiang1111",
         "xiang1211",
-        "an1111",
-        "an1211"
+        "bi3211",
+        "dan4211"
       ],
       "correctSides": [
         "xiang1111",
@@ -1409,8 +1391,8 @@
       "sides": [
         "xing2111",
         "xing2211",
-        "an1111",
-        "an1211"
+        "zhong3111",
+        "zhen1111"
       ],
       "correctSides": [
         "xing2111",
@@ -1427,8 +1409,8 @@
       "sides": [
         "yuan3111",
         "yuan3211",
-        "an1111",
-        "an1211"
+        "zhen1111",
+        "zhong3111"
       ],
       "correctSides": [
         "yuan3111",
@@ -1445,8 +1427,8 @@
       "sides": [
         "yun4111",
         "yun4211",
-        "an1111",
-        "an1211"
+        "xxta1113xx",
+        "wen4211"
       ],
       "correctSides": [
         "yun4111",
@@ -1463,8 +1445,8 @@
       "sides": [
         "zheng4111",
         "zheng4211",
-        "an1111",
-        "an1211"
+        "tai2211",
+        "guo4111"
       ],
       "correctSides": [
         "zheng4111",
@@ -1481,8 +1463,8 @@
       "sides": [
         "zhong3111",
         "zhong3211",
-        "an1111",
-        "an1211"
+        "hai2211",
+        "shu4111"
       ],
       "correctSides": [
         "zhong3111",
@@ -1495,12 +1477,12 @@
 	  "sampleSentence": "我种下一颗种子。"
     },
 	  {
-      "name": "zhu401#",
+      "name": "zhu401",
       "sides": [
         "zhu4111",
         "zhu4211",
-        "an1111",
-        "an1211"
+        "he1111",
+        "hong2111"
       ],
       "correctSides": [
         "zhu4111",
@@ -1517,8 +1499,8 @@
       "sides": [
         "ai4111",
         "ai4211",
-        "an1111",
-        "an1211"
+        "chao3211",
+        "cheng2211"
       ],
       "correctSides": [
         "ai4111",
@@ -1535,8 +1517,8 @@
       "sides": [
         "an1111",
         "an1211",
-        "an1111",
-        "an1211"
+        "bi3111",
+        "chao3211"
       ],
       "correctSides": [
         "an1111",
@@ -1553,8 +1535,8 @@
       "sides": [
         "bi3111",
         "bi3211",
-        "an1111",
-        "an1211"
+        "jiu4211",
+        "jiang3111"
       ],
       "correctSides": [
         "bi3111",
@@ -1571,8 +1553,8 @@
       "sides": [
         "bian1111",
         "bian1211",
-        "an1111",
-        "an1211"
+        "shan3111",
+        "he1211"
       ],
       "correctSides": [
         "bian1111",
@@ -1589,8 +1571,8 @@
       "sides": [
         "chang3111",
         "chang3211",
-        "an1111",
-        "an1211"
+        "shan3211",
+        "ke4211"
       ],
       "correctSides": [
         "chang3111",
@@ -1607,8 +1589,8 @@
       "sides": [
         "da3111",
         "da3211",
-        "an1111",
-        "an1211"
+        "yun4211",
+        "dui4212"
       ],
       "correctSides": [
         "da3111",
@@ -1625,8 +1607,8 @@
       "sides": [
         "dong4111",
         "dong4211",
-        "an1111",
-        "an1211"
+        "dui4212",
+        "chao3111"
       ],
       "correctSides": [
         "dong4111",
@@ -1643,8 +1625,8 @@
       "sides": [
         "dou1111",
         "dou1211",
-        "an1111",
-        "an1211"
+        "dong4111",
+        "gao4211"
       ],
       "correctSides": [
         "dou1111",
@@ -1661,8 +1643,8 @@
       "sides": [
         "duo1111",
         "duo1211",
-        "an1111",
-        "an1211"
+        "mai4211",
+        "neng2111"
       ],
       "correctSides": [
         "duo1111",
@@ -1679,8 +1661,8 @@
       "sides": [
         "fang2111",
         "fang2211",
-        "an1111",
-        "an1211"
+        "wei4111",
+        "xiang301"
       ],
       "correctSides": [
         "fang2111",
@@ -1697,8 +1679,8 @@
       "sides": [
         "fang4111",
         "fang4211",
-        "an1111",
-        "an1211"
+        "ni2211",
+        "neng2111"
       ],
       "correctSides": [
         "fang4111",
@@ -1715,8 +1697,8 @@
       "sides": [
         "fan4111",
         "fan4211",
-        "an1111",
-        "an1211"
+        "fang4211",
+        "huan1111"
       ],
       "correctSides": [
         "fan4111",
@@ -1733,8 +1715,8 @@
       "sides": [
         "ge1111",
         "ge1211",
-        "an1111",
-        "an1211"
+        "yun4211",
+        "de0211"
       ],
       "correctSides": [
         "ge1111",
@@ -1751,8 +1733,8 @@
       "sides": [
         "guo4111",
         "guo4211",
-        "an1111",
-        "an1211"
+        "zheng4111",
+        "zhong3211"
       ],
       "correctSides": [
         "guo4111",
@@ -1769,8 +1751,8 @@
       "sides": [
         "hai2111",
         "hai2211",
-        "an1111",
-        "an1211"
+        "zhong3211",
+        "dong4111"
       ],
       "correctSides": [
         "hai2111",
@@ -1787,8 +1769,8 @@
       "sides": [
         "he1111",
         "he1211",
-        "an1111",
-        "an1211"
+        "bi3211",
+        "shan3111"
       ],
       "correctSides": [
         "he1111",
@@ -1805,8 +1787,8 @@
       "sides": [
         "hong2111",
         "hong2211",
-        "an1111",
-        "an1211"
+        "se4211",
+        "zhu4211"
       ],
       "correctSides": [
         "hong2111",
@@ -1823,8 +1805,8 @@
       "sides": [
         "huan1111",
         "huan1211",
-        "an1111",
-        "an1211"
+        "fei1211",
+        "dong4211"
       ],
       "correctSides": [
         "huan1111",
@@ -1841,8 +1823,8 @@
       "sides": [
         "xiao4111",
         "xiao4211",
-        "an1111",
-        "an1211"
+        "duo3211",
+        "fei1211"
       ],
       "correctSides": [
         "xiao4111",
@@ -1859,8 +1841,8 @@
       "sides": [
         "jiang3111",
         "jiang3211",
-        "an1111",
-        "an1211"
+        "bi3111",
+        "zui4211"
       ],
       "correctSides": [
         "jiang3111",
@@ -1877,8 +1859,8 @@
       "sides": [
         "jie2111",
         "jie2211",
-        "an1111",
-        "an1211"
+        "zui4211",
+        "cao3111"
       ],
       "correctSides": [
         "jie2111",
@@ -1895,8 +1877,8 @@
       "sides": [
         "jie3111",
         "jie3211",
-        "an1111",
-        "an1211"
+        "zui4211",
+        "cao3111"
       ],
       "correctSides": [
         "jie3111",
@@ -1913,8 +1895,8 @@
       "sides": [
         "jiu4111",
         "jiu4211",
-        "an1111",
-        "an1211"
+        "shunag1211",
+        "ta1112"
       ],
       "correctSides": [
         "jiu4111",
@@ -1931,8 +1913,8 @@
       "sides": [
         "mao1111",
         "mao1211",
-        "an1111",
-        "an1211"
+        "shi1211",
+        "chang3211"
       ],
       "correctSides": [
         "mao1111",
@@ -1949,8 +1931,8 @@
       "sides": [
         "mei4111",
         "mei4211",
-        "an1111",
-        "an1211"
+        "gao4211",
+        "cao1111"
       ],
       "correctSides": [
         "mei4111",
@@ -1967,8 +1949,8 @@
       "sides": [
         "na2111",
         "na2211",
-        "an1111",
-        "an1211"
+        "gao4211",
+        "cheng2211"
       ],
       "correctSides": [
         "na2111",
@@ -1985,8 +1967,8 @@
       "sides": [
         "nai3111",
         "nai3211",
-        "an1111",
-        "an1211"
+        "pao3111",
+        "cheng2211"
       ],
       "correctSides": [
         "nai3111",
@@ -2003,8 +1985,8 @@
       "sides": [
         "pao3111",
         "pao3211",
-        "an1111",
-        "an1211"
+        "zi4211",
+        "zui4111"
       ],
       "correctSides": [
         "pao3111",
@@ -2021,8 +2003,8 @@
       "sides": [
         "qi3111",
         "qi3211",
-        "an1111",
-        "an1211"
+        "tai2111",
+        "wen4211"
       ],
       "correctSides": [
         "qi3111",
@@ -2039,8 +2021,8 @@
       "sides": [
         "se4111",
         "se4211",
-        "an1111",
-        "an1211"
+        "qi3211",
+        "hong2111"
       ],
       "correctSides": [
         "se4111",

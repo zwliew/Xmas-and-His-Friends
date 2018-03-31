@@ -14,6 +14,7 @@ public class PlayerData
 
 public class ItemData{
 	public int cost;
+	public string englishName;
 	public string fullName;
 	public bool equipped;
 	public bool purchased;
