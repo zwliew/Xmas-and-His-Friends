@@ -32,18 +32,13 @@ public class DataController : MonoBehaviour {
 		}
 
 		int coin = Random.Range (0,3);
-		string tempName = new string ();
-		switch (coin) {
-		case 0:
-			
-			break;
-		case 1:
-			break;
-		case 2:
-			break;
-		default:
-			break;
-			
+		string tempName = "";
+		tempName = names [coin];
+		names [coin] = names [coin + 1];
+		names [coin + 1] = tempName;
+
+		for(int i = 0; i < 4; i++){
+			thisWord.sides [i] = names [i];
 		}
 
 		return thisWord;
