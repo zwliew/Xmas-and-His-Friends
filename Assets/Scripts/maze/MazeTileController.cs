@@ -31,7 +31,7 @@ public class MazeTileController : MonoBehaviour {
     {
         if (serialNumber == 0)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(0.3f);
             rend.material.color = Color.red;
             rgdBody.useGravity = true;
             obs.enabled = true;
@@ -50,7 +50,7 @@ public class MazeTileController : MonoBehaviour {
         {
             if (other.GetComponent<ModelInfo>().count < serialNumber)
             {
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(0.3f);
                 rend.material.color = Color.red;
                 rgdBody.useGravity = true;
                 obs.enabled = true;

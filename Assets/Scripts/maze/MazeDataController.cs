@@ -14,6 +14,11 @@ public class MazeDataController : MonoBehaviour {
 		
 	}
 
+    private void Refresh()
+    {
+        
+    }
+
     private void UpdatePlayerData(bool win)
     {
 
