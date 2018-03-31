@@ -27,6 +27,8 @@ GameObject:
   - component: {fileID: 65651680068242012}
   - component: {fileID: 65479765124514660}
   - component: {fileID: 65180306345232810}
+  - component: {fileID: 65089656762087654}
+  - component: {fileID: 65288829710312576}
   m_Layer: 9
   m_Name: PinZiPianPang (1)
   m_TagString: PP
@@ -88,6 +90,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1643113125790848}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65089656762087654
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643113125790848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5452148, y: 0.18668984, z: 0.000000067055375}
+  m_Center: {x: 0.0047721067, y: 0.15567033, z: -0.0000009382253}
 --- !u!65 &65180306345232810
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -98,8 +112,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.27576292, y: 0.31570834, z: 0.000000059604645}
-  m_Center: {x: -0.0021459837, y: 0.24925512, z: 0.0000010031642}
+  m_Size: {x: 0.8697557, y: 0.19857517, z: 0.00000005960464}
+  m_Center: {x: 0.020448128, y: -0.03596693, z: 0.0000006407631}
+--- !u!65 &65288829710312576
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643113125790848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34629223, y: 0.2671047, z: 0.000000067055375}
+  m_Center: {x: 0.0025234045, y: 0.38160148, z: -0.0000010370919}
 --- !u!65 &65479765124514660
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -110,8 +136,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.48179314, y: 0.33903828, z: 0.00000005960476}
-  m_Center: {x: 0.004408696, y: -0.087881245, z: 0.00000027351805}
+  m_Size: {x: 1.0720668, y: 0.20043992, z: 0.000000059604794}
+  m_Center: {x: 0.02507611, y: -0.23662288, z: 0.0000009726134}
 --- !u!65 &65651680068242012
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -122,8 +148,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.2316897, z: 0.000000059604496}
-  m_Center: {x: -0.000000002048313, y: -0.38415402, z: -0.0000007502854}
+  m_Size: {x: 1.2102942, y: 0.1590852, z: 0.000000059604545}
+  m_Center: {x: 0.008491078, y: -0.42045534, z: -0.00000008165144}
 --- !u!114 &114160297446831762
 MonoBehaviour:
   m_ObjectHideFlags: 1
