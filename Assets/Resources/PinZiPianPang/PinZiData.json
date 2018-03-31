@@ -1,4 +1,4 @@
-{
+﻿{
   "words": [
     {
       "name": "chi101",
@@ -131,7 +131,7 @@
       "sides": [
         "ma0111",
         "ma0211",
-        "hao3111",
+        "kuai4211",
         "gao1111"
       ],
       "correctSides": [
@@ -294,7 +294,7 @@
         "shen2111",
         "shen2211",
         "lu4211",
-        "lou2111"
+        "shao3211"
       ],
       "correctSides": [
         "shen2111",
@@ -707,7 +707,7 @@
       "sides": [
         "cao1111",
         "cao1211",
-        "shunag1211",
+        "shuang1211",
         "lu4211"
       ],
       "correctSides": [
@@ -797,7 +797,7 @@
       "sides": [
         "cong2111",
         "cong2211",
-        "xqi3111xxx",
+        "qi3111",
         "xiang1211"
       ],
       "correctSides": [
@@ -847,16 +847,16 @@
 	  "sampleSentence": "我知道一加一等于二。"
     },
 	  {
-      "name": "de001",
+      "name": "de201",
       "sides": [
-        "de0111",
-        "de0211",
+        "de2111",
+        "de2211",
         "yun4211",
         "da3211"
       ],
       "correctSides": [
-        "de0111",
-        "de0211"
+        "de2111",
+        "de2211"
       ],
       "sampleVocab": [
         "觉得",
@@ -901,7 +901,7 @@
 	  "sampleSentence": "等德士时要记得排队。"
     },
 	  {
-      "name": "dui401",
+      "name": "dui402",
       "sides": [
         "dui4111",
         "dui4211",
@@ -1589,7 +1589,7 @@
       "sides": [
         "da3111",
         "da3211",
-        "yun4211",
+        "yun4111",
         "dui4212"
       ],
       "correctSides": [
@@ -1860,7 +1860,7 @@
         "jie2111",
         "jie2211",
         "zui4211",
-        "zui4211"
+        "shunag1211"
       ],
       "correctSides": [
         "jie2111",
@@ -2004,7 +2004,7 @@
         "qi3111",
         "qi3211",
         "tai2111",
-        "wen4211"
+        "se4211"
       ],
       "correctSides": [
         "qi3111",
