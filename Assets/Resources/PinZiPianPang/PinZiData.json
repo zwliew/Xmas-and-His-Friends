@@ -167,7 +167,7 @@
       "sides": [
         "men0111",
         "men0211",
-        "yi3211",
+        "yi3111",
         "mai4211"
       ],
       "correctSides": [
@@ -186,7 +186,7 @@
         "ming2111",
         "ming2211",
         "po1211",
-        "qing3211"
+        "pi2111"
       ],
       "correctSides": [
         "ming2111",
@@ -276,7 +276,7 @@
         "shao3111",
         "shao3211",
         "lu4211",
-        "shen2211"
+        "shen2111"
       ],
       "correctSides": [
         "shao3111",
@@ -346,13 +346,13 @@
       "name": "shuang101",
       "sides": [
         "shuang1111",
-        "shunag1211",
+        "shuang1211",
         "cao1211",
         "jiu4211"
       ],
       "correctSides": [
         "shuang1111",
-        "shunag1211"
+        "shuang1211"
       ],
       "sampleVocab": [
         "一双",
@@ -419,7 +419,7 @@
       "sides": [
         "tai2111",
         "tai2211",
-        "zheng4211",
+        "yi3211",
         "yun4211"
       ],
       "correctSides": [
@@ -437,7 +437,7 @@
       "sides": [
         "wen4111",
         "wen4211",
-        "tai2211",
+        "yi3111",
         "qi3211"
       ],
       "correctSides": [
@@ -455,7 +455,7 @@
       "sides": [
         "yi3111",
         "yi3211",
-        "ma0111",
+        "ma0211",
         "men0211"
       ],
       "correctSides": [
@@ -689,7 +689,7 @@
       "sides": [
         "cao3111",
         "cao3211",
-        "shunag1211",
+        "shuang1211",
         "shi1211"
       ],
       "correctSides": [
@@ -831,9 +831,9 @@
 	  {
       "name": "dao401",
       "sides": [
-        "dao4111",
-        "dao4211",
-        "yun4211",
+        "dao4112",
+        "dao4212",
+        "da3211",
         "fan4211"
       ],
       "correctSides": [
@@ -901,16 +901,16 @@
 	  "sampleSentence": "等德士时要记得排队。"
     },
 	  {
-      "name": "dui402",
+      "name": "dui401",
       "sides": [
-        "dui4111",
-        "dui4211",
+        "dui4112",
+        "dui4212",
         "zhen1111",
         "xiang3211"
       ],
       "correctSides": [
-        "dui4111",
-        "dui4211"
+        "dui4112",
+        "dui4212"
       ],
       "sampleVocab": [
         "对不起",
@@ -959,8 +959,8 @@
       "sides": [
         "gao4111",
         "gao4211",
-        "lou2211",
-        "ni2211"
+        "guang1111",
+        "ni2111"
       ],
       "correctSides": [
         "gao4111",
@@ -1301,7 +1301,7 @@
       "sides": [
         "shu4111",
         "shu4211",
-        "chang3211",
+        "chang3111",
         "bian1211"
       ],
       "correctSides": [
@@ -1428,7 +1428,7 @@
         "yun4111",
         "yun4211",
         "ta1113",
-        "wen4211"
+        "wen4111"
       ],
       "correctSides": [
         "yun4111",
@@ -1440,24 +1440,7 @@
       ],
 	  "sampleSentence": "赛龙舟是端午节习俗，也是一种运动。"
     },
-	  {
-      "name": "zheng401",
-      "sides": [
-        "zheng4111",
-        "zheng4211",
-        "tai2211",
-        "guo4111"
-      ],
-      "correctSides": [
-        "zheng4111",
-        "zheng4211"
-      ],
-      "sampleVocab": [
-        "正在",
-        "正常"
-      ],
-	  "sampleSentence": "农历新年，地铁会正常运行。"
-    },
+	 
 	  {
       "name": "zhong301",
       "sides": [
@@ -1608,7 +1591,7 @@
         "dong4111",
         "dong4211",
         "dui4212",
-        "chao3111"
+        "chao3211"
       ],
       "correctSides": [
         "dong4111",
@@ -1733,7 +1716,7 @@
       "sides": [
         "guo4111",
         "guo4211",
-        "zheng4111",
+        "he1111",
         "zhong3211"
       ],
       "correctSides": [
@@ -1751,8 +1734,8 @@
       "sides": [
         "hai2111",
         "hai2211",
-        "zhong3211",
-        "dong4111"
+        "bi3211",
+        "hong2111"
       ],
       "correctSides": [
         "hai2111",
@@ -1931,7 +1914,7 @@
       "sides": [
         "mei4111",
         "mei4211",
-        "gao4211",
+        "gao4111",
         "cao1111"
       ],
       "correctSides": [
@@ -1949,7 +1932,7 @@
       "sides": [
         "na2111",
         "na2211",
-        "gao4211",
+        "nai3211",
         "cheng2211"
       ],
       "correctSides": [
