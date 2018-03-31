@@ -25,8 +25,30 @@ public class DataController : MonoBehaviour {
 
 	public Word GetRandomWord() {
 		int wordIndex = UnityEngine.Random.Range(0, words.Length);
-		return words[wordIndex];
+		Word thisWord = words [wordIndex];
+		string[] names = new string[4];
+		for(int i = 0; i < 4; i++){
+			names [i] = thisWord.sides [i];
+		}
+
+		int coin = Random.Range (0,3);
+		string tempName = new string ();
+		switch (coin) {
+		case 0:
+			
+			break;
+		case 1:
+			break;
+		case 2:
+			break;
+		default:
+			break;
+			
+		}
+
+		return thisWord;
 	}
+
 	public Word[] GetAllWords(){
 		return words;
 	}
