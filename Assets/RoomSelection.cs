@@ -22,12 +22,12 @@ public class RoomSelection : MonoBehaviour {
 		case 0:
 			roomOneBtn.gameObject.SetActive (true);
 			roomTwoBtn.gameObject.SetActive (false);
-			Debug.Log ("Now showing roomOne");
+			//Debug.Log ("Now showing roomOne");
 			break;
 		case 1:
 			roomOneBtn.gameObject.SetActive (false);
 			roomTwoBtn.gameObject.SetActive (true);
-			Debug.Log ("Now showing roomTwo");
+			//Debug.Log ("Now showing roomTwo");
 			break;
 		default:
 			Debug.Log ("Now showing default");

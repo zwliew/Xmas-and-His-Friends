@@ -43,7 +43,7 @@ public class RaycastDestinationSetter2 : MonoBehaviour {
             if (Physics.Raycast (ray,  out hit, weaponRange))
 			{
                 // Set the end position for our laser line 
-                Debug.Log(hit.point);
+                //Debug.Log(hit.point);
                 StartCoroutine(directedAgent.MoveToLocation(hit.point));
                 
 			}

@@ -40,8 +40,12 @@ public class ShopDataController : MonoBehaviour
 		playerDataController = GameObject.FindGameObjectWithTag("Persistent")//Get the PlayerDataController
 			.GetComponent<PlayerDataController>();
 
-		if (playerDataController)
+		if (playerDataController) {
 			Debug.Log ("playerDataController is found successfully");
+		} else {
+			Debug.Log ("Did not find playerDataController, please ensure that the playDataController has a tag 'persistent'");
+		}
+
 
 		purchasedItemsData = new List<ShopItemData>();
 

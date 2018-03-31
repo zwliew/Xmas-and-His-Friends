@@ -56,6 +56,7 @@ public class DisplayController : MonoBehaviour{
 
 		goTetra.GetComponent<Animator> ().updateMode = AnimatorUpdateMode.AnimatePhysics;
 		rotateCubeScript.PlayRotateAnimation ();
+		goTetra.transform.position = Vector3.zero;
 
 		for (int i = 0; i < 5; i++) {
 			if (priPrefabPianPangs[i] != null) {

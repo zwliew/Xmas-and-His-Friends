@@ -25,8 +25,11 @@ public class EditorModeDataController : MonoBehaviour {
 	private List<string> equippedItemNames;
 	private EditorModeItemData[] itemsDataArray;//It is a bit unnecessary as I convert the itemsDataArray to itemsData(which is a list)
 
+	[HideInInspector]
 	public List<EditorModeItemData> itemsData;
+	[HideInInspector]
 	public List<EditorModeItemData> purchasedItemsData;
+	[HideInInspector]
 	public List<EditorModeItemData> equippedItemsData;
 
 	public void Initialize()//One bug lies here: when loaded, the equipped items data is not cleared

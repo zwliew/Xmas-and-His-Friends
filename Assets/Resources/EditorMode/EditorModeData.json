@@ -2,73 +2,91 @@
 	"editorModeItemsData": [
 		{
 			"name": "christmasTree",
-			"fullName": "ChristmasTree",
+			"fullName": "christmasTree",
 			"cost": "100"
 		},
 		{
-			"name": "Fire",
-			"fullName": "Fire",
-            "cost": "50"
+			"name": "fire",
+			"fullName": "fire",
+            "cost": "40"
             
 		},
 		{
 			"name": "mat",
-			"fullName": "Mat",
-            "cost": "23"
+			"fullName": "mat",
+            "cost": "20"
             
 		},
 		{
-			"name": "ToyManBig",
-			"fullName": "ToyManBig",
-            "cost": "23"
+			"name": "toyManBig",
+			"fullName": "toyManBig",
+            "cost": "30"
             
 		},
 		{
-			"name": "Bed",
-			"fullName": "Bed",
-            "cost": "23"
+			"name": "bed",
+			"fullName": "bed",
+            "cost": "60"
             
 		},
 		{
-			"name": "Desk",
-			"fullName": "Desk",
-            "cost": "23"
+			"name": "desk",
+			"fullName": "desk",
+            "cost": "30"
             
 		},
 		{
-			"name": "Deer",
-			"fullName": "Deer",
-            "cost": "23"
+			"name": "deer",
+			"fullName": "deer",
+            "cost": "45"
             
 		},
 		{
-			"name": "Shelves",
-			"fullName": "Shelves",
-            "cost": "23"
+			"name": "shelves",
+			"fullName": "shelves",
+            "cost": "40"
             
 		},
 		{
-			"name": "Sofa",
-			"fullName": "Sofa",
-            "cost": "23"
+			"name": "sofa",
+			"fullName": "sofa",
+            "cost": "45"
             
 		},
 		{
-			"name": "Curtains",
-			"fullName": "Curtains",
-            "cost": "23"
+			"name": "curtains",
+			"fullName": "curtains",
+            "cost": "50"
             
 		},
 		{
-			"name": "Socks",
-			"fullName": "Socks",
-            "cost": "23"
+			"name": "socks",
+			"fullName": "socks",
+            "cost": "35"
             
 		},
 		{
-			"name": "ToyManSmall",
-			"fullName": "ToyManSmall",
-            "cost": "23"
+			"name": "pictureOnWall",
+			"fullName": "pictureOnWall",
+            "cost": "30"
+            
+		},
+		{
+			"name": "candleInAFrame",
+			"fullName": "candleInAFrame",
+            "cost": "25"
+            
+		},
+		{
+			"name": "wreath",
+			"fullName": "wreath",
+            "cost": "50"
+            
+		},
+		{
+			"name": "violincase",
+			"fullName": "violincase",
+            "cost": "40"
             
 		}
 	]

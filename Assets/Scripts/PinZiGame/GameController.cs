@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
 	private Word curWord;
 	private string[] curSelections;
 	private bool hasWon; //So that each round can only be won once;
+	private bool isPlaying;
 
     public AudioSource audioSource;
     public AudioClip winSound;
@@ -36,6 +37,7 @@ public class GameController : MonoBehaviour {
 
 	public void RestartGame () {
 		hasWon = false;
+		isPlaying = true;
 		dataController.Initialize ();
 		curWord = dataController.GetRandomWord ();
 		displayController.Initialize (curWord);
@@ -85,6 +87,9 @@ public class GameController : MonoBehaviour {
 	}
 
 	private void SelectSide(PinZiPP side) {
+		if (!isPlaying) {
+			return;
+		}
 		if (curSelections [0] == null) {
 			displayController.SelectSide (side);
 			curSelections [0] = side.sidename;
@@ -105,6 +110,7 @@ public class GameController : MonoBehaviour {
 						return;
 					}
 					hasWon = true;
+					isPlaying = false;
                     audioSource.PlayOneShot(winSound);
 					displayController.DisplayWin ();
 					dataController.WinThisRound ();
@@ -113,6 +119,7 @@ public class GameController : MonoBehaviour {
 					displayController.UnselectAllSides ();
 					curSelections = new string[2];
                     audioSource.PlayOneShot(loseSound);
+					isPlaying = false;
                     displayController.DisplayLose ();
 				}
 			}
