@@ -2,90 +2,100 @@
 	"shopItemsData": [
 		{
 			"name": "christmasTree",
-			"fullName": "ChristmasTree",
+			"englishName": "christmasTree",
+			"fullName": "christmasTree",
 			"cost": "100"
 		},
 		{
-			"name": "Fire",
-			"fullName": "Fire",
+			"name": "fire",
+			"englishName": "fire",
+			"fullName": "fire",
             "cost": "40"
             
 		},
 		{
 			"name": "mat",
-			"fullName": "Mat",
+			"englishName": "mat",
+			"fullName": "mat",
             "cost": "20"
             
 		},
 		{
-			"name": "ToyManBig",
-			"fullName": "ToyManBig",
+			"name": "toyManBig",
+			"englishName": "toyManBig",
+			"fullName": "toyManBig",
             "cost": "30"
             
 		},
 		{
-			"name": "Bed",
-			"fullName": "Bed",
+			"name": "bed",
+			"englishName": "bed",
+			"fullName": "bed",
             "cost": "60"
             
 		},
 		{
-			"name": "Desk",
-			"fullName": "Desk",
+			"name": "desk",
+			"englishName": "desk",
+			"fullName": "desk",
             "cost": "30"
             
 		},
 		{
-			"name": "Deer",
-			"fullName": "Deer",
+			"name": "deer",
+			"englishName": "deer",
+			"fullName": "deer",
             "cost": "45"
             
 		},
 		{
-			"name": "Shelves",
-			"fullName": "Shelves",
+			"name": "shelves",
+			"englishName": "shelves",
+			"fullName": "shelves",
             "cost": "40"
             
 		},
 		{
-			"name": "Sofa",
-			"fullName": "Sofa",
+			"name": "sofa",
+			"englishName": "sofa",
+			"fullName": "sofa",
             "cost": "45"
             
 		},
 		{
-			"name": "Curtains",
-			"fullName": "Curtains",
+			"name": "curtains",
+			"englishName": "curtains",
+			"fullName": "curtains",
             "cost": "50"
             
 		},
 		{
-			"name": "Socks",
-			"fullName": "Socks",
+			"name": "socks",
+			"fullName": "socks",
             "cost": "35"
             
 		},
 		{
-			"name": "Fuckingboard",
-			"fullName": "ToyManSmall",
+			"name": "pictureOnWall",
+			"fullName": "pictureOnWall",
             "cost": "30"
             
 		},
 		{
-			"name": "Fuckingcandle",
-			"fullName": "ToyManSmall",
+			"name": "candleInAFrame",
+			"fullName": "candleInAFrame",
             "cost": "25"
             
 		},
 		{
-			"name": "Fuckingwreath",
-			"fullName": "ToyManSmall",
+			"name": "wreath",
+			"fullName": "wreath",
             "cost": "50"
             
 		},
 		{
-			"name": "Violincase",
-			"fullName": "ToyManSmall",
+			"name": "violincase",
+			"fullName": "violincase",
             "cost": "40"
             
 		}

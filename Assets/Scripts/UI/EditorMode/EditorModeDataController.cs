@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class EditorModeItemData : ItemData{
 	//public int cost;
+	//public string englishName;
 	//public string fullName;
 	//public bool equipped;
 	//public bool purchased;
@@ -25,8 +26,11 @@ public class EditorModeDataController : MonoBehaviour {
 	private List<string> equippedItemNames;
 	private EditorModeItemData[] itemsDataArray;//It is a bit unnecessary as I convert the itemsDataArray to itemsData(which is a list)
 
+	[HideInInspector]
 	public List<EditorModeItemData> itemsData;
+	[HideInInspector]
 	public List<EditorModeItemData> purchasedItemsData;
+	[HideInInspector]
 	public List<EditorModeItemData> equippedItemsData;
 
 	public void Initialize()//One bug lies here: when loaded, the equipped items data is not cleared
@@ -58,7 +62,7 @@ public class EditorModeDataController : MonoBehaviour {
 		}
 
 		equippedItemsData = ParseItems (equippedItemNames, "equippedItems");
-		Debug.Log ("When initializing, equippedItemsData.Count = " + equippedItemsData.Count);
+		Debug.Log ("When initializing, equippedItemsData.Count = " + (0+equippedItemsData.Count));
 		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
 		
 	}

@@ -735,8 +735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1861791414}
   bgmClips:
-  - {fileID: 8300000, guid: 6b8109d5d74914c44a882fbcf2c5352f, type: 3}
   - {fileID: 8300000, guid: 9f21da757bf3a4c4399a078151d5e655, type: 3}
+  - {fileID: 8300000, guid: 6b8109d5d74914c44a882fbcf2c5352f, type: 3}
 --- !u!1 &1973678526
 GameObject:
   m_ObjectHideFlags: 0

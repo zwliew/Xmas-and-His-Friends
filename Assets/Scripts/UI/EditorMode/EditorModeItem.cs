@@ -42,7 +42,7 @@ public class EditorModeItem : MonoBehaviour {
 		Debug.Log (fullName + " is selected");
 		itemButton.GetComponent<Image> ().sprite = selectedSprite;
 		isSelected = true;
-
+		furniture.SetActive (true);
 	}
 
 	public void SetUnselected(){

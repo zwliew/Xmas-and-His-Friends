@@ -90,7 +90,7 @@ public class ShopDisplayController : MonoBehaviour
 			Button item = buttonPool.GetButton();
 			ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
 			itemScript.fullName = itemData.fullName;
-			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemScript.fullName);
+			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemData.englishName);
 			itemScript.cost = itemData.cost;
 			//Pass in the values here
 			itemScript.Initialize ();

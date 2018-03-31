@@ -7,6 +7,7 @@ public class HomescreenController : MonoBehaviour {
     private PlayerDataController playerDataController;
     private List<string> equippedItemNames;
 
+	public List<GameObject> furnitures;
     // Use this for initialization
     void Start ()
     {
@@ -14,23 +15,27 @@ public class HomescreenController : MonoBehaviour {
             .GetComponent<PlayerDataController>();
         PlayerData playerData = playerDataController.GetPlayerData();
         equippedItemNames = playerData.equippedItems;
-        Debug.Log("No. of equipped itemNames when HomeScreen is loaded: "+equippedItemNames.Count);
+		foreach (string thisItemName in equippedItemNames) {
+			Debug.Log ("(HomeScreenController)"+thisItemName);
+		}
+
+
+		foreach (GameObject thisFurniture in furnitures) {
+			thisFurniture.SetActive (false);
+		}
+
         foreach (string itemName in equippedItemNames)
         {
 			Debug.Log("name of equipped items when HomeScreen is loaded: "+itemName);
-            GameObject equippedGameObject = GameObject.Find(itemName);
-            if (equippedGameObject != null) {
-                equippedGameObject.transform.position = new Vector3(0, 0, 0);
-//				EditorModeItem itemScript =
-//					equippedGameObject.GetComponent<EditorModeItem> ();//The editor Mode Item script is attached to buttons not gameObjects!
-//				if(itemScript != null){
-//					Debug.Log (itemScript);
-//					itemScript.isSelected = true;
-//				}else{
-//					Debug.Log ("did not find the itemScript, The editor Mode Item script is attached to buttons not gameObjects!");
-//				}
-            }
-        }
+
+			foreach(GameObject thisFurniture in furnitures){
+				if (thisFurniture.name.Equals (itemName)) {
+					Debug.Log ("Setting furniture to equipped");
+					thisFurniture.SetActive (true);
+				}
+			}
+		}
+        
     }
 
 	// Update is called once per frame

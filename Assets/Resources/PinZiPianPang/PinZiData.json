@@ -4,9 +4,9 @@
       "name": "chi101",
       "sides": [
         "chi1111",
+        "dao4111",
         "chi1211",
-        "an1111",
-        "an1211"
+        "de0211"
       ],
       "correctSides": [
         "chi1111",
@@ -19,12 +19,12 @@
 	  "sampleSentence": "牛车水有很多好吃的小吃。"
     },
 	{
-      "name": "dao401",
+      "name": "dao402",
       "sides": [
         "dao4111",
+        "chi1111",
         "dao4211",
-        "an1111",
-        "an1211"
+        "de0211"
       ],
       "correctSides": [
         "dao4111",
@@ -40,9 +40,9 @@
       "name": "de001",
       "sides": [
         "de0111",
+        "chi1111",
         "de0211",
-        "an1111",
-        "an1211"
+        "dao4211"
       ],
       "correctSides": [
         "de0111",
@@ -59,11 +59,11 @@
       "sides": [
         "di4111",
         "di4211",
-        "an1111",
-        "an1211"
+        "gao1111",
+        "hao3211"
       ],
       "correctSides": [
-         "di4111",
+        "di4111",
         "di4211"
       ],
       "sampleVocab": [
@@ -77,8 +77,8 @@
       "sides": [
         "gao1111",
         "gao1211",
-        "an1111",
-        "an1211"
+        "di4111",
+        "hao3211"
       ],
       "correctSides": [
         "gao1111",
@@ -93,10 +93,10 @@
 	{
       "name": "hao301",
       "sides": [
+        "di4111",
         "hao3111",
         "hao3211",
-        "an1111",
-        "an1211"
+        "gao1211"
       ],
       "correctSides": [
         "hao3111",
@@ -113,8 +113,8 @@
       "sides": [
         "kuai4111",
         "kuai4211",
-        "an1111",
-        "an1211"
+        "ma0111",
+        "gao1211"
       ],
       "correctSides": [
         "kuai4111",
@@ -131,8 +131,8 @@
       "sides": [
         "ma0111",
         "ma0211",
-        "an1111",
-        "an1211"
+        "hao3111",
+        "gao1111"
       ],
       "correctSides": [
         "ma0111",
@@ -143,6 +143,1896 @@
         "是吗"
       ],
 	  "sampleSentence": "你儿童节喝旺仔牛奶吗？"
+    },
+	  {
+      "name": "ma101",
+      "sides": [
+        "ma1111",
+        "ma1211",
+        "yi3211",
+        "zhu4212"
+      ],
+      "correctSides": [
+        "ma1111",
+        "ma1211"
+      ],
+      "sampleVocab": [
+        "妈妈",
+        "后妈"
+      ],
+	  "sampleSentence": "妈妈的妈妈叫外婆。"
+    },
+	  {
+      "name": "men001",
+      "sides": [
+        "men0111",
+        "men0211",
+        "yi3211",
+        "mai4211"
+      ],
+      "correctSides": [
+        "men0111",
+        "men0211"
+      ],
+      "sampleVocab": [
+        "人们",
+        "你们"
+      ],
+	  "sampleSentence": "你们是哪个班的？"
+    },
+	  {
+      "name": "ming201",
+      "sides": [
+        "ming2111",
+        "ming2211",
+        "po1211",
+        "qing3211"
+      ],
+      "correctSides": [
+        "ming2111",
+        "ming2211"
+      ],
+      "sampleVocab": [
+        "明天",
+        "聪明"
+      ],
+	  "sampleSentence": "明天明明是星期天啊，为什么还要上学？"
+    },
+	  {
+      "name": "pi201",
+      "sides": [
+        "pi2111",
+        "pi2211",
+        "mai4211",
+        "guang1211"
+      ],
+      "correctSides": [
+        "pi2111",
+        "pi2211"
+      ],
+      "sampleVocab": [
+        "皮球",
+        "橡皮"
+      ],
+	  "sampleSentence": "我们去拍皮球。"
+    },
+	  {
+      "name": "qing101",
+      "sides": [
+        "qing1111",
+        "qing1211",
+        "guo2211",
+        "zhuo1211"
+      ],
+      "correctSides": [
+        "qing1111",
+        "qing1211"
+      ],
+      "sampleVocab": [
+        "青草",
+        "青菜"
+      ],
+	  "sampleSentence": "青菜是绿色的。"
+    },
+	  {
+      "name": "ren201",
+      "sides": [
+        "ren2111",
+        "ren2211",
+        "he2211",
+        "jue2211"
+      ],
+      "correctSides": [
+        "ren2111",
+        "ren2211"
+      ],
+      "sampleVocab": [
+        "人们",
+        "人来人往"
+      ],
+	  "sampleSentence": "新年时，牛车水人来人往，人很多。"
+    },
+	  {
+      "name": "san101",
+      "sides": [
+        "san1111",
+        "san1211",
+        "he2111",
+        "ke4211"
+      ],
+      "correctSides": [
+        "san1111",
+        "san1211"
+      ],
+      "sampleVocab": [
+        "三角形",
+        "星期三"
+      ],
+	  "sampleSentence": "星期三，我们学习了三角形。"
+    },
+	  {
+      "name": "shao301",
+      "sides": [
+        "shao3111",
+        "shao3211",
+        "lu4211",
+        "shen2211"
+      ],
+      "correctSides": [
+        "shao3111",
+        "shao3211"
+      ],
+      "sampleVocab": [
+        "不少",
+        "多少"
+      ],
+	  "sampleSentence": "你有多少支铅笔？"
+    },
+	  {
+      "name": "shen201",
+      "sides": [
+        "shen2111",
+        "shen2211",
+        "lu4211",
+        "lou2111"
+      ],
+      "correctSides": [
+        "shen2111",
+        "shen2211"
+      ],
+      "sampleVocab": [
+        "什么",
+        "什锦"
+      ],
+	  "sampleSentence": "你是什么学校的？"
+    },
+	  {
+      "name": "shi401",
+      "sides": [
+        "shi4111",
+        "shi4211",
+        "chao3211",
+        "chu4111"
+      ],
+      "correctSides": [
+        "shi4111",
+        "shi4211"
+      ],
+      "sampleVocab": [
+        "就是",
+        "但是"
+      ],
+	  "sampleSentence": "我就是要喝旺仔牛奶！"
+    },
+	  {
+      "name": "shi101",
+      "sides": [
+        "shi1111",
+        "shi1211",
+        "jie3211",
+        "mao1211"
+      ],
+      "correctSides": [
+        "shi1111",
+        "shi1211"
+      ],
+      "sampleVocab": [
+        "建筑师",
+        "老师"
+      ],
+	  "sampleSentence": "老师给我们留了作业。"
+    },
+	  {
+      "name": "shuang101",
+      "sides": [
+        "shuang1111",
+        "shunag1211",
+        "cao1211",
+        "jiu4211"
+      ],
+      "correctSides": [
+        "shuang1111",
+        "shunag1211"
+      ],
+      "sampleVocab": [
+        "一双",
+        "成双"
+      ],
+	  "sampleSentence": "我有一双运动鞋。"
+    },
+	  {
+      "name": "ta101",
+      "sides": [
+        "ta1111",
+        "ta1211",
+        "ci4211",
+        "zuo4211"
+      ],
+      "correctSides": [
+        "ta1111",
+        "ta1211"
+      ],
+      "sampleVocab": [
+        "它们",
+        "其它"
+      ],
+	  "sampleSentence": "地上有一群蚂蚁。它们在搬家。"
+    },
+	  {
+      "name": "ta102",
+      "sides": [
+        "ta1112",
+        "ta1212",
+        "qi3111",
+        "pao3211"
+      ],
+      "correctSides": [
+        "ta1112",
+        "ta1212"
+      ],
+      "sampleVocab": [
+        "他们",
+        "他的"
+      ],
+	  "sampleSentence": "我有一群男同学。他们喜欢打篮球。"
+    },
+	  {
+      "name": "ta103",
+      "sides": [
+        "ta1113",
+        "ta1213",
+        "mai4211",
+        "qing1211"
+      ],
+      "correctSides": [
+        "ta1113",
+        "ta1213"
+      ],
+      "sampleVocab": [
+        "她们",
+        "她的"
+      ],
+	  "sampleSentence": "我有一群女同学。她们喜欢踢足球。"
+    },
+	  {
+      "name": "tai201",
+      "sides": [
+        "tai2111",
+        "tai2211",
+        "zheng4211",
+        "yun4211"
+      ],
+      "correctSides": [
+        "tai2111",
+        "tai2211"
+      ],
+      "sampleVocab": [
+        "台上",
+        "台阶"
+      ],
+	  "sampleSentence": "请三年级二班李子明同学到台上领奖。"
+    },
+	  {
+      "name": "wen401",
+      "sides": [
+        "wen4111",
+        "wen4211",
+        "tai2211",
+        "qi3211"
+      ],
+      "correctSides": [
+        "wen4111",
+        "wen4211"
+      ],
+      "sampleVocab": [
+        "问路",
+        "请问"
+      ],
+	  "sampleSentence": "请问超市在哪里？"
+    },
+	  {
+      "name": "yi301",
+      "sides": [
+        "yi3111",
+        "yi3211",
+        "ma0111",
+        "men0211"
+      ],
+      "correctSides": [
+        "yi3111",
+        "yi3211"
+      ],
+      "sampleVocab": [
+        "以前",
+        "以后"
+      ],
+	  "sampleSentence": "十年以前，我不认识你。十年以后，我们是朋友，还可以问候。"
+    },
+	  {
+      "name": "yuan201",
+      "sides": [
+        "yuan2111",
+        "yuan2211",
+        "ma1211",
+        "men0211"
+      ],
+      "correctSides": [
+        "yuan2111",
+        "yuan2211"
+      ],
+      "sampleVocab": [
+        "植物园",
+        "公园"
+      ],
+	  "sampleSentence": "我去公园玩滑板。"
+    },
+	  {
+      "name": "zuo201",
+      "sides": [
+        "zuo2111",
+        "zuo2211",
+        "ke4211",
+        "lei2111"
+      ],
+      "correctSides": [
+        "zuo2111",
+        "zuo2211"
+      ],
+      "sampleVocab": [
+        "昨天",
+        "昨夜"
+      ],
+	  "sampleSentence": "昨天是星期天，今天是星期一。"
+    },
+	  {
+      "name": "you201",
+      "sides": [
+        "you2111",
+        "you2211",
+        "qing1211",
+        "he2111"
+      ],
+      "correctSides": [
+        "you2111",
+        "you2211"
+      ],
+      "sampleVocab": [
+        "游戏",
+        "上游"
+      ],
+	  "sampleSentence": "你喜欢玩游戏吗？"
+    },
+	  {
+      "name": "you301",
+      "sides": [
+        "you3111",
+        "you3211",
+        "jue2211",
+        "he2211"
+      ],
+      "correctSides": [
+        "you3111",
+        "you3211"
+      ],
+      "sampleVocab": [
+        "朋友",
+        "友谊"
+      ],
+	  "sampleSentence": "我的朋友每年都会给我过生日。"
+    },
+	  {
+      "name": "yu201",
+      "sides": [
+        "yu2111",
+        "yu2211",
+        "lei2211",
+        "kong1111"
+      ],
+      "correctSides": [
+        "yu2111",
+        "yu2211"
+      ],
+      "sampleVocab": [
+        "鱼汤",
+        "鲤鱼"
+      ],
+	  "sampleSentence": "鸟在天上飞，鱼在水里游。"
+    },
+	  {
+      "name": "zhen101",
+      "sides": [
+        "zhen1111",
+        "zhen1211",
+        "yuan3211",
+        "bi3111"
+      ],
+      "correctSides": [
+        "zhen1111",
+        "zhen1211"
+      ],
+      "sampleVocab": [
+        "真的",
+        "真心"
+      ],
+	  "sampleSentence": "我是真的想喝旺仔牛奶。"
+    },
+	  {
+      "name": "zhu402",
+      "sides": [
+        "zhu4112",
+        "zhu4212",
+        "yuan3211",
+        "bi3111"
+      ],
+      "correctSides": [
+        "zhu4112",
+        "zhu4212"
+      ],
+      "sampleVocab": [
+        "庆祝",
+        "祝福"
+      ],
+	  "sampleSentence": "我们一起庆祝儿童节。"
+    },
+	  {
+      "name": "zhuo101",
+      "sides": [
+        "zhuo1111",
+        "zhuo1211",
+        "yi3211",
+        "ren2211"
+      ],
+      "correctSides": [
+        "zhuo1111",
+        "zhuo1211"
+      ],
+      "sampleVocab": [
+        "捉迷藏",
+        "捉住"
+      ],
+	  "sampleSentence": "你玩过捉迷藏吗？"
+    },
+	  {
+      "name": "zi401",
+      "sides": [
+        "zi4111",
+        "zi4211",
+        "nai3111",
+        "pao3111"
+      ],
+      "correctSides": [
+        "zi4111",
+        "zi4211"
+      ],
+      "sampleVocab": [
+        "名字",
+        "认字"
+      ],
+	  "sampleSentence": "你的名字是什么？"
+    },
+	  {
+      "name": "zui401",
+      "sides": [
+        "zui4111",
+        "zui4211",
+        "pao3111",
+        "bi3111"
+      ],
+      "correctSides": [
+        "zui4111",
+        "zui4211"
+      ],
+      "sampleVocab": [
+        "最后",
+        "最终"
+      ],
+	  "sampleSentence": "最后祝你，身体健康。再见。"
+    },
+	  {
+      "name": "zuo401",
+      "sides": [
+        "zuo4111",
+        "zuo4211",
+        "ci4211",
+        "pao3111"
+      ],
+      "correctSides": [
+        "zuo4111",
+        "zuo4211"
+      ],
+      "sampleVocab": [
+        "做客",
+        "做作业"
+      ],
+	  "sampleSentence": "昨天，李子明同学来我家做客。"
+    },
+	  {
+      "name": "cai301",
+      "sides": [
+        "cai3111",
+        "cai3211",
+        "lei2211",
+        "li4211"
+      ],
+      "correctSides": [
+        "cai3111",
+        "cai3211"
+      ],
+      "sampleVocab": [
+        "采购",
+        "采花"
+      ],
+	  "sampleSentence": "我和妈妈去超市采购。"
+    },
+	  {
+      "name": "cao301",
+      "sides": [
+        "cao3111",
+        "cao3211",
+        "jie2111",
+        "shi1211"
+      ],
+      "correctSides": [
+        "cao3111",
+        "cao3211"
+      ],
+      "sampleVocab": [
+        "草地",
+        "花草"
+      ],
+	  "sampleSentence": "绵羊生活在草地上，吃的是青草。"
+    },
+	  {
+      "name": "cao101",
+      "sides": [
+        "cao1111",
+        "cao1211",
+        "shunag1211",
+        "lu4211"
+      ],
+      "correctSides": [
+        "cao1111",
+        "cao1211"
+      ],
+      "sampleVocab": [
+        "操场",
+        "早操"
+      ],
+	  "sampleSentence": "我们去操场上做早操。"
+    },
+	  {
+      "name": "chao301",
+      "sides": [
+        "chao3111",
+        "chao3211",
+        "ren2111",
+        "qing1211"
+      ],
+      "correctSides": [
+        "chao3111",
+        "chao3211"
+      ],
+      "sampleVocab": [
+        "争吵",
+        "吵架"
+      ],
+	  "sampleSentence": "生气时，不要和别人争吵。"
+    },
+	  {
+      "name": "cheng201",
+      "sides": [
+        "cheng2111",
+        "cheng2211",
+        "shen2211",
+        "shi4211"
+      ],
+      "correctSides": [
+        "cheng2111",
+        "cheng2211"
+      ],
+      "sampleVocab": [
+        "城市",
+        "城郊"
+      ],
+	  "sampleSentence": "城市里有很多汽车和大楼。"
+    },
+	  {
+      "name": "chu401",
+      "sides": [
+        "chu4111",
+        "chu4211",
+        "ai4211",
+        "xiang1211"
+      ],
+      "correctSides": [
+        "chu4111",
+        "chu4211"
+      ],
+      "sampleVocab": [
+        "到处",
+        "用处"
+      ],
+	  "sampleSentence": "水有很多用处。它可以用来浇花，洗碗，洗衣服。"
+    },
+	  {
+      "name": "ci401",
+      "sides": [
+        "ci4111",
+        "ci4211",
+        "qi3111",
+        "ta1111"
+      ],
+      "correctSides": [
+        "ci4111",
+        "ci4211"
+      ],
+      "sampleVocab": [
+        "几次",
+        "次数"
+      ],
+	  "sampleSentence": "你这个学期迟到几次了？"
+    },
+	  {
+      "name": "cong201",
+      "sides": [
+        "cong2111",
+        "cong2211",
+        "xqi3111xxx",
+        "xiang1211"
+      ],
+      "correctSides": [
+        "cong2111",
+        "cong2211"
+      ],
+      "sampleVocab": [
+        "从前",
+        "从来"
+      ],
+	  "sampleSentence": "从前，有一个小朋友，他从来不写作业。后来他PSLE考了零分，去了ITE。"
+    },
+	  {
+      "name": "dan401",
+      "sides": [
+        "dan4111",
+        "dan4211",
+        "lu4111",
+        "xiang1211"
+      ],
+      "correctSides": [
+        "dan4111",
+        "dan4211"
+      ],
+      "sampleVocab": [
+        "但是",
+        "非但"
+      ],
+	  "sampleSentence": "我的家很小但是它很漂亮。"
+    },
+	  {
+      "name": "dao401",
+      "sides": [
+        "dao4111",
+        "dao4211",
+        "yun4211",
+        "fan4211"
+      ],
+      "correctSides": [
+        "dao4111",
+        "dao4211"
+      ],
+      "sampleVocab": [
+        "道具",
+        "知道"
+      ],
+	  "sampleSentence": "我知道一加一等于二。"
+    },
+	  {
+      "name": "de001",
+      "sides": [
+        "de0111",
+        "de0211",
+        "yun4211",
+        "da3211"
+      ],
+      "correctSides": [
+        "de0111",
+        "de0211"
+      ],
+      "sampleVocab": [
+        "觉得",
+        "记得"
+      ],
+	  "sampleSentence": "我记得爸爸妈妈的生日。"
+    },
+	  {
+      "name": "deng101",
+      "sides": [
+        "deng1111",
+        "deng1211",
+        "zhong3111",
+        "yun4211"
+      ],
+      "correctSides": [
+        "deng1111",
+        "deng1211"
+      ],
+      "sampleVocab": [
+        "灯光",
+        "灯笼"
+      ],
+	  "sampleSentence": "中秋节，我们挂灯笼。"
+    },
+	  {
+      "name": "dui402",
+      "sides": [
+        "dui4112",
+        "dui4212",
+        "da3211",
+        "zhen1111"
+      ],
+      "correctSides": [
+        "dui4112",
+        "dui4212"
+      ],
+      "sampleVocab": [
+        "排队",
+        "车队"
+      ],
+	  "sampleSentence": "等德士时要记得排队。"
+    },
+	  {
+      "name": "dui401",
+      "sides": [
+        "dui4111",
+        "dui4211",
+        "zhen1111",
+        "xiang3211"
+      ],
+      "correctSides": [
+        "dui4111",
+        "dui4211"
+      ],
+      "sampleVocab": [
+        "对不起",
+        "不对"
+      ],
+	  "sampleSentence": "对不起，我来晚了。"
+    },
+	  {
+      "name": "duo301",
+      "sides": [
+        "duo3111",
+        "duo3211",
+        "huan1111",
+        "na2211"
+      ],
+      "correctSides": [
+        "duo3111",
+        "duo3211"
+      ],
+      "sampleVocab": [
+        "耳朵",
+        "云朵"
+      ],
+	  "sampleSentence": "人有两只耳朵。"
+    },
+	  {
+      "name": "fei101",
+      "sides": [
+        "fei1111",
+        "fei1211",
+        "huan1111",
+        "na2211"
+      ],
+      "correctSides": [
+        "fei1111",
+        "fei1211"
+      ],
+      "sampleVocab": [
+        "非常",
+        "非法"
+      ],
+	  "sampleSentence": "我今天非常兴奋。"
+    },
+	  {
+      "name": "gao401",
+      "sides": [
+        "gao4111",
+        "gao4211",
+        "lou2211",
+        "ni2211"
+      ],
+      "correctSides": [
+        "gao4111",
+        "gao4211"
+      ],
+      "sampleVocab": [
+        "告诉",
+        "告诉"
+      ],
+	  "sampleSentence": "妈妈告诉我，吃饭前要洗手。"
+    },
+	  {
+      "name": "gei301",
+      "sides": [
+        "gei3111",
+        "gei3211",
+        "mai4211",
+        "ni2211"
+      ],
+      "correctSides": [
+        "gei3111",
+        "gei3211"
+      ],
+      "sampleVocab": [
+        "送给",
+        "给你"
+      ],
+	  "sampleSentence": "我把这个生日卡片送给你。"
+    },
+	  {
+      "name": "guang101",
+      "sides": [
+        "guang1111",
+        "guang1211",
+        "mai4211",
+        "ta1213"
+      ],
+      "correctSides": [
+        "guang1111",
+        "guang1211"
+      ],
+      "sampleVocab": [
+        "光明",
+        "灯光"
+      ],
+	  "sampleSentence": "张华考上了北京大学；李萍进了技术学校；我在超市当售货员：我们都有光明的前途。"
+    },
+	  {
+      "name": "guo201",
+      "sides": [
+        "guo2111",
+        "guo2211",
+        "qing1211",
+        "ta1213"
+      ],
+      "correctSides": [
+        "guo2111",
+        "guo2211"
+      ],
+      "sampleVocab": [
+        "岛国",
+        "建国"
+      ],
+	  "sampleSentence": "建国一代为新加坡做出了很大的贡献。"
+    },
+	  {
+      "name": "he201",
+      "sides": [
+        "he2111",
+        "he2211",
+        "kong1111",
+        "yu2211"
+      ],
+      "correctSides": [
+        "he2111",
+        "he2211"
+      ],
+      "sampleVocab": [
+        "合适",
+        "集合"
+      ],
+	  "sampleSentence": "我们每天早上八点集合。"
+    },
+	  {
+      "name": "jue201",
+      "sides": [
+        "jue2111",
+        "jue2211",
+        "ren2111",
+        "qing1211"
+      ],
+      "correctSides": [
+        "jue2111",
+        "jue2211"
+      ],
+      "sampleVocab": [
+        "觉得",
+        "觉醒"
+      ],
+	  "sampleSentence": "我觉得不舒服。"
+    },
+	  {
+      "name": "ke401",
+      "sides": [
+        "ke4111",
+        "ke4211",
+        "shan3211",
+        "zuo2211"
+      ],
+      "correctSides": [
+        "ke4111",
+        "ke4211"
+      ],
+      "sampleVocab": [
+        "客人",
+        "客厅"
+      ],
+	  "sampleSentence": "客人在客厅看电视。"
+    },
+	  {
+      "name": "kong101",
+      "sides": [
+        "kong1111",
+        "kong1211",
+        "zhen1211",
+        "yu2211"
+      ],
+      "correctSides": [
+        "kong1111",
+        "kong1211"
+      ],
+      "sampleVocab": [
+        "天空",
+        "空中"
+      ],
+	  "sampleSentence": "天空中有一片白云。"
+    },
+	  {
+      "name": "lei201",
+      "sides": [
+        "lei2111",
+        "lei2211",
+        "xiang1111",
+        "cheng2111"
+      ],
+      "correctSides": [
+        "lei2111",
+        "lei2211"
+      ],
+      "sampleVocab": [
+        "雷阵雨",
+        "打雷"
+      ],
+	  "sampleSentence": "天空下起了雷阵雨。"
+    },
+	  {
+      "name": "li401",
+      "sides": [
+        "li4111",
+        "li4211",
+        "cai3211",
+        "cheng2111"
+      ],
+      "correctSides": [
+        "li4111",
+        "li4211"
+      ],
+      "sampleVocab": [
+        "美丽",
+        "绚丽"
+      ],
+	  "sampleSentence": "美丽的草原是我的家。"
+    },
+	  {
+      "name": "lou201",
+      "sides": [
+        "lou2111",
+        "lou2211",
+        "huan1111",
+        "gao4111"
+      ],
+      "correctSides": [
+        "lou2111",
+        "lou2211"
+      ],
+      "sampleVocab": [
+        "楼下",
+        "楼房"
+      ],
+	  "sampleSentence": "我要到楼下玩游戏。"
+    },
+	  {
+      "name": "lu401",
+      "sides": [
+        "lu4111",
+        "lu4211",
+        "shen2111",
+        "shao3211"
+      ],
+      "correctSides": [
+        "lu4111",
+        "lu4211"
+      ],
+      "sampleVocab": [
+        "迷路",
+        "马路"
+      ],
+	  "sampleSentence": "马路上有很多汽车，要注意安全啊！"
+    },
+	  {
+      "name": "mai401",
+      "sides": [
+        "mai4111",
+        "mai4211",
+        "men0111",
+        "ming2211"
+      ],
+      "correctSides": [
+        "mai4111",
+        "mai4211"
+      ],
+      "sampleVocab": [
+        "买卖",
+        "叫卖"
+      ],
+	  "sampleSentence": "小贩中心里禁止叫卖。"
+    },
+	  {
+      "name": "neng201",
+      "sides": [
+        "neng2111",
+        "neng2211",
+        "duo1211",
+        "fang2111"
+      ],
+      "correctSides": [
+        "neng2111",
+        "neng2211"
+      ],
+      "sampleVocab": [
+        "能力",
+        "能量"
+      ],
+	  "sampleSentence": "我有能力在九点之前把作业写完。"
+    },
+	  {
+      "name": "ni201",
+      "sides": [
+        "ni2111",
+        "ni2211",
+        "dou1211",
+        "fang4211"
+      ],
+      "correctSides": [
+        "ni2111",
+        "ni2211"
+      ],
+      "sampleVocab": [
+        "泥土",
+        "泥巴"
+      ],
+	  "sampleSentence": "种子发芽需要泥土。"
+    },
+	  {
+      "name": "po101",
+      "sides": [
+        "po1111",
+        "po1211",
+        "pi2111",
+        "men0111"
+      ],
+      "correctSides": [
+        "po1111",
+        "po1211"
+      ],
+      "sampleVocab": [
+        "新加坡",
+        "山坡"
+      ],
+	  "sampleSentence": "新加坡是个花园城市。"
+    },
+	  {
+      "name": "qing301",
+      "sides": [
+        "qing3111",
+        "qing3211",
+        "ming2211",
+        "ni2111"
+      ],
+      "correctSides": [
+        "qing3111",
+        "qing3211"
+      ],
+      "sampleVocab": [
+        "请问",
+        "请客"
+      ],
+	  "sampleSentence": "李子明，恭喜你拿了奖金！请问你打算什么时候请客？"
+    },
+	  {
+      "name": "quan201",
+      "sides": [
+        "quan2111",
+        "quan2211",
+        "shan3211",
+        "dan4211"
+      ],
+      "correctSides": [
+        "quan2111",
+        "quan2211"
+      ],
+      "sampleVocab": [
+        "全家",
+        "安全"
+      ],
+	  "sampleSentence": "我们全家都喜欢看八频道。"
+    },
+	  {
+      "name": "shan301",
+      "sides": [
+        "shan3111",
+        "shan3211",
+        "bian1211",
+        "bi3211"
+      ],
+      "correctSides": [
+        "shan3111",
+        "shan3211"
+      ],
+      "sampleVocab": [
+        "闪电",
+        "闪光灯"
+      ],
+	  "sampleSentence": "天空中出现一道闪电。"
+    },
+	  {
+      "name": "shu401",
+      "sides": [
+        "shu4111",
+        "shu4211",
+        "chang3211",
+        "chang3111"
+      ],
+      "correctSides": [
+        "shu4111",
+        "shu4211"
+      ],
+      "sampleVocab": [
+        "树木",
+        "树叶"
+      ],
+	  "sampleSentence": "大树上有很多树叶。"
+    },
+	  {
+      "name": "tiao401",
+      "sides": [
+        "tiao4111",
+        "tiao4211",
+        "ge1211",
+        "guo4211"
+      ],
+      "correctSides": [
+        "tiao4111",
+        "tiao4211"
+      ],
+      "sampleVocab": [
+        "跳绳",
+        "跳舞"
+      ],
+	  "sampleSentence": "我们跳舞庆祝儿童节。"
+    },
+	  {
+      "name": "wei401",
+      "sides": [
+        "wei4111",
+        "wei4211",
+        "guo4211",
+        "fang2211"
+      ],
+      "correctSides": [
+        "wei4111",
+        "wei4211"
+      ],
+      "sampleVocab": [
+        "座位",
+        "摊位"
+      ],
+	  "sampleSentence": "农历新年，牛车水有很多摊位。"
+    },
+	  {
+      "name": "xiang301",
+      "sides": [
+        "xiang3111",
+        "xiang3211",
+        "cheng2111",
+        "dui4111"
+      ],
+      "correctSides": [
+        "xiang3111",
+        "xiang3211"
+      ],
+      "sampleVocab": [
+        "响声",
+        "影响"
+      ],
+	  "sampleSentence": "元旦，我可以听到远处焰火的响声。"
+    },
+	  {
+      "name": "xiang101",
+      "sides": [
+        "xiang1111",
+        "xiang1211",
+        "bi3211",
+        "dan4211"
+      ],
+      "correctSides": [
+        "xiang1111",
+        "xiang1211"
+      ],
+      "sampleVocab": [
+        "相亲相爱",
+        "互相"
+      ],
+	  "sampleSentence": "我们是一个相亲相爱的大家族。每年中秋我们都会团聚。"
+    },
+	  {
+      "name": "xing201",
+      "sides": [
+        "xing2111",
+        "xing2211",
+        "zhong3111",
+        "zhen1111"
+      ],
+      "correctSides": [
+        "xing2111",
+        "xing2211"
+      ],
+      "sampleVocab": [
+        "行人",
+        "行动"
+      ],
+	  "sampleSentence": "除夕夜，街上行人很少。因为大家都回家过年了。"
+    },
+	  {
+      "name": "yuan301",
+      "sides": [
+        "yuan3111",
+        "yuan3211",
+        "zhen1111",
+        "zhong3111"
+      ],
+      "correctSides": [
+        "yuan3111",
+        "yuan3211"
+      ],
+      "sampleVocab": [
+        "远处",
+        "远方"
+      ],
+	  "sampleSentence": "我可以看到远处的新年焰火。"
+    },
+	  {
+      "name": "yun401",
+      "sides": [
+        "yun4111",
+        "yun4211",
+        "xxta1113xx",
+        "wen4211"
+      ],
+      "correctSides": [
+        "yun4111",
+        "yun4211"
+      ],
+      "sampleVocab": [
+        "运动",
+        "运气"
+      ],
+	  "sampleSentence": "赛龙舟是端午节习俗，也是一种运动。"
+    },
+	  {
+      "name": "zheng401",
+      "sides": [
+        "zheng4111",
+        "zheng4211",
+        "tai2211",
+        "guo4111"
+      ],
+      "correctSides": [
+        "zheng4111",
+        "zheng4211"
+      ],
+      "sampleVocab": [
+        "正在",
+        "正常"
+      ],
+	  "sampleSentence": "农历新年，地铁会正常运行。"
+    },
+	  {
+      "name": "zhong301",
+      "sides": [
+        "zhong3111",
+        "zhong3211",
+        "hai2211",
+        "shu4111"
+      ],
+      "correctSides": [
+        "zhong3111",
+        "zhong3211"
+      ],
+      "sampleVocab": [
+        "种子",
+        "火种"
+      ],
+	  "sampleSentence": "我种下一颗种子。"
+    },
+	  {
+      "name": "zhu401",
+      "sides": [
+        "zhu4111",
+        "zhu4211",
+        "he1111",
+        "hong2111"
+      ],
+      "correctSides": [
+        "zhu4111",
+        "zhu4211"
+      ],
+      "sampleVocab": [
+        "居住",
+        "住宅"
+      ],
+	  "sampleSentence": "嫦娥居住在月宫里。"
+    },
+	  {
+      "name": "ai401",
+      "sides": [
+        "ai4111",
+        "ai4211",
+        "chao3211",
+        "cheng2211"
+      ],
+      "correctSides": [
+        "ai4111",
+        "ai4211"
+      ],
+      "sampleVocab": [
+        "爱心",
+        "相亲相爱"
+      ],
+	  "sampleSentence": "我们是一个相亲相爱的大家族。每年中秋我们都会团聚。"
+    },
+	  {
+      "name": "an101",
+      "sides": [
+        "an1111",
+        "an1211",
+        "bi3111",
+        "chao3211"
+      ],
+      "correctSides": [
+        "an1111",
+        "an1211"
+      ],
+      "sampleVocab": [
+        "安全",
+        "早安"
+      ],
+	  "sampleSentence": "李老师早安。"
+    },
+	  {
+      "name": "bi301",
+      "sides": [
+        "bi3111",
+        "bi3211",
+        "jiu4211",
+        "jiang3111"
+      ],
+      "correctSides": [
+        "bi3111",
+        "bi3211"
+      ],
+      "sampleVocab": [
+        "蜡笔",
+        "铅笔"
+      ],
+	  "sampleSentence": "农历新年的对联是用毛笔写的。"
+    },
+	  {
+      "name": "bian101",
+      "sides": [
+        "bian1111",
+        "bian1211",
+        "shan3111",
+        "he1211"
+      ],
+      "correctSides": [
+        "bian1111",
+        "bian1211"
+      ],
+      "sampleVocab": [
+        "一边",
+        "河边"
+      ],
+	  "sampleSentence": "我一边吃元宵，一边看灯笼。"
+    },
+	  {
+      "name": "chang301",
+      "sides": [
+        "chang3111",
+        "chang3211",
+        "shan3211",
+        "ke4211"
+      ],
+      "correctSides": [
+        "chang3111",
+        "chang3211"
+      ],
+      "sampleVocab": [
+        "出场",
+        "操场"
+      ],
+	  "sampleSentence": "快看，红狮子跳伞队出场了。"
+    },
+	  {
+      "name": "da301",
+      "sides": [
+        "da3111",
+        "da3211",
+        "yun4211",
+        "dui4212"
+      ],
+      "correctSides": [
+        "da3111",
+        "da3211"
+      ],
+      "sampleVocab": [
+        "打扫",
+        "打雷"
+      ],
+	  "sampleSentence": "农历新年之前，家家户户都要打扫卫生。"
+    },
+	  {
+      "name": "dong401",
+      "sides": [
+        "dong4111",
+        "dong4211",
+        "dui4212",
+        "chao3111"
+      ],
+      "correctSides": [
+        "dong4111",
+        "dong4211"
+      ],
+      "sampleVocab": [
+        "动物",
+        "动画"
+      ],
+	  "sampleSentence": "每年儿童节，我都能看一天的动画。"
+    },
+	  {
+      "name": "dou101",
+      "sides": [
+        "dou1111",
+        "dou1211",
+        "dong4111",
+        "gao4211"
+      ],
+      "correctSides": [
+        "dou1111",
+        "dou1211"
+      ],
+      "sampleVocab": [
+        "全都",
+        "都是"
+      ],
+	  "sampleSentence": "儿童节，大家全都在喝旺仔牛奶。"
+    },
+	  {
+      "name": "duo101",
+      "sides": [
+        "duo1111",
+        "duo1211",
+        "mai4211",
+        "neng2111"
+      ],
+      "correctSides": [
+        "duo1111",
+        "duo1211"
+      ],
+      "sampleVocab": [
+        "很多",
+        "多少"
+      ],
+	  "sampleSentence": "圣诞夜，很多人出来逛街。"
+    },
+	  {
+      "name": "fang201",
+      "sides": [
+        "fang2111",
+        "fang2211",
+        "wei4111",
+        "xiang301"
+      ],
+      "correctSides": [
+        "fang2111",
+        "fang2211"
+      ],
+      "sampleVocab": [
+        "房子",
+        "厨房"
+      ],
+	  "sampleSentence": "除夕夜，妈妈在厨房里做团圆饭。"
+    },
+	  {
+      "name": "fang401",
+      "sides": [
+        "fang4111",
+        "fang4211",
+        "ni2211",
+        "neng2111"
+      ],
+      "correctSides": [
+        "fang4111",
+        "fang4211"
+      ],
+      "sampleVocab": [
+        "放学",
+        "开放"
+      ],
+	  "sampleSentence": "开放日是我们学校最大的节日。"
+    },
+	  {
+      "name": "fan401",
+      "sides": [
+        "fan4111",
+        "fan4211",
+        "fang4211",
+        "huan1111"
+      ],
+      "correctSides": [
+        "fan4111",
+        "fan4211"
+      ],
+      "sampleVocab": [
+        "煮饭",
+        "糯米饭"
+      ],
+	  "sampleSentence": "粽子是糯米饭做成的。"
+    },
+	  {
+      "name": "ge101",
+      "sides": [
+        "ge1111",
+        "ge1211",
+        "yun4211",
+        "de0211"
+      ],
+      "correctSides": [
+        "ge1111",
+        "ge1211"
+      ],
+      "sampleVocab": [
+        "哥哥",
+        "哥们"
+      ],
+	  "sampleSentence": "哥哥说，中国有个特别的节日叫光棍节。"
+    },
+	  {
+      "name": "guo401",
+      "sides": [
+        "guo4111",
+        "guo4211",
+        "zheng4111",
+        "zhong3211"
+      ],
+      "correctSides": [
+        "guo4111",
+        "guo4211"
+      ],
+      "sampleVocab": [
+        "过去",
+        "过年"
+      ],
+	  "sampleSentence": "过年要吃团圆饭。"
+    },
+	  {
+      "name": "hai201",
+      "sides": [
+        "hai2111",
+        "hai2211",
+        "zhong3211",
+        "dong4111"
+      ],
+      "correctSides": [
+        "hai2111",
+        "hai2211"
+      ],
+      "sampleVocab": [
+        "还是",
+        "还有"
+      ],
+	  "sampleSentence": "新加坡还有很多节日，比如万灯节。"
+    },
+	  {
+      "name": "he101",
+      "sides": [
+        "he1111",
+        "he1211",
+        "bi3211",
+        "shan3111"
+      ],
+      "correctSides": [
+        "he1111",
+        "he1211"
+      ],
+      "sampleVocab": [
+        "喝水",
+        "喝茶"
+      ],
+	  "sampleSentence": "今天是儿童节，我要喝旺仔牛奶。"
+    },
+	  {
+      "name": "hong201",
+      "sides": [
+        "hong2111",
+        "hong2211",
+        "se4211",
+        "zhu4211"
+      ],
+      "correctSides": [
+        "hong2111",
+        "hong2211"
+      ],
+      "sampleVocab": [
+        "红包",
+        "红山"
+      ],
+	  "sampleSentence": "我要拿红包去换旺仔牛奶。"
+    },
+	  {
+      "name": "huan101",
+      "sides": [
+        "huan1111",
+        "huan1211",
+        "fei1211",
+        "dong4211"
+      ],
+      "correctSides": [
+        "huan1111",
+        "huan1211"
+      ],
+      "sampleVocab": [
+        "欢乐",
+        "喜欢"
+      ],
+	  "sampleSentence": "我喜欢儿童节，因为可以喝旺仔牛奶。"
+    },
+	  {
+      "name": "xiao401",
+      "sides": [
+        "xiao4111",
+        "xiao4211",
+        "duo3211",
+        "fei1211"
+      ],
+      "correctSides": [
+        "xiao4111",
+        "xiao4211"
+      ],
+      "sampleVocab": [
+        "笑嘻嘻",
+        "笑声"
+      ],
+	  "sampleSentence": "万圣节的夜晚，我们笑嘻嘻地去要糖吃。"
+    },
+	  {
+      "name": "jiang301",
+      "sides": [
+        "jiang3111",
+        "jiang3211",
+        "bi3111",
+        "zui4211"
+      ],
+      "correctSides": [
+        "jiang3111",
+        "jiang3211"
+      ],
+      "sampleVocab": [
+        "讲课",
+        "讲话"
+      ],
+	  "sampleSentence": "老师在讲课，讲一堂关于华族传统节日的课。"
+    },
+	  {
+      "name": "jie201",
+      "sides": [
+        "jie2111",
+        "jie2211",
+        "zui4211",
+        "cao3111"
+      ],
+      "correctSides": [
+        "jie2111",
+        "jie2211"
+      ],
+      "sampleVocab": [
+        "节日",
+        "中秋节"
+      ],
+	  "sampleSentence": "我喜欢不同的节日，因为可以喝旺仔牛奶。"
+    },
+	  {
+      "name": "jie301",
+      "sides": [
+        "jie3111",
+        "jie3211",
+        "zui4211",
+        "cao3111"
+      ],
+      "correctSides": [
+        "jie3111",
+        "jie3211"
+      ],
+      "sampleVocab": [
+        "姐姐",
+        "姐妹"
+      ],
+	  "sampleSentence": "姐姐说，华族的情人节叫七夕。"
+    },
+	  {
+      "name": "jiu401",
+      "sides": [
+        "jiu4111",
+        "jiu4211",
+        "shunag1211",
+        "ta1112"
+      ],
+      "correctSides": [
+        "jiu4111",
+        "jiu4211"
+      ],
+      "sampleVocab": [
+        "就是",
+        "将就"
+      ],
+	  "sampleSentence": "虽然今天不是儿童节，但我就是要喝旺仔牛奶！"
+    },
+	  {
+      "name": "mao101",
+      "sides": [
+        "mao1111",
+        "mao1211",
+        "shi1211",
+        "chang3211"
+      ],
+      "correctSides": [
+        "mao1111",
+        "mao1211"
+      ],
+      "sampleVocab": [
+        "小猫",
+        "猫咪"
+      ],
+	  "sampleSentence": "我喜欢小猫，不喜欢小狗。"
+    },
+	  {
+      "name": "mei401",
+      "sides": [
+        "mei4111",
+        "mei4211",
+        "gao4211",
+        "cao1111"
+      ],
+      "correctSides": [
+        "mei4111",
+        "mei4211"
+      ],
+      "sampleVocab": [
+        "妹妹",
+        "姐妹"
+      ],
+	  "sampleSentence": "今天是儿童节，旺仔牛奶要让给妹妹喝。"
+    },
+	  {
+      "name": "na201",
+      "sides": [
+        "na2111",
+        "na2211",
+        "gao4211",
+        "cheng2211"
+      ],
+      "correctSides": [
+        "na2111",
+        "na2211"
+      ],
+      "sampleVocab": [
+        "拿来",
+        "拿起"
+      ],
+	  "sampleSentence": "请把我的旺仔牛奶拿过来。"
+    },
+	  {
+      "name": "nai301",
+      "sides": [
+        "nai3111",
+        "nai3211",
+        "pao3111",
+        "cheng2211"
+      ],
+      "correctSides": [
+        "nai3111",
+        "nai3211"
+      ],
+      "sampleVocab": [
+        "奶奶",
+        "牛奶"
+      ],
+	  "sampleSentence": "每年重阳节，我都送奶奶旺仔牛奶。"
+    },
+	  {
+      "name": "pao301",
+      "sides": [
+        "pao3111",
+        "pao3211",
+        "zi4211",
+        "zui4111"
+      ],
+      "correctSides": [
+        "pao3111",
+        "pao3211"
+      ],
+      "sampleVocab": [
+        "跑步",
+        "赛跑"
+      ],
+	  "sampleSentence": "体育课，我们到楼下跑步。"
+    },
+	  {
+      "name": "qi301",
+      "sides": [
+        "qi3111",
+        "qi3211",
+        "tai2111",
+        "wen4211"
+      ],
+      "correctSides": [
+        "qi3111",
+        "qi3211"
+      ],
+      "sampleVocab": [
+        "起床",
+        "对不起"
+      ],
+	  "sampleSentence": "起床了，给爸爸妈妈拜年。"
+    },
+	  {
+      "name": "se401",
+      "sides": [
+        "se4111",
+        "se4211",
+        "qi3211",
+        "hong2111"
+      ],
+      "correctSides": [
+        "se4111",
+        "se4211"
+      ],
+      "sampleVocab": [
+        "五颜六色",
+        "紫色"
+      ],
+	  "sampleSentence": "农历新年是红色的，圣诞是白色的。儿童节是五颜六色的。"
     }
   ]
 }

@@ -21,15 +21,16 @@ public class BackGroudMusic : MonoBehaviour {
     }
     public void OnEnable()
     {
-        Debug.Log("OnEnable called");
+        //Debug.Log("OnEnable called");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Scene loaded: " + scene.name);
+        //Debug.Log("Scene loaded: " + scene.name);
         switch (scene.name)
         {
             case "HomeScreen":
+			if(audioSource.clip != bgmClips[0])
                 PlaySceneBGM(0);
                 break;
             case "Intro":
