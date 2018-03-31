@@ -6,12 +6,16 @@ public class NpcAgent : MonoBehaviour {
     private NavMeshAgent agent;
     private bool caught = false;
     public GameObject mas;
+    public GameObject gameManager;
+    private OverallGameManager ogm;
     public int count = 26;
     // Use this for initialization
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         mas.GetComponent<NavMeshAgent>().speed = 0.7f;
+        ogm = gameManager.GetComponent<OverallGameManager>();
+        Debug.Log("faulty OGM name " + ogm.name);
     }
 
     void Update()
@@ -46,10 +50,10 @@ public class NpcAgent : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.name == "Mas1") {
-            Debug.Log("caught");
+        if (other.gameObject.name == "Mas1") { 
             agent.isStopped = true;
             caught = true;
+            ogm.SendMessage("Result", false);
             mas.GetComponent<NavMeshAgent>().speed = 0;
         }
     }
