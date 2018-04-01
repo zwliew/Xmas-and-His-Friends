@@ -86,7 +86,7 @@ public class MazeDisplayController : MonoBehaviour {
     private List<Vector2> GetNodes(int number)
     {
         int row = 0;
-        int col = Random.Range(0, 4);
+        int col = 2;
         Vector2 newNode = new Vector2(row, col);
         List<Vector2> nodes = new List<Vector2>();
         nodes.Add(newNode);
@@ -206,7 +206,7 @@ public class MazeDisplayController : MonoBehaviour {
         GameObject tempXmas = new GameObject();
         tempXmas = Instantiate(xmas);
         tempXmas.SetActive(true);
-        tempXmas.transform.position = new Vector3(0.11f, 0.019f, tempBridge.transform.position.z + 0.113f);
+        tempXmas.transform.position = new Vector3(1.24f, 0.019f, 2.013f);
         GameObject tempEnd = new GameObject();
         tempEnd = Instantiate(endBridge);
         tempEnd.transform.position = new Vector3(-6.68f, -0.7f, adjacentTiles[1].z + 0.18f);
