@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class JsonData2
 {
-    public Sentences[] sentences;
+    public Sentences[] sentences{ get; set;}
 }

@@ -46,6 +46,7 @@ public class MazeDisplayController : MonoBehaviour {
                 GameObject tempGo = Instantiate(space);
                 spaces.Add(tempGo);
                 tempGo.transform.position = new Vector3(-1.04f * j, 0, 1.04f * i);
+                tempGo.SetActive(true);
             }
         }
     }

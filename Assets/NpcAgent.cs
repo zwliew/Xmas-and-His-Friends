@@ -13,7 +13,6 @@ public class NpcAgent : MonoBehaviour {
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        mas.GetComponent<NavMeshAgent>().speed = 0.7f;
         ogm = gameManager.GetComponent<OverallGameManager>();
         Debug.Log("faulty OGM name " + ogm.name);
     }
@@ -42,8 +41,10 @@ public class NpcAgent : MonoBehaviour {
             agent.gameObject.transform.Rotate(0f, rotation.y, 0f);
             yield return new WaitForFixedUpdate();
         }
-        agent.SetDestination(targetLocation);
-        //xmasAnimation.SetMovingState(1);
+        if (agent.isOnNavMesh)
+        {
+            agent.SetDestination(targetLocation);
+        }
         //Debug.Log("move to location is called");
     }
 
