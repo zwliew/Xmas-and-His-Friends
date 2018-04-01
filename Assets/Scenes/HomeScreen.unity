@@ -1418,13 +1418,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: 50a449b782b9967408e6cfae4070621e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.500001
+      value: 1.5000029
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: 50a449b782b9967408e6cfae4070621e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.500001
+      value: 1.5000029
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9500000, guid: 50a449b782b9967408e6cfae4070621e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1758a1d69c69c06499be14e6667cf1db, type: 2}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 50a449b782b9967408e6cfae4070621e, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 50a449b782b9967408e6cfae4070621e, type: 3}
   m_IsPrefabParent: 0
 --- !u!4 &315348381 stripped
@@ -7778,6 +7783,8 @@ GameObject:
   - component: {fileID: 1883136895}
   - component: {fileID: 1883136894}
   - component: {fileID: 1883136893}
+  - component: {fileID: 1883136898}
+  - component: {fileID: 1883136899}
   m_Layer: 0
   m_Name: Mas1
   m_TagString: Untagged
@@ -7792,7 +7799,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1883136891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8510001, y: 0.15833327, z: 0.801}
+  m_LocalPosition: {x: -0.8510001, y: 0.1583333, z: 0.801}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 315348381}
@@ -7854,7 +7861,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -7878,7 +7885,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!114 &1883136894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7940,6 +7947,36 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1883136898
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883136891}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 74659f5d76584ab4184ac7ed029e6c52, type: 3}
+  m_Controller: {fileID: 9100000, guid: b2fafa548e540984ba208fba749e2e25, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1883136899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883136891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ed194501c25054dab554ea2b8a33f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdFlag: 
+  holdFlagTwo: 0
 --- !u!4 &1916810916 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: 24b557cf5b58c4543b43836aed6abae9, type: 3}
