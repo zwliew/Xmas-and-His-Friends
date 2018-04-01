@@ -51,9 +51,9 @@ public class ShopDisplayController : MonoBehaviour
 		curSelectedItem = null;
 		panelController = panel.gameObject.GetComponent<PanelController>();
 		shopWindowContent.GetComponent<RectTransform> ().anchoredPosition = new Vector3 (pagePositions[pageNumber], 0f, 0f);
-		buttonPool = new UIObjectPool(prefabItemButton, shopWindowContent.transform);
-//		buttonPool = gameObject.AddComponent<UIObjectPool>();
-//		buttonPool.InitializeObjectPool (prefabItemButton, shopWindowContent.transform);
+		//buttonPool = new UIObjectPool(prefabItemButton, shopWindowContent.transform);
+		buttonPool = gameObject.AddComponent<UIObjectPool>();
+		buttonPool.InitializeObjectPool (prefabItemButton, shopWindowContent.transform);
 
 		RefreshShopDisplay ();
     }
@@ -72,13 +72,21 @@ public class ShopDisplayController : MonoBehaviour
            shopWindowContent.transform.GetChild(i).gameObject.SetActive(false);
            //Debug.Log("clearing existing items in the shop");
         }
+		Debug.Log("itemsCount:" +items.Count);
 
 		foreach (ShopItemData itemData in items) {
+
             //Button item = buttonPool.GetButton();
             Instantiate(prefabItemButton, shopWindowContent.transform);
             Button item = Instantiate(prefabItemButton, shopWindowContent.transform);
             ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
+
+			//Button item = buttonPool.GetButton();
+			//Button item = Instantiate(prefabItemButton, shopWindowContent.transform);
+			//ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
+
 			itemScript.fullName = itemData.fullName;
+			itemScript.englishName = itemData.englishName;
 			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemData.englishName);
 			itemScript.cost = itemData.cost;
 			itemScript.description = itemData.description;
@@ -88,6 +96,7 @@ public class ShopDisplayController : MonoBehaviour
 
 		for (int i = 0; i < 4 - items.Count % 4; i++) {
 			Button item = buttonPool.GetButton();
+			//Button item = Instantiate(prefabItemButton, shopWindowContent.transform);
 			item.interactable = false;
 			item.transform.GetChild (0).GetComponent<Image> ().color = Color.clear;
 			item.GetComponent<Image> ().color= Color.clear;

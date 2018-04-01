@@ -23,7 +23,7 @@ public class MazeDataController : MonoBehaviour {
     {
         TextAsset dataAsJson = Resources.Load<TextAsset>("CharSpawner");
         JsonData2 sentenceData = JsonUtility.FromJson<JsonData2>(dataAsJson.text);
-        Debug.Log(dataAsJson.text);
+        Debug.Log(sentenceData);
         sentences = sentenceData.sentences;
         Debug.Log("sentences: " + sentenceData.sentences);
     }

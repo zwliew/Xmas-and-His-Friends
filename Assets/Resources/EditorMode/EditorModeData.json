@@ -16,8 +16,8 @@
             
 		},
 		{
-			"name": "mat",
-			"englishName": "mat",
+			"name": "carpet",
+			"englishName": "carpet",
 			"fullName": "毛茸茸的地毯",
 			"description": "毛茸茸的地毯，小盒会在这里打滚。我每次都会把他赶出去。",
             "cost": "20"

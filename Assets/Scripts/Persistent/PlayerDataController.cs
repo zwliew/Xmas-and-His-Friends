@@ -108,6 +108,7 @@ public class PlayerDataController : MonoBehaviour
 		}
 		string displayedShopItemsString = PlayerPrefs.GetString("displayedShopItems");
 		playerData.displayedShopItems = displayedShopItemsString.Split(',').ToList();
+		Debug.Assert (playerData.displayedShopItems.Count > 7);
 
         if (PlayerPrefs.HasKey("purchasedShopItems"))
         {

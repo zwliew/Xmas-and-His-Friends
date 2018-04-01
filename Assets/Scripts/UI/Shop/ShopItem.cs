@@ -16,6 +16,7 @@ public class ShopItem : MonoBehaviour
 {
     public int cost;
 	public string fullName;
+	public string englishName;
 	public string description;
 	public Sprite itemSprite;
 	public Sprite selectedSprite;
