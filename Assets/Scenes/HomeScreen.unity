@@ -4420,12 +4420,25 @@ MonoBehaviour:
   editorModeWindowContent: {fileID: 1161066942}
   prefabItemButton: {fileID: 114945442675568074, guid: e6289879edf512843abac29f369a684d,
     type: 2}
-  mas: {fileID: 0}
+  mas: {fileID: 1883136891}
   furnitures:
   - {fileID: 410046509}
   - {fileID: 709365379}
   - {fileID: 753369262}
   - {fileID: 923094250}
+  - {fileID: 467379814}
+  - {fileID: 1746669016}
+  - {fileID: 1531277223}
+  - {fileID: 410046509}
+  - {fileID: 1675279930}
+  - {fileID: 1740195053}
+  - {fileID: 480592529}
+  - {fileID: 80529879}
+  - {fileID: 1158209793}
+  - {fileID: 792248689}
+  - {fileID: 2139756242}
+  - {fileID: 290828394}
+  - {fileID: 357085141}
 --- !u!114 &1054708530
 MonoBehaviour:
   m_ObjectHideFlags: 0
