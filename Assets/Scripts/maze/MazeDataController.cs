@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System.Text;
+
 public class MazeDataController : MonoBehaviour {
     public int length = 12;
     private string[] sentences;
@@ -23,7 +25,7 @@ public class MazeDataController : MonoBehaviour {
     {
         string path = "Assets/Resources/Maze/CharSpawner.txt";
         //Read the text from directly from the test.txt file
-        StreamReader reader = new StreamReader(path);
+        StreamReader reader = new StreamReader(path, Encoding.GetEncoding("gb2312") );
         Debug.Log(reader == null);
         for(int i = 0; i < 51; i++)
         {
@@ -34,23 +36,22 @@ public class MazeDataController : MonoBehaviour {
         reader.Close();
     }
 
-     private List<string>[] GetRandomSentence()
+     private List<string> GetRandomSentence()
     {
-        List<string>[] pair = new List<string>[2];
-        Debug.Log(pair[0][0] == null);
-        int index = Random.Range(0, 51);
+        List<string> characters = new List<string>();
+        int index = Random.Range(0, 49);
         for (int i = 0; i < sentences[index].Length; i++)
         {
-            
-            Debug.Log(i);
+            string indiChar = sentences[index].Substring(i, 1);
+            characters.Add(indiChar);
+            Debug.Log(i + " " + characters[i]);
         }
         for(int i = 0; i < (25 - sentences[index].Length); i++)
         {
             int randomInt = Random.Range(0, 100);
-            Debug.Log(sentences[20] == null);
-             string test = sentences[20].Substring(0,1);
+            Debug.Log(i);
         }
-        return pair;
+        return characters;
     }
     private void Refresh()
     {
