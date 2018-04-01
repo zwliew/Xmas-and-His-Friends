@@ -1,0 +1,6921 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SprFRoomSelectionWalkAnimation
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.7069847, y: 0, z: 0, w: 0.70722884}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.7069847, y: 0, z: 0, w: 0.70722884}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.49954772, y: -0.5051857, z: 0.4947104, w: 0.50050086}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.49954772, y: -0.5051857, z: 0.4947104, w: 0.50050086}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.018173613, y: 0.7184998, z: -0.69522285, w: -0.0096432865}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.018173613, y: 0.7184998, z: -0.69522285, w: -0.0096432865}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.66847384, y: -0.18325944, z: -0.15728688, w: 0.7034341}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.12588501, y: 0.46563148, z: 0.47135353, w: 0.10585785}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: {x: -0.6734449, y: -0.16378339, z: -0.13755499, w: 0.70761967}
+        inSlope: {x: -0.21886826, y: 0.9301901, z: 0.9441376, w: 0.19025803}
+        outSlope: {x: -0.21743774, y: 0.9305477, z: 0.94521046, w: 0.19311905}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: {x: -0.6845032, y: -0.10521379, z: -0.07815781, w: 0.7171309}
+        inSlope: {x: -0.2603531, y: 1.7484426, z: 1.7688274, w: 0.2002716}
+        outSlope: {x: -0.2589226, y: 1.7477275, z: 1.7695428, w: 0.20170213}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: {x: -0.69217414, y: -0.017716154, z: 0.010092363, w: 0.72144246}
+        inSlope: {x: -0.057220463, y: 2.1021369, z: 2.115369, w: -0.031471256}
+        outSlope: {x: -0.058650963, y: 2.1021364, z: 2.113938, w: -0.03290176}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: {x: -0.68914765, y: 0.070032015, z: 0.098208085, w: 0.7145111}
+        inSlope: {x: 0.16593932, y: 1.7548797, z: 1.7609594, w: -0.25606152}
+        outSlope: {x: 0.16379358, y: 1.7548801, z: 1.7600657, w: -0.25534633}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: {x: -0.6775173, y: 0.14866996, z: 0.17703262, w: 0.69823134}
+        inSlope: {x: 0.003576279, y: 0.0016093255, z: 0, w: 0.0014305116}
+        outSlope: {x: 0.0028610227, y: 0.00017881392, z: -0.0010728835, w: 0.0028610227}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: {x: -0.68865436, y: 0.07009961, z: 0.098159626, w: 0.7149866}
+        inSlope: {x: -0.16093253, y: -1.7572043, z: -1.7600653, w: 0.25892255}
+        outSlope: {x: -0.16164784, y: -1.759172, z: -1.7613177, w: 0.26035315}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: {x: -0.69142735, y: -0.017705455, z: 0.010110199, w: 0.7221582}
+        inSlope: {x: 0.054359447, y: -2.1046405, z: -2.1142964, w: 0.028610237}
+        outSlope: {x: 0.05435941, y: -2.1024933, z: -2.1132221, w: 0.031471238}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: {x: -0.684008, y: -0.10526791, z: -0.0780853, w: 0.71760315}
+        inSlope: {x: 0.2532004, y: -1.7484418, z: -1.7659656, w: -0.20742406}
+        outSlope: {x: 0.25033957, y: -1.745582, z: -1.7652516, w: -0.2059937}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: {x: -0.67320144, y: -0.16383031, z: -0.13749915, w: 0.70785123}
+        inSlope: {x: 0.21314625, y: -0.9298327, z: -0.9452107, w: -0.19741063}
+        outSlope: {x: 0.21028523, y: -0.9269717, z: -0.94342256, w: -0.19598012}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.66847384, y: -0.18325944, z: -0.15728688, w: 0.7034341}
+        inSlope: {x: 0.12016299, y: -0.46205533, z: -0.47242653, w: -0.11444095}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002/Bone.005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0008431038, y: 0.00047657808, z: 0.025922434, w: 0.9996635}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.000019557774, y: 0.0032183016, z: 0.17510355, w: -0.0042915344}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: {x: 0.00084237696, y: 0.0010012964, z: 0.0544595, w: 0.9985151}
+        inSlope: {x: -0.00023050234, y: 0.011406373, z: 0.6212443, w: -0.034332275}
+        outSlope: {x: -0.00023050235, y: 0.011420344, z: 0.6218255, w: -0.033617023}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: {x: 0.0008356219, y: 0.0026435317, z: 0.14377324, w: 0.98960674}
+        inSlope: {x: 0.000001047738, y: 0.000019557776, z: 0.0009834768, w: -0.0003576279}
+        outSlope: {x: 0.00000034924594, y: -0.00001536682, z: -0.0009834765, w: 0.00035762784}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: {x: 0.0008423769, y: 0.0010012962, z: 0.054459486, w: 0.9985152}
+        inSlope: {x: -0.00038731372, y: -0.0114399, z: -0.62137836, w: 0.033974644}
+        outSlope: {x: -0.00038975858, y: -0.011427331, z: -0.6207974, w: 0.033617027}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.0008431038, y: 0.00047657808, z: 0.025922434, w: 0.9996635}
+        inSlope: {x: -0.000011175874, y: -0.0032210962, z: -0.17499183, w: 0.0042915354}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.69726646, y: 0.003909573, z: 0.004167527, w: 0.71678925}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.69726646, y: 0.003909573, z: 0.004167527, w: 0.71678925}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.67341834, y: -0.16715807, z: -0.17348988, w: 0.69890434}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.12302399, y: 0.4774332, z: 0.4938841, w: 0.11587143}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: {x: -0.67827576, y: -0.1471884, z: -0.1528608, w: 0.70349926}
+        inSlope: {x: -0.20885468, y: 0.95272064, z: 0.98884106, w: 0.21457672}
+        outSlope: {x: -0.20742416, y: 0.9548664, z: 0.9909868, w: 0.21600723}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: {x: -0.6883555, y: -0.0871875, z: -0.090493076, w: 0.7144061}
+        inSlope: {x: -0.21457672, y: 1.7920732, z: 1.8600225, w: 0.24604797}
+        outSlope: {x: -0.21314622, y: 1.7926098, z: 1.8602015, w: 0.24890901}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: {x: -0.69305766, y: 0.002444246, z: 0.0025249925, w: 0.7208736}
+        inSlope: {x: 0.015735628, y: 2.1505897, z: 2.2292566, w: 0.0028610232}
+        outSlope: {x: 0.015735624, y: 2.150852, z: 2.2295134, w: -0.0014305114}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: {x: -0.687068, y: 0.09211806, z: 0.09542102, w: 0.71438557}
+        inSlope: {x: 0.23174283, y: 1.7883179, z: 1.8562672, w: -0.25606152}
+        outSlope: {x: 0.23031236, y: 1.7867984, z: 1.8544794, w: -0.25677684}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: {x: -0.6722284, y: 0.17189299, z: 0.17839195, w: 0.6976663}
+        inSlope: {x: -0.003576279, y: 0.00017881395, z: 0.0019669535, w: -0.003576279}
+        outSlope: {x: -0.004291534, y: -0.001966953, z: -0.00017881392, w: -0.0035762782}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: {x: -0.6877272, y: 0.092029564, z: 0.09550592, w: 0.713751}
+        inSlope: {x: -0.22816655, y: -1.7886755, z: -1.8558202, w: 0.26035306}
+        outSlope: {x: -0.22602087, y: -1.7902856, z: -1.8575196, w: 0.26035315}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: {x: -0.69304836, y: 0.0024442947, z: 0.0025249256, w: 0.7208825}
+        inSlope: {x: 0.0014305118, y: -2.1504953, z: -2.229179, w: 0.01573563}
+        outSlope: {x: -0.0014305108, y: -2.15084, z: -2.2295294, w: 0.012874597}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: {x: -0.6876767, y: -0.08727366, z: -0.090410225, w: 0.7150595}
+        inSlope: {x: 0.21600713, y: -1.7901055, z: -1.8576971, w: -0.24318683}
+        outSlope: {x: 0.22029883, y: -1.7888551, z: -1.8564467, w: -0.24318701}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: {x: -0.6779414, y: -0.14726129, z: -0.15279111, w: 0.70382136}
+        inSlope: {x: 0.19741063, y: -0.9520056, z: -0.99062943, w: -0.22172934}
+        outSlope: {x: 0.19884114, y: -0.95129037, z: -0.98848367, w: -0.22315985}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.67341834, y: -0.16715807, z: -0.17348988, w: 0.69890434}
+        inSlope: {x: 0.11587146, y: -0.47528756, z: -0.4949571, w: -0.12302402}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007/Bone.008
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0068977783, y: 0.020465244, z: -0.12937748, w: 0.99136025}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.00014621764, y: -0.000055879354, z: -0.007122755, w: -0.0009536743}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.0068977783, y: 0.020465244, z: -0.12937748, w: 0.99136025}
+        inSlope: {x: -0.00014808029, y: 0.000055879354, z: 0.007122755, w: 0.0009536743}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0029709975, y: 0.002970923, z: -0.7071006, w: 0.70710045}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.0029709975, y: 0.002970923, z: -0.7071006, w: 0.70710045}
+        inSlope: {x: 0.0000013969839, y: -0.0000004656613, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.010
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.45668104, y: 0.23408003, z: 0.2542886, w: 0.8197477}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.29325485, y: -0.74636936, z: -0.44202805, w: 0.18596649}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: {x: -0.46860567, y: 0.20279554, z: 0.23563696, w: 0.8268966}
+        inSlope: {x: -0.562191, y: -1.5231371, z: -0.9087324, w: 0.31471252}
+        outSlope: {x: -0.562191, y: -1.5252829, z: -0.9098053, w: 0.31471252}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: {x: -0.500416, y: 0.10598864, z: 0.17685176, w: 0.8408768}
+        inSlope: {x: -0.85258484, y: -2.9391646, z: -1.7935038, w: 0.24032593}
+        outSlope: {x: -0.8511544, y: -2.9404166, z: -1.7935039, w: 0.24175645}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: {x: -0.53499013, y: -0.04236926, z: 0.083783306, w: 0.83962536}
+        inSlope: {x: -0.62370306, y: -3.5526755, z: -2.2466185, w: -0.35190585}
+        outSlope: {x: -0.62370294, y: -3.5526748, z: -2.245724, w: -0.3519058}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: {x: -0.55251443, y: -0.18937704, z: -0.011955291, w: 0.8116164}
+        inSlope: {x: -0.17166136, y: -2.8806922, z: -1.8943546, w: -0.81825244}
+        outSlope: {x: -0.17023085, y: -2.878904, z: -1.8918512, w: -0.8153914}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: {x: -0.5544375, y: -0.28381675, z: -0.07542111, w: 0.77869046}
+        inSlope: {x: 0.03290176, y: -1.4784335, z: -0.9995698, w: -0.61082834}
+        outSlope: {x: 0.034332283, y: -1.4748577, z: -0.997782, w: -0.6108285}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: {x: -0.55336744, y: -0.3140722, z: -0.0961075, w: 0.76544535}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: {x: -0.5544373, y: -0.28381667, z: -0.07542084, w: 0.7786905}
+        inSlope: {x: -0.028610216, y: 1.4727108, z: 1.0070796, w: 0.6108281}
+        outSlope: {x: -0.03290177, y: 1.4748577, z: 1.0081532, w: 0.61655056}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: {x: -0.55251443, y: -0.18937689, z: -0.011955202, w: 0.8116165}
+        inSlope: {x: 0.17452244, y: 2.8696067, z: 1.921535, w: 0.81825274}
+        outSlope: {x: 0.17595296, y: 2.8710372, z: 1.9236808, w: 0.81682223}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: {x: -0.5349899, y: -0.04236926, z: 0.08378335, w: 0.8396255}
+        inSlope: {x: 0.6265642, y: 3.5303245, z: 2.2811298, w: 0.3490449}
+        outSlope: {x: 0.6222722, y: 3.530143, z: 2.2796977, w: 0.3476141}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: {x: -0.50041604, y: 0.105988756, z: 0.17685182, w: 0.84087676}
+        inSlope: {x: 0.8468624, y: 2.9196725, z: 1.8106691, w: -0.24604785}
+        outSlope: {x: 0.846863, y: 2.9169924, z: 1.8095975, w: -0.24604803}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: {x: -0.46860576, y: 0.2027956, z: 0.23563704, w: 0.82689655}
+        inSlope: {x: 0.55861485, y: 1.5192035, z: 0.9140971, w: -0.31614313}
+        outSlope: {x: 0.55718434, y: 1.5170578, z: 0.91230893, w: -0.3147126}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.45668104, y: 0.23408003, z: 0.2542886, w: 0.8197477}
+        inSlope: {x: 0.29397017, y: 0.744939, z: 0.44345868, w: -0.18739705}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.010/Bone.011
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.014247479, y: -0.0142475385, z: 0.7069633, w: 0.7069632}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.0000018626451, y: 0.0000018626451, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.014247479, y: -0.0142475385, z: 0.7069633, w: 0.7069632}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.012
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.4911465, y: 0.14085759, z: 0.20603493, w: 0.83455616}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.18525124, y: -0.57542324, z: -0.38194656, w: 0.08010864}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: {x: -0.49863234, y: 0.11678494, z: 0.18998455, w: 0.8376354}
+        inSlope: {x: -0.34832954, y: -1.1517406, z: -0.7688999, w: 0.13017654}
+        outSlope: {x: -0.3476143, y: -1.1538863, z: -0.7699728, w: 0.12731552}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: {x: -0.5182617, y: 0.044446737, z: 0.14115255, w: 0.84232134}
+        inSlope: {x: -0.5249977, y: -2.1557808, z: -1.4623404, w: 0.035762787}
+        outSlope: {x: -0.5249978, y: -2.1564963, z: -1.4623405, w: 0.03433228}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: {x: -0.53959817, y: -0.06280852, z: 0.067121826, w: 0.83688927}
+        inSlope: {x: -0.40197375, y: -2.5645497, z: -1.7815233, w: -0.30756}
+        outSlope: {x: -0.40197366, y: -2.5641916, z: -1.7825959, w: -0.31042096}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: {x: -0.5515082, y: -0.16896647, z: -0.008081585, w: 0.8168376}
+        inSlope: {x: -0.14162062, y: -2.1107194, z: -1.5056131, w: -0.54788584}
+        outSlope: {x: -0.14519693, y: -2.109647, z: -1.5043617, w: -0.54931647}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: {x: -0.5539848, y: -0.2625094, z: -0.07602875, w: 0.78639}
+        inSlope: {x: 0, y: -0.0010728837, z: -0.00089406973, w: 0}
+        outSlope: {x: 0.0007152557, y: 0.0014305114, z: 0.0010728835, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: {x: -0.5515082, y: -0.16896643, z: -0.008081511, w: 0.8168376}
+        inSlope: {x: 0.13947485, y: 2.0990965, z: 1.5245674, w: 0.5421638}
+        outSlope: {x: 0.13875964, y: 2.102137, z: 1.5259985, w: 0.545025}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: {x: -0.539598, y: -0.0628084, z: 0.06712176, w: 0.8368893}
+        inSlope: {x: 0.39625177, y: 2.5545366, z: 1.7974381, w: 0.30183798}
+        outSlope: {x: 0.3962515, y: 2.5547135, z: 1.7977945, w: 0.30183777}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: {x: -0.5182617, y: 0.04444679, z: 0.14115258, w: 0.84232134}
+        inSlope: {x: 0.5192754, y: 2.147912, z: 1.4698498, w: -0.040054303}
+        outSlope: {x: 0.51641476, y: 2.1475558, z: 1.4691356, w: -0.041484844}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: {x: -0.4986323, y: 0.11678504, z: 0.18998459, w: 0.8376354}
+        inSlope: {x: 0.3454686, y: 1.1517408, z: 0.77211875, w: -0.12874606}
+        outSlope: {x: 0.3454686, y: 1.1490586, z: 0.7703306, w: -0.13017657}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.4911465, y: 0.14085759, z: 0.20603493, w: 0.83455616}
+        inSlope: {x: 0.18525128, y: 0.57506573, z: 0.3826619, w: -0.08153918}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.012/Bone.013
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.46790352, y: -0.52442396, z: -0.52800965, w: 0.47670907}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.021100044, y: 0.024139881, z: -0.013232231, w: -0.008404255}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: {x: 0.47443965, y: -0.51671654, z: -0.53516245, w: 0.47065082}
+        inSlope: {x: -0.11005998, y: -0.08547306, z: 0.07331371, w: 0.100404024}
+        outSlope: {x: -0.11086465, y: -0.08547307, z: 0.07295609, w: 0.10067225}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.45767176, y: -0.5285223, z: -0.5250622, w: 0.4852942}
+        inSlope: {x: -0.040054325, y: -0.023603441, z: 0.01358986, w: 0.02717972}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.014
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.5973263, y: 26.69284, z: -2.5295258}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.5973263, y: 26.69284, z: -2.5295258}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.00605048, y: -0.033510353, z: -0.15480253}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.00605048, y: -0.033510353, z: -0.15480253}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0000000018325954, y: 0.048874617, z: -3.3178366e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.0000000018325954, y: 0.048874617, z: -3.3178366e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0000000015459954, y: 0.028383395, z: 0.00000001503191}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.0000000015459954, y: 0.028383395, z: 0.00000001503191}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002/Bone.005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0000000051585993, y: 0.03183974, z: 8.1956386e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.0000000051585993, y: 0.03183974, z: 8.1956386e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0000000018325954, y: 0.048874617, z: -3.3178366e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.0000000018325954, y: 0.048874617, z: -3.3178366e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0000000032513197, y: 0.030086994, z: 0.000000004500067}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.0000000032513197, y: 0.030086994, z: 0.000000004500067}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007/Bone.008
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.000000008703028, y: 0.032951813, z: -0.0000000011481188}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.000000008703028, y: 0.032951813, z: -0.0000000011481188}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.005585058, y: -0.033510353, z: -0.15480253}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.005585058, y: -0.033510353, z: -0.15480253}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.010
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 3.9360304e-10, y: 0.038463302, z: -0.0000000066820607}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 3.9360304e-10, y: 0.038463302, z: -0.0000000066820607}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.010/Bone.011
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.005585058, y: -0.033510353, z: -0.15480253}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.005585058, y: -0.033510353, z: -0.15480253}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.012
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0000000010714233, y: 0.04011056, z: -7.7137996e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.0000000010714233, y: 0.04011056, z: -7.7137996e-10}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.012/Bone.013
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.006760023, y: -0.034273848, z: -0.15592478}
+        inSlope: {x: 0.0010109997, y: 0.0067375945, z: 0.010662689}
+        outSlope: {x: 0.0010109997, y: 0.0067375945, z: 0.010662689}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: {x: -0.006593728, y: -0.033176225, z: -0.1541875}
+        inSlope: {x: 0.0029800844, y: 0.019605331, z: 0.031032028}
+        outSlope: {x: 0.0029800844, y: 0.019605331, z: 0.031032028}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833333
+        value: {x: -0.0060745114, y: -0.030014398, z: -0.14917716}
+        inSlope: {x: 0.003505083, y: 0.019553952, z: 0.031029288}
+        outSlope: {x: 0.003505083, y: 0.019553952, z: 0.031029288}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: {x: -0.00600087, y: -0.029736752, z: -0.14873306}
+        inSlope: {x: 0.0017673967, y: 0.0066634933, z: 0.010658339}
+        outSlope: {x: 0.0017673967, y: 0.0066634933, z: 0.010658339}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: {x: -0.0059974454, y: -0.030057492, z: -0.1489662}
+        inSlope: {x: 0.0000821829, y: -0.0076977555, z: -0.0055950177}
+        outSlope: {x: 0.0000821829, y: -0.0076977555, z: -0.0055950177}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: {x: -0.006350336, y: -0.034569044, z: -0.15227178}
+        inSlope: {x: -0.0019245377, y: -0.0221918, z: -0.016272116}
+        outSlope: {x: -0.0019245377, y: -0.0221918, z: -0.016272116}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.0063784276, y: -0.0348867, z: -0.15250474}
+        inSlope: {x: -0.0006742002, y: -0.007623712, z: -0.0055911266}
+        outSlope: {x: -0.0006742002, y: -0.007623712, z: -0.0055911266}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.014
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 100, y: 100, z: 100}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 100, y: 100, z: 100}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.99999994, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.99999994, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.99999994, y: 1.0000002, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.99999994, y: 1.0000002, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.9999999, y: 0.99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.9999999, y: 0.99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002/Bone.005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007/Bone.008
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1.0000001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1, y: 1, z: 1.0000001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.010
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1.0000001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1, y: 1, z: 1.0000001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.010/Bone.011
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.012
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.99999994, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.99999994, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.012/Bone.013
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1.0000001, y: 1.0000002, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 1.0000001, y: 1.0000002, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature/Bone.014
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 407025747
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3948027363
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2526880427
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1942661658
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3444980016
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 523205706
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1176041535
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4045479270
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2900576558
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 407025747
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2104266162
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1899199901
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3896912954
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3948027363
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2526880427
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2553075893
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1942661658
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3444980016
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 523205706
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1176041535
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4045479270
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2900576558
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2104266162
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1899199901
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3896912954
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2553075893
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2104266162
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1899199901
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3896912954
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3948027363
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2526880427
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2553075893
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1942661658
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3444980016
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 523205706
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1176041535
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4045479270
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2900576558
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 407025747
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.5
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.5973263
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.5973263
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 26.69284
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 26.69284
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -2.5295258
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -2.5295258
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.7069847
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.7069847
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.70722884
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.70722884
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.00605048
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.00605048
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.033510353
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.033510353
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.15480253
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.15480253
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.49954772
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.49954772
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.5051857
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.5051857
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.4947104
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.4947104
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.50050086
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.50050086
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0000000018325954
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0000000018325954
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.048874617
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.048874617
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -3.3178366e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -3.3178366e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.018173613
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.018173613
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.7184998
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.7184998
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.69522285
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.69522285
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0096432865
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0096432865
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.0000002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1.0000002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.0000000015459954
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.0000000015459954
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.028383395
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.028383395
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.00000001503191
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.00000001503191
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.66847384
+        inSlope: 0
+        outSlope: -0.12588501
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.6734449
+        inSlope: -0.21886826
+        outSlope: -0.21743774
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.6845032
+        inSlope: -0.2603531
+        outSlope: -0.2589226
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -0.69217414
+        inSlope: -0.057220463
+        outSlope: -0.058650963
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.68914765
+        inSlope: 0.16593932
+        outSlope: 0.16379358
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.6775173
+        inSlope: 0.003576279
+        outSlope: 0.0028610227
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.68865436
+        inSlope: -0.16093253
+        outSlope: -0.16164784
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -0.69142735
+        inSlope: 0.054359447
+        outSlope: 0.05435941
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.684008
+        inSlope: 0.2532004
+        outSlope: 0.25033957
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.67320144
+        inSlope: 0.21314625
+        outSlope: 0.21028523
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.66847384
+        inSlope: 0.12016299
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.18325944
+        inSlope: 0
+        outSlope: 0.46563148
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.16378339
+        inSlope: 0.9301901
+        outSlope: 0.9305477
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.10521379
+        inSlope: 1.7484426
+        outSlope: 1.7477275
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -0.017716154
+        inSlope: 2.1021369
+        outSlope: 2.1021364
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.070032015
+        inSlope: 1.7548797
+        outSlope: 1.7548801
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.14866996
+        inSlope: 0.0016093255
+        outSlope: 0.00017881392
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.07009961
+        inSlope: -1.7572043
+        outSlope: -1.759172
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -0.017705455
+        inSlope: -2.1046405
+        outSlope: -2.1024933
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.10526791
+        inSlope: -1.7484418
+        outSlope: -1.745582
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.16383031
+        inSlope: -0.9298327
+        outSlope: -0.9269717
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.18325944
+        inSlope: -0.46205533
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.15728688
+        inSlope: 0
+        outSlope: 0.47135353
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.13755499
+        inSlope: 0.9441376
+        outSlope: 0.94521046
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.07815781
+        inSlope: 1.7688274
+        outSlope: 1.7695428
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.010092363
+        inSlope: 2.115369
+        outSlope: 2.113938
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.098208085
+        inSlope: 1.7609594
+        outSlope: 1.7600657
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.17703262
+        inSlope: 0
+        outSlope: -0.0010728835
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.098159626
+        inSlope: -1.7600653
+        outSlope: -1.7613177
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.010110199
+        inSlope: -2.1142964
+        outSlope: -2.1132221
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.0780853
+        inSlope: -1.7659656
+        outSlope: -1.7652516
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.13749915
+        inSlope: -0.9452107
+        outSlope: -0.94342256
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.15728688
+        inSlope: -0.47242653
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.7034341
+        inSlope: 0
+        outSlope: 0.10585785
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.70761967
+        inSlope: 0.19025803
+        outSlope: 0.19311905
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.7171309
+        inSlope: 0.2002716
+        outSlope: 0.20170213
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.72144246
+        inSlope: -0.031471256
+        outSlope: -0.03290176
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.7145111
+        inSlope: -0.25606152
+        outSlope: -0.25534633
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.69823134
+        inSlope: 0.0014305116
+        outSlope: 0.0028610227
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.7149866
+        inSlope: 0.25892255
+        outSlope: 0.26035315
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.7221582
+        inSlope: 0.028610237
+        outSlope: 0.031471238
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.71760315
+        inSlope: -0.20742406
+        outSlope: -0.2059937
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.70785123
+        inSlope: -0.19741063
+        outSlope: -0.19598012
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.7034341
+        inSlope: -0.11444095
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.9999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.9999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.0000000051585993
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.0000000051585993
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.03183974
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.03183974
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 8.1956386e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 8.1956386e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.0008431038
+        inSlope: 0
+        outSlope: -0.000019557774
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.00084237696
+        inSlope: -0.00023050234
+        outSlope: -0.00023050235
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.0008356219
+        inSlope: 0.000001047738
+        outSlope: 0.00000034924594
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.0008423769
+        inSlope: -0.00038731372
+        outSlope: -0.00038975858
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.0008431038
+        inSlope: -0.000011175874
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.00047657808
+        inSlope: 0
+        outSlope: 0.0032183016
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.0010012964
+        inSlope: 0.011406373
+        outSlope: 0.011420344
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.0026435317
+        inSlope: 0.000019557776
+        outSlope: -0.00001536682
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.0010012962
+        inSlope: -0.0114399
+        outSlope: -0.011427331
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.00047657808
+        inSlope: -0.0032210962
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.025922434
+        inSlope: 0
+        outSlope: 0.17510355
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.0544595
+        inSlope: 0.6212443
+        outSlope: 0.6218255
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.14377324
+        inSlope: 0.0009834768
+        outSlope: -0.0009834765
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.054459486
+        inSlope: -0.62137836
+        outSlope: -0.6207974
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.025922434
+        inSlope: -0.17499183
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.9996635
+        inSlope: 0
+        outSlope: -0.0042915344
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.9985151
+        inSlope: -0.034332275
+        outSlope: -0.033617023
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.98960674
+        inSlope: -0.0003576279
+        outSlope: 0.00035762784
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.9985152
+        inSlope: 0.033974644
+        outSlope: 0.033617027
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.9996635
+        inSlope: 0.0042915354
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0000000018325954
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0000000018325954
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.048874617
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.048874617
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -3.3178366e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -3.3178366e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.69726646
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.69726646
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.003909573
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.003909573
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.004167527
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.004167527
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.71678925
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.71678925
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.0000000032513197
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.0000000032513197
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.030086994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.030086994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.000000004500067
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.000000004500067
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.67341834
+        inSlope: 0
+        outSlope: -0.12302399
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.67827576
+        inSlope: -0.20885468
+        outSlope: -0.20742416
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.6883555
+        inSlope: -0.21457672
+        outSlope: -0.21314622
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -0.69305766
+        inSlope: 0.015735628
+        outSlope: 0.015735624
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.687068
+        inSlope: 0.23174283
+        outSlope: 0.23031236
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.6722284
+        inSlope: -0.003576279
+        outSlope: -0.004291534
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.6877272
+        inSlope: -0.22816655
+        outSlope: -0.22602087
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -0.69304836
+        inSlope: 0.0014305118
+        outSlope: -0.0014305108
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.6876767
+        inSlope: 0.21600713
+        outSlope: 0.22029883
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.6779414
+        inSlope: 0.19741063
+        outSlope: 0.19884114
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.67341834
+        inSlope: 0.11587146
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.16715807
+        inSlope: 0
+        outSlope: 0.4774332
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.1471884
+        inSlope: 0.95272064
+        outSlope: 0.9548664
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.0871875
+        inSlope: 1.7920732
+        outSlope: 1.7926098
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.002444246
+        inSlope: 2.1505897
+        outSlope: 2.150852
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.09211806
+        inSlope: 1.7883179
+        outSlope: 1.7867984
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.17189299
+        inSlope: 0.00017881395
+        outSlope: -0.001966953
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.092029564
+        inSlope: -1.7886755
+        outSlope: -1.7902856
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.0024442947
+        inSlope: -2.1504953
+        outSlope: -2.15084
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.08727366
+        inSlope: -1.7901055
+        outSlope: -1.7888551
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.14726129
+        inSlope: -0.9520056
+        outSlope: -0.95129037
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.16715807
+        inSlope: -0.47528756
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.17348988
+        inSlope: 0
+        outSlope: 0.4938841
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.1528608
+        inSlope: 0.98884106
+        outSlope: 0.9909868
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.090493076
+        inSlope: 1.8600225
+        outSlope: 1.8602015
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.0025249925
+        inSlope: 2.2292566
+        outSlope: 2.2295134
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.09542102
+        inSlope: 1.8562672
+        outSlope: 1.8544794
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.17839195
+        inSlope: 0.0019669535
+        outSlope: -0.00017881392
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.09550592
+        inSlope: -1.8558202
+        outSlope: -1.8575196
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.0025249256
+        inSlope: -2.229179
+        outSlope: -2.2295294
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.090410225
+        inSlope: -1.8576971
+        outSlope: -1.8564467
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.15279111
+        inSlope: -0.99062943
+        outSlope: -0.98848367
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.17348988
+        inSlope: -0.4949571
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.69890434
+        inSlope: 0
+        outSlope: 0.11587143
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.70349926
+        inSlope: 0.21457672
+        outSlope: 0.21600723
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.7144061
+        inSlope: 0.24604797
+        outSlope: 0.24890901
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.7208736
+        inSlope: 0.0028610232
+        outSlope: -0.0014305114
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.71438557
+        inSlope: -0.25606152
+        outSlope: -0.25677684
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.6976663
+        inSlope: -0.003576279
+        outSlope: -0.0035762782
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.713751
+        inSlope: 0.26035306
+        outSlope: 0.26035315
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.7208825
+        inSlope: 0.01573563
+        outSlope: 0.012874597
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.7150595
+        inSlope: -0.24318683
+        outSlope: -0.24318701
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.70382136
+        inSlope: -0.22172934
+        outSlope: -0.22315985
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.69890434
+        inSlope: -0.12302402
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.000000008703028
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.000000008703028
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.032951813
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.032951813
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0000000011481188
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0000000011481188
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.0068977783
+        inSlope: 0
+        outSlope: 0.00014621764
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.0068977783
+        inSlope: -0.00014808029
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.020465244
+        inSlope: 0
+        outSlope: -0.000055879354
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.020465244
+        inSlope: 0.000055879354
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.12937748
+        inSlope: 0
+        outSlope: -0.007122755
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.12937748
+        inSlope: 0.007122755
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.99136025
+        inSlope: 0
+        outSlope: -0.0009536743
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.99136025
+        inSlope: 0.0009536743
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.005585058
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.005585058
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.033510353
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.033510353
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.15480253
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.15480253
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0029709975
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0029709975
+        inSlope: 0.0000013969839
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.002970923
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.002970923
+        inSlope: -0.0000004656613
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.7071006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.7071006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.70710045
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.70710045
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 3.9360304e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 3.9360304e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.038463302
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.038463302
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0000000066820607
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0000000066820607
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.45668104
+        inSlope: 0
+        outSlope: -0.29325485
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.46860567
+        inSlope: -0.562191
+        outSlope: -0.562191
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.500416
+        inSlope: -0.85258484
+        outSlope: -0.8511544
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -0.53499013
+        inSlope: -0.62370306
+        outSlope: -0.62370294
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.55251443
+        inSlope: -0.17166136
+        outSlope: -0.17023085
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: -0.5544375
+        inSlope: 0.03290176
+        outSlope: 0.034332283
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.55336744
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: -0.5544373
+        inSlope: -0.028610216
+        outSlope: -0.03290177
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.55251443
+        inSlope: 0.17452244
+        outSlope: 0.17595296
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -0.5349899
+        inSlope: 0.6265642
+        outSlope: 0.6222722
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.50041604
+        inSlope: 0.8468624
+        outSlope: 0.846863
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.46860576
+        inSlope: 0.55861485
+        outSlope: 0.55718434
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.45668104
+        inSlope: 0.29397017
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.23408003
+        inSlope: 0
+        outSlope: -0.74636936
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.20279554
+        inSlope: -1.5231371
+        outSlope: -1.5252829
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.10598864
+        inSlope: -2.9391646
+        outSlope: -2.9404166
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -0.04236926
+        inSlope: -3.5526755
+        outSlope: -3.5526748
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.18937704
+        inSlope: -2.8806922
+        outSlope: -2.878904
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: -0.28381675
+        inSlope: -1.4784335
+        outSlope: -1.4748577
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.3140722
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: -0.28381667
+        inSlope: 1.4727108
+        outSlope: 1.4748577
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.18937689
+        inSlope: 2.8696067
+        outSlope: 2.8710372
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -0.04236926
+        inSlope: 3.5303245
+        outSlope: 3.530143
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.105988756
+        inSlope: 2.9196725
+        outSlope: 2.9169924
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.2027956
+        inSlope: 1.5192035
+        outSlope: 1.5170578
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.23408003
+        inSlope: 0.744939
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.2542886
+        inSlope: 0
+        outSlope: -0.44202805
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.23563696
+        inSlope: -0.9087324
+        outSlope: -0.9098053
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.17685176
+        inSlope: -1.7935038
+        outSlope: -1.7935039
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.083783306
+        inSlope: -2.2466185
+        outSlope: -2.245724
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.011955291
+        inSlope: -1.8943546
+        outSlope: -1.8918512
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: -0.07542111
+        inSlope: -0.9995698
+        outSlope: -0.997782
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.0961075
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: -0.07542084
+        inSlope: 1.0070796
+        outSlope: 1.0081532
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.011955202
+        inSlope: 1.921535
+        outSlope: 1.9236808
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.08378335
+        inSlope: 2.2811298
+        outSlope: 2.2796977
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.17685182
+        inSlope: 1.8106691
+        outSlope: 1.8095975
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.23563704
+        inSlope: 0.9140971
+        outSlope: 0.91230893
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.2542886
+        inSlope: 0.44345868
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.8197477
+        inSlope: 0
+        outSlope: 0.18596649
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.8268966
+        inSlope: 0.31471252
+        outSlope: 0.31471252
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.8408768
+        inSlope: 0.24032593
+        outSlope: 0.24175645
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.83962536
+        inSlope: -0.35190585
+        outSlope: -0.3519058
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.8116164
+        inSlope: -0.81825244
+        outSlope: -0.8153914
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: 0.77869046
+        inSlope: -0.61082834
+        outSlope: -0.6108285
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.76544535
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: 0.7786905
+        inSlope: 0.6108281
+        outSlope: 0.61655056
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.8116165
+        inSlope: 0.81825274
+        outSlope: 0.81682223
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.8396255
+        inSlope: 0.3490449
+        outSlope: 0.3476141
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.84087676
+        inSlope: -0.24604785
+        outSlope: -0.24604803
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.82689655
+        inSlope: -0.31614313
+        outSlope: -0.3147126
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.8197477
+        inSlope: -0.18739705
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.005585058
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.005585058
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.033510353
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.033510353
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.15480253
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.15480253
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.014247479
+        inSlope: 0
+        outSlope: -0.0000018626451
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.014247479
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0142475385
+        inSlope: 0
+        outSlope: 0.0000018626451
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0142475385
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.7069633
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.7069633
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.7069632
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.7069632
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.0000000010714233
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.0000000010714233
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.04011056
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.04011056
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -7.7137996e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -7.7137996e-10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.4911465
+        inSlope: 0
+        outSlope: -0.18525124
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -0.49863234
+        inSlope: -0.34832954
+        outSlope: -0.3476143
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.5182617
+        inSlope: -0.5249977
+        outSlope: -0.5249978
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -0.53959817
+        inSlope: -0.40197375
+        outSlope: -0.40197366
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.5515082
+        inSlope: -0.14162062
+        outSlope: -0.14519693
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.5539848
+        inSlope: 0
+        outSlope: 0.0007152557
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.5515082
+        inSlope: 0.13947485
+        outSlope: 0.13875964
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -0.539598
+        inSlope: 0.39625177
+        outSlope: 0.3962515
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.5182617
+        inSlope: 0.5192754
+        outSlope: 0.51641476
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.4986323
+        inSlope: 0.3454686
+        outSlope: 0.3454686
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.4911465
+        inSlope: 0.18525128
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.14085759
+        inSlope: 0
+        outSlope: -0.57542324
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.11678494
+        inSlope: -1.1517406
+        outSlope: -1.1538863
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.044446737
+        inSlope: -2.1557808
+        outSlope: -2.1564963
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -0.06280852
+        inSlope: -2.5645497
+        outSlope: -2.5641916
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.16896647
+        inSlope: -2.1107194
+        outSlope: -2.109647
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.2625094
+        inSlope: -0.0010728837
+        outSlope: 0.0014305114
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.16896643
+        inSlope: 2.0990965
+        outSlope: 2.102137
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -0.0628084
+        inSlope: 2.5545366
+        outSlope: 2.5547135
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.04444679
+        inSlope: 2.147912
+        outSlope: 2.1475558
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.11678504
+        inSlope: 1.1517408
+        outSlope: 1.1490586
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.14085759
+        inSlope: 0.57506573
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.20603493
+        inSlope: 0
+        outSlope: -0.38194656
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.18998455
+        inSlope: -0.7688999
+        outSlope: -0.7699728
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.14115255
+        inSlope: -1.4623404
+        outSlope: -1.4623405
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.067121826
+        inSlope: -1.7815233
+        outSlope: -1.7825959
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -0.008081585
+        inSlope: -1.5056131
+        outSlope: -1.5043617
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.07602875
+        inSlope: -0.00089406973
+        outSlope: 0.0010728835
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.008081511
+        inSlope: 1.5245674
+        outSlope: 1.5259985
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.06712176
+        inSlope: 1.7974381
+        outSlope: 1.7977945
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.14115258
+        inSlope: 1.4698498
+        outSlope: 1.4691356
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.18998459
+        inSlope: 0.77211875
+        outSlope: 0.7703306
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.20603493
+        inSlope: 0.3826619
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.83455616
+        inSlope: 0
+        outSlope: 0.08010864
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.8376354
+        inSlope: 0.13017654
+        outSlope: 0.12731552
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.84232134
+        inSlope: 0.035762787
+        outSlope: 0.03433228
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.83688927
+        inSlope: -0.30756
+        outSlope: -0.31042096
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.8168376
+        inSlope: -0.54788584
+        outSlope: -0.54931647
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.78639
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.8168376
+        inSlope: 0.5421638
+        outSlope: 0.545025
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.8368893
+        inSlope: 0.30183798
+        outSlope: 0.30183777
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.84232134
+        inSlope: -0.040054303
+        outSlope: -0.041484844
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.8376354
+        inSlope: -0.12874606
+        outSlope: -0.13017657
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.83455616
+        inSlope: -0.08153918
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.99999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.006760023
+        inSlope: 0.0010109997
+        outSlope: 0.0010109997
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.006593728
+        inSlope: 0.0029800844
+        outSlope: 0.0029800844
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833333
+        value: -0.0060745114
+        inSlope: 0.003505083
+        outSlope: 0.003505083
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.00600087
+        inSlope: 0.0017673967
+        outSlope: 0.0017673967
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -0.0059974454
+        inSlope: 0.0000821829
+        outSlope: 0.0000821829
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.006350336
+        inSlope: -0.0019245377
+        outSlope: -0.0019245377
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0063784276
+        inSlope: -0.0006742002
+        outSlope: -0.0006742002
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.034273848
+        inSlope: 0.0067375945
+        outSlope: 0.0067375945
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.033176225
+        inSlope: 0.019605331
+        outSlope: 0.019605331
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833333
+        value: -0.030014398
+        inSlope: 0.019553952
+        outSlope: 0.019553952
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.029736752
+        inSlope: 0.0066634933
+        outSlope: 0.0066634933
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -0.030057492
+        inSlope: -0.0076977555
+        outSlope: -0.0076977555
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.034569044
+        inSlope: -0.0221918
+        outSlope: -0.0221918
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0348867
+        inSlope: -0.007623712
+        outSlope: -0.007623712
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.15592478
+        inSlope: 0.010662689
+        outSlope: 0.010662689
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -0.1541875
+        inSlope: 0.031032028
+        outSlope: 0.031032028
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833333
+        value: -0.14917716
+        inSlope: 0.031029288
+        outSlope: 0.031029288
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -0.14873306
+        inSlope: 0.010658339
+        outSlope: 0.010658339
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166666
+        value: -0.1489662
+        inSlope: -0.0055950177
+        outSlope: -0.0055950177
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.15227178
+        inSlope: -0.016272116
+        outSlope: -0.016272116
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.15250474
+        inSlope: -0.0055911266
+        outSlope: -0.0055911266
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.46790352
+        inSlope: 0
+        outSlope: 0.021100044
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.47443965
+        inSlope: -0.11005998
+        outSlope: -0.11086465
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.45767176
+        inSlope: -0.040054325
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.x
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.52442396
+        inSlope: 0
+        outSlope: 0.024139881
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.51671654
+        inSlope: -0.08547306
+        outSlope: -0.08547307
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.5285223
+        inSlope: -0.023603441
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.y
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.52800965
+        inSlope: 0
+        outSlope: -0.013232231
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -0.53516245
+        inSlope: 0.07331371
+        outSlope: 0.07295609
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.5250622
+        inSlope: 0.01358986
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.z
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.47670907
+        inSlope: 0
+        outSlope: -0.008404255
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.47065082
+        inSlope: 0.100404024
+        outSlope: 0.10067225
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.4852942
+        inSlope: 0.02717972
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalRotation.w
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1.0000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.0000002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1.0000002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -89.98021
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -89.98021
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.011853793
+        inSlope: -0.0000137183815
+        outSlope: -0.0000137183815
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.011853793
+        inSlope: -0.0000137183815
+        outSlope: -0.0000137183815
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -90.54552
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -90.54552
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 89.34523
+        inSlope: -0.000091552734
+        outSlope: -0.000091552734
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 89.34523
+        inSlope: -0.000091552734
+        outSlope: -0.000091552734
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 87.991135
+        inSlope: 0.000091552734
+        outSlope: 0.000091552734
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 87.991135
+        inSlope: 0.000091552734
+        outSlope: 0.000091552734
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 161.00073
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 161.00073
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -21.253696
+        inSlope: 0.000022888184
+        outSlope: 0.000022888184
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -21.253696
+        inSlope: 0.000022888184
+        outSlope: 0.000022888184
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.001/Bone.002
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -86.47047
+        inSlope: -0.9008789
+        outSlope: -0.9008789
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -86.50878
+        inSlope: -1.0678711
+        outSlope: -1.0678711
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -86.56498
+        inSlope: -2.6323242
+        outSlope: -2.6323242
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -86.72822
+        inSlope: -4.5065923
+        outSlope: -4.5065923
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -86.92781
+        inSlope: -4.618652
+        outSlope: -4.618652
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -87.15386
+        inSlope: 0.20269777
+        outSlope: 0.20269777
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -86.881584
+        inSlope: 5.3074946
+        outSlope: 5.3074946
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -86.640884
+        inSlope: 4.5197763
+        outSlope: 4.5197763
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -86.49781
+        inSlope: 1.7578117
+        outSlope: 1.7578117
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -86.47313
+        inSlope: 0.18786626
+        outSlope: 0.18786626
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -86.47047
+        inSlope: 0.019775396
+        outSlope: 0.019775396
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -50.549942
+        inSlope: 17.818726
+        outSlope: 17.818726
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -49.814053
+        inSlope: 41.255585
+        outSlope: 41.255585
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -47.120155
+        inSlope: 72.4444
+        outSlope: 72.4444
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -43.84391
+        inSlope: 70.01862
+        outSlope: 70.01862
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -41.172394
+        inSlope: 35.71655
+        outSlope: 35.71655
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -40.538982
+        inSlope: 8.68126
+        outSlope: 8.68126
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -39.983727
+        inSlope: -34.90713
+        outSlope: -34.90713
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -42.457233
+        inSlope: -81.0371
+        outSlope: -81.0371
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -46.429993
+        inSlope: -86.44918
+        outSlope: -86.44918
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -49.54044
+        inSlope: -49.501934
+        outSlope: -49.501934
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -50.549942
+        inSlope: -24.231451
+        outSlope: -24.231451
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 22.668617
+        inSlope: 60.51654
+        outSlope: 60.51654
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 25.19682
+        inSlope: 114.355865
+        outSlope: 114.355865
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 32.21315
+        inSlope: 215.04968
+        outSlope: 215.04968
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 43.22591
+        inSlope: 271.8103
+        outSlope: 271.8103
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 54.84193
+        inSlope: 251.30371
+        outSlope: 251.30371
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 67.17759
+        inSlope: -8.669587
+        outSlope: -8.669587
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 53.65497
+        inSlope: -252.35867
+        outSlope: -252.35867
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 41.841537
+        inSlope: -260.8122
+        outSlope: -260.8122
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 31.524227
+        inSlope: -200.67041
+        outSlope: -200.67041
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 24.92371
+        inSlope: -105.95904
+        outSlope: -105.95904
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 22.668617
+        inSlope: -54.095043
+        outSlope: -54.095043
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.001/Bone.002/Bone.005
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.09516443
+        inSlope: -0.021805823
+        outSlope: -0.021805823
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.090137295
+        inSlope: -0.17206666
+        outSlope: -0.17206666
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.051207308
+        inSlope: 0.000021390619
+        outSlope: 0.000021390619
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.09013728
+        inSlope: 0.10128382
+        outSlope: 0.10128382
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.09516443
+        inSlope: 0.018294279
+        outSlope: 0.018294279
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.057097964
+        inSlope: 0.3850861
+        outSlope: 0.3850861
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.11982691
+        inSlope: 1.3606696
+        outSlope: 1.3606696
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.31354675
+        inSlope: 0.00010997058
+        outSlope: 0.00010997058
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.11982688
+        inSlope: -1.3669667
+        outSlope: -1.3669667
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.057097964
+        inSlope: -0.38560492
+        outSlope: -0.38560492
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 2.9708736
+        inSlope: 20.066982
+        outSlope: 20.066982
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 6.2437863
+        inSlope: 71.32775
+        outSlope: 71.32775
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 16.532696
+        inSlope: 0.00006866456
+        outSlope: 0.00006866456
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 6.243785
+        inSlope: -71.28882
+        outSlope: -71.28882
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 2.9708736
+        inSlope: -20.066628
+        outSlope: -20.066628
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.001/Bone.002/Bone.005/Bone.006
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 88.28799
+        inSlope: 0.000045776367
+        outSlope: 0.000045776367
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 88.28799
+        inSlope: 0.000045776367
+        outSlope: 0.000045776367
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 22.465809
+        inSlope: -0.000022888184
+        outSlope: -0.000022888184
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 22.465809
+        inSlope: -0.000022888184
+        outSlope: -0.000022888184
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 22.486712
+        inSlope: -0.000011444092
+        outSlope: -0.000011444092
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 22.486712
+        inSlope: -0.000011444092
+        outSlope: -0.000011444092
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.001/Bone.007
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -87.872
+        inSlope: -0.7976074
+        outSlope: -0.7976074
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -87.90501
+        inSlope: -0.01977539
+        outSlope: -0.01977539
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -87.8721
+        inSlope: 1.9281006
+        outSlope: 1.9281006
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -87.74596
+        inSlope: 1.2260743
+        outSlope: 1.2260743
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -87.77023
+        inSlope: -1.4095458
+        outSlope: -1.4095458
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -87.87247
+        inSlope: -0.57183844
+        outSlope: -0.57183844
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -87.87247
+        inSlope: 1.9687498
+        outSlope: 1.9687498
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -87.744484
+        inSlope: 1.275513
+        outSlope: 1.275513
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -87.76655
+        inSlope: -1.3996575
+        outSlope: -1.3996575
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -87.855515
+        inSlope: -1.2062991
+        outSlope: -1.2062991
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -87.872
+        inSlope: -0.37792978
+        outSlope: -0.37792978
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.011634752
+        inSlope: 10.184881
+        outSlope: 10.184881
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.42269504
+        inSlope: -1.2444677
+        outSlope: -1.2444677
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.012739037
+        inSlope: -6.925634
+        outSlope: -6.925634
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.035041448
+        inSlope: 15.557217
+        outSlope: 15.557217
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 0.7277391
+        inSlope: 2.2180192
+        outSlope: 2.2180192
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 0.011775285
+        inSlope: -7.821555
+        outSlope: -7.821555
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 0.012901522
+        inSlope: 5.9257426
+        outSlope: 5.9257426
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.035387374
+        inSlope: -15.421673
+        outSlope: -15.421673
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -0.68470055
+        inSlope: -3.2535608
+        outSlope: -3.2535608
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -0.19060056
+        inSlope: 11.633643
+        outSlope: 11.633643
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.011634752
+        inSlope: 5.3223333
+        outSlope: 5.3223333
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -27.89285
+        inSlope: 70.89134
+        outSlope: 70.89134
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -24.925577
+        inSlope: 162.4731
+        outSlope: 162.4731
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -14.450574
+        inSlope: 305.23184
+        outSlope: 305.23184
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 0.36768705
+        inSlope: 339.41302
+        outSlope: 339.41302
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 14.516062
+        inSlope: 295.64795
+        outSlope: 295.64795
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 28.674854
+        inSlope: 7.8177342
+        outSlope: 7.8177342
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 15.230343
+        inSlope: -304.06787
+        outSlope: -304.06787
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 0.36733976
+        inSlope: -339.54898
+        outSlope: -339.54898
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -13.753657
+        inSlope: -294.61398
+        outSlope: -294.61398
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -24.312748
+        inSlope: -172.6686
+        outSlope: -172.6686
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -27.89285
+        inSlope: -86.36918
+        outSlope: -86.36918
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.001/Bone.007/Bone.008
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.087072
+        inSlope: 0.031828165
+        outSlope: 0.031828165
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1.087072
+        inSlope: -0.031892538
+        outSlope: -0.031892538
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 2.223577
+        inSlope: -0.015686989
+        outSlope: -0.015686989
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 2.223577
+        inSlope: 0.015532494
+        outSlope: 0.015532494
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -14.849631
+        inSlope: -0.82100487
+        outSlope: -0.82100487
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -14.849631
+        inSlope: 0.8211765
+        outSlope: 0.8211765
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.001/Bone.007/Bone.008/Bone.009
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -0.0000060030957
+        inSlope: 0.000036018573
+        outSlope: 0.000036018573
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -0.0000060030957
+        inSlope: 0.000036018573
+        outSlope: 0.000036018573
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.48146614
+        inSlope: -0.000033438206
+        outSlope: -0.000033438206
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.48146614
+        inSlope: -0.000033438206
+        outSlope: -0.000033438206
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.010
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -60.201004
+        inSlope: -7.659668
+        outSlope: -7.659668
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -60.5225
+        inSlope: -15.826904
+        outSlope: -15.826904
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -61.529755
+        inSlope: -30.500244
+        outSlope: -30.500244
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -63.034897
+        inSlope: -33.477543
+        outSlope: -33.477543
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -64.341064
+        inSlope: -21.384886
+        outSlope: -21.384886
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: -64.99648
+        inSlope: -8.30786
+        outSlope: -8.30786
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -65.164085
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: -64.99645
+        inSlope: 9.134028
+        outSlope: 9.134028
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -64.341064
+        inSlope: 23.675543
+        outSlope: 23.675543
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -63.03487
+        inSlope: 35.04667
+        outSlope: 35.04667
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -61.52977
+        inSlope: 30.372787
+        outSlope: 30.372787
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -60.522514
+        inSlope: 15.595097
+        outSlope: 15.595097
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -60.201004
+        inSlope: 7.5926533
+        outSlope: 7.5926533
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 17.751284
+        inSlope: -102.66408
+        outSlope: -102.66408
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 13.460016
+        inSlope: -209.51106
+        outSlope: -209.51106
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 0.14998567
+        inSlope: -408.34583
+        outSlope: -408.34583
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -20.769278
+        inSlope: -516.35376
+        outSlope: -516.35376
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -42.79732
+        inSlope: -450.41495
+        outSlope: -450.41495
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: -57.982204
+        inSlope: -245.19312
+        outSlope: -245.19312
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -63.061096
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: -57.982178
+        inSlope: 244.4325
+        outSlope: 244.4325
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -42.797302
+        inSlope: 446.0505
+        outSlope: 446.0505
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -20.769258
+        inSlope: 507.47742
+        outSlope: 507.47742
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 0.14999822
+        inSlope: 401.63986
+        outSlope: 401.63986
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 13.460015
+        inSlope: 207.73222
+        outSlope: 207.73222
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 17.751284
+        inSlope: 102.30018
+        outSlope: 102.30018
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 24.122961
+        inSlope: -4.9003143
+        outSlope: -4.9003143
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 23.93436
+        inSlope: -7.200714
+        outSlope: -7.200714
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 23.665201
+        inSlope: 2.3800507
+        outSlope: 2.3800507
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 24.220617
+        inSlope: 32.80147
+        outSlope: 32.80147
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 26.005957
+        inSlope: 50.269722
+        outSlope: 50.269722
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833334
+        value: 27.819687
+        inSlope: 32.92822
+        outSlope: 32.92822
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 28.507423
+        inSlope: -0.0005493165
+        outSlope: -0.0005493165
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2916667
+        value: 27.819685
+        inSlope: -31.625092
+        outSlope: -31.625092
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 26.005957
+        inSlope: -44.2171
+        outSlope: -44.2171
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 24.2206
+        inSlope: -22.959509
+        outSlope: -22.959509
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 23.665203
+        inSlope: 3.8817425
+        outSlope: 3.8817425
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 23.93437
+        inSlope: 8.744158
+        outSlope: 8.744158
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 24.122961
+        inSlope: 5.2620406
+        outSlope: 5.2620406
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.010/Bone.011
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.000004909198
+        inSlope: -0.00002945519
+        outSlope: -0.00002945519
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 0.000004909198
+        inSlope: -0.00002945519
+        outSlope: -0.00002945519
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -2.3090637
+        inSlope: -0.00001859665
+        outSlope: -0.00001859665
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -2.3090637
+        inSlope: -0.00001859665
+        outSlope: -0.00001859665
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.012
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -61.380707
+        inSlope: -5.403076
+        outSlope: -5.403076
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: -61.60845
+        inSlope: -11.17749
+        outSlope: -11.17749
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -62.329556
+        inSlope: -22.461823
+        outSlope: -22.461823
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -63.474556
+        inSlope: -28.160158
+        outSlope: -28.160158
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -64.65095
+        inSlope: -23.211912
+        outSlope: -23.211912
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -65.673485
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -64.65094
+        inSlope: 23.592588
+        outSlope: 23.592588
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -63.474537
+        inSlope: 27.906652
+        outSlope: 27.906652
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -62.329556
+        inSlope: 21.84493
+        outSlope: 21.84493
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: -61.608448
+        inSlope: 10.927279
+        outSlope: 10.927279
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -61.380707
+        inSlope: 5.3371596
+        outSlope: 5.3371596
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 3.9170237
+        inSlope: -75.963936
+        outSlope: -75.963936
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 0.74487597
+        inSlope: -152.3553
+        outSlope: -152.3553
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: -8.848282
+        inSlope: -289.0393
+        outSlope: -289.0393
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: -23.428074
+        inSlope: -357.8025
+        outSlope: -357.8025
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: -38.603363
+        inSlope: -312.95212
+        outSlope: -312.95212
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: -52.918102
+        inSlope: -0.00013732912
+        outSlope: -0.00013732912
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -38.603348
+        inSlope: 307.56497
+        outSlope: 307.56497
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: -23.428024
+        inSlope: 353.06223
+        outSlope: 353.06223
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: -8.848273
+        inSlope: 285.8492
+        outSlope: 285.8492
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 0.744892
+        inSlope: 151.49792
+        outSlope: 151.49792
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 3.9170237
+        inSlope: 75.77924
+        outSlope: 75.77924
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 25.410255
+        inSlope: -7.302063
+        outSlope: -7.302063
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666668
+        value: 25.114052
+        inSlope: -13.16217
+        outSlope: -13.16217
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 24.384005
+        inSlope: -16.402725
+        outSlope: -16.402725
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 23.787151
+        inSlope: -3.9756777
+        outSlope: -3.9756777
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666667
+        value: 23.858465
+        inSlope: 10.878249
+        outSlope: 10.878249
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 24.568632
+        inSlope: 0.000617981
+        outSlope: 0.000617981
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: 23.858463
+        inSlope: -4.606155
+        outSlope: -4.606155
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 23.78711
+        inSlope: 9.297731
+        outSlope: 9.297731
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4166667
+        value: 24.384005
+        inSlope: 19.515966
+        outSlope: 19.515966
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.45833334
+        value: 25.114048
+        inSlope: 13.935885
+        outSlope: 13.935885
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 25.410255
+        inSlope: 7.487734
+        outSlope: 7.487734
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.012/Bone.013
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -6.18241
+        inSlope: 1.3840585
+        outSlope: 1.3840585
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -6.111508
+        inSlope: -1.4003749
+        outSlope: -1.4003749
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -6.361619
+        inSlope: -1.4004651
+        outSlope: -1.4004651
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.x
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -89.30312
+        inSlope: 0.6407776
+        outSlope: 0.6407776
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -89.08823
+        inSlope: 1.8901978
+        outSlope: 1.8901978
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -88.70841
+        inSlope: 1.3785096
+        outSlope: 1.3785096
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.y
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: -89.73811
+        inSlope: -3.8242035
+        outSlope: -3.8242035
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.33333334
+        value: -91.3245
+        inSlope: 21.139343
+        outSlope: 21.139343
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: -88.28795
+        inSlope: 5.8419805
+        outSlope: 5.8419805
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAngles.z
+    path: Armature/Bone.014
+    classID: 4
+    script: {fileID: 0}
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

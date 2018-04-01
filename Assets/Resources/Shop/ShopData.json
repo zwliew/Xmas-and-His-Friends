@@ -114,22 +114,22 @@
 		{
 			"name": "wreath",
 			"englishName": "wreath",
-			"fullName": "手作花环",
-			"description": "圣诞手很巧，这些花环都是自己做的。",
-            "cost": "30"
-            
-		},
-		{
-			"name": "wreathBig",
-			"englishName": "wreathBig",
 			"fullName": "大的手作花环",
 			"description": "圣诞手很巧，这些花环都是自己做的。",
             "cost": "20"
             
 		},
 		{
-			"name": "violincase",
-			"englishName": "violincaseV",
+			"name": "wreathSmall",
+			"englishName": "wreathSmall",
+			"fullName": "手作花环",
+			"description": "圣诞手很巧，这些花环都是自己做的。",
+            "cost": "30"
+            
+		},
+		{
+			"name": "violinCase",
+			"englishName": "violinCase",
 			"fullName": "小提琴盒子",
 			"description": "圣诞是乐队的哦，很擅长拉提琴。",
             "cost": "40"
