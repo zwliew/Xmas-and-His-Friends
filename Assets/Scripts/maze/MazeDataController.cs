@@ -10,8 +10,8 @@ public class MazeDataController : MonoBehaviour {
         sentences = new string[52];
         List<string>[] sentence = new List<string>[2];
         ReadString();
+        GetRandomSentence();
        // sentence = GetRandomSentence();
-        //Debug.Log(sentence[0][0]);
     }
 	
 	// Update is called once per frame
@@ -25,7 +25,7 @@ public class MazeDataController : MonoBehaviour {
         //Read the text from directly from the test.txt file
         StreamReader reader = new StreamReader(path);
         Debug.Log(reader == null);
-        for(int i = 0; i < 52; i++)
+        for(int i = 0; i < 51; i++)
         {
             sentences[i] = reader.ReadLine();
             Debug.Log(sentences[i]);
@@ -34,25 +34,24 @@ public class MazeDataController : MonoBehaviour {
         reader.Close();
     }
 
-   /*  private List<string>[] GetRandomSentence()
+     private List<string>[] GetRandomSentence()
     {
-       List<string>[] SenInstance = new List<string>[2];
-        int index = Random.Range(0,20);
-        if (sentences == null)
+        List<string>[] pair = new List<string>[2];
+        Debug.Log(pair[0][0] == null);
+        int index = Random.Range(0, 51);
+        for (int i = 0; i < sentences[index].Length; i++)
         {
-            Debug.Log("sentences is null");
+            
+            Debug.Log(i);
         }
-        string thisSentence = sentences[index];
-        for (int i = 0; i < thisSentence.corSentence.Length; i++)
+        for(int i = 0; i < (25 - sentences[index].Length); i++)
         {
-            SenInstance[1].Add(thisSentence.corSentence.Substring(i, 1));
+            int randomInt = Random.Range(0, 100);
+            Debug.Log(sentences[20] == null);
+             string test = sentences[20].Substring(0,1);
         }
-        for (int i = 0; i < thisSentence.randSentence.Length; i++)
-        {
-            SenInstance[2].Add(thisSentence.corSentence.Substring(i, 1));
-        }
-        return SenInstance;
-    }*/
+        return pair;
+    }
     private void Refresh()
     {
         

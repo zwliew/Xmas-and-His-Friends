@@ -76,9 +76,7 @@ public class ShopDisplayController : MonoBehaviour
 
 		foreach (ShopItemData itemData in items) {
 
-            //Button item = buttonPool.GetButton();
-            Instantiate(prefabItemButton, shopWindowContent.transform);
-            Button item = Instantiate(prefabItemButton, shopWindowContent.transform);
+            Button item = buttonPool.GetButton();
             ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
 
 			//Button item = buttonPool.GetButton();
