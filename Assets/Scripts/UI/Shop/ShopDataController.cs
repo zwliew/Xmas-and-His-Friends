@@ -56,15 +56,15 @@ public class ShopDataController : MonoBehaviour
 		TextAsset dataAsJson = Resources.Load<TextAsset> ("Shop/ShopData");//Load textual data for ShopItemData
 		ShopJsonData shopJsonData = JsonUtility.FromJson<ShopJsonData>(dataAsJson.text);
 		itemsDataArray = shopJsonData.shopItemsData;
-
+		Debug.Assert (itemsDataArray.Length > 5);
 		itemsData = new List<ShopItemData> ();//Convert to list, fill up the rest of the ShopSItemData
 		foreach (ShopItemData itemData in itemsDataArray) {
 			itemsData.Add(itemData);
 		}
-			
+		Debug.Assert (itemsData.Count > 5);	
 		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
 		displayedItemsData = ParseItems (displayedItemNames, "displayedItems");
-
+		Debug.Assert (displayedItemsData.Count > 5);	
 	}
 
 	private List<ShopItemData> ParseItems(List<string> itemsStringList, string mode){//Self-explainatory method, also modifies the itemsData
@@ -75,10 +75,10 @@ public class ShopDataController : MonoBehaviour
 		case "displayedItems":
 			foreach (string itemName in itemsStringList) {
 				foreach (ShopItemData itemData in itemsData) {
-					if (itemData.fullName.Equals (itemName)) {
+					if (itemData.englishName.Equals (itemName)) {
 						itemData.isOnSale = true;
 						tempItemsData.Add (itemData);
-						Debug.Log ("ItemSetDisplayedSuccessfully: " + itemData.fullName);
+						Debug.Log ("ItemSetDisplayedSuccessfully: " + itemData.englishName);
 					}
 				}
 			}
@@ -87,10 +87,10 @@ public class ShopDataController : MonoBehaviour
 		case "purchasedItems":
 			foreach (string itemName in itemsStringList) {
 				foreach (ShopItemData itemData in itemsData) {
-					if (itemData.fullName.Equals (itemName)) {
+					if (itemData.englishName.Equals (itemName)) {
 						itemData.purchased = true;
 						tempItemsData.Add (itemData);
-						Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
+						Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.englishName);
 					}
 				}
 			}
@@ -107,28 +107,28 @@ public class ShopDataController : MonoBehaviour
 		switch(mode){
 		case "remove":
 			foreach (ShopItemData itemData in itemsData) {
-				if (itemData.fullName.Equals (itemsString)) {
+				if (itemData.englishName.Equals (itemsString)) {
 					itemData.isOnSale = false;
 					tempItemsData = itemData;
-					Debug.Log ("Item Deselected Successfully: " + itemData.fullName);
+					Debug.Log ("Item Deselected Successfully: " + itemData.englishName);
 				}
 			}
 			break;
 		case "add":
 			foreach (ShopItemData itemData in itemsData) {
-				if (itemData.fullName.Equals (itemsString)) {
+				if (itemData.englishName.Equals (itemsString)) {
 					itemData.isOnSale = true;
 					tempItemsData = itemData;
-					Debug.Log ("Item Selected Successfully: " + itemData.fullName);
+					Debug.Log ("Item Selected Successfully: " + itemData.englishName);
 				}
 			}
 			break;
 		case "purchase":
 			foreach (ShopItemData itemData in itemsData) {
-				if (itemData.fullName.Equals (itemsString)) {
+				if (itemData.englishName.Equals (itemsString)) {
 					itemData.purchased = true;
 					tempItemsData = itemData;
-					Debug.Log ("Item Purchased Successfully: " + itemData.fullName);
+					Debug.Log ("Item Purchased Successfully: " + itemData.englishName);
 				}
 			}
 			break;
@@ -159,8 +159,8 @@ public class ShopDataController : MonoBehaviour
     public void PurchaseSelectedItem()
     {
 		//Debug.Log (purchasedItemsData[0]);
-		purchasedItemsData.Add(ParseItems(curSelectedItem.fullName, "purchase"));
-		displayedItemsData.Remove(ParseItems(curSelectedItem.fullName, "remove"));
+		purchasedItemsData.Add(ParseItems(curSelectedItem.englishName, "purchase"));
+		displayedItemsData.Remove(ParseItems(curSelectedItem.englishName, "remove"));
 		playerDataController.UpdatePlayerCoins (-(int)curSelectedItem.cost);
 		EndandSave ();
 		GetComponent<ShopDisplayController> ().Initialize ();
@@ -169,13 +169,13 @@ public class ShopDataController : MonoBehaviour
 	public void EndandSave(){
 		purchasedItemNames.Clear ();
 		foreach (ShopItemData	 itemData in purchasedItemsData) {
-			purchasedItemNames.Add (itemData.fullName.ToString ());
+			purchasedItemNames.Add (itemData.englishName.ToString ());
 		}
 		playerDataController.UpdatePurchasedShopItem (purchasedItemNames);
 
 		displayedItemNames.Clear ();
 		foreach (ShopItemData itemData in displayedItemsData) {
-			displayedItemNames.Add (itemData.fullName.ToString ());
+			displayedItemNames.Add (itemData.englishName.ToString ());
 		}
 		playerDataController.UpdateDisplayedShopItem (displayedItemNames);
 	}
