@@ -14,6 +14,10 @@ public class MazeDataController : MonoBehaviour {
 		
 	}
 
+    void ReadXML()
+    {
+        
+    }
     private void Refresh()
     {
         

@@ -12,7 +12,7 @@ public class DirectedAgent : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
         agent = GetComponent<NavMeshAgent>();
-        xmasAnimation = GetComponent<AnimationController>();
+        xmasAnimation = GetComponentInChildren<AnimationController>();
         Debug.Log(xmasAnimation.name);
     }
 
@@ -28,21 +28,21 @@ public class DirectedAgent : MonoBehaviour {
 
     public IEnumerator MoveToLocation(Vector3 targetLocation)
     {
-//        Vector3 dir = targetLocation - mas.transform.position;
-//        Quaternion turn = Quaternion.LookRotation(dir);
-//       
-//        for (int i = 8; i > 0; i--)
-//        {
-//            Vector3 rotation = Quaternion.Slerp(mas.transform.rotation, turn, Time.deltaTime).eulerAngles;
-//            mas.transform.rotation = Quaternion.Euler(-90f, rotation.y*Time.deltaTime/8, 0f);
-//            mas.transform.Rotate(-90f, rotation.y, 0f);
-//            yield return new WaitForFixedUpdate();
-//        }
+        Vector3 dir = targetLocation - mas.transform.position;
+        Quaternion turn = Quaternion.LookRotation(dir);
+       
+        for (int i = 8; i > 0; i--)
+        {
+            Vector3 rotation = Quaternion.Slerp(mas.transform.rotation, turn, Time.deltaTime).eulerAngles;
+            mas.transform.rotation = Quaternion.Euler(0f, rotation.y*Time.deltaTime/8, 0f);
+            mas.transform.Rotate(0f, rotation.y, 0f);
+            yield return new WaitForFixedUpdate();
+        }
         agent.SetDestination(targetLocation);
         xmasAnimation.SetMovingState(1);
         agent.isStopped = false;
         //Debug.Log("move to location is called");
         furnitureInteractionScript.ResetClickCount();
-		yield return new WaitForFixedUpdate ();
+
     }
 }
