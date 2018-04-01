@@ -44,6 +44,7 @@ public class EditorModeDisplayController : MonoBehaviour
 			//itemData.furniture = GameObject.FindGameObjectWithTag (itemData.fullName);
 			foreach(GameObject furniture in furnitures){
 				if (furniture.name == itemData.englishName) {
+					Debug.Log (furniture.name);
 					itemData.furniture = furniture;
 				}
 			}
@@ -76,11 +77,12 @@ public class EditorModeDisplayController : MonoBehaviour
 
 			EditorModeItem itemScript = item.gameObject.GetComponent<EditorModeItem> ();
 			itemScript.fullName = itemData.fullName;//Pass in the values here
+			itemScript.englishName = itemData.englishName;
             itemScript.furniture = itemData.furniture;
             itemScript.position = itemData.position;
             itemScript.rotation = itemData.rotation;
 			itemScript.isSelected = itemData.equipped;
-			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemScript.fullName);
+			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemData.englishName);
 //			Debug.Log("parameters passed successfully!" +itemScript.isSelected );
             itemScript.Initialize ();
 		}

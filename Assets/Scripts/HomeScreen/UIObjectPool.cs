@@ -9,7 +9,14 @@ public class UIObjectPool : MonoBehaviour {
     private Button prefab;
     private Transform parent;
 
-    /* Constructs an object pool with a prefab and a parent transform */
+	public void InitializeObjectPool(Button prefab, Transform parent) {
+		buttons = new List<Button>();
+		this.prefab = prefab;
+		this.parent = parent;
+	}
+
+
+	/* Constructs an object pool with a prefab and a parent transform */
     public UIObjectPool(Button prefab, Transform parent) {
         buttons = new List<Button>();
         this.prefab = prefab;
