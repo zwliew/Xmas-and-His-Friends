@@ -24,11 +24,13 @@ public class AnimationController : MonoBehaviour {
 //		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 //		rbXmas = GetComponent<Rigidbody> ();
 		xmasAnimator = GetComponent<Animator> ();
+        Debug.Log("Animator name: " + xmasAnimator.name);
 		xmasAnimator.SetInteger ("MoveState", 0);
 	}
 		
 	public void SetMovingState(int movingState){
 		xmasAnimator.SetInteger ("MoveState", movingState);
+        Debug.Log("Going through state number: " + movingState);
 	}
 
 	IEnumerator EnterGame(string gameName){
