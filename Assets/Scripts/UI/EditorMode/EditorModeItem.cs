@@ -7,6 +7,7 @@ public class EditorModeItem : MonoBehaviour {
 
 	public int cost;
 	public string fullName;
+	public string englishName;
 	public Sprite itemSprite;
 	public Sprite selectedSprite;
 	public Sprite unselectedSprite;

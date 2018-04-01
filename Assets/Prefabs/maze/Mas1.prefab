@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 114919974944224774}
   - component: {fileID: 195532917302255622}
   - component: {fileID: 136025875410860094}
+  - component: {fileID: 114101868527674406}
   m_Layer: 0
   m_Name: Mas1
   m_TagString: Untagged
@@ -644,6 +645,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holdFlag: 
   holdFlagTwo: 0
+--- !u!114 &114101868527674406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1859530650514868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2312fd78b00239348a2d074a870276be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 1
 --- !u!114 &114399510800785418
 MonoBehaviour:
   m_ObjectHideFlags: 1

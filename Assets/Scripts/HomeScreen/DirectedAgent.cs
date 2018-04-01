@@ -13,13 +13,12 @@ public class DirectedAgent : MonoBehaviour {
 	void Awake () {
         agent = GetComponent<NavMeshAgent>();
         xmasAnimation = GetComponentInChildren<AnimationController>();
-        Debug.Log(xmasAnimation.name);
     }
 
     private void Update()
     {
         
-        if ((agent.transform.position - agent.destination).magnitude < 0.3f && xmasAnimation)
+        if ((agent.transform.position - agent.destination).magnitude < 0.1f && xmasAnimation)
         {
             xmasAnimation.SetMovingState(0);
         }
@@ -34,7 +33,7 @@ public class DirectedAgent : MonoBehaviour {
         for (int i = 8; i > 0; i--)
         {
             Vector3 rotation = Quaternion.Slerp(mas.transform.rotation, turn, Time.deltaTime).eulerAngles;
-            mas.transform.rotation = Quaternion.Euler(0f, rotation.y*Time.deltaTime/8, 0f);
+            mas.transform.rotation = Quaternion.Euler(0f, rotation.y*Time.deltaTime*2, 0f);
             mas.transform.Rotate(0f, rotation.y, 0f);
             yield return new WaitForFixedUpdate();
         }

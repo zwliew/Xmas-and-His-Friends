@@ -52,6 +52,9 @@ public class ShopDisplayController : MonoBehaviour
 		panelController = panel.gameObject.GetComponent<PanelController>();
 		shopWindowContent.GetComponent<RectTransform> ().anchoredPosition = new Vector3 (pagePositions[pageNumber], 0f, 0f);
 		buttonPool = new UIObjectPool(prefabItemButton, shopWindowContent.transform);
+//		buttonPool = gameObject.AddComponent<UIObjectPool>();
+//		buttonPool.InitializeObjectPool (prefabItemButton, shopWindowContent.transform);
+
 		RefreshShopDisplay ();
     }
 
@@ -66,7 +69,7 @@ public class ShopDisplayController : MonoBehaviour
             buttonPool.DestroyPool(
                 shopWindowContent.transform.GetChild(i).gameObject.GetComponent<Button>()
                 );
-           // shopWindowContent.transform.GetChild(i).gameObject.SetActive(false);
+           shopWindowContent.transform.GetChild(i).gameObject.SetActive(false);
            //Debug.Log("clearing existing items in the shop");
         }
 

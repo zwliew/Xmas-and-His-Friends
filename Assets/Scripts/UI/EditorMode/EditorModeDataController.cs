@@ -51,6 +51,9 @@ public class EditorModeDataController : MonoBehaviour {
 		}
 
 		purchasedItemNames = playerData.purchasedShopItems;
+		foreach (string str in equippedItemNames) {
+			Debug.Log ("purchasedShopItemName is: " + str);
+		}
 
 		TextAsset dataAsJson = Resources.Load<TextAsset> ("EditorMode/EditorModeData");//Load textual data for EditorModeItemData
 		EditorModeJsonData editorModeJsonData = JsonUtility.FromJson<EditorModeJsonData>(dataAsJson.text);
@@ -64,7 +67,7 @@ public class EditorModeDataController : MonoBehaviour {
 		equippedItemsData = ParseItems (equippedItemNames, "equippedItems");
 		Debug.Log ("When initializing, equippedItemsData.Count = " + (0+equippedItemsData.Count));
 		purchasedItemsData = ParseItems (purchasedItemNames, "purchasedItems");
-		
+		Debug.Log ("When initializing, purchasedItemsData.Count = " + (0+purchasedItemsData.Count));
 	}
 
 	private List<EditorModeItemData> ParseItems(List<string> itemsStringList, string mode){//Self-explainatory method, also modifies the itemsData
@@ -75,7 +78,7 @@ public class EditorModeDataController : MonoBehaviour {
 		case "equippedItems":
 			foreach (string itemName in itemsStringList) {
 				foreach (EditorModeItemData itemData in itemsData) {
-					if (itemData.fullName.Equals (itemName)) {//I don't know if this part works
+					if (itemData.englishName.Equals (itemName)) {//I don't know if this part works
 						itemData.equipped = true;
 						tempItemsData.Add (itemData);
 						//Debug.Log ("ItemSetEquippedSuccessfully: " + itemData.fullName);
@@ -87,7 +90,7 @@ public class EditorModeDataController : MonoBehaviour {
 		case "purchasedItems":
 			foreach (string itemName in itemsStringList) {
 				foreach (EditorModeItemData itemData in itemsData) {
-					if (itemData.fullName.Equals (itemName)) {
+					if (itemData.englishName.Equals (itemName)) {
 						itemData.purchased = true;
 						tempItemsData.Add (itemData);
 						//Debug.Log ("ItemSetPurchasedSuccessfully: " + itemData.fullName);
@@ -107,19 +110,19 @@ public class EditorModeDataController : MonoBehaviour {
 		switch(mode){
 		case "remove":
 			foreach (EditorModeItemData itemData in itemsData) {
-				if (itemData.fullName.Equals (itemsString)) {
+				if (itemData.englishName.Equals (itemsString)) {
 					itemData.equipped = false;
 					tempItemsData = itemData;
-					Debug.Log ("ItemRemovedSuccessfully: " + itemData.fullName);
+					Debug.Log ("ItemRemovedSuccessfully: " + itemData.englishName);
 				}
 			}
 			break;
 		case "add":
 			foreach (EditorModeItemData itemData in itemsData) {
-				if (itemData.fullName.Equals (itemsString)) {
+				if (itemData.englishName.Equals (itemsString)) {
 					itemData.equipped = true;
 					tempItemsData = itemData;
-					Debug.Log ("ItemAddedSuccessfully: " + itemData.fullName);
+					Debug.Log ("ItemAddedSuccessfully: " + itemData.englishName);
 				}
 			}
 			break;
@@ -143,24 +146,24 @@ public class EditorModeDataController : MonoBehaviour {
 
 		//Debug.Log ("EMDC is selecting items");
 		if (item.isSelected) {//The logic here a bit confusing since displayController will select the item first
-			Debug.Log ("Removing equippedItem in EditorModeData: " + item.fullName);
+			Debug.Log ("Removing equippedItem in EditorModeData: " + item.englishName);
 			Debug.Log("No of equippedItemsData before removing: " + equippedItemsData.Count);
-			EditorModeItemData itemToBeRemoved = ParseItems(item.fullName, "remove");//Removing all just solves the issue
+			EditorModeItemData itemToBeRemoved = ParseItems(item.englishName, "remove");//Removing all just solves the issue
 			while (equippedItemsData.Contains(itemToBeRemoved)) {
 				equippedItemsData.Remove (itemToBeRemoved);
 			}
 
 			Debug.Log("No of equippedItemsData after removing: " + equippedItemsData.Count);
 		} else {
-			Debug.Log ("Adding equippedItem in EditorModeData: " + item.fullName);
-			equippedItemsData.Add (ParseItems(item.fullName, "add"));
+			Debug.Log ("Adding equippedItem in EditorModeData: " + item.englishName);
+			equippedItemsData.Add (ParseItems(item.englishName, "add"));
 		}
 	}
 
 	public void EndandSave(){
 		equippedItemNames.Clear ();
 		foreach (EditorModeItemData itemData in equippedItemsData) {
-			equippedItemNames.Add (itemData.fullName.ToString ());
+			equippedItemNames.Add (itemData.englishName.ToString ());
 		}
 		playerDataController.UpdateEquippedEditorModeItem (equippedItemNames);
 //		purchasedItemsData.Clear ();
