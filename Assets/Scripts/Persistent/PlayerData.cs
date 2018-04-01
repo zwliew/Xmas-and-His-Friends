@@ -16,6 +16,7 @@ public class ItemData{
 	public int cost;
 	public string englishName;
 	public string fullName;
+	public string description;
 	public bool equipped;
 	public bool purchased;
 }

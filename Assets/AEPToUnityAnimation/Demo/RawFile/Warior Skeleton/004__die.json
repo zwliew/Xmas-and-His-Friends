@@ -1,0 +1,1664 @@
+{
+	"bones": [
+		{
+			"name": "root"
+		},
+		{
+			"name": "camera center",
+			"parent": "root",
+			"enabled": true,
+			"x": 468,
+			"y": -1250
+		},
+		{
+			"name": "chip",
+			"parent": "root",
+			"enabled": true,
+			"x": 486,
+			"y": -1065
+		},
+		{
+			"name": "shadow",
+			"parent": "root",
+			"enabled": true,
+			"x": 468,
+			"y": -1250,
+			"scaleX": 4.1869918699187,
+			"scaleY": 4.1869918699187
+		},
+		{
+			"name": "baptayngoai",
+			"parent": "chip",
+			"enabled": true,
+			"x": -82,
+			"y": 197
+		},
+		{
+			"name": "baptaysau",
+			"parent": "chip",
+			"enabled": true,
+			"x": 152,
+			"y": 172
+		},
+		{
+			"name": "dau",
+			"parent": "chip",
+			"enabled": true,
+			"x": 14,
+			"y": 199
+		},
+		{
+			"name": "duingoai",
+			"parent": "chip",
+			"enabled": true,
+			"x": -62,
+			"y": 8.99999999999591,
+			"rotation": 344.913645991535
+		},
+		{
+			"name": "duitrong",
+			"parent": "chip",
+			"enabled": true,
+			"x": 56,
+			"y": 3
+		},
+		{
+			"name": "than",
+			"parent": "chip",
+			"enabled": true,
+			"x": 10,
+			"y": 121
+		},
+		{
+			"name": "channgoai",
+			"parent": "duingoai",
+			"enabled": true,
+			"x": -21.0234674485752,
+			"y": -110.272452663564,
+			"rotation": 15.0863540084652
+		},
+		{
+			"name": "chantrong",
+			"parent": "duitrong",
+			"enabled": true,
+			"x": 34,
+			"y": -100
+		},
+		{
+			"name": "duoingua",
+			"parent": "dau",
+			"enabled": true,
+			"x": -106,
+			"y": 192
+		},
+		{
+			"name": "mat die",
+			"parent": "dau",
+			"enabled": true,
+			"x": 60,
+			"y": 61
+		},
+		{
+			"name": "taao",
+			"parent": "than",
+			"enabled": true,
+			"x": 31,
+			"y": -129
+		},
+		{
+			"name": "tayngoai",
+			"parent": "baptayngoai",
+			"enabled": true,
+			"x": -107,
+			"y": -81,
+			"rotation": 354.278084033607
+		},
+		{
+			"name": "taytrong",
+			"parent": "baptaysau",
+			"enabled": true,
+			"x": 24.0000017781489,
+			"y": -117.999999235994,
+			"scaleX": 0.88235293765164,
+			"scaleY": 0.88235293765164,
+			"rotation": 355.249386464298
+		},
+		{
+			"name": "vatngoai",
+			"parent": "than",
+			"enabled": true,
+			"x": -79.9999999999999,
+			"y": -90.0000000000017,
+			"rotation": 318.218548102276
+		},
+		{
+			"name": "vattrong",
+			"parent": "than",
+			"enabled": true,
+			"x": 79.8448960684833,
+			"y": -101.691898218681,
+			"rotation": 15.1240073083106
+		},
+		{
+			"name": "chuy",
+			"parent": "tayngoai",
+			"enabled": true,
+			"x": -44.3210961599002,
+			"y": -112.243365993136,
+			"rotation": 237.210269142471
+		},
+		{
+			"name": "chuy_L1",
+			"parent": "taytrong",
+			"enabled": true,
+			"x": 35.5498365557789,
+			"y": -98.8042136425988,
+			"rotation": 258.988307738679
+		},
+		{
+			"name": "bantayngoai",
+			"parent": "chuy",
+			"enabled": true,
+			"x": 17.8334109773648,
+			"y": 13.1301792779286,
+			"rotation": 111.789730857529
+		},
+		{
+			"name": "bantaytrong",
+			"parent": "chuy_L1",
+			"enabled": true,
+			"x": -7.35651848663466,
+			"y": 7.29785797206569,
+			"rotation": 73.8809248211385
+		}
+	],
+	"slots": [
+		{
+			"name": "camera center",
+			"bone": "camera center",
+			"attachment": "004__die-assets/camera center",
+			"color": "FFFFFF00"
+		},
+		{
+			"name": "shadow",
+			"bone": "shadow",
+			"attachment": "004__die-assets/shadow"
+		},
+		{
+			"name": "duoingua",
+			"bone": "duoingua",
+			"attachment": "004__die-assets/duoingua"
+		},
+		{
+			"name": "chuy_L1",
+			"bone": "chuy_L1",
+			"attachment": "004__die-assets/chuy"
+		},
+		{
+			"name": "bantaytrong",
+			"bone": "bantaytrong",
+			"attachment": "004__die-assets/bantaytrong"
+		},
+		{
+			"name": "baptaysau",
+			"bone": "baptaysau",
+			"attachment": "004__die-assets/baptaysau"
+		},
+		{
+			"name": "taytrong",
+			"bone": "taytrong",
+			"attachment": "004__die-assets/taytrong"
+		},
+		{
+			"name": "duitrong",
+			"bone": "duitrong",
+			"attachment": "004__die-assets/duitrong"
+		},
+		{
+			"name": "chantrong",
+			"bone": "chantrong",
+			"attachment": "004__die-assets/chantrong"
+		},
+		{
+			"name": "chip",
+			"bone": "chip",
+			"attachment": "004__die-assets/chip"
+		},
+		{
+			"name": "duingoai",
+			"bone": "duingoai",
+			"attachment": "004__die-assets/duingoai"
+		},
+		{
+			"name": "channgoai",
+			"bone": "channgoai",
+			"attachment": "004__die-assets/channgoai"
+		},
+		{
+			"name": "vattrong",
+			"bone": "vattrong",
+			"attachment": "004__die-assets/vattrong"
+		},
+		{
+			"name": "vatngoai",
+			"bone": "vatngoai",
+			"attachment": "004__die-assets/vatngoai"
+		},
+		{
+			"name": "taao",
+			"bone": "taao",
+			"attachment": "004__die-assets/taao"
+		},
+		{
+			"name": "than",
+			"bone": "than",
+			"attachment": "004__die-assets/than"
+		},
+		{
+			"name": "dau",
+			"bone": "dau",
+			"attachment": "004__die-assets/dau"
+		},
+		{
+			"name": "mat die",
+			"bone": "mat die",
+			"attachment": "004__die-assets/mat die"
+		},
+		{
+			"name": "chuy",
+			"bone": "chuy",
+			"attachment": "004__die-assets/chuy"
+		},
+		{
+			"name": "bantayngoai",
+			"bone": "bantayngoai",
+			"attachment": "004__die-assets/bantayngoai"
+		},
+		{
+			"name": "baptayngoai",
+			"bone": "baptayngoai",
+			"attachment": "004__die-assets/baptayngoai"
+		},
+		{
+			"name": "tayngoai",
+			"bone": "tayngoai",
+			"attachment": "004__die-assets/tayngoai"
+		}
+	],
+	"skins": {
+		"default": {
+			"camera center": {
+				"004__die-assets/camera center": {
+					"x": 50,
+					"y": -50,
+					"width": 100,
+					"height": 100
+				}
+			},
+			"shadow": {
+				"004__die-assets/shadow": {
+					"x": 0,
+					"y": 0,
+					"width": 123,
+					"height": 52
+				}
+			},
+			"duoingua": {
+				"004__die-assets/duoingua": {
+					"x": 0,
+					"y": 0,
+					"width": 184,
+					"height": 212
+				}
+			},
+			"chuy_L1": {
+				"004__die-assets/chuy": {
+					"x": 3.41060182098599,
+					"y": 155.873279559811,
+					"width": 281,
+					"height": 689
+				}
+			},
+			"bantaytrong": {
+				"004__die-assets/bantaytrong": {
+					"x": 0,
+					"y": 0,
+					"width": 75,
+					"height": 68
+				}
+			},
+			"baptaysau": {
+				"004__die-assets/baptaysau": {
+					"x": 6,
+					"y": -36,
+					"width": 141,
+					"height": 200
+				}
+			},
+			"taytrong": {
+				"004__die-assets/taytrong": {
+					"x": 12.9999982218511,
+					"y": -34.000000764006,
+					"width": 120,
+					"height": 119
+				}
+			},
+			"duitrong": {
+				"004__die-assets/duitrong": {
+					"x": 2,
+					"y": -35,
+					"width": 163,
+					"height": 166
+				}
+			},
+			"chantrong": {
+				"004__die-assets/chantrong": {
+					"x": 11,
+					"y": -27,
+					"width": 106,
+					"height": 134
+				}
+			},
+			"chip": {
+				"004__die-assets/chip": {
+					"x": 0,
+					"y": 0,
+					"width": 216,
+					"height": 133
+				}
+			},
+			"duingoai": {
+				"004__die-assets/duingoai": {
+					"x": -0.64161861843975,
+					"y": -50.8794779306505,
+					"width": 141,
+					"height": 200
+				}
+			},
+			"channgoai": {
+				"004__die-assets/channgoai": {
+					"x": 1,
+					"y": -53.9999999999998,
+					"width": 124,
+					"height": 130
+				}
+			},
+			"vattrong": {
+				"004__die-assets/vattrong": {
+					"x": 15.1066281747769,
+					"y": -47.5898077281229,
+					"width": 92,
+					"height": 146
+				}
+			},
+			"vatngoai": {
+				"004__die-assets/vatngoai": {
+					"x": 32.8309905839244,
+					"y": -55.713700470055,
+					"width": 161,
+					"height": 194
+				}
+			},
+			"taao": {
+				"004__die-assets/taao": {
+					"x": -8.18181818181819,
+					"y": -59,
+					"width": 150,
+					"height": 166
+				}
+			},
+			"than": {
+				"004__die-assets/than": {
+					"x": 0,
+					"y": 0,
+					"width": 345,
+					"height": 310
+				}
+			},
+			"dau": {
+				"004__die-assets/dau": {
+					"x": 32,
+					"y": 170,
+					"width": 357,
+					"height": 470
+				}
+			},
+			"mat die": {
+				"004__die-assets/mat die": {
+					"x": 0,
+					"y": 0,
+					"width": 230,
+					"height": 266
+				}
+			},
+			"chuy": {
+				"004__die-assets/chuy": {
+					"x": 21.9436808771022,
+					"y": 145.895343073965,
+					"width": 281,
+					"height": 689
+				}
+			},
+			"bantayngoai": {
+				"004__die-assets/bantayngoai": {
+					"x": 0,
+					"y": 0,
+					"width": 81,
+					"height": 69
+				}
+			},
+			"baptayngoai": {
+				"004__die-assets/baptayngoai": {
+					"x": -65,
+					"y": -38,
+					"width": 185,
+					"height": 180
+				}
+			},
+			"tayngoai": {
+				"004__die-assets/tayngoai": {
+					"x": -20,
+					"y": -44,
+					"width": 120,
+					"height": 149
+				}
+			}
+		}
+	},
+	"animations": {
+		"animation": {
+			"bones": {
+				"chuy_L1": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": -101.011692261321,
+							"tangentType": "linear",
+							"angleExactly": -101.011692261321,
+							"angle": 0,
+							"angleinAEP": 101.011692261321
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": -101.011692261321,
+							"tangentType": "linear",
+							"angleExactly": -94.8208142745849,
+							"angle": 6.19087798673648,
+							"angleinAEP": 94.8208142745849
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": -101.011692261321,
+							"tangentType": "linear",
+							"angleExactly": -102.511490015979,
+							"angle": -1.49979775465771,
+							"angleinAEP": 102.511490015979
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": -101.011692261321,
+							"tangentType": "linear",
+							"angleExactly": -102.511490015979,
+							"angle": -1.49979775465771,
+							"angleinAEP": 102.511490015979
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": -101.011692261321,
+							"tangentType": "linear",
+							"angleExactly": 16.857623220568,
+							"angle": 117.869315481889,
+							"angleinAEP": -16.857623220568
+						}
+					]
+				},
+				"baptaysau": {
+					"translate": [
+						{
+							"time": 0,
+							"x": 152,
+							"y": 172
+						},
+						{
+							"time": 0.36666666666667,
+							"x": 92,
+							"y": 172
+						},
+						{
+							"time": 0.9,
+							"x": 92,
+							"y": 162
+						},
+						{
+							"time": 1.16666666666667,
+							"x": 52.0001176223577,
+							"y": 162.097003994356
+						}
+					]
+				},
+				"duitrong": {
+					"translate": [
+						{
+							"time": 0,
+							"x": 56,
+							"y": 3
+						},
+						{
+							"time": 0.36666666666667,
+							"x": 90,
+							"y": -1
+						},
+						{
+							"time": 0.5,
+							"x": 36,
+							"y": 3
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 0.23333333333333,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 19.2527482908019,
+							"angle": 19.2527482908019,
+							"angleinAEP": -19.2527482908019
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 3.87878700247101,
+							"angle": 3.87878700247101,
+							"angleinAEP": -3.87878700247101
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 46.9467233443936,
+							"angle": 46.9467233443936,
+							"angleinAEP": -46.9467233443936
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 46.9467233443936,
+							"angle": 46.9467233443936,
+							"angleinAEP": -46.9467233443936
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -8.01313320369856,
+							"angle": -8.01313320369856,
+							"angleinAEP": 8.01313320369856
+						}
+					]
+				},
+				"chantrong": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 0.23333333333333,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 2.90035205659135,
+							"angle": 2.90035205659135,
+							"angleinAEP": -2.90035205659135
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -12.2541303666188,
+							"angle": -12.2541303666188,
+							"angleinAEP": 12.2541303666188
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -51.4998759942243,
+							"angle": -51.4998759942243,
+							"angleinAEP": 51.4998759942243
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -51.4998759942243,
+							"angle": -51.4998759942243,
+							"angleinAEP": 51.4998759942243
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 7.44527785467925,
+							"angle": 7.44527785467925,
+							"angleinAEP": -7.44527785467925
+						}
+					]
+				},
+				"chip": {
+					"translate": [
+						{
+							"time": 0,
+							"x": 486,
+							"y": -1065
+						},
+						{
+							"time": 0.23333333333333,
+							"x": 504,
+							"y": -1047
+						},
+						{
+							"time": 0.36666666666667,
+							"x": 524,
+							"y": -1071
+						},
+						{
+							"time": 0.5,
+							"x": 544,
+							"y": -1121
+						},
+						{
+							"time": 0.53333333333333,
+							"x": 544,
+							"y": -1121.31054512722
+						},
+						{
+							"time": 0.56666666666667,
+							"x": 544,
+							"y": -1121.62749609249
+						},
+						{
+							"time": 0.6,
+							"x": 544,
+							"y": -1121.96106292365
+						},
+						{
+							"time": 0.63333333333333,
+							"x": 544,
+							"y": -1121.63775445979
+						},
+						{
+							"time": 0.66666666666667,
+							"x": 544,
+							"y": -1121.3079346445
+						},
+						{
+							"time": 0.7,
+							"x": 544,
+							"y": -1120.99210888176
+						},
+						{
+							"time": 0.73333333333333,
+							"x": 544,
+							"y": -1120.67921779928
+						},
+						{
+							"time": 0.76666666666667,
+							"x": 544,
+							"y": -1120.35857362429
+						},
+						{
+							"time": 0.8,
+							"x": 544,
+							"y": -1120.03886487567
+						},
+						{
+							"time": 0.83333333333333,
+							"x": 544,
+							"y": -1120.37039047363
+						},
+						{
+							"time": 0.86666666666667,
+							"x": 544,
+							"y": -1120.68853944723
+						},
+						{
+							"time": 0.9,
+							"x": 544,
+							"y": -1121
+						},
+						{
+							"time": 1.16666666666667,
+							"x": 746,
+							"y": -1167
+						},
+						{
+							"time": 1.26666666666667,
+							"x": 756,
+							"y": -1155
+						},
+						{
+							"time": 1.33333333333333,
+							"x": 766,
+							"y": -1167
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -89.8610518769954,
+							"angle": -89.8610518769954,
+							"angleinAEP": 89.8610518769954
+						},
+						{
+							"time": 1.26666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -86.5753738573081,
+							"angle": -86.5753738573081,
+							"angleinAEP": 86.5753738573081
+						},
+						{
+							"time": 1.33333333333333,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -89.8610518769954,
+							"angle": -89.8610518769954,
+							"angleinAEP": 89.8610518769954
+						}
+					]
+				},
+				"duingoai": {
+					"translate": [
+						{
+							"time": 0,
+							"x": -62,
+							"y": 8.99999999999591
+						},
+						{
+							"time": 0.23333333333333,
+							"x": -64.5434171529775,
+							"y": -8.63025145893647
+						},
+						{
+							"time": 0.36666666666667,
+							"x": -66,
+							"y": -3.00000000000409
+						},
+						{
+							"time": 0.5,
+							"x": -66,
+							"y": 8.99999999999591
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": -15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": -15.0863540084651,
+							"angle": 0,
+							"angleinAEP": 15.0863540084651
+						},
+						{
+							"time": 0.23333333333333,
+							"test0": 0,
+							"test1": -15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": -23.1470740315417,
+							"angle": -8.06072002307659,
+							"angleinAEP": 23.1470740315417
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": -15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": -28.6368180572837,
+							"angle": -13.5504640488186,
+							"angleinAEP": 28.6368180572837
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": -15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": 5.65005891992785,
+							"angle": 20.736412928393,
+							"angleinAEP": -5.65005891992785
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": -15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": 5.65005891992785,
+							"angle": 20.736412928393,
+							"angleinAEP": -5.65005891992785
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": -15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": 18.1253080461438,
+							"angle": 33.2116620546089,
+							"angleinAEP": -18.1253080461438
+						}
+					]
+				},
+				"channgoai": {
+					"translate": [
+						{
+							"time": 0,
+							"x": -21.0234674485752,
+							"y": -110.272452663564
+						},
+						{
+							"time": 0.23333333333333,
+							"x": -15.9475033657921,
+							"y": -123.818652637606
+						},
+						{
+							"time": 0.36666666666667,
+							"x": -17.986258348661,
+							"y": -120.007716444448
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": 15.0863540084651,
+							"angle": 0,
+							"angleinAEP": -15.0863540084651
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": 15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": 23.0418168592827,
+							"angle": 7.95546285081753,
+							"angleinAEP": -23.0418168592827
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": 15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": -71.6756660724832,
+							"angle": -86.7620200809484,
+							"angleinAEP": 71.6756660724832
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": 15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": -71.6756660724832,
+							"angle": -86.7620200809484,
+							"angleinAEP": 71.6756660724832
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": 15.0863540084651,
+							"tangentType": "linear",
+							"angleExactly": 19.5139215861297,
+							"angle": 4.42756757766452,
+							"angleinAEP": -19.5139215861297
+						}
+					]
+				},
+				"vattrong": {
+					"translate": [
+						{
+							"time": 0,
+							"x": 79.8448960684833,
+							"y": -101.691898218681
+						},
+						{
+							"time": 0.23333333333333,
+							"x": 79.8448960684833,
+							"y": -101.691898218681
+						},
+						{
+							"time": 0.36666666666667,
+							"x": 79.8448960684833,
+							"y": -97.6918982186814
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 15.1240073083106,
+							"tangentType": "linear",
+							"angleExactly": 15.1240073083106,
+							"angle": 0,
+							"angleinAEP": -15.1240073083106
+						},
+						{
+							"time": 0.23333333333333,
+							"test0": 0,
+							"test1": 15.1240073083106,
+							"tangentType": "linear",
+							"angleExactly": 25.9680676276946,
+							"angle": 10.844060319384,
+							"angleinAEP": -25.9680676276946
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": 15.1240073083106,
+							"tangentType": "linear",
+							"angleExactly": -11.7806350934321,
+							"angle": -26.9046424017427,
+							"angleinAEP": 11.7806350934321
+						}
+					]
+				},
+				"vatngoai": {
+					"translate": [
+						{
+							"time": 0,
+							"x": -79.9999999999999,
+							"y": -90.0000000000017
+						},
+						{
+							"time": 0.23333333333333,
+							"x": -79.9999999999999,
+							"y": -90.0000000000017
+						},
+						{
+							"time": 0.36666666666667,
+							"x": -77.9999999999999,
+							"y": -84.0000000000017
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": -41.7814518977235,
+							"tangentType": "linear",
+							"angleExactly": -41.7814518977235,
+							"angle": 0,
+							"angleinAEP": 41.7814518977235
+						},
+						{
+							"time": 0.23333333333333,
+							"test0": 0,
+							"test1": -41.7814518977235,
+							"tangentType": "linear",
+							"angleExactly": -51.334774448092,
+							"angle": -9.55332255036846,
+							"angleinAEP": 51.334774448092
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": -41.7814518977235,
+							"tangentType": "linear",
+							"angleExactly": -28.0872707767474,
+							"angle": 13.6941811209761,
+							"angleinAEP": 28.0872707767474
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": -41.7814518977235,
+							"tangentType": "linear",
+							"angleExactly": -28.0872707767474,
+							"angle": 13.6941811209761,
+							"angleinAEP": 28.0872707767474
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": -41.7814518977235,
+							"tangentType": "linear",
+							"angleExactly": -28.0872707767474,
+							"angle": 13.6941811209761,
+							"angleinAEP": 28.0872707767474
+						},
+						{
+							"time": 1.26666666666667,
+							"test0": 0,
+							"test1": -41.7814518977235,
+							"tangentType": "linear",
+							"angleExactly": -14.3328859046625,
+							"angle": 27.4485659930611,
+							"angleinAEP": 14.3328859046625
+						}
+					]
+				},
+				"than": {
+					"translate": [
+						{
+							"time": 0.36666666666667,
+							"x": 10,
+							"y": 121
+						},
+						{
+							"time": 0.5,
+							"x": 10,
+							"y": 109
+						},
+						{
+							"time": 0.56666666666667,
+							"x": 10,
+							"y": 117
+						}
+					]
+				},
+				"dau": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.26666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 7.03108158240718,
+							"angle": 7.03108158240718,
+							"angleinAEP": -7.03108158240718
+						},
+						{
+							"time": 1.33333333333333,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						}
+					]
+				},
+				"chuy": {
+					"rotate": [
+						{
+							"time": 0.6,
+							"test0": 0,
+							"test1": -122.789730857529,
+							"tangentType": "linear",
+							"angleExactly": -122.789730857529,
+							"angle": 0,
+							"angleinAEP": 122.789730857529
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": -122.789730857529,
+							"tangentType": "linear",
+							"angleExactly": -123,
+							"angle": -0.21026914247145,
+							"angleinAEP": 123
+						},
+						{
+							"time": 1.2,
+							"test0": 0,
+							"test1": -122.789730857529,
+							"tangentType": "linear",
+							"angleExactly": -71,
+							"angle": 51.7897308575286,
+							"angleinAEP": 71
+						},
+						{
+							"time": 1.33333333333333,
+							"test0": 0,
+							"test1": -122.789730857529,
+							"tangentType": "linear",
+							"angleExactly": -74.7777777777778,
+							"angle": 48.0119530797508,
+							"angleinAEP": 74.7777777777778
+						},
+						{
+							"time": 1.5,
+							"test0": 0,
+							"test1": -122.789730857529,
+							"tangentType": "linear",
+							"angleExactly": -75,
+							"angle": 47.7897308575286,
+							"angleinAEP": 75
+						}
+					]
+				},
+				"bantayngoai": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 111.789730857529,
+							"tangentType": "linear",
+							"angleExactly": 111.789730857529,
+							"angle": 0,
+							"angleinAEP": -111.789730857529
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": 111.789730857529,
+							"tangentType": "linear",
+							"angleExactly": 97.3347278150389,
+							"angle": -14.4550030424897,
+							"angleinAEP": -97.3347278150389
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": 111.789730857529,
+							"tangentType": "linear",
+							"angleExactly": 91.8249043261734,
+							"angle": -19.9648265313552,
+							"angleinAEP": -91.8249043261734
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": 111.789730857529,
+							"tangentType": "linear",
+							"angleExactly": 92.311707781881,
+							"angle": -19.4780230756475,
+							"angleinAEP": -92.311707781881
+						},
+						{
+							"time": 1.16666666666667,
+							"test0": 0,
+							"test1": 111.789730857529,
+							"tangentType": "linear",
+							"angleExactly": 57.1589143917091,
+							"angle": -54.6308164658194,
+							"angleinAEP": -57.1589143917091
+						}
+					]
+				},
+				"baptayngoai": {
+					"translate": [
+						{
+							"time": 0,
+							"x": -82,
+							"y": 197
+						},
+						{
+							"time": 0.2,
+							"x": -79.3251816268334,
+							"y": 205.784832397794
+						},
+						{
+							"time": 0.5,
+							"x": -74,
+							"y": 177
+						},
+						{
+							"time": 0.8,
+							"x": -73.9312890702072,
+							"y": 180.503503093966
+						},
+						{
+							"time": 0.9,
+							"x": -74,
+							"y": 185
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 9.46556971578802,
+							"angle": 9.46556971578802,
+							"angleinAEP": -9.46556971578802
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 17.4725207000181,
+							"angle": 17.4725207000181,
+							"angleinAEP": -17.4725207000181
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 27.4363248899253,
+							"angle": 27.4363248899253,
+							"angleinAEP": -27.4363248899253
+						}
+					]
+				},
+				"tayngoai": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": -5.72191596639318,
+							"tangentType": "linear",
+							"angleExactly": -5.72191596639318,
+							"angle": 0,
+							"angleinAEP": 5.72191596639318
+						},
+						{
+							"time": 0.36666666666667,
+							"test0": 0,
+							"test1": -5.72191596639318,
+							"tangentType": "linear",
+							"angleExactly": 23.4541587156994,
+							"angle": 29.1760746820926,
+							"angleinAEP": -23.4541587156994
+						},
+						{
+							"time": 0.5,
+							"test0": 0,
+							"test1": -5.72191596639318,
+							"tangentType": "linear",
+							"angleExactly": 8.11341747622298,
+							"angle": 13.8353334426162,
+							"angleinAEP": -8.11341747622298
+						},
+						{
+							"time": 0.9,
+							"test0": 0,
+							"test1": -5.72191596639318,
+							"tangentType": "linear",
+							"angleExactly": -0.0469768466842,
+							"angle": 5.67493911970898,
+							"angleinAEP": 0.0469768466842
+						}
+					]
+				}
+			},
+			"slots": {
+				"camera center": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/camera center"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"shadow": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/shadow"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"duoingua": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/duoingua"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"chuy_L1": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/chuy"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"bantaytrong": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/bantaytrong"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"baptaysau": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/baptaysau"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"taytrong": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/taytrong"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"duitrong": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/duitrong"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"chantrong": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/chantrong"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"chip": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/chip"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"duingoai": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/duingoai"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"channgoai": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/channgoai"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"vattrong": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/vattrong"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"vatngoai": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/vatngoai"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"taao": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/taao"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"than": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/than"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"dau": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/dau"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"mat": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/mat"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"mat die": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/mat die"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"chuy": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/chuy"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"bantayngoai": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/bantayngoai"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"baptayngoai": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/baptayngoai"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				},
+				"tayngoai": {
+					"attachment": [
+						{
+							"time": 0,
+							"name": "004__die-assets/tayngoai"
+						},
+						{
+							"time": 1.7,
+							"name": null
+						}
+					]
+				}
+			}
+		}
+	}
+}

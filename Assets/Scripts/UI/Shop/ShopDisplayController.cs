@@ -92,6 +92,7 @@ public class ShopDisplayController : MonoBehaviour
 			itemScript.fullName = itemData.fullName;
 			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemData.englishName);
 			itemScript.cost = itemData.cost;
+			itemScript.description = itemData.description;
 			//Pass in the values here
 			itemScript.Initialize ();
 		}
@@ -129,7 +130,7 @@ public class ShopDisplayController : MonoBehaviour
             }
             //Debug.Log("button is active: " + purchaseButton.gameObject.active);
 			curSelectedItem = item;
-			descriptionText.text = item.fullName.ToString ();
+			descriptionText.text = item.description.ToString();
 			priceText.text = item.cost.ToString();
             //Debug.Log("item.fullName: " + item.fullName);
             panelController.itemName = item.fullName;

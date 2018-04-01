@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 162d3d64256ed4bfab8c3d5925547c00
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Emo attack
+    21300002: bantayngoai
+    21300004: bantaytrong
+    21300006: baptayngoai
+    21300008: baptaysau
+    21300010: channgoai
+    21300012: chantrong
+    21300014: chip
+    21300016: chuy
+    21300018: dau
+    21300020: duingoai
+    21300022: duitrong
+    21300024: duoingua
+    21300026: effect_slash
+    21300028: mat die
+    21300030: mat
+    21300032: shadow
+    21300034: taao
+    21300036: tayngoai
+    21300038: taytrong
+    21300040: than
+    21300042: vatngoai
+    21300044: vattrong
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: 5
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Emo attack
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 747
+        width: 182
+        height: 168
+      alignment: 9
+      pivot: {x: .373626381, y: .476190478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bantayngoai
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 918
+        width: 80
+        height: 68
+      alignment: 9
+      pivot: {x: .506250024, y: .507352948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bantaytrong
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 918
+        width: 74
+        height: 67
+      alignment: 9
+      pivot: {x: .506756783, y: .50746268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: baptayngoai
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 568
+        width: 183
+        height: 178
+      alignment: 9
+      pivot: {x: .855191231, y: .713483155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: baptaysau
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 613
+        width: 133
+        height: 194
+      alignment: 9
+      pivot: {x: .484962404, y: .685567021}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: channgoai
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 873
+        width: 105
+        height: 122
+      alignment: 9
+      pivot: {x: .533333361, y: .967213094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chantrong
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 568
+        width: 86
+        height: 119
+      alignment: 9
+      pivot: {x: .476744175, y: .789915979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chip
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 873
+        width: 215
+        height: 132
+      alignment: 9
+      pivot: {x: .502325594, y: .503787875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chuy
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 0
+        width: 138
+        height: 612
+      alignment: 9
+      pivot: {x: .344611019, y: .246086046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dau
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 302
+        height: 349
+      alignment: 9
+      pivot: {x: .375827819, y: .13753581}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duingoai
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 808
+        width: 133
+        height: 191
+      alignment: 9
+      pivot: {x: .497305393, y: .748060107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duitrong
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 334
+        width: 139
+        height: 165
+      alignment: 9
+      pivot: {x: .406474829, y: .715151489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: duoingua
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 151
+        height: 137
+      alignment: 9
+      pivot: {x: .503311276, y: .23357664}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: effect_slash
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 916
+        height: 567
+      alignment: 9
+      pivot: {x: .435043663, y: .503527343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mat die
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 165
+        width: 177
+        height: 168
+      alignment: 9
+      pivot: {x: .355932206, y: .476190478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mat
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 182
+        height: 164
+      alignment: 9
+      pivot: {x: .373626381, y: .463414639}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shadow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 122
+        height: 51
+      alignment: 9
+      pivot: {x: .504098356, y: .509803951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: taao
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 0
+        width: 149
+        height: 150
+      alignment: 9
+      pivot: {x: .558267236, y: .846666694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tayngoai
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 0
+        width: 114
+        height: 136
+      alignment: 9
+      pivot: {x: .657894731, y: .871323526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: taytrong
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 0
+        width: 115
+        height: 118
+      alignment: 9
+      pivot: {x: .400000006, y: .792372882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: than
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 568
+        width: 326
+        height: 304
+      alignment: 9
+      pivot: {x: .480061352, y: .506578922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vatngoai
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 0
+        width: 146
+        height: 148
+      alignment: 9
+      pivot: {x: .244308293, y: .727795243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vattrong
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 747
+        width: 83
+        height: 116
+      alignment: 9
+      pivot: {x: .287871957, y: 1.02232587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

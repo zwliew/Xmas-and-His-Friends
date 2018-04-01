@@ -4,12 +4,14 @@
 			"name": "christmasTree",
 			"englishName": "christmasTree",
 			"fullName": "christmasTree",
+			"description": "xxx",
 			"cost": "100"
 		},
 		{
 			"name": "fire",
 			"englishName": "fire",
 			"fullName": "fire",
+			"description": "xxx",
             "cost": "40"
             
 		},
@@ -17,6 +19,7 @@
 			"name": "mat",
 			"englishName": "mat",
 			"fullName": "mat",
+			"description": "xxx",
             "cost": "20"
             
 		},
@@ -24,6 +27,7 @@
 			"name": "toyManBig",
 			"englishName": "toyManBig",
 			"fullName": "toyManBig",
+			"description": "xxx",
             "cost": "30"
             
 		},
@@ -31,6 +35,7 @@
 			"name": "bed",
 			"englishName": "bed",
 			"fullName": "bed",
+			"description": "xxxx",
             "cost": "60"
             
 		},
@@ -38,6 +43,7 @@
 			"name": "desk",
 			"englishName": "desk",
 			"fullName": "desk",
+			"description": "xxx",
             "cost": "30"
             
 		},
@@ -45,6 +51,7 @@
 			"name": "deer",
 			"englishName": "deer",
 			"fullName": "deer",
+			"description": "xxx",
             "cost": "45"
             
 		},
@@ -52,6 +59,7 @@
 			"name": "shelves",
 			"englishName": "shelves",
 			"fullName": "shelves",
+			"description": "xxx",
             "cost": "40"
             
 		},
@@ -59,6 +67,7 @@
 			"name": "sofa",
 			"englishName": "sofa",
 			"fullName": "sofa",
+			"description": "xxxx",
             "cost": "45"
             
 		},
@@ -66,36 +75,47 @@
 			"name": "curtains",
 			"englishName": "curtains",
 			"fullName": "curtains",
+			"description": "xxx",
             "cost": "50"
             
 		},
 		{
 			"name": "socks",
+			"englishName": "curtains",
 			"fullName": "socks",
+			"description": "xxx",
             "cost": "35"
             
 		},
 		{
 			"name": "pictureOnWall",
+			"englishName": "curtains",
 			"fullName": "pictureOnWall",
+			"description": "xxx",
             "cost": "30"
             
 		},
 		{
 			"name": "candleInAFrame",
+			"englishName": "curtains",
 			"fullName": "candleInAFrame",
+			"description": "xxx",
             "cost": "25"
             
 		},
 		{
 			"name": "wreath",
+			"englishName": "curtains",
 			"fullName": "wreath",
+			"description": "xxx",
             "cost": "50"
             
 		},
 		{
 			"name": "violincase",
+			"englishName": "curtains",
 			"fullName": "violincase",
+			"description": "xxx",
             "cost": "40"
             
 		}

@@ -1,0 +1,186 @@
+{
+	"bones": [
+		{
+			"name": "root"
+		},
+		{
+			"name": "Energy_[00000-00014]",
+			"parent": "root",
+			"enabled": true,
+			"x": 960,
+			"y": -540
+		}
+	],
+	"slots": [
+		{
+			"name": "Energy_[00000-00014]",
+			"bone": "Energy_[00000-00014]",
+			"attachment": "Energy-assets/op/Energy/Energy_00000"
+		}
+	],
+	"skins": {
+		"default": {
+			"Energy_[00000-00014]": {
+				"Energy-assets/op/Energy/Energy_00000": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00001": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00002": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00003": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00004": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00005": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00006": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00007": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00008": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00009": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00010": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00011": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00012": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00013": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				},
+				"Energy-assets/op/Energy/Energy_00014": {
+					"x": 0,
+					"y": 0,
+					"width": 512,
+					"height": 288
+				}
+			}
+		}
+	},
+	"animations": {
+		"animation": {
+			"bones": {
+				
+			},
+			"slots": {
+				"Energy_[00000-00014]": {
+					"attachment": [
+						{
+							"time": 0.03125,
+							"name": "Energy-assets/op/Energy/Energy_00001"
+						},
+						{
+							"time": 0.0625,
+							"name": "Energy-assets/op/Energy/Energy_00002"
+						},
+						{
+							"time": 0.09375,
+							"name": "Energy-assets/op/Energy/Energy_00003"
+						},
+						{
+							"time": 0.125,
+							"name": "Energy-assets/op/Energy/Energy_00004"
+						},
+						{
+							"time": 0.15625,
+							"name": "Energy-assets/op/Energy/Energy_00005"
+						},
+						{
+							"time": 0.1875,
+							"name": "Energy-assets/op/Energy/Energy_00006"
+						},
+						{
+							"time": 0.21875,
+							"name": "Energy-assets/op/Energy/Energy_00007"
+						},
+						{
+							"time": 0.25,
+							"name": "Energy-assets/op/Energy/Energy_00008"
+						},
+						{
+							"time": 0.28125,
+							"name": "Energy-assets/op/Energy/Energy_00009"
+						},
+						{
+							"time": 0.3125,
+							"name": "Energy-assets/op/Energy/Energy_00010"
+						},
+						{
+							"time": 0.34375,
+							"name": "Energy-assets/op/Energy/Energy_00011"
+						},
+						{
+							"time": 0.375,
+							"name": "Energy-assets/op/Energy/Energy_00012"
+						},
+						{
+							"time": 0.40625,
+							"name": "Energy-assets/op/Energy/Energy_00013"
+						},
+						{
+							"time": 0.4375,
+							"name": "Energy-assets/op/Energy/Energy_00014"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,592 @@
+{
+	"bones": [
+		{
+			"name": "root"
+		},
+		{
+			"name": "body",
+			"parent": "root",
+			"enabled": true,
+			"x": 227.5,
+			"y": -399
+		},
+		{
+			"name": "dau",
+			"parent": "body",
+			"enabled": true,
+			"x": 0.5,
+			"y": 146.5
+		},
+		{
+			"name": "tayP",
+			"parent": "body",
+			"enabled": true,
+			"x": 70,
+			"y": 75.5
+		},
+		{
+			"name": "tayT",
+			"parent": "body",
+			"enabled": true,
+			"x": -48.5,
+			"y": 63.5
+		},
+		{
+			"name": "eye_nham",
+			"parent": "dau",
+			"enabled": true,
+			"x": -23.5,
+			"y": 102.5
+		},
+		{
+			"name": "eye_nham_L1",
+			"parent": "dau",
+			"enabled": true,
+			"x": -23.5,
+			"y": 102.5
+		},
+		{
+			"name": "eye_open",
+			"parent": "dau",
+			"enabled": true,
+			"x": -20,
+			"y": 94.5
+		},
+		{
+			"name": "mieng",
+			"parent": "dau",
+			"enabled": true,
+			"x": -3,
+			"y": 24.5
+		},
+		{
+			"name": "taiP",
+			"parent": "dau",
+			"enabled": true,
+			"x": 45,
+			"y": 145
+		},
+		{
+			"name": "taiT",
+			"parent": "dau",
+			"enabled": true,
+			"x": -86.5,
+			"y": 127
+		}
+	],
+	"slots": [
+		{
+			"name": "body",
+			"bone": "body",
+			"attachment": "Idle-assets/body"
+		},
+		{
+			"name": "taiP",
+			"bone": "taiP",
+			"attachment": "Idle-assets/taiP"
+		},
+		{
+			"name": "taiT",
+			"bone": "taiT",
+			"attachment": "Idle-assets/taiT"
+		},
+		{
+			"name": "dau",
+			"bone": "dau",
+			"attachment": "Idle-assets/dau"
+		},
+		{
+			"name": "eye_open",
+			"bone": "eye_open",
+			"attachment": "Idle-assets/eye_open"
+		},
+		{
+			"name": "eye_nham_L1",
+			"bone": "eye_nham_L1"
+		},
+		{
+			"name": "eye_nham",
+			"bone": "eye_nham"
+		},
+		{
+			"name": "tayP",
+			"bone": "tayP",
+			"attachment": "Idle-assets/tayP"
+		},
+		{
+			"name": "tayT",
+			"bone": "tayT",
+			"attachment": "Idle-assets/tayT"
+		},
+		{
+			"name": "mieng",
+			"bone": "mieng",
+			"attachment": "Idle-assets/mieng"
+		}
+	],
+	"skins": {
+		"default": {
+			"body": {
+				"Idle-assets/body": {
+					"x": 3.5,
+					"y": 49,
+					"width": 224,
+					"height": 174
+				}
+			},
+			"taiP": {
+				"Idle-assets/taiP": {
+					"x": 29.5,
+					"y": -55.5,
+					"width": 113,
+					"height": 185
+				}
+			},
+			"taiT": {
+				"Idle-assets/taiT": {
+					"x": -32,
+					"y": -71.5,
+					"width": 102,
+					"height": 204
+				}
+			},
+			"dau": {
+				"Idle-assets/dau": {
+					"x": -12,
+					"y": 83.5,
+					"width": 223,
+					"height": 239
+				}
+			},
+			"eye_open": {
+				"Idle-assets/eye_open": {
+					"x": 0,
+					"y": 0,
+					"width": 150,
+					"height": 79
+				}
+			},
+			"eye_nham_L1": {
+				"Idle-assets/eye_nham": {
+					"x": 0,
+					"y": 0,
+					"width": 150,
+					"height": 93
+				}
+			},
+			"eye_nham": {
+				"Idle-assets/eye_nham": {
+					"x": 0,
+					"y": 0,
+					"width": 150,
+					"height": 93
+				}
+			},
+			"tayP": {
+				"Idle-assets/tayP": {
+					"x": -19.5,
+					"y": -5.5,
+					"width": 74,
+					"height": 51
+				}
+			},
+			"tayT": {
+				"Idle-assets/tayT": {
+					"x": 41,
+					"y": -7.5,
+					"width": 145,
+					"height": 68
+				}
+			},
+			"mieng": {
+				"Idle-assets/mieng": {
+					"x": 14,
+					"y": 1,
+					"width": 118,
+					"height": 77
+				}
+			}
+		}
+	},
+	"animations": {
+		"animation": {
+			"bones": {
+				"body": {
+					"scale": [
+						{
+							"time": 0,
+							"x": 1,
+							"y": 1
+						},
+						{
+							"time": 1.1,
+							"x": 1,
+							"y": 0.98161764705882
+						},
+						{
+							"time": 2.3,
+							"x": 1,
+							"y": 1
+						},
+						{
+							"time": 3.4,
+							"x": 1,
+							"y": 0.98161764705882
+						},
+						{
+							"time": 4.6,
+							"x": 1,
+							"y": 1
+						}
+					]
+				},
+				"taiP": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.1,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -3.10819332959244,
+							"angle": -3.10819332959244,
+							"angleinAEP": 3.10819332959244
+						},
+						{
+							"time": 2.3,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 3.4,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -3.10819332959244,
+							"angle": -3.10819332959244,
+							"angleinAEP": 3.10819332959244
+						},
+						{
+							"time": 4.6,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						}
+					]
+				},
+				"taiT": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.1,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -3.10819332959244,
+							"angle": -3.10819332959244,
+							"angleinAEP": 3.10819332959244
+						},
+						{
+							"time": 2.3,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 3.4,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -3.10819332959244,
+							"angle": -3.10819332959244,
+							"angleinAEP": 3.10819332959244
+						},
+						{
+							"time": 4.6,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						}
+					]
+				},
+				"dau": {
+					"translate": [
+						{
+							"time": 0,
+							"x": 0.5,
+							"y": 146.5
+						},
+						{
+							"time": 1.1,
+							"x": 3.5,
+							"y": 143.953183520599
+						},
+						{
+							"time": 2.3,
+							"x": 0.5,
+							"y": 146.5
+						},
+						{
+							"time": 3.4,
+							"x": 3.5,
+							"y": 143.953183520599
+						},
+						{
+							"time": 4.6,
+							"x": 0.5,
+							"y": 146.5
+						}
+					],
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.1,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 1.65165075626407,
+							"angle": 1.65165075626407,
+							"angleinAEP": -1.65165075626407
+						},
+						{
+							"time": 2.3,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 3.4,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 1.65165075626407,
+							"angle": 1.65165075626407,
+							"angleinAEP": -1.65165075626407
+						},
+						{
+							"time": 4.6,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						}
+					]
+				},
+				"tayP": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.1,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -6.64979644838003,
+							"angle": -6.64979644838003,
+							"angleinAEP": 6.64979644838003
+						},
+						{
+							"time": 2.3,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 3.4,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": -6.64979644838003,
+							"angle": -6.64979644838003,
+							"angleinAEP": 6.64979644838003
+						},
+						{
+							"time": 4.6,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						}
+					]
+				},
+				"tayT": {
+					"rotate": [
+						{
+							"time": 0,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 1.1,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 2.48375888733482,
+							"angle": 2.48375888733482,
+							"angleinAEP": -2.48375888733482
+						},
+						{
+							"time": 2.3,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 3.4,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 2.48375888733482,
+							"angle": 2.48375888733482,
+							"angleinAEP": -2.48375888733482
+						},
+						{
+							"time": 4.6,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						}
+					]
+				},
+				"mieng": {
+					"translate": [
+						{
+							"time": 4.06666666666667,
+							"x": -3,
+							"y": 24.5
+						},
+						{
+							"time": 4.26666666666667,
+							"x": 1.04392461335803,
+							"y": 27.4618306016313
+						},
+						{
+							"time": 4.46666666666667,
+							"x": -3,
+							"y": 24.5
+						}
+					],
+					"rotate": [
+						{
+							"time": 4.06666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						},
+						{
+							"time": 4.26666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 5.39322847288728,
+							"angle": 5.39322847288728,
+							"angleinAEP": -5.39322847288728
+						},
+						{
+							"time": 4.46666666666667,
+							"test0": 0,
+							"test1": 0,
+							"tangentType": "linear",
+							"angleExactly": 0,
+							"angle": 0,
+							"angleinAEP": 0
+						}
+					]
+				}
+			},
+			"slots": {
+				"eye_nham_L1": {
+					"attachment": [
+						{
+							"time": 1.3,
+							"name": "Idle-assets/eye_nham"
+						},
+						{
+							"time": 1.4,
+							"name": null
+						}
+					]
+				},
+				"eye_nham": {
+					"attachment": [
+						{
+							"time": 3,
+							"name": "Idle-assets/eye_nham"
+						},
+						{
+							"time": 3.1,
+							"name": null
+						}
+					]
+				}
+			}
+		}
+	}
+}
