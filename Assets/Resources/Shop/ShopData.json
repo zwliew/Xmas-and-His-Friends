@@ -10,112 +10,128 @@
 		{
 			"name": "fire",
 			"englishName": "fire",
-			"fullName": "fire",
-			"description": "xxx",
+			"fullName": "温暖的壁炉",
+			"description": "冬天好冷啊，所以我会坐在壁炉边上烤火。",
             "cost": "40"
             
 		},
 		{
 			"name": "mat",
 			"englishName": "mat",
-			"fullName": "mat",
-			"description": "xxx",
+			"fullName": "毛茸茸的地毯",
+			"description": "毛茸茸的地毯，小盒会在这里打滚。我每次都会把他赶出去。",
             "cost": "20"
             
 		},
 		{
 			"name": "toyManBig",
 			"englishName": "toyManBig",
-			"fullName": "toyManBig",
-			"description": "xxx",
+			"fullName": "大玩具士兵",
+			"description": "我有两个玩具士兵，一个大的，一个小的。这是大的。",
             "cost": "30"
+            
+		},
+		{
+			"name": "toyManSmall",
+			"englishName": "toyManSmall",
+			"fullName": "小玩具士兵",
+			"description": "我有两个玩具士兵，一个大的，一个小的。这是小的。",
+            "cost": "20"
             
 		},
 		{
 			"name": "bed",
 			"englishName": "bed",
-			"fullName": "bed",
-			"description": "xxxx",
+			"fullName": "柔软的床",
+			"description": "这是圣诞的床，床上放着我最喜欢的书，《童第周的故事》。",
             "cost": "60"
             
 		},
 		{
 			"name": "desk",
 			"englishName": "desk",
-			"fullName": "desk",
-			"description": "xxx",
+			"fullName": "高高的写字台",
+			"description": "这是我的写字台，每天晚上洗澡后睡觉前我会做一个小时的作业。",
             "cost": "30"
             
 		},
 		{
 			"name": "deer",
 			"englishName": "deer",
-			"fullName": "deer",
-			"description": "xxx",
+			"fullName": "驯鹿的脑袋",
+			"description": "这是一只驯鹿头。OWO",
             "cost": "45"
             
 		},
 		{
 			"name": "shelves",
 			"englishName": "shelves",
-			"fullName": "shelves",
-			"description": "xxx",
+			"fullName": "两个书架",
+			"description": "这是我的书架，我最喜欢的是我种的那盆小草。从植物园移植过来的。",
             "cost": "40"
             
 		},
 		{
 			"name": "sofa",
 			"englishName": "sofa",
-			"fullName": "sofa",
-			"description": "xxxx",
+			"fullName": "绿色的沙发",
+			"description": "这是圣诞的沙发，软软的很舒服。",
             "cost": "45"
             
 		},
 		{
 			"name": "curtains",
 			"englishName": "curtains",
-			"fullName": "curtains",
-			"description": "xxx",
+			"fullName": "暗红色的窗帘",
+			"description": "拉开窗帘阳光就能照进来哦。",
             "cost": "50"
             
 		},
 		{
 			"name": "socks",
-			"englishName": "curtains",
-			"fullName": "socks",
-			"description": "xxx",
+			"englishName": "socks",
+			"fullName": "五种颜色的袜子",
+			"description": "我喜欢给朋友送礼物，我把他们都放在袜子里。",
             "cost": "35"
             
 		},
 		{
 			"name": "pictureOnWall",
-			"englishName": "curtains",
-			"fullName": "pictureOnWall",
-			"description": "xxx",
+			"englishName": "pictureOnWall",
+			"fullName": "墙上的图片",
+			"description": "这些图片上画着我珍贵的回忆。",
             "cost": "30"
             
 		},
 		{
 			"name": "candleInAFrame",
-			"englishName": "curtains",
-			"fullName": "candleInAFrame",
-			"description": "xxx",
+			"englishName": "candleInAFrame",
+			"fullName": "有气味的蜡烛",
+			"description": "这是带有雪松和柏树香味的蜡烛。",
             "cost": "25"
             
 		},
 		{
 			"name": "wreath",
-			"englishName": "curtains",
-			"fullName": "wreath",
-			"description": "xxx",
-            "cost": "50"
+			"englishName": "wreath",
+			"fullName": "手作花环",
+			"description": "圣诞手很巧，这些花环都是自己做的。",
+            "cost": "30"
+            
+		},
+		{
+			"name": "wreathBig",
+			"englishName": "wreathBig",
+			"fullName": "大的手作花环",
+			"description": "圣诞手很巧，这些花环都是自己做的。",
+            "cost": "20"
             
 		},
 		{
 			"name": "violincase",
-			"englishName": "curtains",
-			"fullName": "violincase",
-			"description": "xxx",
+			"englishName": "violincaseV",
+			"fullName": "小提琴盒子",
+			"description": "圣诞是乐队的哦，很擅长拉提琴。",
             "cost": "40"
             
 		}

@@ -35,7 +35,7 @@ public class FurnitureInteraction : MonoBehaviour {
         idleTime += Time.deltaTime * Random.Range(0.5f, 1.1f);
         if (idleTime > 10f)
         {
-            AudioClip idleClip = Resources.Load<AudioClip>("Sounds/Audio/" + Random.Range(1, 5).ToString() + ".mp3");//The file name is xxx.mp3.mp3 quite strange isnt it?
+            AudioClip idleClip = Resources.Load<AudioClip>("Sounds/Audio/" + Random.Range(1, 38).ToString() + ".mp3");//The file name is xxx.mp3.mp3 quite strange isnt it?
             if (source != null && idleClip != null && !source.isPlaying)
             {
                 source.PlayOneShot(idleClip, 1f);
