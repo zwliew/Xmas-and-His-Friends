@@ -40,7 +40,9 @@ public class DisplayController : MonoBehaviour{
 	public GameObject goRotateCubeScriptHolder;
 	private RotateCube rotateCubeScript;
 
-	public void Initialize (Word word) {
+    public static List<string> corSentence { get; internal set; }
+
+    public void Initialize (Word word) {
 		this.word = word;
 		selectedSides = new PinZiPP[2];
 		rotateCubeScript = goRotateCubeScriptHolder.GetComponent<RotateCube> ();
