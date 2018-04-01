@@ -24,7 +24,7 @@ public class MazeDataController : MonoBehaviour {
 		
 	}
 
-    void Refresh()
+    public void Refresh()
     {
         corSentence = GetCorrectSentence();
         randSentence = GetRandomSentence();

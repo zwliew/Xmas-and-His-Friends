@@ -18,9 +18,12 @@ public class OverallGameManager : MonoBehaviour {
 		
 	}
 
-    void NewRound()
+    public void NewRound()
     {
-
+        Debug.Log("starting a new round");
+        dataController.Refresh();
+        displayController.Annihilte();
+        displayController.Refresh();
     }
 
     void Repeat()
@@ -36,7 +39,6 @@ public class OverallGameManager : MonoBehaviour {
     void Result(bool win)
     {
         displayController.RoundEnd(win);
-        dataController.RoundEnd(win);
         Debug.Log("The game is won: " + win);
     }
 }

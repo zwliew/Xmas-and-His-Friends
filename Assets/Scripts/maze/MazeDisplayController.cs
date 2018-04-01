@@ -10,21 +10,25 @@ public class MazeDisplayController : MonoBehaviour {
     public GameObject space;
     public GameObject bridge;
     public GameObject endBridge;
+    public GameObject xmas;
     public string[] corSentence = new string[12];
     public string[] randSentence = new string[25];
     private MazeDataController dataController;
+    private OverallGameManager ogm;
    
 
     void Start()
     {
         dataController = GetComponent<MazeDataController>();
+        ogm = GetComponent<OverallGameManager>();
         dataController.Start();
         Refresh();
 
     }
    
-    private void Refresh()
+    public void Refresh()
     {
+        Annihilte();
         ReceiveData(dataController.corSentence, dataController.randSentence);
         Debug.Log(corSentence[0]);
         if (corSentence == null || randSentence == null)
@@ -199,6 +203,10 @@ public class MazeDisplayController : MonoBehaviour {
         tempBridge = Instantiate(bridge);
         tempBridge.SetActive(true);
         tempBridge.transform.position = new Vector3(2.67f, -0.47f, adjacentTiles[0].z-0.18f);
+        GameObject tempXmas = new GameObject();
+        tempXmas = Instantiate(xmas);
+        tempXmas.SetActive(true);
+        tempXmas.transform.position = new Vector3(0.11f, 0.019f, tempBridge.transform.position.z + 0.113f);
         GameObject tempEnd = new GameObject();
         tempEnd = Instantiate(endBridge);
         tempEnd.transform.position = new Vector3(-6.68f, -0.7f, adjacentTiles[1].z + 0.18f);
@@ -208,6 +216,10 @@ public class MazeDisplayController : MonoBehaviour {
 
     private void ShowMessageBox(bool win)
     {
+        Debug.Log("message box shown");
+        ogm.NewRound();
+
+
 
     }
    
@@ -216,4 +228,15 @@ public class MazeDisplayController : MonoBehaviour {
         ShowMessageBox(win);
     }
 
+    public void Annihilte()
+    {
+        foreach(MazeTileController tile in FindObjectsOfType<MazeTileController>())
+        {
+            Destroy(tile.gameObject);
+        }
+        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("regenerate"))
+        {
+            Destroy(obj);
+        }
+    }
 }
