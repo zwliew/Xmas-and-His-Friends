@@ -7,11 +7,23 @@ public class OverallGameManager : MonoBehaviour {
     private List<string> randSentence = new List<string>();
     public MazeDisplayController displayController;
     public MazeDataController dataController;
+
+	public GameObject StartPage;
+	public GameObject WinPage;
+	public GameObject LostPage;
 	// Use this for initialization
 	void Start () {
         Debug.Log("OGM has started");
+		StartPage.SetActive (true);
+		WinPage.SetActive (false);
+		LostPage.SetActive (false);
 
     }
+
+	public void StartNewRound(){
+		dataController.StartNewRound ();
+		displayController.StartNewRound ();
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,7 +37,7 @@ public class OverallGameManager : MonoBehaviour {
         displayController.NewRound();
     }
 
-    void Repeat()
+    public void Repeat()
     {
         displayController.Repeat();
     }
@@ -37,8 +49,17 @@ public class OverallGameManager : MonoBehaviour {
 
     void Result(bool win)
     {
+		dataController.RoundEnd(win);
         displayController.RoundEnd(win);
-        dataController.RoundEnd(win);
-        Debug.Log("The game is won: " + win);
+        Debug.Log("-------------"+"The game is won: " + win);
+		if (win) {
+			StartPage.SetActive (false);
+			WinPage.SetActive (true);
+			LostPage.SetActive (false);
+		} else {
+			StartPage.SetActive (false);
+			WinPage.SetActive (false);
+			LostPage.SetActive (true);
+		}
     }
 }

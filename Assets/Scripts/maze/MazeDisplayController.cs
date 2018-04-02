@@ -21,11 +21,13 @@ public class MazeDisplayController : MonoBehaviour {
     {
         dataController = GetComponent<MazeDataController>();
         ogm = GetComponent<OverallGameManager>();
-        dataController.Start();
-        Refresh();
-
+		//StartNewRound ();
     }
    
+	public void StartNewRound(){
+		dataController.Start();
+		Refresh();
+	}
     public void Refresh()
     {
         ReceiveData(dataController.corSentence, dataController.randSentence);
