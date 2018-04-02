@@ -17,6 +17,7 @@ public class FurnitureInteraction : MonoBehaviour {
     public GameObject InGameUI;
     [HideInInspector]
     public bool isInRoom { get; set; }
+	public OverallSceneManager overallSceneManager;
 
     public void Start()
     {
@@ -73,8 +74,12 @@ public class FurnitureInteraction : MonoBehaviour {
             }
 
 			if (soundName.Equals ("christmasTree")) {
-				SceneManager.LoadScene ("NewPinZiGame");
+				overallSceneManager.LoadScene ("NewPinZiGame");
 			}
+			if (soundName.Equals ("desk")) {
+				overallSceneManager.LoadScene ("maze");
+			}
+
 
             Debug.Log("Trying to play sound: " + soundName);
             AudioClip clip = Resources.Load<AudioClip>(

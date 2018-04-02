@@ -46,7 +46,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1950860889940842
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1666784228961630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.62153, y: -5.379731, z: 4.16}
+  m_LocalPosition: {x: -80.08496, y: -7.3406467, z: -0.38507032}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_Children:
   - {fileID: 4099145630293234}
@@ -142,7 +142,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c5e13dcfd471af44f9b42384024332b7, type: 2}
+  - {fileID: 2100000, guid: 9a695d807a5fff647874b3f2c4df8b02, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -205,18 +205,18 @@ TextMesh:
   m_GameObject: {fileID: 1052354866510668}
   m_Text: "\u683D"
   m_OffsetZ: 0
-  m_CharacterSize: 0.17
+  m_CharacterSize: 0.15
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 40
-  m_FontStyle: 1
+  m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 1589fc90d91d0c048aebc49e87fb5f81, type: 3}
+  m_Font: {fileID: 12800000, guid: 9a695d807a5fff647874b3f2c4df8b02, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4285071130
+    rgba: 4294967295
 --- !u!114 &114303496491582902
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,15 +10,23 @@ public class MazeDataController : MonoBehaviour {
     public OverallGameManager ogm;
     public List<string> corSentence = new List<string>();
     public List<string> randSentence = new List<string>();
-    private PlayerDataController playerData = new PlayerDataController();
+   // private PlayerDataController playerData = new PlayerDataController();
+	private PlayerDataController playerData;
 	// Use this for initialization
 	public void Start () {
-        sentences = new string[52];
-        ReadString();
-        Refresh();
-        Debug.Log(corSentence[0]);
-        // sentence = GetRandomSentence();
+		GameObject playerDatagO = GameObject.FindGameObjectWithTag ("Persistent");
+		if(playerDatagO != null)
+			playerData = playerDatagO.GetComponent<PlayerDataController> ();
+		//StartNewRound ();
     }
+
+	public void StartNewRound(){
+		sentences = new string[52];
+		ReadString();
+		Refresh();
+		Debug.Log(corSentence[0]);
+		// sentence = GetRandomSentence();
+	}
 
     // Update is called once per frame
     void Update () {
@@ -72,7 +80,8 @@ public class MazeDataController : MonoBehaviour {
     {
         if (win)
         {
-            playerData.UpdatePlayerCoins(5);
+			if (playerData != null)
+				playerData.UpdatePlayerCoins (5);
             Debug.Log("Player Data updated");
         }
 
