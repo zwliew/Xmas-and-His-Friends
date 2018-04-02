@@ -58,8 +58,8 @@ public class RoomSelectionAni : MonoBehaviour {
 			timeKeeper += 1f;
 		}
 		//Debug.Log(xmasNavAgent.remainingDistance);
-		if (xmasNavAgent.remainingDistance > 0f && xmasNavAgent.remainingDistance < 0.5f 
-			&& triggerOne && sprfNavAgent.remainingDistance > 0f && sprfNavAgent.remainingDistance < 0.5f) {
+		if (triggerOne && (((xmasNavAgent.remainingDistance >= 0f) && (xmasNavAgent.remainingDistance < 0.5f) 
+			&& (sprfNavAgent.remainingDistance >= 0f)&& (sprfNavAgent.remainingDistance < 0.5f) && timeKeeper >1.3f) || (timeKeeper > 5f))) {
 			phaseName = "phaseTwo";
 			Debug.Log(phaseName);
 			animationController.SetAnimationState (0);

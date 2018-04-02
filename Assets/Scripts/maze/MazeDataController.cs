@@ -80,9 +80,10 @@ public class MazeDataController : MonoBehaviour {
     {
         if (win)
         {
-			if (playerData != null)
+			if (playerData != null) {
 				playerData.UpdatePlayerCoins (5);
-            Debug.Log("Player Data updated");
+				Debug.Log ("Player Data(coins) updated");
+			}
         }
 
     }

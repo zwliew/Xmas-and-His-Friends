@@ -14,6 +14,18 @@ public class OverallSceneManager : MonoBehaviour {
 			break;
 		default:
 			GameObject gO = GameObject.FindWithTag ("Transition");
+			switch (sceneName) {
+			case "Intro":
+				break;
+			case "RoomSelection":
+				break;
+			case "HomeScreen":
+				break;
+			case "NewPinZiGame":
+				break;
+			case "maze":
+				break;
+			}
 			if (gO != null)
 				gO.GetComponent<SceneTransitionAnimator> ().PlayTransition ();
 			StartCoroutine (LoadSceneAfterTime (1.3f, sceneName));
@@ -22,9 +34,18 @@ public class OverallSceneManager : MonoBehaviour {
 	}
 
 	IEnumerator LoadSceneAfterTime(float t, string sceneName){
-		yield return new WaitForSeconds (t);
-		SceneManager.LoadScene (sceneName);
+		//yield return new WaitForSeconds (t);
+		//SceneManager.LoadScene (sceneName);
+		yield return StartCoroutine(LoadSceneAsync(sceneName));
 		
+	}
+	
+	IEnumerator LoadSceneAsync (string sceneName){
+		yield return new WaitForSeconds (0.5f);
+		async = SceneManager.LoadSceneAsync(sceneName);
+		while (!async.isDone) {
+			yield return null;
+		}
 	}
 	
 	//-------------------------------
@@ -32,13 +53,6 @@ public class OverallSceneManager : MonoBehaviour {
 		GameObjectUtility.ClearObjectPools ();
 		CharacterSpawner.EndGameClear ();
 		LoadSceneAsync ("BuildingOne");
-	}
-
-	IEnumerator LoadSceneAsync (string sceneName){
-		async = SceneManager.LoadSceneAsync(sceneName);
-		while (!async.isDone) {
-			yield return null;
-		}
 	}
 
 	public static void EnterGame(string gameName){
