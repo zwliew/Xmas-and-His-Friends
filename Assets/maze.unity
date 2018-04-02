@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1336d5df6c0b45543ad8d9675629656d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mas: {fileID: 2022281483}
   gameManager: {fileID: 1134046799}
   count: 26
 --- !u!136 &46396176
@@ -388,7 +389,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1666784228961630, guid: 08d9a0aa1dfe1484e98fc9fe6bf02911, type: 2}
       propertyPath: m_Name
-      value: Space (1)
+      value: Space
       objectReference: {fileID: 0}
     - target: {fileID: 1666784228961630, guid: 08d9a0aa1dfe1484e98fc9fe6bf02911, type: 2}
       propertyPath: m_IsActive
@@ -646,7 +647,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 620000342}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
@@ -690,7 +691,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 976208763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.67, y: -0.47, z: 1.08}
+  m_LocalPosition: {x: 2.67, y: -0.47, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 370411848}
@@ -791,15 +792,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400038, guid: 80a04ef75db81a147a77c82865141b8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6800001
+      value: 1.1100006
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 80a04ef75db81a147a77c82865141b8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.018999994
+      value: 0.019000053
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 80a04ef75db81a147a77c82865141b8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.2110001
+      value: 0.13099998
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 80a04ef75db81a147a77c82865141b8b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1568,7 +1569,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2022281483}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.001
   m_Height: 0.49

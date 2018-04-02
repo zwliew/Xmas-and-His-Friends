@@ -75,9 +75,14 @@ public class ShopDisplayController : MonoBehaviour
 		Debug.Log("itemsCount:" +items.Count);
 
 		foreach (ShopItemData itemData in items) {
-			Button item = buttonPool.GetButton();
+
+            Button item = buttonPool.GetButton();
+            ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
+
+			//Button item = buttonPool.GetButton();
 			//Button item = Instantiate(prefabItemButton, shopWindowContent.transform);
-			ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
+			//ShopItem itemScript = item.gameObject.GetComponent<ShopItem> ();
+
 			itemScript.fullName = itemData.fullName;
 			itemScript.englishName = itemData.englishName;
 			itemScript.itemSprite = Resources.Load<Sprite>("Shop/" + itemData.englishName);

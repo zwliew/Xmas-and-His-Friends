@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class MazeDisplayController : MonoBehaviour {
     private int length = 12;
     private List<GameObject> spaces;
@@ -10,31 +10,62 @@ public class MazeDisplayController : MonoBehaviour {
     public GameObject space;
     public GameObject bridge;
     public GameObject endBridge;
+    public GameObject xmas;
+    public string[] corSentence = new string[12];
+    public string[] randSentence = new string[25];
+    private MazeDataController dataController;
+    private OverallGameManager ogm;
+   
+
     void Start()
     {
+        dataController = GetComponent<MazeDataController>();
+        ogm = GetComponent<OverallGameManager>();
+        dataController.Start();
         Refresh();
 
     }
-
-    private void Refresh()
+   
+    public void Refresh()
     {
-        InstantiateTiles();
-        correctNodes = GetNodes(length);
-        GenerateBridge(MatchAndGenerate(correctNodes));
-
+        ReceiveData(dataController.corSentence, dataController.randSentence);
+        Debug.Log(corSentence[0]);
+        if (corSentence == null || randSentence == null)
+        {
+            return;
+        }
+        else
+        {
+            InstantiateTiles();
+            correctNodes = GetNodes(12);
+            GenerateBridge(MatchAndGenerate(correctNodes));
+        }
     }
     void Update()
     {
-        /*if (Input.GetMouseButtonDown(0))
-        {
-            List<Vector2> nodes = new List<Vector2>();
-            nodes = GetNodes();
-        }*/
 
-          //numberOfCharacters =  GetNodes(12);
-        //Debug.Log(numberOfCharacters.Count);
 
         
+    }
+
+    public void ReceiveData(List<string> corSentence, List<string> randSentence)
+    {
+        Debug.Log("receiving data");
+        this.corSentence = new string[12];
+        this.randSentence = new string[25];
+        int count1 = 0;
+        int count2 = 0;
+        foreach (string chara in corSentence)
+        {
+            this.corSentence[count1] = chara;
+            Debug.Log("chara= " + this.corSentence[count1]);
+            count1++;
+        }
+        foreach (string chara in randSentence)
+        {
+            this.randSentence[count2] = chara;
+            count2++;
+        }
     }
     private void InstantiateTiles()
     {
@@ -46,15 +77,17 @@ public class MazeDisplayController : MonoBehaviour {
                 GameObject tempGo = Instantiate(space);
                 spaces.Add(tempGo);
                 tempGo.transform.position = new Vector3(-1.04f * j, 0, 1.04f * i);
+                tempGo.SetActive(true);
+                tempGo.GetComponentInChildren<TextMesh>().text = randSentence[5 * i + j];
             }
         }
     }
     private List<Vector2> GetNodes(int number)
     {
-        List<Vector2> nodes = new List<Vector2>();
         int row = 0;
-        int col = Random.Range(0, 4);
+        int col = 2;
         Vector2 newNode = new Vector2(row, col);
+        List<Vector2> nodes = new List<Vector2>();
         nodes.Add(newNode);
 
         while (row < 5)
@@ -65,12 +98,12 @@ public class MazeDisplayController : MonoBehaviour {
             {
                 if (direction > 4)
                 {//Toss a five-sided coin to decide where to go[first time only]
-                    int coin = Random.Range(0, 1001);//0 forward, 1,2 left, 3,4 right
-                    if(coin > 501)
+                    int coin = Random.Range(0, 5);//0 forward, 1,2 left, 3,4 right
+                    if(coin > 3)
                     {
                         direction = 1;
                     }
-                    if (coin >1 && coin < 502)
+                    if (coin >1 && coin < 4)
                     {
                         direction = -1;
                     }
@@ -102,8 +135,8 @@ public class MazeDisplayController : MonoBehaviour {
                 {//decide whether moving horizontally is possible
                     direction = 0;
                 }
-
-                float anotherCoin = Random.Range(0f, 1f);// decide whether to move horizontally
+                float anotherCoin = Random.Range(0f, 1f);
+                // decide whether to move horizontally
                 if (anotherCoin > 0.3f)
                 {
 
@@ -152,12 +185,12 @@ public class MazeDisplayController : MonoBehaviour {
     {
         List<Vector3> startNEnd = new List<Vector3>();// records the starting and ending positions of tiles;
         int count = 1;
-        foreach (Vector2 pos in positions) {
-            spaces[(int)pos.x + ((int)pos.y * 5)].GetComponent<MazeTileController>().serialNumber = count;
-            spaces[(int)pos.x + ((int)pos.y * 5)].GetComponentInChildren<Renderer>().material.SetColor("green", Color.green);
-            spaces[(int)pos.x + ((int)pos.y * 5)].GetComponentInChildren<TextMesh>().text = count.ToString(); 
+        for(int i = 0; i < positions.Count; i++) {
+            spaces[(int)positions[i].x + ((int)positions[i].y * 5)].GetComponent<MazeTileController>().serialNumber = count;
+            spaces[(int)positions[i].x + ((int)positions[i].y * 5)].GetComponentInChildren<TextMesh>().text = corSentence[i]; 
             count++;
         }
+
         startNEnd.Add(spaces[(int)positions[0].x + ((int)positions[0].y * 5)].transform.position);
         startNEnd.Add(spaces[(int)positions[length - 1].x + ((int)positions[length - 1].y * 5)].transform.position);
         return startNEnd;
@@ -169,6 +202,12 @@ public class MazeDisplayController : MonoBehaviour {
         tempBridge = Instantiate(bridge);
         tempBridge.SetActive(true);
         tempBridge.transform.position = new Vector3(2.67f, -0.47f, adjacentTiles[0].z-0.18f);
+        GameObject tempXmas = new GameObject();
+        tempXmas = Instantiate(xmas);
+        tempXmas.SetActive(true);
+        tempXmas.GetComponent<NavMeshAgent>().enabled = false ;
+        tempXmas.transform.position = new Vector3(1.24f, 0.019f, 2.013f);
+        tempXmas.GetComponent<NavMeshAgent>().enabled = true;
         GameObject tempEnd = new GameObject();
         tempEnd = Instantiate(endBridge);
         tempEnd.transform.position = new Vector3(-6.68f, -0.7f, adjacentTiles[1].z + 0.18f);
@@ -178,6 +217,9 @@ public class MazeDisplayController : MonoBehaviour {
 
     private void ShowMessageBox(bool win)
     {
+        Debug.Log("message box shown");
+
+
 
     }
    
@@ -186,4 +228,27 @@ public class MazeDisplayController : MonoBehaviour {
         ShowMessageBox(win);
     }
 
+    public void Annihilte()
+    {
+        foreach(MazeTileController tile in FindObjectsOfType<MazeTileController>())
+        {
+            Destroy(tile.gameObject);
+        }
+        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("regenerate"))
+        {
+            Destroy(obj);
+        }
+    }
+
+    public void Repeat()
+    {
+        Annihilte();
+        Refresh();
+    }
+
+    public void NewRound()
+    {
+        Annihilte();
+        Refresh();
+    }
 }

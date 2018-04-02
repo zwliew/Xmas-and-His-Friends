@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OverallGameManager : MonoBehaviour {
-    private MazeDisplayController displayController;
-    private MazeDataController dataController;
+    private List<string> corSentence = new List<string>();
+    private List<string> randSentence = new List<string>();
+    public MazeDisplayController displayController;
+    public MazeDataController dataController;
 	// Use this for initialization
 	void Start () {
-        displayController = GetComponent<MazeDisplayController>();
-        dataController = GetComponent<MazeDataController>();
+        Debug.Log("OGM has started");
+
     }
 	
 	// Update is called once per frame
@@ -16,14 +18,21 @@ public class OverallGameManager : MonoBehaviour {
 		
 	}
 
-    void NewRound()
+    public void NewRound()
     {
-
+        Debug.Log("starting a new round");
+        dataController.Refresh();
+        displayController.NewRound();
     }
 
     void Repeat()
     {
+        displayController.Repeat();
+    }
+    public void HandOverData(List<string> corSentence, List<string>randSentence)
+    {
 
+        Debug.Log("passing data");
     }
 
     void Result(bool win)

@@ -86,7 +86,9 @@ public class PlayerDataController : MonoBehaviour
     private void LoadPlayerData()
     {
 		playerData = new PlayerData ();
+
 		InitializeMoneyAndFurniture ();
+
 
         if (PlayerPrefs.HasKey("name"))
         {

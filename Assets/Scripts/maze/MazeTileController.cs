@@ -29,6 +29,7 @@ public class MazeTileController : MonoBehaviour {
 
     private IEnumerator OnTriggerEnter(Collider other)
     {
+        Debug.Log("name is " + other.name);
         if (serialNumber == 0)
         {
             yield return new WaitForSeconds(0.3f);
@@ -39,14 +40,14 @@ public class MazeTileController : MonoBehaviour {
             other.GetComponent<NavMeshAgent>().enabled = false;
             other.GetComponent<Rigidbody>().useGravity = true;
             rgdBody.detectCollisions = false;
-            if (other.name == "Mas1")
+            if (other.name == "Mas1(Clone)")
             {
                 ogm.SendMessage("Result", false);
             }
             yield return new WaitForSeconds(5f);
            
         }
-        if (other.name == "Mas1")
+        if (other.name == "Mas1(Clone)")
         {
             if (other.GetComponent<ModelInfo>().count < serialNumber)
             {
@@ -65,7 +66,7 @@ public class MazeTileController : MonoBehaviour {
             {
                  other.GetComponent<ModelInfo>().count = serialNumber + 1;
                  Debug.Log("Xmas count is equal to: " + other.GetComponent<ModelInfo>().count);
-                 if(serialNumber == dataController.length  )
+                 if(serialNumber == dataController.length)
                 {
                     ogm.SendMessage("Result", true);
                 }
