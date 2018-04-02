@@ -18,11 +18,8 @@ TagManager:
   - PPfour
   - PP
   - destroyed
-  - ChristmasTree
-  - Fire
-  - Carpet
   - Persistent
-  - regenerate
+  - Transition
   layers:
   - Default
   - TransparentFX

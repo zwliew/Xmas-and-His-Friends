@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FurnitureInteraction : MonoBehaviour {
     /// <summary>
@@ -70,6 +71,10 @@ public class FurnitureInteraction : MonoBehaviour {
             {
                 soundName = hitInfo.collider.gameObject.name;
             }
+
+			if (soundName.Equals ("christmasTree")) {
+				SceneManager.LoadScene ("NewPinZiGame");
+			}
 
             Debug.Log("Trying to play sound: " + soundName);
             AudioClip clip = Resources.Load<AudioClip>(

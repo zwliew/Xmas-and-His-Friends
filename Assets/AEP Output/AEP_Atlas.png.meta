@@ -1,14 +1,12 @@
 fileFormatVersion: 2
 guid: 8d6651315c0a546e2942781ef748d6be
-timeCreated: 1522563883
+timeCreated: 1522589675
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: organized title layers-01
-    21300002: organized title layers-02
-    21300004: organized title layers-03
-    21300006: organized title layers-04
-    21300008: yellow square
+    21300000: blue solid
+    21300002: red solid
+    21300004: yellow solid
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -75,71 +73,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: organized title layers-01
+      name: blue solid
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2216
-        height: 1894
-      alignment: 9
-      pivot: {x: 0.4061372, y: 0.46040127}
+        width: 1388
+        height: 1388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: organized title layers-02
+      name: red solid
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1389
         y: 0
-        width: 2038
-        height: 1950
-      alignment: 9
-      pivot: {x: 0.49582925, y: 0.47871795}
+        width: 1388
+        height: 1388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: organized title layers-03
+      name: yellow solid
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2418
-        width: 1669
-        height: 1371
-      alignment: 9
-      pivot: {x: 0.52097064, y: 0.5802334}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: organized title layers-04
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1015
-        width: 2035
-        height: 1402
-      alignment: 9
-      pivot: {x: 0.5619165, y: 0.46184024}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: yellow square
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 2778
         y: 0
-        width: 3499
-        height: 1014
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 1108
+        height: 1075
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

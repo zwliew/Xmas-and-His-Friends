@@ -47,16 +47,16 @@ public class DataController : MonoBehaviour {
 	public Word[] GetAllWords(){
 		return words;
 	}
-	public void WinThisRound(){//TODO
-//		
-//		playerDataController = GameObject.FindGameObjectWithTag("Persistent")//Get the PlayerDataController
-//			.GetComponent<PlayerDataController>();
-//		if (playerDataController)
-//			Debug.Log ("playerDataController is found successfully");
-//
-//		playerDataController.UpdatePlayerCoins (10);
-//
-//		
+	public void WinThisRound(){
+		
+		playerDataController = GameObject.FindGameObjectWithTag("Persistent")//Get the PlayerDataController
+			.GetComponent<PlayerDataController>();
+		if (playerDataController) {
+			Debug.Log ("playerDataController is found successfully");
+
+			playerDataController.UpdatePlayerCoins (10);
+		}
+		
 	}
 	//string dataFilePath = "jar:file:///data/app/com.hci.xmas-2/base.apk!/assets/PinZiData.json"; //Path.Combine (Application.streamingAssetsPath, dataFileName);
 	//dataFilePath = "PinZiData.json";
