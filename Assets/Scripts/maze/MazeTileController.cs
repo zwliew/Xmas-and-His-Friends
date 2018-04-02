@@ -10,9 +10,13 @@ public class MazeTileController : MonoBehaviour {
     private MazeDataController dataController;
     private OverallGameManager ogm;
     public GameObject gameManager;
+    private GameObject gorakutile;
+    public GameObject trees; 
 	// Use this for initialization
 	void Start () {
         rgdBody = GetComponentInChildren<Rigidbody>();
+        gorakutile = GetComponentInChildren<Identifier>().gameObject;
+        gorakutile.SetActive(false);
         rend = GetComponentInChildren<Renderer>();
        // rgdBody.useGravity = false;
         rgdBody.isKinematic = false;
@@ -66,6 +70,11 @@ public class MazeTileController : MonoBehaviour {
             {
                  other.GetComponent<ModelInfo>().count = serialNumber + 1;
                  Debug.Log("Xmas count is equal to: " + other.GetComponent<ModelInfo>().count);
+                rgdBody.gameObject.SetActive(false);
+                gorakutile.SetActive(true);
+                Instantiate(trees);
+                trees.SetActive(true);
+                trees.transform.position = new Vector3(this.transform.position.x - 0.9f, this.transform.position.y, this.transform.position.z +0.37f);
                  if(serialNumber == dataController.length)
                 {
                     ogm.SendMessage("Result", true);
