@@ -9,13 +9,15 @@ public class MazeTileController : MonoBehaviour {
     private NavMeshObstacle obs;
     private MazeDataController dataController;
     private OverallGameManager ogm;
-    public GameObject gameManager;
+    private GameObject gameManager;
     private GameObject gorakutile;
     public GameObject trees; 
 	// Use this for initialization
 	void Start () {
         rgdBody = GetComponentInChildren<Rigidbody>();
         gorakutile = GetComponentInChildren<Identifier>().gameObject;
+        gameManager = GameObject.Find("GameController");
+
         gorakutile.SetActive(false);
         rend = GetComponentInChildren<Renderer>();
        // rgdBody.useGravity = false;
@@ -74,7 +76,8 @@ public class MazeTileController : MonoBehaviour {
                 gorakutile.SetActive(true);
                 Instantiate(trees);
                 trees.SetActive(true);
-                trees.transform.position = new Vector3(this.transform.position.x - 0.9f, this.transform.position.y, this.transform.position.z +0.37f);
+                trees.transform.position = new Vector3(this.gameObject.transform.position.x /*- 0.9f*/, this.gameObject.transform.position.y, this.gameObject.transform.position.z /*+0.37f*/);
+                Debug.Log("tile position" + serialNumber + transform.position);
                  if(serialNumber == dataController.length)
                 {
                     ogm.SendMessage("Result", true);
