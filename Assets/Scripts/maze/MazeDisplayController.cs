@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class MazeDisplayController : MonoBehaviour {
     private int length = 12;
     private List<GameObject> spaces;
@@ -28,7 +28,6 @@ public class MazeDisplayController : MonoBehaviour {
    
     public void Refresh()
     {
-        Annihilte();
         ReceiveData(dataController.corSentence, dataController.randSentence);
         Debug.Log(corSentence[0]);
         if (corSentence == null || randSentence == null)
@@ -206,7 +205,9 @@ public class MazeDisplayController : MonoBehaviour {
         GameObject tempXmas = new GameObject();
         tempXmas = Instantiate(xmas);
         tempXmas.SetActive(true);
+        tempXmas.GetComponent<NavMeshAgent>().enabled = false ;
         tempXmas.transform.position = new Vector3(1.24f, 0.019f, 2.013f);
+        tempXmas.GetComponent<NavMeshAgent>().enabled = true;
         GameObject tempEnd = new GameObject();
         tempEnd = Instantiate(endBridge);
         tempEnd.transform.position = new Vector3(-6.68f, -0.7f, adjacentTiles[1].z + 0.18f);

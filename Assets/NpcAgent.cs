@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class NpcAgent : MonoBehaviour {
     private NavMeshAgent agent;
     private bool caught = false;
-    public GameObject mas;
+    private GameObject mas;
     public GameObject gameManager;
     private OverallGameManager ogm;
     public int count = 26;
@@ -14,7 +14,7 @@ public class NpcAgent : MonoBehaviour {
     {
         agent = GetComponent<NavMeshAgent>();
         ogm = gameManager.GetComponent<OverallGameManager>();
-        Debug.Log("faulty OGM name " + ogm.name);
+
     }
 
     void Update()
@@ -25,6 +25,7 @@ public class NpcAgent : MonoBehaviour {
             StopCoroutine(MoveToLocation(mas.transform.position));
         }
         else{
+            mas = GameObject.Find("Mas1(Clone)");
             StartCoroutine(MoveToLocation(mas.transform.position));
         }
 
@@ -51,7 +52,7 @@ public class NpcAgent : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.name == "Mas1") { 
+        if (other.gameObject.name == "Mas1(Clone)") { 
             agent.isStopped = true;
             caught = true;
             ogm.SendMessage("Result", false);
