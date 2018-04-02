@@ -22,6 +22,7 @@ TagManager:
   - Fire
   - Carpet
   - Persistent
+  - regenerate
   layers:
   - Default
   - TransparentFX

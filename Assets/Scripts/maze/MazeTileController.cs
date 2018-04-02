@@ -66,7 +66,7 @@ public class MazeTileController : MonoBehaviour {
             {
                  other.GetComponent<ModelInfo>().count = serialNumber + 1;
                  Debug.Log("Xmas count is equal to: " + other.GetComponent<ModelInfo>().count);
-                 if(serialNumber == dataController.length  )
+                 if(serialNumber == dataController.length)
                 {
                     ogm.SendMessage("Result", true);
                 }

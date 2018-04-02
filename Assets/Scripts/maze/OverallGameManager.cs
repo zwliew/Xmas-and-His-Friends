@@ -22,13 +22,12 @@ public class OverallGameManager : MonoBehaviour {
     {
         Debug.Log("starting a new round");
         dataController.Refresh();
-        displayController.Annihilte();
-        displayController.Refresh();
+        displayController.NewRound();
     }
 
     void Repeat()
     {
-
+        displayController.Repeat();
     }
     public void HandOverData(List<string> corSentence, List<string>randSentence)
     {
@@ -39,6 +38,7 @@ public class OverallGameManager : MonoBehaviour {
     void Result(bool win)
     {
         displayController.RoundEnd(win);
+        dataController.RoundEnd(win);
         Debug.Log("The game is won: " + win);
     }
 }

@@ -10,6 +10,7 @@ public class MazeDataController : MonoBehaviour {
     public OverallGameManager ogm;
     public List<string> corSentence = new List<string>();
     public List<string> randSentence = new List<string>();
+    private PlayerDataController playerData = new PlayerDataController();
 	// Use this for initialization
 	public void Start () {
         sentences = new string[52];
@@ -69,6 +70,11 @@ public class MazeDataController : MonoBehaviour {
     }
     private void UpdatePlayerData(bool win)
     {
+        if (win)
+        {
+            playerData.UpdatePlayerCoins(5);
+            Debug.Log("Player Data updated");
+        }
 
     }
     public void RoundEnd(bool win)

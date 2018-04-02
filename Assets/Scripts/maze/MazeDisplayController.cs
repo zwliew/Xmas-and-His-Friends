@@ -218,7 +218,6 @@ public class MazeDisplayController : MonoBehaviour {
     private void ShowMessageBox(bool win)
     {
         Debug.Log("message box shown");
-        ogm.NewRound();
 
 
 
@@ -239,5 +238,17 @@ public class MazeDisplayController : MonoBehaviour {
         {
             Destroy(obj);
         }
+    }
+
+    public void Repeat()
+    {
+        Annihilte();
+        Refresh();
+    }
+
+    public void NewRound()
+    {
+        Annihilte();
+        Refresh();
     }
 }
