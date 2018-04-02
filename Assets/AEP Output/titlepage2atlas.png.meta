@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8952e44376c2b495b80c125e6d666d7d
-timeCreated: 1522592011
+timeCreated: 1522632509
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -93,7 +93,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1895
+        y: 0
         width: 2038
         height: 1950
       alignment: 9
@@ -106,8 +106,8 @@ TextureImporter:
       name: organized title layers-03
       rect:
         serializedVersion: 2
-        x: 2217
-        y: 2418
+        x: 0
+        y: 0
         width: 1669
         height: 1371
       alignment: 9
@@ -120,7 +120,7 @@ TextureImporter:
       name: organized title layers-04
       rect:
         serializedVersion: 2
-        x: 2217
+        x: 0
         y: 1015
         width: 2035
         height: 1402
@@ -134,7 +134,7 @@ TextureImporter:
       name: yellow square
       rect:
         serializedVersion: 2
-        x: 2217
+        x: 0
         y: 0
         width: 3499
         height: 1014

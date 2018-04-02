@@ -13,14 +13,21 @@ public class OverallSceneManager : MonoBehaviour {
 		case "":
 			break;
 		default:
-			SceneManager.LoadScene (sceneName);
 			GameObject gO = GameObject.FindWithTag ("Transition");
-			if(gO!=null)
+			if (gO != null)
 				gO.GetComponent<SceneTransitionAnimator> ().PlayTransition ();
+			StartCoroutine (LoadSceneAfterTime (1.3f, sceneName));
 			break;
 		}
 	}
 
+	IEnumerator LoadSceneAfterTime(float t, string sceneName){
+		yield return new WaitForSeconds (t);
+		SceneManager.LoadScene (sceneName);
+		
+	}
+	
+	//-------------------------------
 	public void LoadSceneForUI(){
 		GameObjectUtility.ClearObjectPools ();
 		CharacterSpawner.EndGameClear ();
@@ -36,5 +43,4 @@ public class OverallSceneManager : MonoBehaviour {
 
 	public static void EnterGame(string gameName){
 	}
-
 }

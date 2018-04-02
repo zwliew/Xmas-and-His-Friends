@@ -112,10 +112,7 @@ public class RoomSelectionAni : MonoBehaviour {
 		} else if (i == 2) {
 			uiAnimator.SetTrigger ("SpringFes");
 		}
-		for(int ii =0;ii<10;ii++){
-			yield return null;
-			
-		}
+		yield return new WaitForSeconds (2f);
 		phaseName = "phaseFour";
 	}
 

@@ -12,8 +12,9 @@ public class SceneTransitionAnimator : MonoBehaviour {
 	}
 
 	public void PlayTransition(){
-		Debug.Log ("TransitionAnimation");
-		aniController.Play ("Transitiontest");
+		
+		Debug.Log ("TransitionAnimation is being played");
+		aniController.SetTrigger ("transition");
 	}
 
 	void Update(){
