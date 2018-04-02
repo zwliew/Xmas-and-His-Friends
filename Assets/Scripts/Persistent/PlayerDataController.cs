@@ -15,7 +15,7 @@ public class PlayerDataController : MonoBehaviour
     void Awake()
     {
 		DontDestroyOnLoad (gameObject);
-		PlayerPrefs.DeleteAll ();
+		InitializeForFirstLogin ();
         LoadPlayerData();
     }
 
@@ -24,6 +24,14 @@ public class PlayerDataController : MonoBehaviour
         playerData.name = name;
         SavePlayerData();
     }
+
+	void Update(){
+		if (Input.GetKey (KeyCode.A)) {
+			Debug.Log ("ReInstalling the game..");
+			PlayerPrefs.DeleteAll ();
+			PlayerPrefs.DeleteKey ("firstTimePlay");
+		}
+	}
 
     /**
      * Updates the number of coins in the player's inventory
@@ -78,11 +86,7 @@ public class PlayerDataController : MonoBehaviour
     private void LoadPlayerData()
     {
 		playerData = new PlayerData ();
-        PlayerPrefs.SetInt("coins", 100);
-		PlayerPrefs.SetString ("displayedShopItems", "fire,desk,deer,shelves,sofa,carpet,toyManSmall,toyManBig,wreath,wreathSmall");
-		PlayerPrefs.SetString ("purchasedShopItems", 
-			"christmasTree,desk,bed,curtains,fire,deer,shelves,sofa,pictureOnWall,carpet,toyManBig,wreath,wreathSmall,candleInAFrame,violinCase,toyManSmall");
-		PlayerPrefs.SetString ("equippedItems", "christmasTree");
+		InitializeMoneyAndFurniture ();
 
         if (PlayerPrefs.HasKey("name"))
         {
@@ -146,4 +150,22 @@ public class PlayerDataController : MonoBehaviour
 
 		PlayerPrefs.Save ();
     }
+
+	private void InitializeForFirstLogin(){
+		if (PlayerPrefs.HasKey ("firstTimePlay")) {
+			InitializeMoneyAndFurniture ();
+			Debug.Log ("Virgin");
+		} else {
+			Debug.Log ("not first time into this game");
+		}
+		PlayerPrefs.SetString ("firstTimePlay", "AlreadlyLoggedIn");
+	}
+
+	private void InitializeMoneyAndFurniture(){
+		PlayerPrefs.SetInt("coins", 100);
+		PlayerPrefs.SetString ("displayedShopItems", "fire,desk,deer,shelves,sofa,carpet,toyManSmall,toyManBig,wreath,wreathSmall");
+		PlayerPrefs.SetString ("purchasedShopItems", 
+			"desk,bed,curtains,fire,deer,shelves,sofa,pictureOnWall,carpet,toyManBig,wreath,wreathSmall,candleInAFrame,violinCase,toyManSmall");
+		PlayerPrefs.SetString ("equippedItems", "christmasTree");
+	}
 }

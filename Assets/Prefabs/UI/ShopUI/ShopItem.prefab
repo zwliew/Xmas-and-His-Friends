@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 0
   fullName: 
+  englishName: 
   description: 
   itemSprite: {fileID: 21300000, guid: e924c343b1d656a4181e9319a56a1f44, type: 3}
   selectedSprite: {fileID: 21300000, guid: 13ca509d72ed0be4f900bba7fd26457d, type: 3}
@@ -116,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.53676474, g: 0.023680788, b: 0.18291368, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -124,13 +125,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 9a695d807a5fff647874b3f2c4df8b02, type: 3}
+    m_FontSize: 45
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
-    m_Alignment: 0
+    m_MaxSize: 300
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -285,8 +286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 8.950039, y: 0}
-  m_SizeDelta: {x: 270.6, y: 73.848}
+  m_AnchoredPosition: {x: 11.1, y: 2.2100067}
+  m_SizeDelta: {x: 377.8, y: 73.848}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224541058158075162
 RectTransform:

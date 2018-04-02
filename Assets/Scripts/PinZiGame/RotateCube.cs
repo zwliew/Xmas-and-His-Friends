@@ -29,6 +29,8 @@ public class RotateCube : MonoBehaviour {
 	private Vector3 touchStartPosition;
 	private Vector3 touchEndPosition;
 
+	private Vector3 touchRealTimePosition;
+
 	void Start(){
 		isPlaying = true;
 		rbTetra = goTetra.GetComponent<Rigidbody> ();	
@@ -51,11 +53,24 @@ public class RotateCube : MonoBehaviour {
 				switch(touch0.phase){
 				case TouchPhase.Began:
 					touchStartPosition = touch0.position;
+			 		touchRealTimePosition = touch0.position;
 					break;
 				case TouchPhase.Moved:
-					if(touch0.deltaPosition.magnitude > 1f){
-						rbTetra.AddTorque (new Vector3 (touch0.deltaPosition.y * 4f * fForceConstant,-touch0.deltaPosition.x * 4f* fForceConstant, 0f));
+
+					Vector3 speed = Vector3.zero;
+
+					speed = Vector3.Lerp(speed, touch0.deltaPosition, 0.1f);
+
+					if(touch0.deltaPosition.magnitude > 0.1f){
+						rbTetra.AddTorque (new Vector3 (speed.y * 0.5f * fForceConstant,-speed.x * 0.5f* fForceConstant, 0f));
 					}
+					if(touch0.deltaPosition.magnitude > 1.1f){
+						rbTetra.AddTorque (new Vector3 (speed.y * 0.5f * fForceConstant,-speed.x * 0.5f* fForceConstant, 0f));
+					}
+					if(touch0.deltaPosition.magnitude > 10f){
+						rbTetra.AddTorque (new Vector3 (speed.y * 0.5f * fForceConstant,-speed.x * 0.5f* fForceConstant, 0f));
+					}
+			
 					break;
 				case TouchPhase.Ended:
 					touchEndPosition = touch0.position;
@@ -73,6 +88,8 @@ public class RotateCube : MonoBehaviour {
 			#endif
 
 			#if UNITY_EDITOR
+			if(Input.GetMouseButtonDown(0))
+				touchRealTimePosition = Input.mousePosition;
 			if (Input.GetMouseButton (0)) {//Hold mouse left btn to drag
 			isDragging = true;
 			} else {
@@ -81,16 +98,18 @@ public class RotateCube : MonoBehaviour {
 
 			if (isDragging) {//To achieve rotation
 				//---------Copied from online---------------
+				Vector3 touchDeltaPosition = touchRealTimePosition - Input.mousePosition;
 				Vector3 speed = Vector3.zero;
 				Vector3 avgSpeed = Vector3.zero;
-				speed = new Vector3 (-Input.GetAxis ("Mouse X"), Input.GetAxis ("Mouse Y"), 0);
-				avgSpeed = Vector3.Lerp (avgSpeed, speed, Time.deltaTime * 5);
-				float i = Time.deltaTime;
-				speed = Vector3.Lerp (speed, Vector3.zero, i);
+				speed = Vector3.Lerp(speed, touchDeltaPosition, 0.1f);
+				//speed = new Vector3 (-Input.GetAxis ("Mouse X"), Input.GetAxis ("Mouse Y"), 0);
+				//avgSpeed = Vector3.Lerp (avgSpeed, speed, Time.deltaTime * 5);
+				//float i = Time.deltaTime;
+				//speed = Vector3.Lerp (speed, Vector3.zero, i);
 				//---------Copied from online---------------
 
-				rbTetra.AddTorque (new Vector3 (speed.y * 8f * fForceConstant, speed.x * 8f* fForceConstant, 0f));
-
+				rbTetra.AddTorque (new Vector3 (-speed.y * 1f * fForceConstant, speed.x * 1f* fForceConstant, 0f));
+				touchRealTimePosition =  Input.mousePosition;
 			} 
 			#endif
 

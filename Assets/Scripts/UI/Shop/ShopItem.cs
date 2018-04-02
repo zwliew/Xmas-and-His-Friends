@@ -38,6 +38,7 @@ public class ShopItem : MonoBehaviour
         itemButton.onClick.RemoveAllListeners();
         itemButton.onClick.AddListener(() => { SelectItem(); });
 		nameText.text = "";
+		nameText.text = shopItem.fullName;
 
     }
 
@@ -48,7 +49,6 @@ public class ShopItem : MonoBehaviour
 	public void SetSelected(){
 		Debug.Log (fullName + " is selected");
 		itemButton.GetComponent<Image> ().sprite = selectedSprite;
-		nameText.text = shopItem.fullName;
 		isSelected = true;
 	}
 

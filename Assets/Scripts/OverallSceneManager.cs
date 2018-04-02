@@ -14,6 +14,9 @@ public class OverallSceneManager : MonoBehaviour {
 			break;
 		default:
 			SceneManager.LoadScene (sceneName);
+			GameObject gO = GameObject.FindWithTag ("Transition");
+			if(gO!=null)
+				gO.GetComponent<SceneTransitionAnimator> ().PlayTransition ();
 			break;
 		}
 	}
