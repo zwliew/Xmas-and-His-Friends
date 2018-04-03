@@ -15,7 +15,7 @@ public class MazeDisplayController : MonoBehaviour {
     public string[] randSentence = new string[25];
     private MazeDataController dataController;
     private OverallGameManager ogm;
-   
+	private GameObject runtimeXmas;
 
     void Start()
     {
@@ -206,6 +206,7 @@ public class MazeDisplayController : MonoBehaviour {
         tempBridge.transform.position = new Vector3(2.67f, -0.47f, adjacentTiles[0].z-0.18f);
         GameObject tempXmas = new GameObject();
         tempXmas = Instantiate(xmas);
+		runtimeXmas = tempXmas;
         tempXmas.SetActive(true);
         tempXmas.GetComponent<NavMeshAgent>().enabled = false ;
         tempXmas.transform.position = new Vector3(1.24f, 0.019f, 2.013f);
@@ -227,7 +228,9 @@ public class MazeDisplayController : MonoBehaviour {
    
     public void RoundEnd(bool win)
     {
-        ShowMessageBox(win);
+		foreach (CapsuleCollider cc in runtimeXmas.GetComponents<CapsuleCollider>()) {
+			cc.enabled = false;
+		}
     }
 
     public void Annihilte()
@@ -253,4 +256,15 @@ public class MazeDisplayController : MonoBehaviour {
         Annihilte();
         Refresh();
     }
+
+	public IEnumerator RevealAnswer(){
+		foreach (GameObject go in spaces) {
+			if (go.GetComponent<MazeTileController> ().serialNumber == 0) {
+				go.GetComponentInChildren<Rigidbody> ().useGravity = true;
+				go.SetActive (false);
+			}
+
+		}
+		yield return new WaitForSeconds (3f);
+	}
 }

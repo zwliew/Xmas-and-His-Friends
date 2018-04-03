@@ -41,10 +41,11 @@ public class OverallSceneManager : MonoBehaviour {
 	}
 	
 	IEnumerator LoadSceneAsync (string sceneName){
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (1f);
 		async = SceneManager.LoadSceneAsync(sceneName);
+		async.allowSceneActivation = true;
 		while (!async.isDone) {
-			yield return null;
+			yield return new WaitForFixedUpdate();
 		}
 	}
 	

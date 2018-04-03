@@ -49,7 +49,7 @@ public class EditorModeItem : MonoBehaviour {
 	public void SetUnselected(){
 		itemButton.GetComponent<Image> ().sprite = unselectedSprite;
 		if (furniture)
-			furniture.transform.position = new Vector3 (99f, 99f, 99f);
+			furniture.gameObject.SetActive (false);
 		isSelected = false;
 	}
 

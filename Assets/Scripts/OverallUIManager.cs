@@ -148,6 +148,7 @@ public class OverallUIManager : MonoBehaviour {
 	private void RefreshCoinDisplay (){
 		Text coinTxt = InGameUICanvasGroup.GetComponentInChildren<Text> ();
         Debug.Log("player data is " + playerDataController.GetPlayerData().coins);
+		coinTxt.text = playerDataController.GetPlayerData ().coins.ToString ();
 	}
 		
 

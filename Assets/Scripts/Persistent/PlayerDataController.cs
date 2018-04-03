@@ -167,7 +167,7 @@ public class PlayerDataController : MonoBehaviour
 		PlayerPrefs.SetInt("coins", 100);
 		PlayerPrefs.SetString ("displayedShopItems", "fire,desk,deer,shelves,sofa,carpet,toyManSmall,toyManBig,wreath,wreathSmall");
 		PlayerPrefs.SetString ("purchasedShopItems", 
-			"desk,bed,curtains,fire,deer,shelves,sofa,pictureOnWall,carpet,toyManBig,wreath,wreathSmall,candleInAFrame,violinCase,toyManSmall");
-		PlayerPrefs.SetString ("equippedItems", "christmasTree");
+			"bed,curtains,fire,deer,shelves,sofa,pictureOnWall,carpet,toyManBig,wreath,wreathSmall,candleInAFrame,violinCase,toyManSmall");
+		PlayerPrefs.SetString ("equippedItems", "christmasTree,desk");
 	}
 }

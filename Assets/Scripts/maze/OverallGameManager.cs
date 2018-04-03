@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class OverallGameManager : MonoBehaviour {
     private List<string> corSentence = new List<string>();
     private List<string> randSentence = new List<string>();
@@ -53,9 +53,20 @@ public class OverallGameManager : MonoBehaviour {
         displayController.RoundEnd(win);
         Debug.Log("-------------"+"The game is won: " + win);
 		if (win) {
+			StartCoroutine(displayController.RevealAnswer ());
 			StartPage.SetActive (false);
 			WinPage.SetActive (true);
 			LostPage.SetActive (false);
+			//WinPage.GetComponentInChildren<Text> ().text = "";
+			string temp = "";
+			foreach(string s in displayController.corSentence) {
+				temp += s;
+				Debug.Log (s);
+			}
+			WinPage.GetComponentsInChildren<Text> ()[1].text = temp;
+			Debug.Log (temp);
+			Debug.Log (WinPage.GetComponentInChildren<Text> ().text);
+
 		} else {
 			StartPage.SetActive (false);
 			WinPage.SetActive (false);

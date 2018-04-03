@@ -51,7 +51,13 @@ public class FurnitureInteraction : MonoBehaviour {
         {
             return;
         }
-
+		clickCount += 1;
+		if (clickCount > 5)
+		{
+			Debug.Log("clicking too many times, stopping sound");
+			source.Stop();
+			clickCount = 0;
+		}
         // Return early if the previous audio source is still playing
         if (source == null || source.isPlaying)
         {
@@ -64,7 +70,7 @@ public class FurnitureInteraction : MonoBehaviour {
         {
             // Load AudioClip from Sounds/Furniture/<soundName>
             string soundName = "";
-            if (hitInfo.collider.gameObject.transform.parent != null)
+			if (hitInfo.collider.gameObject.transform.parent != null &&hitInfo.collider.gameObject.transform.parent.gameObject.name != "Room")
             {
                 soundName = hitInfo.collider.gameObject.transform.parent.name;
             }
@@ -83,11 +89,12 @@ public class FurnitureInteraction : MonoBehaviour {
 
             Debug.Log("Trying to play sound: " + soundName);
             AudioClip clip = Resources.Load<AudioClip>(
-                "Sounds/Furniture/" + soundName);
+                "Sounds/Audio/Furniture/" + soundName);
 
             if (source != null && clip != null)
             {
                 source.PlayOneShot(clip);
+				Debug.Log ("Playing sound: " + clip.name);
                 idleTime = 0f;
                 clickCount = 0;
             }
@@ -95,7 +102,7 @@ public class FurnitureInteraction : MonoBehaviour {
             {
                 Debug.Log("didnot get the clip: " + soundName);
                 clickCount += 1;
-                if (clickCount > 4)
+                if (clickCount > 5)
                 {
                     Debug.Log("clicking too many times, stopping sound");
                     source.Stop();
@@ -106,7 +113,7 @@ public class FurnitureInteraction : MonoBehaviour {
         else
         {
             clickCount += 1;
-            if (clickCount > 4)
+            if (clickCount > 5)
             {
                 Debug.Log("clicking too many times, stopping sound");
                 source.Stop();

@@ -29,6 +29,10 @@ public class RoomSelectionAni : MonoBehaviour {
 
 	public CanvasGroup UICvsGrp;
 
+	public AudioClip XmasAudioClip;
+	public AudioClip SdrClip;
+	public AudioSource audioSource;
+
 	// Use this for initialization
 	void Start () {
 		UICvsGrp.gameObject.SetActive (false);
@@ -109,8 +113,12 @@ public class RoomSelectionAni : MonoBehaviour {
 		Animator uiAnimator = UICvsGrp.gameObject.GetComponent<Animator> ();
 		if (i == 1) {
 			uiAnimator.SetTrigger ("Xmas");
+			audioSource.Stop ();
+			audioSource.PlayOneShot (XmasAudioClip);
 		} else if (i == 2) {
 			uiAnimator.SetTrigger ("SpringFes");
+			audioSource.Stop ();
+			audioSource.PlayOneShot (SdrClip);
 		}
 		yield return new WaitForSeconds (2f);
 		phaseName = "phaseFour";
@@ -126,3 +134,4 @@ public class RoomSelectionAni : MonoBehaviour {
 		UICvsGrp.gameObject.SetActive (false);
 	}
 }
+

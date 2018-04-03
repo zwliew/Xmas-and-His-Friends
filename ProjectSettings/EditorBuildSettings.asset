@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/NewPinZiGame.unity
     guid: 0a897bb2caabdbc43b9120af4a78b755
   - enabled: 1
-    path: Assets/Scenes/maze.unity
-    guid: 853bfae1baa18df49b7389e98d4e1320
+    path: Assets/Scenes/Archives/maze.unity
+    guid: ca37bc3ef92b84248a22b849e4353327
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

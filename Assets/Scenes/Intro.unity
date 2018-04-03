@@ -545,6 +545,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1973678527}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &906359817
@@ -889,7 +900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1861791414}
   bgmClips:
-  - {fileID: 8300000, guid: 9f21da757bf3a4c4399a078151d5e655, type: 3}
+  - {fileID: 8300000, guid: 8a525cd2051304f08942f91799aafb75, type: 3}
   - {fileID: 8300000, guid: 6b8109d5d74914c44a882fbcf2c5352f, type: 3}
 --- !u!1 &1973678526
 GameObject:

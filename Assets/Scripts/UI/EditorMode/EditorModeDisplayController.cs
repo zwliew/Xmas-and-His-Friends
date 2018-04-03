@@ -107,7 +107,7 @@ public class EditorModeDisplayController : MonoBehaviour
 			curSelectedItem = item;
             if (item.furniture)
             {
-				item.furniture.transform.position = Vector3.zero;
+				item.furniture.transform.localPosition = Vector3.zero;
 				Debug.Log ("Setting item to be displayed in emdc");
                 //Debug.Log(item.furniture.transform.position.x);
                 //item.furniture.transform.rotation = Quaternion.Euler(item.position);

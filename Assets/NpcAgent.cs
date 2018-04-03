@@ -8,12 +8,14 @@ public class NpcAgent : MonoBehaviour {
     private GameObject mas;
     public GameObject gameManager;
     private OverallGameManager ogm;
+	private AnimationController ac;
     public int count = 26;
     // Use this for initialization
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         ogm = gameManager.GetComponent<OverallGameManager>();
+		ac = GetComponentInChildren<AnimationController> ();
 
     }
 
@@ -23,10 +25,12 @@ public class NpcAgent : MonoBehaviour {
         if (caught)
         {
             StopCoroutine(MoveToLocation(mas.transform.position));
+			ac.SetMovingState (0);
         }
         else{
             mas = GameObject.Find("Mas1(Clone)");
             StartCoroutine(MoveToLocation(mas.transform.position));
+			ac.SetMovingState (1);
         }
 
     }

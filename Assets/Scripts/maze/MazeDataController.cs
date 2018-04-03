@@ -41,15 +41,20 @@ public class MazeDataController : MonoBehaviour {
 
     void ReadString()
     {
-        string path = "Assets/Resources/Maze/CharSpawner.txt";
+        string path = "Assets/Resources/Maze/CharSpawnerUTF.txt";
         //Read the text from directly from the test.txt file
-        StreamReader reader = new StreamReader(path, Encoding.GetEncoding("gb2312") );
-        for(int i = 0; i < 51; i++)
+        //StreamReader reader = new StreamReader(path, Encoding.GetEncoding("Default") );
+		//StreamReader reader = new StreamReader(path, Encoding.UTF8 );
+		TextAsset ta = Resources.Load ("Maze/CharSpawnerUTF", typeof(TextAsset)) as TextAsset;
+		string[] lines = ta.text.Split (new[] { '\r', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
+        
+		for(int i = 0; i < 51; i++)
         {
-            sentences[i] = reader.ReadLine();
+            //sentences[i] = reader.ReadLine();
+			sentences[i] = lines[i];
         }
 
-        reader.Close();
+        //reader.Close();
     }
 
      private List<string> GetCorrectSentence()
