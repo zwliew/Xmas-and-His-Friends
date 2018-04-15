@@ -7,6 +7,10 @@ public class OverallSceneManager : MonoBehaviour {
 
 	private AsyncOperation async;
 
+	public void Start(){
+		DontDestroyOnLoad (gameObject);
+	}
+
 	public void LoadScene(string sceneName){
 		GameObjectUtility.ClearObjectPools ();
 		switch(sceneName){
@@ -41,21 +45,24 @@ public class OverallSceneManager : MonoBehaviour {
 	}
 	
 	IEnumerator LoadSceneAsync (string sceneName){
+		Debug.Log ("waiting for transition animation to be played first");
 		yield return new WaitForSeconds (1f);
-		async = SceneManager.LoadSceneAsync(sceneName);
+		Debug.Log ("Start async");
+		async = SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Single);
 		async.allowSceneActivation = true;
 		while (!async.isDone) {
 			yield return new WaitForFixedUpdate();
 		}
+		Debug.Log ("Finished async");
 	}
 	
-	//-------------------------------
-	public void LoadSceneForUI(){
-		GameObjectUtility.ClearObjectPools ();
-		CharacterSpawner.EndGameClear ();
-		LoadSceneAsync ("BuildingOne");
-	}
-
-	public static void EnterGame(string gameName){
-	}
+//	//-------------------------------
+//	public void LoadSceneForUI(){
+//		GameObjectUtility.ClearObjectPools ();
+//		CharacterSpawner.EndGameClear ();
+//		LoadSceneAsync ("BuildingOne");
+//	}
+//
+//	public static void EnterGame(string gameName){
+//	}
 }

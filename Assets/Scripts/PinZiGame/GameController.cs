@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 /**
  * Controls the logic and flow of the current game
@@ -51,6 +52,15 @@ public class GameController : MonoBehaviour {
 			}
 		}
 		#if UNITY_EDITOR	
+		if (Input.GetMouseButtonUp (0)) {//Avoid accidental clicking
+			PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
+			if (selectedSide != null) {
+				SelectSide (selectedSide);
+			}
+		}
+		#endif
+
+		#if UNITY_STANDALONE
 		if (Input.GetMouseButtonUp (0)) {//Avoid accidental clicking
 			PinZiPP selectedSide = GetSelectedSide (Input.mousePosition);
 			if (selectedSide != null) {

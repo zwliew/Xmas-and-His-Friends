@@ -113,6 +113,32 @@ public class RotateCube : MonoBehaviour {
 			} 
 			#endif
 
+			#if UNITY_STANDALONE
+			if(Input.GetMouseButtonDown(0))
+				touchRealTimePosition = Input.mousePosition;
+			if (Input.GetMouseButton (0)) {//Hold mouse left btn to drag
+				isDragging = true;
+			} else {
+				isDragging = false;
+			}
+
+			if (isDragging) {//To achieve rotation
+				//---------Copied from online---------------
+				Vector3 touchDeltaPosition = touchRealTimePosition - Input.mousePosition;
+				Vector3 speed = Vector3.zero;
+				Vector3 avgSpeed = Vector3.zero;
+				speed = Vector3.Lerp(speed, touchDeltaPosition, 0.1f);
+				//speed = new Vector3 (-Input.GetAxis ("Mouse X"), Input.GetAxis ("Mouse Y"), 0);
+				//avgSpeed = Vector3.Lerp (avgSpeed, speed, Time.deltaTime * 5);
+				//float i = Time.deltaTime;
+				//speed = Vector3.Lerp (speed, Vector3.zero, i);
+				//---------Copied from online---------------
+
+				rbTetra.AddTorque (new Vector3 (-speed.y * 1f * fForceConstant, speed.x * 1f* fForceConstant, 0f));
+				touchRealTimePosition =  Input.mousePosition;
+			} 
+			#endif
+
 			if(!isDragging){//To achieve snapping effect
 				
 				for (int i = 0; i < 4; i++) {//Find which one is at the most back

@@ -23,13 +23,13 @@ public class DisplayController : MonoBehaviour{
 	private Texture2D[] texture2DSidesSelected;
 	private Texture2D texture2DAns;
 
-	private Vector3[] v3Positions = new Vector3[5]{
-		new Vector3(-1.64f, 1.96f, 0f), 
-		new Vector3(-0.04f, 3.32f, 0f), 
-		new Vector3(1.72f, 2.32f, 0f), 
-		new Vector3(0.02f, -0.37f, 0f),
-		new Vector3(0f, 1.5f, -3f)
-	};
+//	private Vector3[] v3Positions = new Vector3[5]{
+//		new Vector3(-1.64f, 1.96f, 0f), 
+//		new Vector3(-0.04f, 3.32f, 0f), 
+//		new Vector3(1.72f, 2.32f, 0f), 
+//		new Vector3(0.02f, -0.37f, 0f),
+//		new Vector3(0f, 1.5f, -3f)
+//	};
 
 	private PinZiPP[] selectedSides = new PinZiPP[2];
 
@@ -38,14 +38,14 @@ public class DisplayController : MonoBehaviour{
 	private GameObject[] priPrefabPianPangs = new GameObject[5];
 	public GameObject goTetra;
 	public GameObject goRotateCubeScriptHolder;
-	private RotateCube rotateCubeScript;
+//	private RotateCube rotateCubeScript;
 
     public static List<string> corSentence { get; internal set; }
 
     public void Initialize (Word word) {
 		this.word = word;
 		selectedSides = new PinZiPP[2];
-		rotateCubeScript = goRotateCubeScriptHolder.GetComponent<RotateCube> ();
+//		rotateCubeScript = goRotateCubeScriptHolder.GetComponent<RotateCube> ();
 		Reset ();
 		priPrefabPianPangs = new GameObject[5];
 		DisplayAllSides ();

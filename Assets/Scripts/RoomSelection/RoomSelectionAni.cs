@@ -20,7 +20,7 @@ public class RoomSelectionAni : MonoBehaviour {
 	public GameObject destinationTwo;
 	public GameObject startPointTwo;
 
-	private string nameOfHim;
+	//private string nameOfHim;
 
 	private float timeKeeper;
 	private string phaseName;
@@ -36,7 +36,7 @@ public class RoomSelectionAni : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		UICvsGrp.gameObject.SetActive (false);
-		nameOfHim = xmasGameObject.name;
+		//nameOfHim = xmasGameObject.name;
 
 		xmasNavAgent = xmasGameObject.GetComponent<NavMeshAgent> ();
 		sprfNavAgent = sprfGameObject.GetComponent<NavMeshAgent> ();

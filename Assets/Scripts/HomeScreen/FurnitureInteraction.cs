@@ -12,12 +12,12 @@ public class FurnitureInteraction : MonoBehaviour {
 
     private AudioSource source;
     private int clickCount;
-    private bool isPlayingFurniture;
+//    private bool isPlayingFurniture;
     private float idleTime;
     public GameObject InGameUI;
     [HideInInspector]
     public bool isInRoom { get; set; }
-	public OverallSceneManager overallSceneManager;
+	public LocalSceneManager localSceneManager;
 
     public void Start()
     {
@@ -25,7 +25,7 @@ public class FurnitureInteraction : MonoBehaviour {
         clickCount = 0;
         idleTime = 0f;
         isInRoom = true;
-        isPlayingFurniture = false;
+//        isPlayingFurniture = false;
     }
 
     public void Update()
@@ -80,10 +80,10 @@ public class FurnitureInteraction : MonoBehaviour {
             }
 
 			if (soundName.Equals ("christmasTree")) {
-				overallSceneManager.LoadScene ("NewPinZiGame");
+				localSceneManager.LoadScene ("NewPinZiGame");
 			}
 			if (soundName.Equals ("desk")) {
-				overallSceneManager.LoadScene ("maze");
+				localSceneManager.LoadScene ("maze");
 			}
 
 

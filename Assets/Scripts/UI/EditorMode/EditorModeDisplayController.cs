@@ -23,7 +23,7 @@ using System.Collections.Generic;
 
 public class EditorModeDisplayController : MonoBehaviour
 {
-	private EditorModeItem curSelectedItem;
+//	private EditorModeItem curSelectedItem;
 	private List<EditorModeItemData> items;//Stores the item data
 	private List<Button> itemButton;//Stores button instantiated on runtime;
 
@@ -58,7 +58,7 @@ public class EditorModeDisplayController : MonoBehaviour
 		}
         mas.transform.position = new Vector3(-0.89f, 0.2f, 0.86f);
         mas.SetActive(false);
-		curSelectedItem = null;
+		//curSelectedItem = null;
 		RefreshEditorModeDisplay ();
 	}
 
@@ -104,7 +104,7 @@ public class EditorModeDisplayController : MonoBehaviour
 			UnselectItem (item);
 		} else {
 			item.SetSelected();
-			curSelectedItem = item;
+//			curSelectedItem = item;
             if (item.furniture)
             {
 				item.furniture.transform.localPosition = Vector3.zero;
@@ -125,7 +125,7 @@ public class EditorModeDisplayController : MonoBehaviour
 			return;
 		}
 		item.SetUnselected();
-		curSelectedItem = null;
+//		curSelectedItem = null;
 	}
 
 	public void UIShopItemNextPage(){

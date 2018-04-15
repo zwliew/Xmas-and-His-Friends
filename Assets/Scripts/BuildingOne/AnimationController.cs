@@ -15,7 +15,7 @@ public class AnimationController : MonoBehaviour {
 
 	private Animator xmasAnimator;
 
-	private int stepCountOne = 0;
+//	private int stepCountOne = 0;
 //	private int stepCountTwo = 0;
 
 	void Awake(){

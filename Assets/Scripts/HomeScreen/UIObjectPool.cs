@@ -34,6 +34,7 @@ public class UIObjectPool : MonoBehaviour {
             button = Instantiate(prefab, parent);
         }
         Debug.Log("GET: " + buttons.Count);
+		button.GetComponent<ShopItem> ().Initialize ();
         return button;
     }
 
