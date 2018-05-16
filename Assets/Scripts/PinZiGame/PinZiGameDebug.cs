@@ -14,6 +14,8 @@ public class PinZiGameDebug : Monobehaviour{
     private Word[] allWords;
     private Texture2D texture2DSides;
     private Texture2D texture2DAns;
+	private GameObject[] priPrefabPianPangs = new GameObject[5];
+
     
     public void Start(){
         datacontroller.Initialize();
@@ -51,7 +53,8 @@ public class PinZiGameDebug : Monobehaviour{
 	    	texture2DAns =	Resources.Load (strCorrectTexturePath) as Texture2D;
 		
 			for (int i = 0; i < sides.Length; i++) {
-				priPrefabPianPangs[i] = GameObjectUtility.customInstantiate (prefabPianPangs [i], goPlaceHolders[i].transform.position, goPlaceHolders[i].transform.rotation);
+				yAxis = 10 * i;
+				priPrefabPianPangs[i] = GameObjectUtility.customInstantiate (prefabPianPangs [i], Vector3.zero);
 				priPrefabPianPangs[i].transform.position = new Vector3(xAxis, yAxis,zAxis);
 				//Debug.Log ("Getting pinZiScript");
 				PinZiPP pinZiScript = priPrefabPianPangs[i].GetComponent<PinZiPP> ();
