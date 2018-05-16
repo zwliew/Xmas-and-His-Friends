@@ -30,16 +30,16 @@ public class PinZiGameDebug : Monobehaviour{
         for(int i = 0; i<100; i++){
             Word word = words[i];
             string[] sides = word.sides;
-		    texture2DSides = new Texture2D[sides.Length];
+	    texture2DSides = new Texture2D[sides.Length];
             for (int i = 0; i < sides.Length; i++) {
-			    string strTexturePath = "PinZiPianPang/" + sides [i].ToString ();
+			string strTexturePath = "PinZiPianPang/" + sides [i].ToString ();
 		    	//Debug.Log ("Loading " + (i+1) + " " +strTexturePath);
 		    	texture2DSides[i] =	Resources.Load (strTexturePath) as Texture2D;
 	    		texture2DSidesSelected[i] =	Resources.Load (strTexturePath+"r") as Texture2D;
-    			//Debug.Log ("Loaded " + texture2DSides [i].name);
-	    		//Debug.Log ("Loading... " + (i+1) + "/" + sides.Length);
-    			yield return new WaitForFixedUpdate ();
-    		}
+    		//Debug.Log ("Loaded " + texture2DSides [i].name);
+	    	//Debug.Log ("Loading... " + (i+1) + "/" + sides.Length);
+    		yield return new WaitForFixedUpdate ();
+    	    }
             string strCorrectTexturePath = "PinZiPianPang/" + word.name.ToString ();
 	    	texture2DAns =	Resources.Load (strCorrectTexturePath) as Texture2D;
             for (int i = 0; i < sides.Length; i++) {
