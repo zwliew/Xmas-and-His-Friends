@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//NOT IN USE
 public class AnimationController : MonoBehaviour {
 	[HideInInspector]
 	public string holdFlag;
